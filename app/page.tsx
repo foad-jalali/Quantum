@@ -111,10 +111,10 @@ export default function Home() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-white text-gray-800 overflow-hidden">
+    <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
       {/* Navigation */}
       <motion.header
-        className="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80"
+        className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-amber-50/80"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -182,7 +182,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden min-h-[90vh] flex items-center">
         <ParticleBackground />
-        <div className="absolute inset-0 bg-gradient-radial from-gray-100/50 to-transparent opacity-30"></div>
+        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <motion.div
@@ -348,7 +348,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-gray-50" id="about" ref={aboutRef}>
+      <section className="py-16 bg-amber-50" id="about" ref={aboutRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             className="flex flex-col items-center text-center max-w-3xl mx-auto"
@@ -434,7 +434,7 @@ export default function Home() {
       </section>
 
       {/* Divisions Section */}
-      <section className="py-16 bg-white" id="divisions" ref={divisionsRef}>
+      <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -658,7 +658,7 @@ export default function Home() {
 
       {/* Performance Section */}
       <section
-        className="py-16 bg-gray-50"
+        className="py-16 bg-amber-50"
         id="performance"
         ref={performanceRef}
       >
@@ -828,7 +828,7 @@ export default function Home() {
       </section>
 
       {/* Company Info Slider */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -890,7 +890,7 @@ export default function Home() {
       </section>
 
       {/* Skills/Expertise Section */}
-      <section className="py-16 bg-white" ref={expertiseRef}>
+      <section className="py-16 bg-amber-50" ref={expertiseRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -1007,7 +1007,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-gray-50" id="why-us" ref={whyUsRef}>
+      <section className="py-16 bg-amber-50" id="why-us" ref={whyUsRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -1105,7 +1105,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-white" id="contact" ref={contactRef}>
+      <section className="py-16 bg-amber-50" id="contact" ref={contactRef}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-2">
             <motion.div
@@ -1297,7 +1297,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-6 bg-gray-50 text-gray-700">
+      <footer className="py-6 bg-amber-50 text-gray-700">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             className="flex flex-col md:flex-row justify-between items-center"
