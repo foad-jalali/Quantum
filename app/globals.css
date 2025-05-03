@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background:0 0% 100%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -90,5 +90,10 @@
   }
   50% {
     opacity: 0.6;
+  }
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }

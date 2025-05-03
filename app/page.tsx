@@ -28,6 +28,8 @@ import AnimatedCounter from "@/components/animated-counter";
 import DivisionIcon from "@/components/division-icon";
 import PerformanceChart from "@/components/performance-chart";
 import InfoSlider from "@/components/info-slider";
+import PartnersSection from "@/components/partners";
+import FeatureGridSection from "@/components/feature-grid-section";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -48,6 +50,17 @@ export default function Home() {
     once: true,
     amount: 0.3,
   });
+  const services = [
+    { title: "End-to-End Procurement & Sourcing", image: "/services/1.png", href: "/services/ai" },
+    { title: "Tender Management & Consortium Building", image: "/services/2.png", href: "/services/ai" },
+    { title: "Vendor Identification & Matchmaking", image: "/services/3.png", href: "/services/ai" },
+    { title: "Project Management & Execution Oversight", image: "/services/4.png", href: "/services/ai" },
+    { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/ai" },
+    { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/ai" },
+    { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/ai" },
+    { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/ai" },
+  ];
+  
 
   useEffect(() => {
     if (aboutInView) {
@@ -113,7 +126,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
       {/* Navigation */}
-      <motion.header
+      {/* <motion.header
         className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-amber-50/80"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -177,7 +190,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </motion.header>
+      </motion.header> */}
 
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden min-h-[90vh] flex items-center">
@@ -348,7 +361,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-amber-50" id="about" ref={aboutRef}>
+      {/* <section className="py-16 bg-amber-50" id="about" ref={aboutRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             className="flex flex-col items-center text-center max-w-3xl mx-auto"
@@ -420,8 +433,8 @@ export default function Home() {
                         stat.label === "Satisfaction"
                           ? "%"
                           : stat.label === "Support"
-                          ? "/7"
-                          : "+"
+                            ? "/7"
+                            : "+"
                       }
                     />
                   </div>
@@ -431,8 +444,13 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
-
+      </section> */}
+      <PartnersSection />
+      <FeatureGridSection
+        title="Our Core Services"
+        subtitle="Tailored solutions for complex projects"
+        items={services}
+      />
       {/* Divisions Section */}
       <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
         <div className="container mx-auto px-4 md:px-6">
@@ -1078,8 +1096,8 @@ export default function Home() {
                     animate={
                       whyUsInView
                         ? {
-                            scale: [1, 1.2, 1],
-                          }
+                          scale: [1, 1.2, 1],
+                        }
                         : {}
                     }
                     transition={{
