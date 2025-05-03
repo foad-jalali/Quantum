@@ -34,7 +34,7 @@ const navItems = [
             { label: "IT & Emerging Technologies", href: "#cloud", image: "/navbar/industries/9.png" },
         ],
     },
-    { label: "About Us", href: "#resources" },
+    { label: "Solutions", href: "#resources" },
     { label: "About Us", href: "#resources" },
     { label: "Blog", href: "#performance" },
     { label: "Career", href: "#why-us" },
@@ -116,7 +116,7 @@ export default function Navbar() {
                                                 transition={{ duration: 0.2 }}
                                             />
                                         </motion.div>
-                                        <div className="absolute top-full left-0 mt-2 bg-white border border-gray-300 rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 z-50 w-[1000px] p-4">
+                                        <div className="absolute left-1/2 -translate-x-1/2 mt-6 bg-white border border-gray-300 rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 z-50 w-[1000px] p-4">
                                             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                                                 {item.subItems.map((sub, j) => (
                                                     <a

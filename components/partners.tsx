@@ -12,7 +12,7 @@ export default function PartnersSection() {
   return (
     <div className="py-10 bg-[#DBF9F0]">
       <h2 className="text-center text-2xl font-bold mb-6">Our Trusted Partners & Vendor Network</h2>
-      <LogoSlider logos={logos} direction="left" speed="normal" />
+      <LogoSlider logos={logos} direction="left" speed="fast" />
     </div>
   );
 }

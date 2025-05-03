@@ -60,6 +60,17 @@ export default function Home() {
     { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/ai" },
     { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/ai" },
   ];
+  const industries = [
+    { title: "Military & Defence", image: "/industries/1.png", href: "/industries/ai" },
+    { title: "Airports", image: "/industries/2.png", href: "/industries/ai" },
+    { title: "Airlines & MRO ", image: "/industries/3.png", href: "/industries/ai" },
+    { title: "Energy, Oil & Gas", image: "/industries/4.png", href: "/industries/ai" },
+    { title: "Marine & Shipbuilding", image: "/industries/5.png", href: "/industries/ai" },
+    { title: "Healthcare & HealthTech", image: "/industries/6.png", href: "/industries/ai" },
+    { title: "Manufacturing & Industrial Fabrication", image: "/industries/7.png", href: "/industries/ai" },
+    { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/ai" },
+    { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/ai" },
+  ];
   
 
   useEffect(() => {
@@ -450,6 +461,15 @@ export default function Home() {
         title="Our Core Services"
         subtitle="Tailored solutions for complex projects"
         items={services}
+        backgroundColor="#048A81"
+      />
+      <FeatureGridSection
+        title="Industries We Empower"
+        subtitle="Enabling growth across diverse sectors"
+        items={industries}
+        lg={3}
+        textColor="text-black"
+        backgroundColor="#FFFFFF"
       />
       {/* Divisions Section */}
       <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
