@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import {
     ArrowRight,
+    Quote,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -15,6 +16,7 @@ import FeatureHighlightSection from "@/components/feature-highlight-section";
 import FeatureSection from "@/components/feature-section";
 import Quantum from "@/components/quantum";
 import HeroSection from "@/components/hero-section";
+import ContentSlider from "./content-slider";
 
 export default function Home() {
     const isMobile = useMobile();
@@ -134,33 +136,33 @@ export default function Home() {
     const caseStudies = [
         {
             title: "Government of Canada:",
-            content:
+            quote:
                 "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
-            color: "#f59e0b",
+            name: ''
         },
         {
             title: "National Airport Authority:",
-            content:
+            quote:
                 "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
-            color: "#f59e0b",
+            name: ''
         },
         {
             title: "Major Airline Operator:",
-            content:
+            quote:
                 "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
-            color: "#f59e0b",
+            name: ''
         },
         {
             title: "HealthTech Innovator:",
-            content:
+            quote:
                 "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
-            color: "#f59e0b",
+            name: ''
         },
         {
             title: "Remote Energy Consortium:",
-            content:
+            quote:
                 "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
-            color: "#f59e0b",
+            name: ''
         },
     ];
 
@@ -359,7 +361,7 @@ export default function Home() {
         </motion.header> */}
 
             {/* Hero Section */}
-            <section className="py-20 relative overflow-hidden min-h-[90vh] flex items-center">
+            <section className="h-screen relative overflow-hidden flex items-center">
                 <ParticleBackground />
                 <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -1284,11 +1286,12 @@ export default function Home() {
                 backgroundColor="#1282A2"
                 reverse={true}
             />
-            <StorySection
+            <ContentSlider
                 title="Case Studies"
                 subtitle="Our Successful Projects Across Industries"
-                slides={caseStudies}
+                items={caseStudies}
             />
+
 
             <HeroSection
                 image="/home/hero.png"

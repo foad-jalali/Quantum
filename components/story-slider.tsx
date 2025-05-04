@@ -20,7 +20,7 @@ const StorySection = ({
     title,
     subtitle,
     slides,
-    backgroundColor = "#fef3c7",
+    backgroundColor = "#ffffff",
 }: StorySectionProps) => {
     return (
         <section className="py-16" style={{ backgroundColor }}>

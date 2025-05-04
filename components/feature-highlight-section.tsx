@@ -73,11 +73,11 @@ const FeatureHighlightSection = ({ title, subtitle, features }: FeatureHighlight
                             whileHover={{ y: -10, transition: { duration: 0.2 } }}
                         >
                             <motion.div
-                                className="h-12 w-12 bg-amber-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors"
+                                className="h-16 w-16 bg-amber-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors"
                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                             >
-                                <img src={feature.icon} alt="Feature Icon" className="w-6 h-6" />
+                                <img src={feature.icon} alt="Feature Icon" className="w-8 h-8" />
                             </motion.div>
 
                             <h3 className="font-semibold mb-2 text-center text-gray-900">
