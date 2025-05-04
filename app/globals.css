@@ -97,3 +97,19 @@
     transform: translate(calc(-50% - 0.5rem));
   }
 }
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spin-reverse-slower {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+.animate-spin-reverse-slower {
+  animation: spin-reverse-slower 30s linear infinite;
+}
+

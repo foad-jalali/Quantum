@@ -30,6 +30,11 @@ import PerformanceChart from "@/components/performance-chart";
 import InfoSlider from "@/components/info-slider";
 import PartnersSection from "@/components/partners";
 import FeatureGridSection from "@/components/feature-grid-section";
+import StorySection from "@/components/story-slider";
+import FeatureHighlightSection from "@/components/feature-highlight-section";
+import FeatureSection from "@/components/feature-section";
+import Quantum from "@/components/quantum";
+import HeroSection from "@/components/hero-section";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -71,7 +76,177 @@ export default function Home() {
     { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/ai" },
     { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/ai" },
   ];
-  
+  const slides = [
+    {
+      title: "Turnkey Government & Commercial Solutions",
+      content:
+        "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "AI & Advanced Software Platforms",
+      content:
+        "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Secure Infrastructure & Data Systems",
+      content:
+        "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Navigation & Remote Monitoring Systems",
+      content:
+        "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Embedded & Edge Computing Solutions",
+      content:
+        "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Industrial Equipment & Automation",
+      content:
+        "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Power & Energy Systems",
+      content:
+        "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Field Monitoring & Instrumentation",
+      content:
+        "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Enterprise IT & Network Integration",
+      content:
+        "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Smart Connectivity & Signal Solutions",
+      content:
+        "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Custom Fabrication & Modular Manufacturing",
+      content:
+        "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Lighting & Sustainable Infrastructure",
+      content:
+        "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech.",
+      color: "#f59e0b",
+    },
+  ];
+
+  const caseStudies = [
+    {
+      title: "Government of Canada:",
+      content:
+        "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
+      color: "#f59e0b",
+    },
+    {
+      title: "National Airport Authority:",
+      content:
+        "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
+      color: "#f59e0b",
+    },
+    {
+      title: "Major Airline Operator:",
+      content:
+        "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
+      color: "#f59e0b",
+    },
+    {
+      title: "HealthTech Innovator:",
+      content:
+        "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
+      color: "#f59e0b",
+    },
+    {
+      title: "Remote Energy Consortium:",
+      content:
+        "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
+      color: "#f59e0b",
+    },
+  ];
+
+  const features = [
+    {
+      icon: "/icon/1.svg",
+      // title: "Pan-African Vision",
+      description: "Military-Grade Equipment Vendors",
+    },
+    {
+      icon: "/icon/2.svg",
+      // title: "Innovative Approach",
+      description: "AI/ML & Software Solution Providers",
+    },
+    {
+      icon: "/icon/3.svg",
+      // title: "Affordable Excellence",
+      description: "IT Hardware Distributors (Dell, HPE, etc.)",
+    },
+    {
+      icon: "/icon/4.svg",
+      // title: "Future-Focused",
+      description: "Airport & Airline Equipment Suppliers (ATC, ASMCGS, GSE, Simulators)",
+    },
+    {
+      icon: "/icon/5.svg",
+      // title: "Future-Focused",
+      description: "Airline OEMs and Component Manufacturers",
+    },
+    {
+      icon: "/icon/6.svg",
+      // title: "Future-Focused",
+      description: "Energy Solution Providers (Solar, Wind, Battery, UPS)",
+    },
+    {
+      icon: "/icon/7.svg",
+      // title: "Future-Focused",
+      description: "Marine Equipment and Vessel Manufacturers",
+    },
+    {
+      icon: "/icon/8.svg",
+      // title: "Future-Focused",
+      description: "Healthcare Equipment Manufacturers & Medical Tech Solution Developers",
+    },
+    {
+      icon: "/icon/9.svg",
+      // title: "Future-Focused",
+      description: "Sensor and Analytical Instrument Vendors",
+    },
+    {
+      icon: "/icon/10.svg",
+      // title: "Future-Focused",
+      description: "Advanced Fabrication & CNC Engineering & Manufacturing Partners",
+    },
+    {
+      icon: "/icon/11.svg",
+      // title: "Future-Focused",
+      description: "Automation & Instrumentation Providers",
+    },
+    {
+      icon: "/icon/12.svg",
+      // title: "Future-Focused",
+      description: "Training & Consulting Firms",
+    },
+  ];
+
 
   useEffect(() => {
     if (aboutInView) {
@@ -278,7 +453,7 @@ export default function Home() {
                 </motion.div>
               </motion.div>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               className="flex justify-center"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -308,7 +483,6 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
                   <div className="relative w-48 h-48">
-                    {/* Abstract Logo */}
                     <svg viewBox="0 0 200 200" className="w-full h-full">
                       <motion.path
                         d="M100,20 L160,50 L160,150 L100,180 L40,150 L40,50 Z"
@@ -366,6 +540,14 @@ export default function Home() {
                   </div>
                 </motion.div>
               </div>
+            </motion.div> */}
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+            >
+              <Quantum />
             </motion.div>
           </div>
         </div>
@@ -472,7 +654,7 @@ export default function Home() {
         backgroundColor="#FFFFFF"
       />
       {/* Divisions Section */}
-      <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
+      {/* <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -692,10 +874,10 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Performance Section */}
-      <section
+      {/* <section
         className="py-16 bg-amber-50"
         id="performance"
         ref={performanceRef}
@@ -863,72 +1045,18 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Company Info Slider */}
-      <section className="py-16 bg-amber-50">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.h2
-            className="text-3xl font-bold tracking-tight text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <motion.span
-              className="text-amber-500 inline-block"
-              animate={{
-                rotate: [0, 10, 0, -10, 0],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatDelay: 5,
-              }}
-            >
-              ✨
-            </motion.span>{" "}
-            Our Story
-          </motion.h2>
+      <StorySection
+        title="Solutions We Deliver "
+        subtitle="Integrated systems for governments and enterprises"
+        slides={slides}
+      />
 
-          <InfoSlider
-            slides={[
-              {
-                title: "Our Beginning",
-                content:
-                  "Chiloane Holdings was founded in 2023 with a vision to create a dynamic ecosystem of businesses that empower the digital, financial, and creative economy of Africa. Starting with just two divisions, we've rapidly expanded to six specialized business units.",
-                color: "#f59e0b",
-              },
-              {
-                title: "Our Mission",
-                content:
-                  "We aim to be the leading youth-led holding company in Africa, creating innovative solutions that address real-world challenges while building sustainable wealth and opportunities for the next generation of African entrepreneurs and creatives.",
-                color: "#f59e0b",
-              },
-              {
-                title: "Our Approach",
-                content:
-                  "We believe in the power of multidisciplinary thinking. By combining expertise across technology, finance, media, and consulting, we create unique synergies that allow our divisions to thrive independently while benefiting from shared resources and knowledge.",
-                color: "#f59e0b",
-              },
-              {
-                title: "Our Future",
-                content:
-                  "Looking ahead, we're focused on strategic expansion across the African continent, forming key partnerships with industry leaders, and investing in emerging technologies that will shape the future of business and creativity in Africa.",
-                color: "#f59e0b",
-              },
-              {
-                title: "Join Our Journey",
-                content:
-                  "Whether you're a potential client, partner, or team member, we invite you to be part of our growth story. Together, we can build innovative solutions that drive economic empowerment and creative excellence across Africa.",
-                color: "#f59e0b",
-              },
-            ]}
-          />
-        </div>
-      </section>
 
       {/* Skills/Expertise Section */}
-      <section className="py-16 bg-amber-50" ref={expertiseRef}>
+      {/* <section className="py-16 bg-amber-50" ref={expertiseRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -1042,10 +1170,10 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-amber-50" id="why-us" ref={whyUsRef}>
+      {/* <section className="py-16 bg-amber-50" id="why-us" ref={whyUsRef}>
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
             className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -1140,10 +1268,58 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
+      <FeatureHighlightSection
+        title="Together, We Engineer the Extraordinary"
+        subtitle="QIS proudly collaborates with vendors across multiple sectors to build end-to-end solutions for military, government, and commercial clients. Our vendor network is an essential part of the value we deliver to clients worldwide."
+        features={features}
+      />
+
+      <FeatureSection
+        image="/home/1.png"
+        alt="AI Services"
+        description={
+          <>
+            <h2>Join Our Global Vendor Network:</h2>
+            <p>
+              Are you a forward-thinking supplier, integrator, or technology firm? Join QIS's growing global vendor ecosystem. By partnering with us, you’ll have the opportunity to contribute to complex, high-impact projects across multiple sectors, including defence, energy, healthcare, aviation, and infrastructure.
+            </p>
+            <h2>Benefits of Joining:</h2>
+            <ul>
+              <li>Access to Government and International Projects</li>
+              <li>
+                Be Considered for Strategic Consortiums
+              </li>
+              <li>
+                Collaborate on Custom, Turnkey Solutions
+              </li>
+              <li>
+                Enhance Visibility Across B2G & B2B Channels
+              </li>
+            </ul>
+          </>
+        }
+        buttonText="Join Our Global Vendor Network"
+        buttonLink="/services/ai"
+        backgroundColor="#1282A2"
+        reverse={true}
+      />
+      <StorySection
+        title="Case Studies"
+        subtitle="Our Successful Projects Across Industries"
+        slides={caseStudies}
+      />
+
+      <HeroSection
+        image="/home/hero.png"
+        title="Wrap with Confidence Statement"
+        subtitle="With our network of global vendors, project management experience, and direct access to major tendering platforms (GoC, NATO, UN), QIS empowers you to secure, source, and deliver what matters most — without the usual friction."
+        buttonText="Partner with Us"
+        buttonLink="/contact"
+      />
 
       {/* Contact Section */}
-      <section className="py-16 bg-amber-50" id="contact" ref={contactRef}>
+      {/* <section className="py-16 bg-amber-50" id="contact" ref={contactRef}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-2">
             <motion.div
@@ -1332,10 +1508,10 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="py-6 bg-amber-50 text-gray-700">
+      {/* <footer className="py-6 bg-amber-50 text-gray-700">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             className="flex flex-col md:flex-row justify-between items-center"
@@ -1382,7 +1558,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
