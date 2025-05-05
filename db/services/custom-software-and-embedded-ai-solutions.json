@@ -1,0 +1,67 @@
+{
+    "slug": "custom-software-and-embedded-ai-solutions",
+    "title": "Custom Software & Embedded AI Solutions ",
+    "short_description": "Quantum specializes in Custom Software & Embedded AI Solutions, empowering businesses to innovate, automate, and stay ahead through tailored technology built precisely for their needs, enhanced with the power of artificial intelligence. ",
+    "description": "",
+    "first_section_image": "/single-services/7/first_section.png",
+    "second_section_image": "/single-services/7/second_section.png",
+    "hero_image": "/single-services/7/hero.png",
+    "first_section_content": {
+      "title": "Quantum’s Expertise in Building Custom Software Solutions ",
+      "description": "Off-the-shelf software often falls short when it comes to addressing unique business challenges. That’s why Quantum designs and develops custom software solutions that fit client requirements perfectly — no compromises, no unnecessary complexity. Our custom software services include: ",
+      "bottom_content": "By building software around your specific workflows and goals, Quantum ensures that technology becomes a catalyst for business growth, not a limitation. ",
+      "btn": "Partner with Us"
+    },
+    "card_section": {
+      "title": "Quantum’s Cutting-Edge Embedded AI Solutions ",
+      "top_content": "In today’s fast-moving digital landscape, embedding artificial intelligence into business processes is no longer a luxury — it’s a necessity. Quantum’s Embedded AI Solutions are designed to infuse intelligence, automation, and adaptability into your custom software. Our embedded AI capabilities include: ",
+      "bottom_content": "Quantum helps businesses leverage AI not just as a tool, but as a strategic differentiator, unlocking new opportunities for efficiency, innovation, and competitive advantage. "
+    },
+    "first_section_cards": [
+      {
+        "content": "Business Requirements Analysis and Process Mapping "
+      },
+      {
+        "content": "Custom Web, Mobile, and Desktop Application Development "
+      },
+      {
+        "content": "Cloud-Native Application Architecture and Development "
+      },
+      {
+        "content": "UI/UX Design Focused on Usability and Business Goals "
+      },
+      {
+        "content": "System Scalability, Security, and Performance Engineering "
+      },
+      {
+        "content": "Ongoing Maintenance, Support, and Future Enhancements ",
+        "icon_6": "/single-services/06.png"
+      }
+    ],
+    "divisions": [
+      {
+        "content": "Machine Learning Model Development and Integration "
+      },
+      {
+        "content": "Natural Language Processing (NLP) for Smart Interfaces "
+      },
+      {
+        "content": "Predictive Analytics and Data-Driven Decision Support "
+      },
+      {
+        "content": "Computer Vision for Automation and Quality Control "
+      },
+      {
+        "content": "AI-Based Process Optimization and Workflow Automation "
+      },
+      {
+        "content": "Custom AI Algorithm Development for Specialized Needs ",
+        "icon_6": "/single-services/06.png"
+      }
+    ],
+    "second_section_content": {
+      "title": "Why Quantum is the Smart Choice for Custom Software and AI Innovation ",
+      "description": "Quantum’s Custom Software & Embedded AI Solutions offer a unique blend of craftsmanship, innovation, and technical excellence. We combine deep domain knowledge with advanced technological expertise to deliver solutions that are powerful, scalable, and future-proof. With Quantum, your business is not just adopting new technology — it’s building a smarter, more agile future. ",
+      "btn": "Join Us"
+    }
+  }

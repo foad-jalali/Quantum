@@ -42,9 +42,9 @@ export default function Home() {
         { title: "Tender Management & Consortium Building", image: "/services/2.png", href: "/services/tender-management-and-consortium-building" },
         { title: "Vendor Identification & Matchmaking", image: "/services/3.png", href: "/services/vendor-identification-and-matchmaking" },
         { title: "Project Management & Execution Oversight", image: "/services/4.png", href: "/services/project-management-and-execution-oversight" },
-        { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/ai" },
-        { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/ai" },
-        { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/ai" },
+        { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/tender-preparation-and-bid-management" },
+        { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/it-infrastructure-deployment-and-software-integration" },
+        { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/custom-software-and-embedded-ai-solutions" },
         { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/ai" },
     ];
     const industries = [
