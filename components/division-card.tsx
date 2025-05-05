@@ -32,7 +32,7 @@ const DivisionCard = ({
             custom={index}
             whileHover={{ y: -10, transition: { duration: 0.2 } }}
         >
-            <Card className="max-w-md w-full mx-auto bg-gray-900 border-gray-800 hover:border-amber-500 transition-colors h-full overflow-hidden group">
+            <Card className="max-w-md w-full mx-auto bg-white border-gray-100 hover:border-amber-500 transition-colors h-full overflow-hidden group">
                 <CardHeader className="pb-2 relative">
                     <div className="absolute top-0 right-0 h-20 w-20 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-bl-full"></div>
                     {(icon || title) && (
@@ -45,11 +45,11 @@ const DivisionCard = ({
                             {title}
                         </CardTitle>
                     )}
-                    {description && <CardDescription className="text-gray-400">{description}</CardDescription>}
+                    {description && <CardDescription className="text-[#00204E]">{description}</CardDescription>}
                 </CardHeader>
 
                 <CardContent className="flex flex-col items-center justify-center text-center min-h-[200px] px-4">
-                    <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-xs mx-auto m-0">
+                    <p className="text-base sm:text-lg text-[#00204E] leading-relaxed max-w-xs mx-auto m-0">
                         {content}
                     </p>
                 </CardContent>

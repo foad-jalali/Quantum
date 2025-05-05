@@ -42,8 +42,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
             <section className="py-16" style={{ backgroundColor: "#DBF9F0" }}>
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-4 text-gray-800">{data.title}</h2>
-                    <h3 className="text-xl text-gray-800">{data.short_description}</h3>
+                    <h2 className="text-4xl font-bold mb-4 text-[#00204E]">{data.title}</h2>
+                    <h3 className="container text-xl text-[#00204E]">{data.short_description}</h3>
                 </div>
             </section>
 
@@ -77,12 +77,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     )}
 
                     <div className="text-center">
-                        <p className="text-white text-lg mb-4 pt-8">
+                        <p className="container text-white text-lg mb-4 pt-8">
                             {data.first_section_content.bottom_content}
                         </p>
                         <a
                             href="/contact"
-                            className="px-6 py-3 bg-amber-500 text-black font-semibold rounded hover:bg-amber-600 transition"
+                            className="px-6 py-3 bg-amber-500 text-black font-semibold rounded hover:bg-amber-600 transition mt-16"
                         >
                             {data.first_section_content.btn}
                         </a>
@@ -92,7 +92,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <section className="py-16" style={{ backgroundColor: "#247BA0" }}>
                 <div className="container mx-auto px-4 text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 text-white">{data.card_section.title}</h2>
-                    <h3 className="text-xl text-white">{data.card_section.top_content}</h3>
+                    <h3 className="container text-xl text-white">{data.card_section.top_content}</h3>
                 </div>
                 {data?.divisions?.length > 0 && (
                     <div className="flex justify-center">
@@ -112,7 +112,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     </div>
                 )}
                 <div className="text-center mt-16">
-                    <p className="text-white text-lg mb-4 pt-8">{data.card_section.bottom_content}</p>
+                    <p className="container text-white text-lg mb-4 pt-8">{data.card_section.bottom_content}</p>
                 </div>
             </section>
             <FeatureSection

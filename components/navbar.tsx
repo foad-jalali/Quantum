@@ -53,7 +53,7 @@ export default function Navbar() {
 
     return (
         <motion.header
-            className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-amber-50/80"
+            className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-white"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -83,7 +83,7 @@ export default function Navbar() {
                                     <motion.a
                                         key={i}
                                         href={item.href}
-                                        className="text-gray-700 hover:text-amber-600 transition-colors relative"
+                                        className="text-[#00204E] hover:text-amber-600 transition-colors relative"
                                         whileHover={{ scale: 1.1 }}
                                         initial={{ opacity: 0, y: -20 }}
                                         animate={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ export default function Navbar() {
                                 return (
                                     <div key={i} className="relative group">
                                         <motion.div
-                                            className="text-gray-700 hover:text-amber-600 transition-colors relative cursor-pointer"
+                                            className="text-[#00204E] hover:text-amber-600 transition-colors relative cursor-pointer"
                                             whileHover={{ scale: 1.1 }}
                                             initial={{ opacity: 0, y: -20 }}
                                             animate={{ opacity: 1, y: 0 }}
@@ -116,7 +116,10 @@ export default function Navbar() {
                                                 transition={{ duration: 0.2 }}
                                             />
                                         </motion.div>
-                                        <div className="absolute left-1/2 -translate-x-1/2 mt-6 bg-white border border-gray-300 rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 z-50 w-[1000px] p-4">
+                                        <div className="absolute left-1/2 -translate-x-1/2 mt-6 bg-white border border-gray-300 rounded-md 
+                                                        invisible opacity-0 group-hover:visible group-hover:opacity-100 
+                                                        transition-all duration-300 delay-100 ease-in-out 
+                                                        z-50 w-[1000px] p-4">
                                             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                                                 {item.subItems.map((sub, j) => (
                                                     <a

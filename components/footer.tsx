@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="bg-amber-50 text-gray-800 text-sm">
+        <footer className="bg-white text-gray-800 text-sm">
             <div className="container mx-auto px-4 md:px-6 py-8">
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6">
@@ -82,7 +82,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="font-semibold mb-3">Quantum International Services Ltd</h4>
+                        <h4 className="text-[#00204E] font-semibold mb-3">Quantum International Services Ltd</h4>
                         <p className="mb-2">
                             Address:<br />#302 - 10650 113 Street NW,<br />Edmonton, AB, Canada T5H 3H6
                         </p>
@@ -110,7 +110,7 @@ const Footer = () => {
 
 const FooterList = ({ title, items }: { title: string; items: string[] }) => (
     <div>
-        <h4 className="font-semibold mb-3">{title}</h4>
+        <h4 className="text-[#00204E] font-semibold mb-3">{title}</h4>
         <ul className="space-y-1">
             {items.map((item, idx) => (
                 <li key={idx}>
