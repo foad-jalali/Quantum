@@ -27,30 +27,40 @@ const HeroSection = ({
   const hasContent = title || subtitle || buttonText;
 
   return (
-    <section className={cn("relative w-full overflow-hidden", height)}>
-      <Image
-        src={image}
-        alt={alt}
-        fill
-        className="object-cover"
-        priority
-      />
+    <section className="relative w-full h-screen overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          priority
+          className="object-cover object-center w-full h-full"
+        />
+      </div>
 
       {hasContent && (
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 text-center text-white px-4">
-          {title && <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>}
-          {subtitle && <p className="text-lg md:text-xl mb-6">{subtitle}</p>}
-          {buttonText && (
-            <Link
-              href={buttonLink}
-              className="inline-block bg-amber-500 text-black font-semibold px-6 py-3 rounded hover:bg-amber-600 transition"
-            >
-              {buttonText}
-            </Link>
-          )}
+        <div className="absolute bottom-0 left-0 w-full z-10 px-4 pb-8 md:pb-12 text-white text-center">
+          <div className="max-w-3xl mx-auto">
+            {title && (
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+            )}
+            {subtitle && (
+              <p className="text-lg md:text-xl mb-6">{subtitle}</p>
+            )}
+            {buttonText && (
+              <Link
+                href={buttonLink}
+                className="inline-block bg-amber-500 text-black font-semibold px-6 py-3 rounded hover:bg-amber-600 transition"
+              >
+                {buttonText}
+              </Link>
+            )}
+          </div>
         </div>
       )}
     </section>
+
+
   );
 };
 

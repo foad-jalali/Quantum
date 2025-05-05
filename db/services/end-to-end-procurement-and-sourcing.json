@@ -1,0 +1,68 @@
+{
+  "slug": "end-to-end-procurement-and-sourcing",
+  "title": "End-to-End Procurement & Sourcing",
+  "short_description": "Quantum offers comprehensive End-to-End Procurement & Sourcing solutions, helping businesses streamline purchasing processes, identify optimal suppliers, and secure the best value for every project.",
+  "description": "We provide custom AI/ML solutions...",
+  "first_section_image": "/single-services/first_section.png",
+  "second_section_image": "/single-services/second_section.png",
+  "hero_image": "/single-services/hero.png",
+  "content": "<p>Full HTML or Markdown here</p>",
+  "first_section_content": {
+    "title": "Quantum’s Approach to Complete Procurement Solutions",
+    "description": "Procurement and sourcing are the heart of efficient business operations. At Quantum, we design a full-cycle procurement strategy tailored to each client’s unique needs. Our services cover every stage of procurement, from need identification to final delivery. We ensure transparency, cost-efficiency, and strategic supplier relationships through:",
+    "bottom_content": "By working with Quantum, businesses can significantly reduce procurement cycle times, lower costs, and maintain quality standards without internal resource overload.",
+    "btn": "Partner with Us"
+  },
+  "card_section": {
+    "title": "Quantum’s Strategic Sourcing Methodology",
+    "top_content": "At Quantum, sourcing is not just about buying—it’s about building competitive advantage. Our strategic sourcing methodology ensures that each procurement decision aligns with the broader goals of the organization. We focus on:",
+    "bottom_content": "Through our sourcing expertise, Quantum ensures that clients are not only buying products and services but also acquiring long-term value and innovation for their business ecosystems."
+  },
+  "first_section_cards": [
+    {
+      "content": "Requirement Analysis and Specification Finalization"
+    },
+    {
+      "content": "Supplier Research, Qualification, and Onboarding"
+    },
+    {
+      "content": "Price Negotiation and Contract Management"
+    },
+    {
+      "content": "Procurement Planning and Order Management"
+    },
+    {
+      "content": "Risk Mitigation and Compliance Assurance"
+    },
+    {
+      "content": "Ongoing Supplier Performance Monitoring",
+      "icon_6": "/single-services/06.png"
+    }
+  ],
+  "divisions": [
+    {
+      "content": "Total Cost of Ownership (TCO) Analysis"
+    },
+    {
+      "content": "Supplier Consolidation and Relationship Building"
+    },
+    {
+      "content": "Multi-vendor Strategy Development"
+    },
+    {
+      "content": "Sustainability and Ethical Sourcing Evaluation"
+    },
+    {
+      "content": "Market Intelligence and Competitive Benchmarking"
+    },
+    {
+      "content": "Leveraging Technology for Data-Driven Decisions",
+      "icon_6": "/single-services/06.png"
+    }
+  ],
+  "second_section_content": {
+    "title": "Why Quantum is Your Trusted Procurement Partner?",
+    "description": "Quantum’s End-to-End Procurement & Sourcing services go beyond traditional purchasing. We act as an extension of your team, bringing expertise, transparency, and technology-driven solutions to every transaction. With a proven track record across multiple industries, we are committed to driving efficiency, reliability, and strategic advantage for your organization.",
+    "btn": "Join Us"
+  }
+}

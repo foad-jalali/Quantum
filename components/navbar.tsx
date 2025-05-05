@@ -10,7 +10,7 @@ const navItems = [
     {
         label: "Services",
         subItems: [
-            { label: "End-to-End Procurement & Sourcing", href: "#ai-data", image: "/navbar/services/1.png" },
+            { label: "End-to-End Procurement & Sourcing", href: "/services/end-to-end-procurement-and-sourcing", image: "/navbar/services/1.png" },
             { label: "Tender Management & Consortium Building", href: "#cloud", image: "/navbar/services/2.png" },
             { label: "Vendor Identification & Matchmaking", href: "#cloud", image: "/navbar/services/3.png" },
             { label: "Project Management & Execution Oversight ", href: "#cloud", image: "/navbar/services/4.png" },
