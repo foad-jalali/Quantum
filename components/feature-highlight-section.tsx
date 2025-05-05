@@ -31,7 +31,7 @@ const staggerContainer = {
 
 const FeatureHighlightSection = ({ title, subtitle, features }: FeatureHighlightSection) => {
     return (
-        <section className="py-16 bg-amber-50" id="why-us">
+        <section className="py-16 bg-[#F5F5F5]" id="why-us">
             <div className="container mx-auto px-4 md:px-6">
                 <motion.h2
                     className="text-3xl font-bold tracking-tight text-center mb-4"

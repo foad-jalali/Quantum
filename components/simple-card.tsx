@@ -17,12 +17,12 @@ const fadeInUp = {
 const SimpleCard = ({ icon, title, description }: SimpleCardProps) => {
   return (
     <motion.div
-      className="bg-gray-200 p-6 rounded-lg border border-gray-200 hover:border-amber-500 transition-colors group"
+      className="bg-white p-6 rounded-lg border border-white hover:border-amber-500 transition-colors group shadow-lg shadow-black/5"
       variants={fadeInUp}
       whileHover={{ y: -10, transition: { duration: 0.2 } }}
     >
       <motion.div
-        className="h-16 w-16 bg-amber-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors"
+        className="h-16 w-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors"
         whileHover={{ scale: 1.1, rotate: 5 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >

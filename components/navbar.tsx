@@ -11,9 +11,9 @@ const navItems = [
         label: "Services",
         subItems: [
             { label: "End-to-End Procurement & Sourcing", href: "/services/end-to-end-procurement-and-sourcing", image: "/navbar/services/1.png" },
-            { label: "Tender Management & Consortium Building", href: "#cloud", image: "/navbar/services/2.png" },
-            { label: "Vendor Identification & Matchmaking", href: "#cloud", image: "/navbar/services/3.png" },
-            { label: "Project Management & Execution Oversight ", href: "#cloud", image: "/navbar/services/4.png" },
+            { label: "Tender Management & Consortium Building", href: "/services/tender-management-and-consortium-building", image: "/navbar/services/2.png" },
+            { label: "Vendor Identification & Matchmaking", href: "/services/vendor-identification-and-matchmaking", image: "/navbar/services/3.png" },
+            { label: "Project Management & Execution Oversight ", href: "/services/project-management-and-execution-oversight", image: "/navbar/services/4.png" },
             { label: "Tender Preparation & Bid Management", href: "#cloud", image: "/navbar/services/5.png" },
             { label: "IT Infrastructure Deployment & Software Integration", href: "#cloud", image: "/navbar/services/6.png" },
             { label: "Custom Software & Embedded AI Solutions", href: "#cloud", image: "/navbar/services/7.png" },

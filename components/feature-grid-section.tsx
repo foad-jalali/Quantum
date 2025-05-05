@@ -22,7 +22,7 @@ const FeatureGridSection = ({
     subtitle,
     items,
     backgroundColor,
-    textColor = "text-white", // ← پیش‌فرض سفید
+    textColor = "text-white",
     lg = 4,
   }: FeatureGridSectionProps) => {
     return (
