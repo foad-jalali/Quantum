@@ -62,7 +62,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                         }
 
                         backgroundColor="transparent"
-                        reverse={true}
+                        reverse={false}
                     />
 
                     {data?.first_section_cards?.length > 0 && (
@@ -129,7 +129,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 buttonText={data.second_section_content.btn}
                 buttonLink="/services/ai"
                 backgroundColor="#00A676"
-                reverse={false}
+                reverse={true}
             />
         </div>
     );

@@ -1284,7 +1284,7 @@ export default function Home() {
                 buttonText="Join Our Global Vendor Network"
                 buttonLink="/services/ai"
                 backgroundColor="#1282A2"
-                reverse={true}
+                reverse={false}
             />
             <ContentSlider
                 title="Case Studies"

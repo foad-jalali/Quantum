@@ -33,17 +33,6 @@ const FeatureSection = ({
                 )}
             >
 
-                <div className="relative w-full max-w-md h-auto rounded-[10px] overflow-hidden shadow-md mx-auto">
-                    <Image
-                        src={image}
-                        alt={alt}
-                        width={400}
-                        height={400}
-                        className="object-cover w-full h-full"
-                    />
-                </div>
-
-
                 <div className="w-full md:w-1/2">
                     <div className="prose prose-lg text-white prose-headings:text-white max-w-none mb-6 font-semibold">
                         {description}
@@ -58,6 +47,15 @@ const FeatureSection = ({
                             {buttonText}
                         </Link>
                     )}
+                </div>
+                <div className="relative w-full max-w-md h-auto rounded-[10px] overflow-hidden shadow-md mx-auto">
+                    <Image
+                        src={image}
+                        alt={alt}
+                        width={400}
+                        height={400}
+                        className="object-cover w-full h-full"
+                    />
                 </div>
             </div>
         </section>
