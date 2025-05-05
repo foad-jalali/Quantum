@@ -17,7 +17,7 @@ const navItems = [
             { label: "Tender Preparation & Bid Management", href: "/services/tender-preparation-and-bid-management", image: "/navbar/services/5.png" },
             { label: "IT Infrastructure Deployment & Software Integration", href: "/services/it-infrastructure-deployment-and-software-integration", image: "/navbar/services/6.png" },
             { label: "Custom Software & Embedded AI Solutions", href: "/services/custom-software-and-embedded-ai-solutions", image: "/navbar/services/7.png" },
-            { label: "Custom Fabrication & Product Customization", href: "#cloud", image: "/navbar/services/8.png" },
+            { label: "Custom Fabrication & Product Customization", href: "/services/custom-fabrication-and-product-customization", image: "/navbar/services/8.png" },
         ],
     },
     {

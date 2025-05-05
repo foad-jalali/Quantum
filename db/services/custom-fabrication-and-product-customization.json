@@ -1,0 +1,57 @@
+{
+    "slug": "custom-fabrication-and-product-customization",
+    "title": "Custom Fabrication & Product Customization",
+    "short_description": "Quantum, in collaboration with our reputable local vendors, delivers Custom Fabrication & Product Customization services, helping businesses bring their unique product visions to life with precision manufacturing, tailored designs, and flexible production capabilities. ",
+    "description": "",
+    "first_section_image": "/single-services/8/first_section.png",
+    "second_section_image": "/single-services/8/second_section.png",
+    "hero_image": "/single-services/8/hero.png",
+    "first_section_content": {
+      "title": "Quantum’s Precision Custom Fabrication Services ",
+      "description": "When off-the-shelf products don't meet your needs, Quantum steps in with expert Custom Fabrication services designed to create exactly what your project demands. We offer full-cycle manufacturing support — from concept to completion — with a focus on quality, precision, and scalability. Our custom fabrication expertise includes: ",
+      "bottom_content": "At Quantum, we combine engineering excellence with craftsmanship, ensuring that every custom-fabricated product exceeds expectations for functionality, aesthetics, and durability. ",
+      "btn": "Partner with Us"
+    },
+    "card_section": {
+      "title": "Quantum’s Expertise in Tailored Product Customization ",
+      "top_content": "Customization isn’t just about modifying existing products — it’s about adapting and evolving them to better fit specific customer needs, applications, and environments. Quantum’s Product Customization services are built to offer flexibility and innovation at every stage. Our services cover: ",
+      "bottom_content": "With Quantum’s approach, clients aren’t forced to fit into standard molds. Instead, products are shaped around their exact operational, technical, and brand requirements — giving them a true competitive edge. "
+    },
+    "first_section_cards": [
+      {
+        "content": "Material Sourcing and Specification Compliance "
+      },
+      {
+        "content": "Advanced Manufacturing and Fabrication Techniques "
+      },
+      {
+        "content": "CNC Machining, 3D Printing, and Metal Fabrication "
+      }
+    ],
+    "divisions": [
+      {
+        "content": "Design Modifications to Meet Specific Use Cases "
+      },
+      {
+        "content": "Feature Enhancements and Component Upgrades "
+      },
+      {
+        "content": "Aesthetic Customization (Color, Finish, Branding) "
+      },
+      {
+        "content": "Adaptation for Environmental or Industry-Specific Requirements "
+      },
+      {
+        "content": "Packaging, Labeling, and Custom Assembly Solutions "
+      },
+      {
+        "content": "Lifecycle Support Including Maintenance and Upgrades ",
+        "icon_6": "/single-services/06.png"
+      }
+    ],
+    "second_section_content": {
+      "title": "Why Quantum is the Go-To Partner for Custom Fabrication and Customization ",
+      "description": "Quantum’s Custom Fabrication & Product Customization services are grounded in precision, flexibility, and innovation. Whether you need a unique prototype, a customized product line, or specialized components to support your vision, Quantum delivers with an unmatched focus on quality, timelines, and client satisfaction. We don’t just fabricate products — we build solutions that empower businesses to lead their industries. ",
+      "btn": "Join Us"
+    }
+  }

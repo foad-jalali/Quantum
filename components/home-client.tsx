@@ -45,7 +45,7 @@ export default function Home() {
         { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/tender-preparation-and-bid-management" },
         { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/it-infrastructure-deployment-and-software-integration" },
         { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/custom-software-and-embedded-ai-solutions" },
-        { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/ai" },
+        { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/custom-fabrication-and-product-customization" },
     ];
     const industries = [
         { title: "Military & Defence", image: "/industries/1.png", href: "/industries/ai" },

@@ -1,16 +1,18 @@
-"use client";
-
+"use client"
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
-    FacebookIcon,
-    TwitterIcon,
-    LinkedinIcon,
-    InstagramIcon,
-    YoutubeIcon,
+    Twitter,
+    Linkedin,
+    Instagram,
 } from "lucide-react";
 
+const socialLinks = [
+    { icon: Twitter, href: "/#" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/quantumints" },
+    { icon: Instagram, href: "/#" },
+];
 const Footer = () => {
     return (
         <footer className="bg-white text-gray-800 text-sm">
@@ -27,19 +29,23 @@ const Footer = () => {
                         <span className="font-bold">Quantum</span>
                     </div>
                     <div className="flex space-x-4">
-                        {[FacebookIcon, TwitterIcon, LinkedinIcon, InstagramIcon, YoutubeIcon].map((Icon, i) => (
-                            <motion.a
-                                key={i}
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-700 hover:text-amber-600"
-                                whileHover={{ scale: 1.2 }}
-                            >
-                                <Icon className="w-5 h-5" />
-                            </motion.a>
-                        ))}
+                        {socialLinks.map((social, i) => {
+                            const Icon = social.icon;
+                            return (
+                                <motion.a
+                                    key={i}
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-700 hover:text-amber-600"
+                                    whileHover={{ scale: 1.2 }}
+                                >
+                                    <Icon className="w-5 h-5" />
+                                </motion.a>
+                            );
+                        })}
                     </div>
+
                 </div>
 
                 {/* Divider */}
@@ -47,38 +53,65 @@ const Footer = () => {
 
                 {/* Columns */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-6">
-                    {/* Services */}
                     <FooterList title="Services" items={[
-                        "Procurement & Sourcing",
-                        "Tender Management & Consortium Building",
-                        "Vendor Identification & Matchmaking",
-                        "Project Management & Execution Oversight",
-                        "Tender Preparation & Bid Management",
-                        "IT Infrastructure & System Integration",
-                        "Custom Software & Embedded AI Solutions",
-                        "Custom Fabrication & Manufacturing",
-                    ]} />
+                        { label: "End-to-End Procurement & Sourcing", href: "/services/end-to-end-procurement-and-sourcing" },
+                        { label: "Tender Management & Consortium Building", href: "/services/tender-management-and-consortium-building" },
+                        { label: "Vendor Identification & Matchmaking", href: "/services/vendor-identification-and-matchmaking" },
+                        { label: "Project Management & Execution Oversight", href: "/services/project-management-and-execution-oversight" },
+                        { label: "Tender Preparation & Bid Management", href: "/services/tender-preparation-and-bid-management" },
+                        { label: "IT Infrastructure Deployment & Software Integration", href: "/services/it-infrastructure-deployment-and-software-integration" },
+                        { label: "Custom Software & Embedded AI Solutions", href: "/services/custom-software-and-embedded-ai-solutions" },
+                        { label: "Custom Fabrication & Product Customization", href: "/services/custom-fabrication-and-product-customization" },
+                    ]}
+                        category="services"
+                    />
 
-                    {/* Industries */}
                     <FooterList title="Industries" items={[
-                        "Military & Defence", "Airports", "Airlines", "Energy, Oil & Gas",
-                        "Marine", "HealthTech", "Manufacturing", "Navigation", "IT"
-                    ]} />
+                        { label: "Military & Defence", href: "/industries/ai" },
+                        { label: "Airports", href: "/industries/ai" },
+                        { label: "Airlines & MRO ", href: "/industries/ai" },
+                        { label: "Energy, Oil & Gas", href: "/industries/ai" },
+                        { label: "Marine & Shipbuilding", href: "/industries/ai" },
+                        { label: "Healthcare & HealthTech", href: "/industries/ai" },
+                        { label: "Manufacturing & Industrial Fabrication", href: "/industries/ai" },
+                        { label: "Navigation, GPS, GNSS", href: "/industries/ai" },
+                        { label: "IT & Emerging Technologies", href: "/industries/ai" },
+                    ]}
+                        category="industries"
+                    />
 
-                    {/* Solutions */}
-                    <FooterList title="Solutions" items={[
-                        "Tenders Turnkey Solutions", "AI/ML & Custom Software",
-                        "Data Centre Infrastructure", "Navigation Systems", "Embedded System",
-                        "Industrial Equipment", "Power Solutions", "Connectivity",
-                        "Fabrication & Manufacturing", "Lighting & Sustainable Tech",
-                        "Field Monitoring and Remote Sensing", "End-to-End IT Infrastructure Solutions"
-                    ]} />
+                    <FooterList
+                        title="Solutions"
+                        items={[
+                            { label: "Tenders Turnkey Solutions", href: "/solutions/tenders-turnkey-solutions" },
+                            { label: "AI/ML & Custom Software", href: "/solutions/ai-ml-custom-software" },
+                            { label: "Data Centre Infrastructure", href: "/solutions/data-centre-infrastructure" },
+                            { label: "Navigation Systems", href: "/solutions/navigation-systems" },
+                            { label: "Embedded System", href: "/solutions/embedded-system" },
+                            { label: "Industrial Equipment", href: "/solutions/industrial-equipment" },
+                            { label: "Power Solutions", href: "/solutions/power-solutions" },
+                            { label: "Connectivity", href: "/solutions/connectivity" },
+                            { label: "Fabrication & Manufacturing", href: "/solutions/fabrication-manufacturing" },
+                            { label: "Lighting & Sustainable Tech", href: "/solutions/lighting-sustainable-tech" },
+                            { label: "Field Monitoring and Remote Sensing", href: "/solutions/field-monitoring" },
+                            { label: "End-to-End IT Infrastructure Solutions", href: "/solutions/end-to-end-it" },
+                        ]}
+                        category="solutions"
+                    />
 
-                    {/* Company Info */}
-                    <FooterList title="Company Info" items={[
-                        "About Us", "Contact Us", "Partnerships", "Case Studies",
-                        "FAQ", "Blog", "Careers"
-                    ]} />
+                    <FooterList
+                        title="Company Info"
+                        items={[
+                            { label: "About Us", href: "/about" },
+                            { label: "Contact Us", href: "/contact" },
+                            { label: "Partnerships", href: "/partnerships" },
+                            { label: "Case Studies", href: "/case-studies" },
+                            { label: "FAQ", href: "/faq" },
+                            { label: "Blog", href: "/blog" },
+                            { label: "Careers", href: "/careers" },
+                        ]}
+                        category=""
+                    />
 
                     {/* Contact Info */}
                     <div>
@@ -97,30 +130,44 @@ const Footer = () => {
 
                 {/* Bottom Section */}
                 <div className="border-t border-gray-300 pt-4 text-center">
-                    <p>© {new Date().getFullYear()} Quantum. All rights reserved.</p>
-                    <div className="mt-2 flex justify-center space-x-4">
-                        <Link href="#" className="hover:text-amber-600">Terms of Service</Link>
-                        <Link href="#" className="hover:text-amber-600">Cookies Policy</Link>
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-sm text-gray-600">
+                        <p>© {new Date().getFullYear()} Quantum. All rights reserved.</p>
+                        <span className="hidden md:inline">|</span>
+                        <div className="flex space-x-4">
+                            <Link href="/terms" className="hover:text-amber-600">Terms of Service</Link>
+                            <span className="md:hidden"></span>
+                            <Link href="/cookies" className="hover:text-amber-600">Cookies Policy</Link>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </footer>
     );
 };
 
-const FooterList = ({ title, items }: { title: string; items: string[] }) => (
+const FooterList = ({
+    title,
+    items,
+    category,
+}: {
+    title: string;
+    items: { label: string; href: string }[];
+    category: "services" | "industries" | "solutions" | "";
+}) => (
     <div>
         <h4 className="text-[#00204E] font-semibold mb-3">{title}</h4>
         <ul className="space-y-1">
             {items.map((item, idx) => (
                 <li key={idx}>
-                    <Link href="#" className="hover:text-amber-600 transition-colors">
-                        {item}
+                    <Link href={item.href} className="hover:text-amber-600 transition-colors">
+                        {item.label}
                     </Link>
                 </li>
             ))}
         </ul>
     </div>
 );
+
 
 export default Footer;
