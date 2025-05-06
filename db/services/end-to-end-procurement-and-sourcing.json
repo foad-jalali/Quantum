@@ -20,23 +20,28 @@
   },
   "first_section_cards": [
     {
-      "content": "Requirement Analysis and Specification Finalization"
+      "content": "Requirement Analysis and Specification Finalization",
+      "icon": "/icon/01.svg"
     },
     {
-      "content": "Supplier Research, Qualification, and Onboarding"
+      "content": "Supplier Research, Qualification, and Onboarding",
+      "icon": "/icon/02.svg"
     },
     {
-      "content": "Price Negotiation and Contract Management"
+      "content": "Price Negotiation and Contract Management",
+      "icon": "/icon/03.svg"
     },
     {
-      "content": "Procurement Planning and Order Management"
+      "content": "Procurement Planning and Order Management",
+      "icon": "/icon/04.svg"
     },
     {
-      "content": "Risk Mitigation and Compliance Assurance"
+      "content": "Risk Mitigation and Compliance Assurance",
+      "icon": "/icon/05.svg"
     },
     {
       "content": "Ongoing Supplier Performance Monitoring",
-      "icon_6": "/single-services/06.png"
+      "icon": "/icon/06.svg"
     }
   ],
   "divisions": [

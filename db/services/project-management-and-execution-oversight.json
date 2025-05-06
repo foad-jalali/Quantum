@@ -19,23 +19,28 @@
     },
     "first_section_cards": [
       {
-        "content": "Project Scoping, Scheduling, and Resource Planning "
+        "content": "Project Scoping, Scheduling, and Resource Planning ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Risk Identification, Mitigation, and Contingency Management"
+        "content": "Risk Identification, Mitigation, and Contingency Management",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Budget Development, Cost Control, and Financial Tracking "
+        "content": "Budget Development, Cost Control, and Financial Tracking ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Quality Assurance and Performance Metrics Monitoring "
+        "content": "Quality Assurance and Performance Metrics Monitoring ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "Stakeholder Engagement, Communication, and Reporting "
+        "content": "Stakeholder Engagement, Communication, and Reporting ",
+        "icon": "/icon/05.svg"
       },
       {
         "content": "Issue Resolution and Change Management Processes ",
-        "icon_6": "/single-services/06.png"
+        "icon": "/icon/06.svg"
       }
     ],
     "divisions": [

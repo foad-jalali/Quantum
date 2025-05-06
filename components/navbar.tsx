@@ -116,11 +116,13 @@ export default function Navbar() {
                                                 transition={{ duration: 0.2 }}
                                             />
                                         </motion.div>
-                                        <div className="absolute left-1/2 -translate-x-1/2 mt-6 bg-white border border-gray-300 rounded-md 
-                                                        invisible opacity-0 group-hover:visible group-hover:opacity-100 
-                                                        transition-all duration-300 delay-100 ease-in-out 
-                                                        z-50 w-[1000px] p-4">
-                                            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                                        <div
+                                            className="absolute left-1/2 -translate-x-1/2 mt-4 bg-white border border-gray-300 rounded-md 
+             invisible opacity-0 group-hover:visible group-hover:opacity-100 
+             transition-all duration-300 delay-100 ease-in-out 
+             z-50 w-[90vw] max-w-[1000px] p-4 shadow-lg"
+                                        >
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
                                                 {item.subItems.map((sub, j) => (
                                                     <a
                                                         key={j}
@@ -139,6 +141,7 @@ export default function Navbar() {
                                                 ))}
                                             </div>
                                         </div>
+
                                     </div>
                                 );
                             }

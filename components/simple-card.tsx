@@ -26,7 +26,7 @@ const SimpleCard = ({ icon, title, description }: SimpleCardProps) => {
         whileHover={{ scale: 1.1, rotate: 5 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
-        <img src={icon} alt="Feature Icon" className="w-8 h-8" />
+        <img src={icon} alt="Feature Icon" className="w-12 h-12" />
       </motion.div>
       <h3 className="font-semibold mb-2 text-center text-gray-900">
         {title}

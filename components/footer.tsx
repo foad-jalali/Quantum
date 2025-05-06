@@ -67,7 +67,7 @@ const Footer = () => {
                     />
 
                     <FooterList title="Industries" items={[
-                        { label: "Military & Defence", href: "/industries/ai" },
+                        { label: "Military & Defence", href: "/industries/military-and-defence" },
                         { label: "Airports", href: "/industries/ai" },
                         { label: "Airlines & MRO ", href: "/industries/ai" },
                         { label: "Energy, Oil & Gas", href: "/industries/ai" },

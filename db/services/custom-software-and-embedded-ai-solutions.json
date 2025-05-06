@@ -19,23 +19,28 @@
     },
     "first_section_cards": [
       {
-        "content": "Business Requirements Analysis and Process Mapping "
+        "content": "Business Requirements Analysis and Process Mapping ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Custom Web, Mobile, and Desktop Application Development "
+        "content": "Custom Web, Mobile, and Desktop Application Development ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Cloud-Native Application Architecture and Development "
+        "content": "Cloud-Native Application Architecture and Development ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "UI/UX Design Focused on Usability and Business Goals "
+        "content": "UI/UX Design Focused on Usability and Business Goals ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "System Scalability, Security, and Performance Engineering "
+        "content": "System Scalability, Security, and Performance Engineering ",
+        "icon": "/icon/05.svg"
       },
       {
         "content": "Ongoing Maintenance, Support, and Future Enhancements ",
-        "icon_6": "/single-services/06.png"
+        "icon": "/icon/06.svg"
       }
     ],
     "divisions": [

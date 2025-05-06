@@ -19,13 +19,16 @@
     },
     "first_section_cards": [
       {
-        "content": "Material Sourcing and Specification Compliance "
+        "content": "Material Sourcing and Specification Compliance ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Advanced Manufacturing and Fabrication Techniques "
+        "content": "Advanced Manufacturing and Fabrication Techniques ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "CNC Machining, 3D Printing, and Metal Fabrication "
+        "content": "CNC Machining, 3D Printing, and Metal Fabrication ",
+        "icon": "/icon/03.svg"
       }
     ],
     "divisions": [

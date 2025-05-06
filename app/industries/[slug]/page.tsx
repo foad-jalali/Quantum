@@ -1,25 +1,27 @@
-import fs from "fs";
 import path from "path";
+import React from "react";
+import fs from "fs";
 import { notFound } from "next/navigation";
 import HeroSection from "@/components/hero-section";
 import FeatureSection from "@/components/feature-section";
 import SimpleCard from "@/components/simple-card";
-import DivisionCard from "@/components/division-card";
+import Image from "next/image";
 
-interface ServicePageProps {
+interface IndustryPageProps {
     params: { slug: string };
 }
 
-export async function generateMetadata({ params }: ServicePageProps) {
-    const data = await getServiceData(params.slug);
+
+export async function generateMetadata({ params }: IndustryPageProps) {
+    const data = await getIndustryData(params.slug);
     return {
         title: data?.title || "Service",
         description: data?.description || "",
     };
 }
 
-async function getServiceData(slug: string) {
-    const filePath = path.join(process.cwd(), "db/services", `${slug}.json`);
+async function getIndustryData(slug: string) {
+    const filePath = path.join(process.cwd(), "db/industries", `${slug}.json`);
     try {
         const data = fs.readFileSync(filePath, "utf-8");
         return JSON.parse(data);
@@ -27,9 +29,8 @@ async function getServiceData(slug: string) {
         return null;
     }
 }
-
-export default async function ServicePage({ params }: ServicePageProps) {
-    const data = await getServiceData(params.slug);
+export default async function IndustryPage({ params }: IndustryPageProps) {
+    const data = await getIndustryData(params.slug);
 
     if (!data) return notFound();
 
@@ -40,9 +41,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 buttonLink="/contact"
             />
 
-            <section className="py-16" style={{ backgroundColor: "#DBF9F0" }}>
+            <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-4 text-[#00204E]">{data.title}</h2>
+                    <h2 className="text-4xl font-bold mb-4"style={{ color: data.title_color }}>{data.title}</h2>
                     <h3 className="container text-xl text-[#00204E]">{data.short_description}</h3>
                 </div>
             </section>
@@ -67,11 +68,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
                     {data?.first_section_cards?.length > 0 && (
                         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-12">
-                            {data.first_section_cards.map((item: { content: string; icon?: string}, index: number) => (
+                            {data.first_section_cards.map((item: { content: string }, index: number) => (
                                 <SimpleCard
                                     key={index}
                                     description={item.content}
-                                    icon={item.icon}
                                 />
                             ))}
                         </div>
@@ -90,30 +90,32 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     </div>
                 </div>
             </div>
-            <section className="py-16" style={{ backgroundColor: "#247BA0" }}>
+            <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
                 <div className="container mx-auto px-4 text-center mb-16">
-                    <h2 className="text-4xl font-bold mb-4 text-white">{data.card_section.title}</h2>
-                    <h3 className="container text-xl text-white">{data.card_section.top_content}</h3>
+                    <h2 className="text-4xl font-bold mb-4 text-[#00204E]">{data.card_section.title}</h2>
+                    <h3 className="container text-xl text-[#00204E]">{data.card_section.top_content}</h3>
                 </div>
-                {data?.divisions?.length > 0 && (
-                    <div className="flex justify-center">
-                        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl px-4">
-                            {data.divisions.map((division: any, index: number) => (
-                                <DivisionCard
-                                    key={index}
-                                    index={index}
-                                    icon={division.icon}
-                                    title={division.title}
-                                    description={division.description}
-                                    content={division.content}
-                                    services={division.services}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                )}
                 <div className="text-center mt-16">
-                    <p className="container text-white text-lg mb-4 pt-8">{data.card_section.bottom_content}</p>
+                    <p className="container text-[#00204E] text-lg mb-4 pt-8">{data.card_section.bottom_content}</p>
+                </div>
+            </section>
+
+            <section className="py-16" style={{ backgroundColor: "#C9D1D3" }}>
+                <div className="container mx-auto px-4 text-center mb-16">
+                    <h2 className="text-4xl font-bold mb-4 text-[#00204E]">{data.info_section.title}</h2>
+                    <h3 className="container text-xl text-[#00204E]">{data.info_section.top_content}</h3>
+                </div>
+                <div className="flex justify-center mb-16">
+                    <Image
+                        src={data.info_section.image}
+                        alt="Illustration"
+                        width={800}
+                        height={600}
+                        className="rounded-lg"
+                    />
+                </div>
+                <div className="text-center mt-16">
+                    <p className="container text-[#00204E] text-lg mb-4 pt-8">{data.info_section.bottom_content}</p>
                 </div>
             </section>
             <FeatureSection

@@ -1,0 +1,45 @@
+{
+    "slug": "military-and-defence",
+    "title": "Military & Defence Solutions by Quantum",
+    "title_color": "#556B2F",
+    "short_description": "Quantum empowers the Military & Defence sector with advanced procurement, project management, custom fabrication, IT infrastructure deployment, and integrated software solutions to support mission-critical operations worldwide. ",
+    "first_section_image": "/single-industries/1/first_section.png",
+    "second_section_image": "/single-industries/1/second_section.png",
+    "hero_image": "/single-industries/1/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Comprehensive Support for Military Procurement & Sourcing",
+        "description": "Procurement in the Military & Defence sector demands precision, compliance, and rapid responsiveness. Quantum, in collaboration with our Mid- or Large- reputable vendors, provides End-to-End Procurement & Sourcing services tailored to the needs of Defence organizations and contractors. Our Defence-specific procurement capabilities include:",
+        "bottom_content": "Quantum’s expertise ensures military organizations and Defence contractors maintain operational readiness, compliance, and supply chain security at all times.",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Specialized Project Management & Execution Oversight for Defence Projects",
+        "top_content": "Defence projects are highly complex, with strict timelines, sensitive deliverables, and non-negotiable standards. Quantum’s Project Management & Execution Oversight services are specifically adapted for Military & Defence environments. Our project services include: ",
+        "bottom_content": "Quantum delivers end-to-end project oversight, ensuring that airport projects are delivered on time, within budget, and with maximum operational impact. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Sourcing mission-critical components, systems, and equipment "
+        },
+        {
+            "content": "Identifying and qualifying Defence-certified vendors"
+        },
+        {
+            "content": "Vendor performance monitoring and lifecycle management "
+        },
+        {
+            "content": "Supporting bid preparation for government and Defence tenders"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/1/info.png",
+        "title": "Quantum’s Advanced Technology & Customization for Military Applications ",
+        "top_content": "In a world where technology superiority defines tactical advantage, Quantum, in collaboration with our Mid- or Large- reputable vendors,  provides Military & Defence clients with bespoke technological solutions. Our Custom Software and Embedded AI services for the Defence sector include: ",
+        "bottom_content": "Through our tailored technology and fabrication services, Quantum enables Defence forces to enhance decision-making, increase operational efficiency, and achieve strategic superiority. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Trusted Technology Partner for the Military & Defence Sector ",
+        "description": "Quantum’s Military & Defence solutions are designed with a deep understanding of the industry’s unique requirements — security, precision, reliability, and compliance. By delivering tailored procurement, project management, technology integration, and customization services, Quantum ensures that military and defence organizations and contractors are equipped to meet the evolving demands of modern Military and Defence landscapes with confidence and agility.",
+        "btn": "Join Us"
+    }
+}

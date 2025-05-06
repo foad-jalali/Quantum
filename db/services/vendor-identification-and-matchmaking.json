@@ -19,23 +19,28 @@
     },
     "first_section_cards": [
       {
-        "content": "Detailed Needs Analysis and Project Scoping "
+        "content": "Detailed Needs Analysis and Project Scoping ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Market Research and Vendor Database Development "
+        "content": "Market Research and Vendor Database Development ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Vendor Qualification and Due Diligence "
+        "content": "Vendor Qualification and Due Diligence ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "RFX Documentation (RFP/RFQ)"
+        "content": "RFX Documentation (RFP/RFQ)",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "Shortlisting Based on Technical, Financial, and Compliance Criteria "
+        "content": "Shortlisting Based on Technical, Financial, and Compliance Criteria ",
+        "icon": "/icon/05.svg"
       },
       {
         "content": "Conducting Vendor Audits and Performance Reviews ",
-        "icon_6": "/single-services/06.png"
+        "icon": "/icon/06.svg"
       }
     ],
     "divisions": [

@@ -19,23 +19,28 @@
     },
     "first_section_cards": [
       {
-        "content": "Detailed Tender Opportunity Analysis"
+        "content": "Detailed Tender Opportunity Analysis",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Bid/No-Bid Decision Support and Risk Assessment "
+        "content": "Bid/No-Bid Decision Support and Risk Assessment ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Development of Win Themes and Value Propositions "
+        "content": "Development of Win Themes and Value Propositions ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Technical, Financial, and Administrative Document Preparation "
+        "content": "Technical, Financial, and Administrative Document Preparation ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "Compliance Checking Against Tender Requirements "
+        "content": "Compliance Checking Against Tender Requirements ",
+        "icon": "/icon/05.svg"
       },
       {
         "content": "Design and Formatting for Professional Presentation ",
-        "icon_6": "/single-services/06.png"
+        "icon": "/icon/06.svg"
       }
     ],
     "divisions": [
