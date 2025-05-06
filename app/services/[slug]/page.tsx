@@ -14,7 +14,9 @@ export async function generateMetadata({ params }: ServicePageProps) {
     const data = await getServiceData(params.slug);
     return {
         title: `${data?.title} | Quantum`|| "Service",
-        description: data?.description || "",
+        description: data?.short_description || "",
+        url: `https://quantumints.com/services/${data.slug}`,
+        image: data.hero_image || "/homehero.jpg",
     };
 }
 
@@ -42,7 +44,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
             <section className="py-16" style={{ backgroundColor: "#DBF9F0" }}>
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-4 text-[#00204E]">{data.title}</h2>
+                    <h1 className="text-4xl font-bold mb-4 text-[#00204E]">{data.title}</h1>
                     <h3 className="container text-xl text-[#00204E]">{data.short_description}</h3>
                 </div>
             </section>

@@ -34,6 +34,8 @@ const HeroSection = ({
           alt={alt}
           fill
           priority
+          placeholder="blur"
+          blurDataURL="placeholder.svg"
           className="object-cover md:object-cover object-center"
         />
       </div>

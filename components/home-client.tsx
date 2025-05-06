@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import {
-    ArrowRight,
-    Quote,
+  ArrowRight,
+  Quote,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -19,282 +19,282 @@ import HeroSection from "@/components/hero-section";
 import ContentSlider from "./content-slider";
 
 export default function Home() {
-    const isMobile = useMobile();
-    const controls = useAnimation();
-    const aboutRef = useRef(null);
-    const divisionsRef = useRef(null);
-    const expertiseRef = useRef(null);
-    const whyUsRef = useRef(null);
-    const contactRef = useRef(null);
-    const performanceRef = useRef(null);
+  const isMobile = useMobile();
+  const controls = useAnimation();
+  const aboutRef = useRef(null);
+  const divisionsRef = useRef(null);
+  const expertiseRef = useRef(null);
+  const whyUsRef = useRef(null);
+  const contactRef = useRef(null);
+  const performanceRef = useRef(null);
 
-    const aboutInView = useInView(aboutRef, { once: true, amount: 0.3 });
-    const divisionsInView = useInView(divisionsRef, { once: true, amount: 0.1 });
-    const expertiseInView = useInView(expertiseRef, { once: true, amount: 0.3 });
-    const whyUsInView = useInView(whyUsRef, { once: true, amount: 0.3 });
-    const contactInView = useInView(contactRef, { once: true, amount: 0.3 });
-    const performanceInView = useInView(performanceRef, {
-        once: true,
-        amount: 0.3,
-    });
-    const services = [
-        { title: "End-to-End Procurement & Sourcing", image: "/services/1.png", href: "/services/end-to-end-procurement-and-sourcing" },
-        { title: "Tender Management & Consortium Building", image: "/services/2.png", href: "/services/tender-management-and-consortium-building" },
-        { title: "Vendor Identification & Matchmaking", image: "/services/3.png", href: "/services/vendor-identification-and-matchmaking" },
-        { title: "Project Management & Execution Oversight", image: "/services/4.png", href: "/services/project-management-and-execution-oversight" },
-        { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/tender-preparation-and-bid-management" },
-        { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/it-infrastructure-deployment-and-software-integration" },
-        { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/custom-software-and-embedded-ai-solutions" },
-        { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/custom-fabrication-and-product-customization" },
-    ];
-    const industries = [
-        { title: "Military & Defence", image: "/industries/1.png", href: "/industries/military-and-defenc" },
-        { title: "Airports", image: "/industries/2.png", href: "/industries/airports" },
-        { title: "Airlines & MRO ", image: "/industries/3.png", href: "/industries/airlines-and-mro" },
-        { title: "Energy, Oil & Gas", image: "/industries/4.png", href: "/industries/energy-oil-and-gas" },
-        { title: "Marine & Shipbuilding", image: "/industries/5.png", href: "/industries/marine-and-shipbuilding" },
-        { title: "Healthcare & HealthTech", image: "/industries/6.png", href: "/industries/healthcare-and-healthtech" },
-        { title: "Manufacturing & Industrial Fabrication", image: "/industries/7.png", href: "/industries/manufacturing-and-industrial" },
-        { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/navigation-gps-gnss" },
-        { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/it-and-emerging-technologies" },
-    ];
-    const slides = [
-        {
-            title: "Turnkey Government & Commercial Solutions",
-            content:
-                "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "AI & Advanced Software Platforms",
-            content:
-                "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Secure Infrastructure & Data Systems",
-            content:
-                "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Navigation & Remote Monitoring Systems",
-            content:
-                "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Embedded & Edge Computing Solutions",
-            content:
-                "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Industrial Equipment & Automation",
-            content:
-                "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Power & Energy Systems",
-            content:
-                "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Field Monitoring & Instrumentation",
-            content:
-                "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Enterprise IT & Network Integration",
-            content:
-                "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Smart Connectivity & Signal Solutions",
-            content:
-                "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Custom Fabrication & Modular Manufacturing",
-            content:
-                "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
-            color: "#f59e0b",
-        },
-        {
-            title: "Lighting & Sustainable Infrastructure",
-            content:
-                "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech.",
-            color: "#f59e0b",
-        },
-    ];
+  const aboutInView = useInView(aboutRef, { once: true, amount: 0.3 });
+  const divisionsInView = useInView(divisionsRef, { once: true, amount: 0.1 });
+  const expertiseInView = useInView(expertiseRef, { once: true, amount: 0.3 });
+  const whyUsInView = useInView(whyUsRef, { once: true, amount: 0.3 });
+  const contactInView = useInView(contactRef, { once: true, amount: 0.3 });
+  const performanceInView = useInView(performanceRef, {
+    once: true,
+    amount: 0.3,
+  });
+  const services = [
+    { title: "End-to-End Procurement & Sourcing", image: "/services/1.png", href: "/services/end-to-end-procurement-and-sourcing" },
+    { title: "Tender Management & Consortium Building", image: "/services/2.png", href: "/services/tender-management-and-consortium-building" },
+    { title: "Vendor Identification & Matchmaking", image: "/services/3.png", href: "/services/vendor-identification-and-matchmaking" },
+    { title: "Project Management & Execution Oversight", image: "/services/4.png", href: "/services/project-management-and-execution-oversight" },
+    { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/tender-preparation-and-bid-management" },
+    { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/it-infrastructure-deployment-and-software-integration" },
+    { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/custom-software-and-embedded-ai-solutions" },
+    { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/custom-fabrication-and-product-customization" },
+  ];
+  const industries = [
+    { title: "Military & Defence", image: "/industries/1.png", href: "/industries/military-and-defenc" },
+    { title: "Airports", image: "/industries/2.png", href: "/industries/airports" },
+    { title: "Airlines & MRO ", image: "/industries/3.png", href: "/industries/airlines-and-mro" },
+    { title: "Energy, Oil & Gas", image: "/industries/4.png", href: "/industries/energy-oil-and-gas" },
+    { title: "Marine & Shipbuilding", image: "/industries/5.png", href: "/industries/marine-and-shipbuilding" },
+    { title: "Healthcare & HealthTech", image: "/industries/6.png", href: "/industries/healthcare-and-healthtech" },
+    { title: "Manufacturing & Industrial Fabrication", image: "/industries/7.png", href: "/industries/manufacturing-and-industrial" },
+    { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/navigation-gps-gnss" },
+    { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/it-and-emerging-technologies" },
+  ];
+  const slides = [
+    {
+      title: "Turnkey Government & Commercial Solutions",
+      content:
+        "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "AI & Advanced Software Platforms",
+      content:
+        "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Secure Infrastructure & Data Systems",
+      content:
+        "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Navigation & Remote Monitoring Systems",
+      content:
+        "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Embedded & Edge Computing Solutions",
+      content:
+        "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Industrial Equipment & Automation",
+      content:
+        "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Power & Energy Systems",
+      content:
+        "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Field Monitoring & Instrumentation",
+      content:
+        "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Enterprise IT & Network Integration",
+      content:
+        "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Smart Connectivity & Signal Solutions",
+      content:
+        "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Custom Fabrication & Modular Manufacturing",
+      content:
+        "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
+      color: "#f59e0b",
+    },
+    {
+      title: "Lighting & Sustainable Infrastructure",
+      content:
+        "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech.",
+      color: "#f59e0b",
+    },
+  ];
 
-    const caseStudies = [
-        {
-            title: "Government of Canada:",
-            quote:
-                "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
-            name: ''
-        },
-        {
-            title: "National Airport Authority:",
-            quote:
-                "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
-            name: ''
-        },
-        {
-            title: "Major Airline Operator:",
-            quote:
-                "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
-            name: ''
-        },
-        {
-            title: "HealthTech Innovator:",
-            quote:
-                "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
-            name: ''
-        },
-        {
-            title: "Remote Energy Consortium:",
-            quote:
-                "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
-            name: ''
-        },
-    ];
+  const caseStudies = [
+    {
+      title: "Government of Canada:",
+      quote:
+        "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
+      name: ''
+    },
+    {
+      title: "National Airport Authority:",
+      quote:
+        "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
+      name: ''
+    },
+    {
+      title: "Major Airline Operator:",
+      quote:
+        "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
+      name: ''
+    },
+    {
+      title: "HealthTech Innovator:",
+      quote:
+        "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
+      name: ''
+    },
+    {
+      title: "Remote Energy Consortium:",
+      quote:
+        "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
+      name: ''
+    },
+  ];
 
-    const features = [
-        {
-            icon: "/icon/1.svg",
-            // title: "Pan-African Vision",
-            description: "Military-Grade Equipment Vendors",
-        },
-        {
-            icon: "/icon/2.svg",
-            // title: "Innovative Approach",
-            description: "AI/ML & Software Solution Providers",
-        },
-        {
-            icon: "/icon/3.svg",
-            // title: "Affordable Excellence",
-            description: "IT Hardware Distributors (Dell, HPE, etc.)",
-        },
-        {
-            icon: "/icon/4.svg",
-            // title: "Future-Focused",
-            description: "Airport & Airline Equipment Suppliers (ATC, ASMCGS, GSE, Simulators)",
-        },
-        {
-            icon: "/icon/5.svg",
-            // title: "Future-Focused",
-            description: "Airline OEMs and Component Manufacturers",
-        },
-        {
-            icon: "/icon/6.svg",
-            // title: "Future-Focused",
-            description: "Energy Solution Providers (Solar, Wind, Battery, UPS)",
-        },
-        {
-            icon: "/icon/7.svg",
-            // title: "Future-Focused",
-            description: "Marine Equipment and Vessel Manufacturers",
-        },
-        {
-            icon: "/icon/8.svg",
-            // title: "Future-Focused",
-            description: "Healthcare Equipment Manufacturers & Medical Tech Solution Developers",
-        },
-        {
-            icon: "/icon/9.svg",
-            // title: "Future-Focused",
-            description: "Sensor and Analytical Instrument Vendors",
-        },
-        {
-            icon: "/icon/10.svg",
-            // title: "Future-Focused",
-            description: "Advanced Fabrication & CNC Engineering & Manufacturing Partners",
-        },
-        {
-            icon: "/icon/11.svg",
-            // title: "Future-Focused",
-            description: "Automation & Instrumentation Providers",
-        },
-        {
-            icon: "/icon/12.svg",
-            // title: "Future-Focused",
-            description: "Training & Consulting Firms",
-        },
-    ];
+  const features = [
+    {
+      icon: "/icon/1.svg",
+      // title: "Pan-African Vision",
+      description: "Military-Grade Equipment Vendors",
+    },
+    {
+      icon: "/icon/2.svg",
+      // title: "Innovative Approach",
+      description: "AI/ML & Software Solution Providers",
+    },
+    {
+      icon: "/icon/3.svg",
+      // title: "Affordable Excellence",
+      description: "IT Hardware Distributors (Dell, HPE, etc.)",
+    },
+    {
+      icon: "/icon/4.svg",
+      // title: "Future-Focused",
+      description: "Airport & Airline Equipment Suppliers (ATC, ASMCGS, GSE, Simulators)",
+    },
+    {
+      icon: "/icon/5.svg",
+      // title: "Future-Focused",
+      description: "Airline OEMs and Component Manufacturers",
+    },
+    {
+      icon: "/icon/6.svg",
+      // title: "Future-Focused",
+      description: "Energy Solution Providers (Solar, Wind, Battery, UPS)",
+    },
+    {
+      icon: "/icon/7.svg",
+      // title: "Future-Focused",
+      description: "Marine Equipment and Vessel Manufacturers",
+    },
+    {
+      icon: "/icon/8.svg",
+      // title: "Future-Focused",
+      description: "Healthcare Equipment Manufacturers & Medical Tech Solution Developers",
+    },
+    {
+      icon: "/icon/9.svg",
+      // title: "Future-Focused",
+      description: "Sensor and Analytical Instrument Vendors",
+    },
+    {
+      icon: "/icon/10.svg",
+      // title: "Future-Focused",
+      description: "Advanced Fabrication & CNC Engineering & Manufacturing Partners",
+    },
+    {
+      icon: "/icon/11.svg",
+      // title: "Future-Focused",
+      description: "Automation & Instrumentation Providers",
+    },
+    {
+      icon: "/icon/12.svg",
+      // title: "Future-Focused",
+      description: "Training & Consulting Firms",
+    },
+  ];
 
 
-    useEffect(() => {
-        if (aboutInView) {
-            controls.start("visible");
-        }
-    }, [aboutInView, controls]);
+  useEffect(() => {
+    if (aboutInView) {
+      controls.start("visible");
+    }
+  }, [aboutInView, controls]);
 
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 60 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.6, ease: "easeOut" },
-        },
-    };
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 60 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
 
-    const staggerContainer = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.2,
-            },
-        },
-    };
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
+      },
+    },
+  };
 
-    const fadeIn = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { duration: 0.6 },
-        },
-    };
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.6 },
+    },
+  };
 
-    const scaleUp = {
-        hidden: { scale: 0.8, opacity: 0 },
-        visible: {
-            scale: 1,
-            opacity: 1,
-            transition: { duration: 0.5 },
-        },
-    };
+  const scaleUp = {
+    hidden: { scale: 0.8, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.5 },
+    },
+  };
 
-    const slideInLeft = {
-        hidden: { x: -100, opacity: 0 },
-        visible: {
-            x: 0,
-            opacity: 1,
-            transition: { duration: 0.6, ease: "easeOut" },
-        },
-    };
+  const slideInLeft = {
+    hidden: { x: -100, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
 
-    const slideInRight = {
-        hidden: { x: 100, opacity: 0 },
-        visible: {
-            x: 0,
-            opacity: 1,
-            transition: { duration: 0.6, ease: "easeOut" },
-        },
-    };
+  const slideInRight = {
+    hidden: { x: 100, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
 
-    return (
-        <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
-            {/* Navigation */}
-            {/* <motion.header
+  return (
+    <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
+      {/* Navigation */}
+      {/* <motion.header
           className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-amber-50/80"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -360,82 +360,90 @@ export default function Home() {
           </div>
         </motion.header> */}
 
-            {/* Hero Section */}
-            <section className="h-screen relative overflow-hidden flex items-center">
-                <ParticleBackground />
-                <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
-                <div className="container mx-auto px-4 md:px-6 relative z-10">
-                    <div className="grid gap-12 lg:grid-cols-2 items-center">
-                        <motion.div
-                            className="space-y-6"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.3 }}
-                        >
-                            <motion.h1
-                                className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.5 }}
-                            >
-                                <motion.span
-                                    className="text-amber-500 inline-block"
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5, delay: 0.7 }}
-                                >
-                                    Quantum
-                                </motion.span>{" "}
-                                International Services
-                            </motion.h1>
-                            <motion.p
-                                className="text-xl md:text-2xl text-gray-700"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 0.5, delay: 0.9 }}
-                            >
-                                Innovating Public Procurement & Supply Solutions Globally
-                            </motion.p>
-                            <motion.div
-                                className="flex flex-col sm:flex-row gap-4 pt-4"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 1.1 }}
-                            >
-                                <motion.div
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                                        <span className="relative z-10">Explore Our Divisions</span>
-                                        <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
-                                    </Button>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <Button
-                                        variant="outline"
-                                        className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group"
-                                    >
-                                        <span>Contact Us</span>
-                                        <motion.div
-                                            initial={{ x: 0 }}
-                                            whileHover={{ x: 5 }}
-                                            transition={{
-                                                type: "spring",
-                                                stiffness: 400,
-                                                damping: 10,
-                                            }}
-                                        >
-                                            <ArrowRight className="ml-2 h-4 w-4 group-hover:text-amber-400" />
-                                        </motion.div>
-                                    </Button>
-                                </motion.div>
-                            </motion.div>
-                        </motion.div>
-                        {/* <motion.div
+      {/* Hero Section */}
+      <section className="h-screen relative overflow-hidden flex items-center bg-black">
+        <ParticleBackground />
+        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <motion.h1
+                className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                <motion.span
+                  className="text-amber-500 inline-block"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                >
+                  Quantum
+                </motion.span>{" "}
+                <motion.span
+                  className="text-white inline-block"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                >
+                  International Services
+
+                </motion.span>{" "}
+              </motion.h1>
+              <motion.p
+                className="text-xl md:text-2xl text-white"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.9 }}
+              >
+                Innovating Public Procurement & Supply Solutions Globally
+              </motion.p>
+              <motion.div
+                className="flex flex-col sm:flex-row gap-4 pt-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.1 }}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
+                    <span className="relative z-10">Explore Our Divisions</span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
+                  </Button>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Button
+                    variant="outline"
+                    className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group"
+                  >
+                    <span>Contact Us</span>
+                    <motion.div
+                      initial={{ x: 0 }}
+                      whileHover={{ x: 5 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
+                    >
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:text-amber-400" />
+                    </motion.div>
+                  </Button>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+            {/* <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -523,20 +531,20 @@ export default function Home() {
                   </motion.div>
                 </div>
               </motion.div> */}
-                        <motion.div
-                            className="flex justify-center"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-                        >
-                            <Quantum />
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+            >
+              <Quantum />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-            {/* About Section */}
-            {/* <section className="py-16 bg-amber-50" id="about" ref={aboutRef}>
+      {/* About Section */}
+      {/* <section className="py-16 bg-amber-50" id="about" ref={aboutRef}>
           <div className="container mx-auto px-4 md:px-6">
             <motion.div
               className="flex flex-col items-center text-center max-w-3xl mx-auto"
@@ -620,23 +628,23 @@ export default function Home() {
             </motion.div>
           </div>
         </section> */}
-            <PartnersSection />
-            <FeatureGridSection
-                title="Our Core Services"
-                subtitle="Tailored solutions for complex projects"
-                items={services}
-                backgroundColor="#048A81"
-            />
-            <FeatureGridSection
-                title="Industries We Empower"
-                subtitle="Enabling growth across diverse sectors"
-                items={industries}
-                lg={3}
-                textColor="text-black"
-                backgroundColor="#FFFFFF"
-            />
-            {/* Divisions Section */}
-            {/* <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
+      <PartnersSection />
+      <FeatureGridSection
+        title="Our Core Services"
+        subtitle="Tailored solutions for complex projects"
+        items={services}
+        backgroundColor="#048A81"
+      />
+      <FeatureGridSection
+        title="Industries We Empower"
+        subtitle="Enabling growth across diverse sectors"
+        items={industries}
+        lg={3}
+        textColor="text-black"
+        backgroundColor="#FFFFFF"
+      />
+      {/* Divisions Section */}
+      {/* <section className="py-16 bg-amber-50" id="divisions" ref={divisionsRef}>
           <div className="container mx-auto px-4 md:px-6">
             <motion.h2
               className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -858,8 +866,8 @@ export default function Home() {
           </div>
         </section> */}
 
-            {/* Performance Section */}
-            {/* <section
+      {/* Performance Section */}
+      {/* <section
           className="py-16 bg-amber-50"
           id="performance"
           ref={performanceRef}
@@ -1029,16 +1037,16 @@ export default function Home() {
           </div>
         </section> */}
 
-            {/* Company Info Slider */}
-            <StorySection
-                title="Solutions We Deliver "
-                subtitle="Integrated systems for governments and enterprises"
-                slides={slides}
-            />
+      {/* Company Info Slider */}
+      <StorySection
+        title="Solutions We Deliver "
+        subtitle="Integrated systems for governments and enterprises"
+        slides={slides}
+      />
 
 
-            {/* Skills/Expertise Section */}
-            {/* <section className="py-16 bg-amber-50" ref={expertiseRef}>
+      {/* Skills/Expertise Section */}
+      {/* <section className="py-16 bg-amber-50" ref={expertiseRef}>
           <div className="container mx-auto px-4 md:px-6">
             <motion.h2
               className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -1154,8 +1162,8 @@ export default function Home() {
           </div>
         </section> */}
 
-            {/* Why Choose Us */}
-            {/* <section className="py-16 bg-amber-50" id="why-us" ref={whyUsRef}>
+      {/* Why Choose Us */}
+      {/* <section className="py-16 bg-amber-50" id="why-us" ref={whyUsRef}>
           <div className="container mx-auto px-4 md:px-6">
             <motion.h2
               className="text-3xl font-bold tracking-tight text-center mb-12"
@@ -1251,58 +1259,58 @@ export default function Home() {
             </motion.div>
           </div>
         </section> */}
-            <FeatureHighlightSection
-                title="Together, We Engineer the Extraordinary"
-                subtitle="QIS proudly collaborates with vendors across multiple sectors to build end-to-end solutions for military, government, and commercial clients. Our vendor network is an essential part of the value we deliver to clients worldwide."
-                features={features}
-            />
+      <FeatureHighlightSection
+        title="Together, We Engineer the Extraordinary"
+        subtitle="QIS proudly collaborates with vendors across multiple sectors to build end-to-end solutions for military, government, and commercial clients. Our vendor network is an essential part of the value we deliver to clients worldwide."
+        features={features}
+      />
 
-            <FeatureSection
-                image="/home/1.png"
-                alt="AI Services"
-                description={
-                    <>
-                        <h2>Join Our Global Vendor Network:</h2>
-                        <p>
-                            Are you a forward-thinking supplier, integrator, or technology firm? Join QIS's growing global vendor ecosystem. By partnering with us, you’ll have the opportunity to contribute to complex, high-impact projects across multiple sectors, including defence, energy, healthcare, aviation, and infrastructure.
-                        </p>
-                        <h2>Benefits of Joining:</h2>
-                        <ul>
-                            <li>Access to Government and International Projects</li>
-                            <li>
-                                Be Considered for Strategic Consortiums
-                            </li>
-                            <li>
-                                Collaborate on Custom, Turnkey Solutions
-                            </li>
-                            <li>
-                                Enhance Visibility Across B2G & B2B Channels
-                            </li>
-                        </ul>
-                    </>
-                }
-                buttonText="Join Our Global Vendor Network"
-                buttonLink="/services/ai"
-                backgroundColor="#1282A2"
-                reverse={false}
-            />
-            <ContentSlider
-                title="Case Studies"
-                subtitle="Our Successful Projects Across Industries"
-                items={caseStudies}
-            />
+      <FeatureSection
+        image="/home/1.png"
+        alt="AI Services"
+        description={
+          <>
+            <h2>Join Our Global Vendor Network:</h2>
+            <p>
+              Are you a forward-thinking supplier, integrator, or technology firm? Join QIS's growing global vendor ecosystem. By partnering with us, you’ll have the opportunity to contribute to complex, high-impact projects across multiple sectors, including defence, energy, healthcare, aviation, and infrastructure.
+            </p>
+            <h2>Benefits of Joining:</h2>
+            <ul>
+              <li>Access to Government and International Projects</li>
+              <li>
+                Be Considered for Strategic Consortiums
+              </li>
+              <li>
+                Collaborate on Custom, Turnkey Solutions
+              </li>
+              <li>
+                Enhance Visibility Across B2G & B2B Channels
+              </li>
+            </ul>
+          </>
+        }
+        buttonText="Join Our Global Vendor Network"
+        buttonLink="/services/ai"
+        backgroundColor="#1282A2"
+        reverse={false}
+      />
+      <ContentSlider
+        title="Case Studies"
+        subtitle="Our Successful Projects Across Industries"
+        items={caseStudies}
+      />
 
 
-            <HeroSection
-                image="/home/hero.png"
-                title="Wrap with Confidence Statement"
-                subtitle="With our network of global vendors, project management experience, and direct access to major tendering platforms (GoC, NATO, UN), QIS empowers you to secure, source, and deliver what matters most — without the usual friction."
-                buttonText="Partner with Us"
-                buttonLink="/contact"
-            />
+      <HeroSection
+        image="/home/hero.png"
+        title="Wrap with Confidence Statement"
+        subtitle="With our network of global vendors, project management experience, and direct access to major tendering platforms (GoC, NATO, UN), QIS empowers you to secure, source, and deliver what matters most — without the usual friction."
+        buttonText="Partner with Us"
+        buttonLink="/contact"
+      />
 
-            {/* Contact Section */}
-            {/* <section className="py-16 bg-amber-50" id="contact" ref={contactRef}>
+      {/* Contact Section */}
+      {/* <section className="py-16 bg-amber-50" id="contact" ref={contactRef}>
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2">
               <motion.div
@@ -1492,6 +1500,6 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        </div>
-    );
+    </div>
+  );
 }
