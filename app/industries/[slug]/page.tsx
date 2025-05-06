@@ -68,10 +68,11 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
 
                     {data?.first_section_cards?.length > 0 && (
                         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-12">
-                            {data.first_section_cards.map((item: { content: string }, index: number) => (
+                            {data.first_section_cards.map((item: { content: string; icon?: string }, index: number) => (
                                 <SimpleCard
                                     key={index}
                                     description={item.content}
+                                    icon={item.icon}
                                 />
                             ))}
                         </div>
