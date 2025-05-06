@@ -15,7 +15,7 @@ interface IndustryPageProps {
 export async function generateMetadata({ params }: IndustryPageProps) {
     const data = await getIndustryData(params.slug);
     return {
-        title: data?.title || "Service",
+        title: `${data?.title} | Quantum` || "Service",
         description: data?.description || "",
     };
 }

@@ -23,7 +23,7 @@ const navItems = [
     {
         label: "Industries",
         subItems: [
-            { label: "Military & Defence", href: "#ai-data", image: "/navbar/industries/1.png" },
+            { label: "Military & Defence", href: "/industries/military-and-defence", image: "/navbar/industries/1.png" },
             { label: "Airports", href: "#cloud", image: "/navbar/industries/2.png" },
             { label: "Airlines & MRO", href: "#cloud", image: "/navbar/industries/3.png" },
             { label: "Energy, Oil & Gas", href: "#cloud", image: "/navbar/industries/4.png" },

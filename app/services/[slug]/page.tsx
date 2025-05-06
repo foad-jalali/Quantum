@@ -13,7 +13,7 @@ interface ServicePageProps {
 export async function generateMetadata({ params }: ServicePageProps) {
     const data = await getServiceData(params.slug);
     return {
-        title: data?.title || "Service",
+        title: `${data?.title} | Quantum`|| "Service",
         description: data?.description || "",
     };
 }
