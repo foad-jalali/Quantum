@@ -1,0 +1,54 @@
+{
+    "slug": "marine-and-shipbuilding",
+    "title": "Marine & Shipbuilding Solutions by Quantum ",
+    "title_color": "#007C91",
+    "short_description": "Quantum supports the Marine & Shipbuilding sector with specialized procurement, project management, IT deployment, and custom fabrication services, enabling shipyards, fleet operators, and marine engineering firms to optimize operations, enhance safety, and drive innovation. ",
+    "first_section_image": "/single-industries/5/first_section.png",
+    "second_section_image": "/single-industries/5/second_section.png",
+    "hero_image": "/single-industries/5/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Specialized Procurement Services for Marine and Shipbuilding ",
+        "description": "The marine industry demands durable, high-performance equipment and materials that meet stringent maritime regulations. Quantum’s End-to-End Procurement & Sourcing services for marine and shipbuilding projects ensure quality, compliance, and timely delivery. Our capabilities include: ",
+        "bottom_content": "Quantum helps shipbuilders and marine operators maintain competitive advantages by ensuring access to superior, regulation-compliant products and services. ",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Project Management and Execution Oversight for Marine Projects ",
+        "top_content": "Marine and shipbuilding projects require coordination across multiple disciplines, timelines, and regulatory frameworks. Quantum’s Project Management & Execution Oversight services are tailored to meet the complexities of ship construction, retrofitting, and modernization initiatives. Our services include: ",
+        "bottom_content": "Quantum ensures marine projects are delivered efficiently, safely, and in full compliance, meeting the industry's strict operational and regulatory demands. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Procurement of marine engines, navigation systems, and structural materials",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Sourcing of IMO-compliant safety equipment and communication systems",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Supply chain management and vendor performance tracking",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Tender preparation for shipyard infrastructure projects and fleet modernization",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Vendor identification and qualification based on maritime certifications (SOLAS, MARPOL)",
+            "icon": "/icon/05.svg"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/5/info.png",
+        "title": "Quantum’s Advanced IT and Custom Fabrication for Marine Applications ",
+        "top_content": "Modern vessels and shipyards require cutting-edge technology to stay competitive and compliant. Quantum offers IT Infrastructure Deployment, Software Integration, and Custom Fabrication services specifically for the marine sector, including: ",
+        "bottom_content": "Quantum ensures that shipbuilders and fleet operators are equipped with durable, intelligent, and future-proof technologies that meet the demands of modern marine operations. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Trusted Partner for Marine & Shipbuilding Projects ",
+        "description": "Quantum’s Marine & Shipbuilding solutions combine industry-specific knowledge, technological innovation, and execution excellence. We empower marine organizations to build and operate vessels that are safer, more efficient, and more sustainable. Whether you’re expanding a shipyard, modernizing a fleet, or deploying new technologies, Quantum stands ready as your trusted strategic partner. ",
+        "btn": "Join Us",
+        "bg_color": "#2E8B57"
+    }
+}

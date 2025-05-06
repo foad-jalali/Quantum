@@ -1,0 +1,54 @@
+{
+    "slug": "healthcare-and-healthtech",
+    "title": "Healthcare & HealthTech Solutions by Quantum ",
+    "title_color": "#007E99",
+    "short_description": "Quantum empowers the Healthcare & HealthTech sectors with tailored procurement, IT infrastructure deployment, project management, and custom technology integration, enabling hospitals, clinics, and health innovators to achieve operational excellence and enhance patient care. ",
+    "first_section_image": "/single-industries/6/first_section.png",
+    "second_section_image": "/single-industries/6/second_section.png",
+    "hero_image": "/single-industries/6/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Specialized Procurement Services for Healthcare & HealthTech ",
+        "description": "In the healthcare sector, sourcing critical medical equipment, software, and infrastructure components demands strict compliance with regulatory standards and a focus on patient safety. Quantum’s End-to-End Procurement & Sourcing services help healthcare providers and HealthTech companies streamline acquisitions while maintaining compliance. Our capabilities include: ",
+        "bottom_content": "Quantum ensures that healthcare organizations acquire the right tools, systems, and technologies to deliver exceptional care and drive innovation. ",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Project Management & Execution Oversight for Healthcare Initiatives ",
+        "top_content": "Healthcare projects, whether new hospital construction, IT infrastructure upgrades, or digital health rollouts, require meticulous planning, stakeholder alignment, and regulatory compliance. Quantum’s Project Management & Execution Oversight services support healthcare leaders in achieving successful outcomes. Our services include: ",
+        "bottom_content": "Quantum’s project expertise ensures healthcare initiatives are delivered safely, efficiently, and aligned with patient-centered goals. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Procurement of medical devices, diagnostic equipment, and hospital IT systems",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Vendor identification and qualification based on FDA, CE, and ISO standards ",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Tender preparation for healthcare facility expansions and technology rollouts ",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Vendor performance monitoring and contract management for long-term value ",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Strategic sourcing of HealthTech solutions including telemedicine and wearable devices",
+            "icon": "/icon/05.svg"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/6/info.png",
+        "title": "Quantum’s IT Infrastructure and Custom HealthTech Solutions ",
+        "top_content": "Healthcare is transforming through technology, and Quantum supports this transformation with comprehensive IT Infrastructure Deployment and Custom Software solutions tailored for clinical environments. Our services include: ",
+        "bottom_content": "Quantum enables healthcare organizations and innovators to leverage technology for better diagnostics, improved operational efficiency, and enhanced patient experiences. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Strategic Partner for Healthcare & HealthTech ",
+        "description": "Quantum’s Healthcare & HealthTech solutions are designed to meet the sector’s unique demands for reliability, security, innovation, and compliance. With specialized procurement, IT deployment, project management, and technology integration services, Quantum empowers healthcare providers and HealthTech companies to lead in delivering cutting-edge patient care and advancing medical technology. ",
+        "btn": "Join Us",
+        "bg_color": "#007E99"
+    }
+}

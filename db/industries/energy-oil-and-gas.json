@@ -1,0 +1,54 @@
+{
+    "slug": "",
+    "title": "Energy, Oil & Gas Solutions by Quantum ",
+    "title_color": "#A33C00",
+    "short_description": "Quantum delivers specialized solutions for the Energy, Oil & Gas sector, combining tailored procurement, advanced project management, IT systems integration, and custom engineering to support complex, mission-critical operations in upstream, midstream, and downstream segments. ",
+    "first_section_image": "/single-industries/4/first_section.png",
+    "second_section_image": "/single-industries/4/second_section.png",
+    "hero_image": "/single-industries/4/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s High-Compliance Procurement & Sourcing for Energy and Oil & Gas ",
+        "description": "Procurement in the energy sector requires strict adherence to safety, environmental, and performance standards. Quantum offers end-to-end procurement and sourcing services specifically tailored for Oil & Gas and Energy companies, helping them stay compliant and cost-efficient. Our procurement services include: ",
+        "bottom_content": "Quantum ensures timely and compliant delivery of critical components for exploration, refining, distribution, and renewable energy projects. ",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Project Management for Complex Energy Sector Initiatives ",
+        "top_content": "Oil & Gas and Energy projects often span multiple locations, disciplines, and compliance frameworks. Quantum’s Project Management & Execution Oversight services are structured to address the specific complexities of this industry. Our capabilities include: ",
+        "bottom_content": "Quantum ensures every energy project is delivered safely, within scope, and with full regulatory transparency, no matter the scale or geography. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Sourcing industrial equipment, valves, pumps, safety systems, and control panels",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Vendor identification and compliance checks (ISO, API, ASME standards)",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Tender preparation for oilfield services, plant expansion, and EPC contracts",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Supplier performance auditing and lifecycle management",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Strategic sourcing of renewable energy components (solar, wind, smart grid tech)",
+            "icon": "/icon/05.svg"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/4/info.png",
+        "title": "Quantum’s IT Integration and Custom Engineering for Energy Innovation ",
+        "top_content": "Digital transformation is driving the future of energy. Quantum supports this evolution with scalable IT infrastructure and customized engineering solutions designed for the harsh environments and performance demands of the sector. Our services include: ",
+        "bottom_content": "Quantum empowers energy companies to harness the power of data, automation, and resilience through tailored tech deployment and engineering. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Strategic Partner for Energy, Oil & Gas ",
+        "description": "Quantum’s Energy, Oil & Gas solutions are engineered for performance, reliability, and compliance. With deep industry knowledge and cross-disciplinary capabilities, we help companies meet complex operational demands, reduce risk, and embrace innovation. From upstream exploration to renewable integration, Quantum stands as a trusted technology and execution partner. ",
+        "btn": "Join Us",
+        "bg_color": "#607D8B"
+    }
+}

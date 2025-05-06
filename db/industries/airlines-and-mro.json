@@ -1,0 +1,54 @@
+{
+    "slug": "airlines-and-mro",
+    "title": "Airlines & MRO Solutions by Quantum ",
+    "title_color": "#00204E",
+    "short_description": "Quantum empowers Airlines and MRO (Maintenance, Repair, and Overhaul) providers by delivering specialized procurement, IT integration, project management, and custom fabrication services to ensure operational excellence, safety, and efficiency across aviation maintenance and operations. ",
+    "first_section_image": "/single-industries/3/first_section.png",
+    "second_section_image": "/single-industries/3/second_section.png",
+    "hero_image": "/single-industries/3/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Tailored Procurement and Sourcing for Airlines & MRO Providers ",
+        "description": "Airlines and MRO facilities rely heavily on high-quality, compliant sourcing for aircraft parts, systems, and supporting infrastructure. Quantum’s specialized End-to-End Procurement & Sourcing services ensure that airlines and MROs receive the right parts and services efficiently and reliably. Our capabilities include: ",
+        "bottom_content": "Quantum ensures that aviation organizations secure the best value while meeting stringent aviation regulations and operational requirement",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Expert Project Management & Execution Oversight for Aviation ",
+        "top_content": "Managing projects in the aviation and MRO sectors demands strict adherence to safety, regulatory, and timeline standards. Quantum’s Project Management & Execution Oversight services ensure that every initiative — from facility expansions to IT system upgrades — is executed with precision. Our aviation project management services include: ",
+        "bottom_content": "Quantum ensures that aviation and MRO projects remain on schedule, within budget, and in full compliance with aviation industry standards. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Strategic sourcing of certified aircraft parts, avionics, and systems",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Supplier performance monitoring and contract management",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Tender management and bid preparation for MRO and airline projects",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Supply chain risk assessment and continuity planning",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Vendor identification, qualification, and compliance assurance (FAA, EASA standards)",
+            "icon": "/icon/05.svg"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/3/info.png",
+        "title": "Quantum’s Aviation IT Deployment and Custom Fabrication Services ",
+        "top_content": "The aviation industry is rapidly transforming with technology-driven operations and predictive maintenance. Quantum supports Airlines and MRO providers with IT Infrastructure Deployment, Software Integration, and Custom Fabrication solutions tailored to the sector’s specific needs, including: ",
+        "bottom_content": "Quantum delivers aviation technology and fabrication solutions that enhance operational reliability, optimize maintenance efficiency, and drive business resilience. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Strategic Technology Partner for Airlines & MRO Providers ",
+        "description": "Quantum’s Airlines & MRO solutions are built around a deep understanding of the aviation industry’s critical demands for compliance, safety, innovation, and efficiency. With tailored procurement, IT deployment, project oversight, and customization services, Quantum empowers aviation organizations to soar higher, maintain peak operational performance, and embrace technological advancements with confidence. ",
+        "btn": "Join Us",
+        "bg_color": "#048A81"
+    }
+}

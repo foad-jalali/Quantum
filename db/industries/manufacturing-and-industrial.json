@@ -1,0 +1,54 @@
+{
+    "slug": "manufacturing-and-industrial",
+    "title": "Manufacturing & Industrial Fabrication Solutions by Quantum ",
+    "title_color": "#4B4B4B",
+    "short_description": "Quantum empowers the Manufacturing & Industrial Fabrication sectors with specialized procurement, project management, IT deployment, and custom fabrication services, helping manufacturers optimize operations, enhance production capabilities, and embrace industry innovation. ",
+    "first_section_image": "/single-industries/7/first_section.png",
+    "second_section_image": "/single-industries/7/second_section.png",
+    "hero_image": "/single-industries/7/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Specialized Procurement Services for Manufacturers and Fabricators ",
+        "description": "In manufacturing and industrial fabrication, sourcing the right materials, machinery, and technology is critical for ensuring quality, efficiency, and competitiveness. Quantum’s End-to-End Procurement & Sourcing services help manufacturers streamline operations with the right resources. Our services include: ",
+        "bottom_content": "Quantum ensures that manufacturing and fabrication operations have access to high-quality, cost-effective, and compliant products that drive operational success. ",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Project Management & Execution Oversight for Industrial Operations ",
+        "top_content": "Manufacturing and fabrication projects often involve complex engineering, multi-phase implementations, and integration of new technologies. Quantum’s Project Management & Execution Oversight services are designed to navigate these challenges efficiently. Our services include: ",
+        "bottom_content": "Quantum provides manufacturers with the project leadership and execution oversight needed to deliver large-scale industrial projects on time and within budget. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Procurement of industrial machinery, automation systems, and raw materials",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Vendor identification and qualification based on ISO and industry-specific standards",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Tender preparation for plant expansions and equipment upgrades",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Supplier auditing, performance tracking, and lifecycle management",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Strategic sourcing of smart manufacturing technologies (IoT, AI-driven systems)",
+            "icon": "/icon/05.svg"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/7/info.png",
+        "title": "Quantum’s IT Integration and Custom Fabrication for Industry 4.0 ",
+        "top_content": "Modern manufacturing is driven by digital transformation and custom engineering. Quantum supports this transition with cutting-edge IT Infrastructure Deployment, Software Integration, and Custom Fabrication services. Our expertise includes: ",
+        "bottom_content": "Quantum helps manufacturers and fabricators embrace smart manufacturing strategies that enhance productivity, reduce downtime, and drive competitive advantage. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Trusted Partner for Manufacturing & Industrial Fabrication ",
+        "description": "Quantum’s Manufacturing & Industrial Fabrication solutions are built on a deep understanding of industrial processes, innovation, and operational excellence. With tailored procurement, project management, IT deployment, and custom fabrication services, Quantum enables manufacturers to lead the market, innovate continuously, and achieve scalable success. ",
+        "btn": "Join Us",
+        "bg_color": "#4B4B4B"
+    }
+}

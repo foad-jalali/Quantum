@@ -1,0 +1,54 @@
+{
+    "slug": "navigation-gps-gnss",
+    "title": "Navigation, GPS, GNSS Solutions by Quantum ",
+    "title_color": "#52575D",
+    "short_description": "Quantum delivers specialized solutions for the Navigation, GPS, and GNSS sectors, offering advanced procurement, IT deployment, project management, and custom system integration to empower industries relying on precision positioning, navigation, and timing (PNT) technologies. ",
+    "first_section_image": "/single-industries/8/first_section.png",
+    "second_section_image": "/single-industries/8/second_section.png",
+    "hero_image": "/single-industries/8/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Precision Procurement Services for Navigation, GPS, and GNSS ",
+        "description": "The accuracy and reliability of Navigation, GPS, and GNSS systems depend on sourcing the right technologies and components that meet stringent technical and operational standards. Quantum’s End-to-End Procurement & Sourcing services are tailored to organizations operating in navigation-critical industries. Our services include: ",
+        "bottom_content": "Quantum ensures that organizations have access to the latest, most accurate, and most reliable navigation technologies essential for mission success. ",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Project Management & Execution Oversight for Navigation Systems ",
+        "top_content": "Implementing Navigation, GPS, and GNSS solutions across industries involves complex projects with strict performance benchmarks. Quantum’s Project Management & Execution Oversight services deliver project success through structured processes and technical excellence. Our services include: ",
+        "bottom_content": "Quantum provides the leadership and technical oversight necessary to implement navigation projects that meet the highest standards of accuracy, reliability, and safety. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Procurement of GPS receivers, GNSS antennas, and navigation modules",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Vendor identification and validation based on GNSS technology standards",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Lifecycle vendor management and component traceability",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Tender preparation for large-scale navigation infrastructure projects",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Sourcing of specialized equipment for aerospace, maritime, and transportation sectors",
+            "icon": "/icon/05.svg"
+        }
+    ],
+    "info_section": {
+        "image": "/single-industries/8/info.png",
+        "title": "Quantum’s IT Deployment and Custom Integration for Navigation Innovation ",
+        "top_content": "Advancements in navigation technologies demand seamless IT integration and customized solutions to meet diverse industry needs. Quantum supports this evolution with IT Infrastructure Deployment and Custom Software Solutions tailored for PNT (Positioning, Navigation, Timing) environments. Our services include: ",
+        "bottom_content": "Quantum empowers organizations to integrate cutting-edge navigation technologies into their operations, enhancing precision, efficiency, and operational safety. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Strategic Partner for Navigation, GPS, and GNSS Solutions ",
+        "description": "Quantum’s Navigation, GPS, and GNSS solutions combine technical expertise, industry knowledge, and execution excellence. Whether supporting aviation, maritime, defense, or transportation sectors, Quantum delivers tailored services that ensure clients stay ahead in an increasingly precise and data-driven world. ",
+        "btn": "Join Us",
+        "bg_color": "#4B4B4B"
+    }
+}

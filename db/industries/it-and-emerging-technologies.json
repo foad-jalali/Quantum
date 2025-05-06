@@ -1,0 +1,54 @@
+{
+    "slug": "it-and-emerging-technologies",
+    "title": "IT & Emerging Technologies Solutions by Quantum ",
+    "title_color": "#00204E",
+    "short_description": "Quantum empowers businesses to harness the power of IT & Emerging Technologies through advanced procurement, IT infrastructure deployment, project management, and custom technology solutions designed to drive innovation, digital transformation, and future readiness. ",
+    "first_section_image": "/single-industries/9/first_section.png",
+    "second_section_image": "/single-industries/9/second_section.png",
+    "hero_image": "/single-industries/9/hero.png",
+    "first_section_content": {
+        "title": "Quantum’s Strategic Procurement Services for IT and Emerging Technologies ",
+        "description": "In the fast-paced world of technology, timely access to cutting-edge tools and systems is critical for maintaining a competitive edge. Quantum’s End-to-End Procurement & Sourcing services are tailored to help businesses and innovators secure the IT and technology solutions they need. Our procurement services include: ",
+        "bottom_content": "Quantum ensures that organizations obtain the right technology solutions efficiently, securely, and cost-effectively to fuel their innovation journeys. ",
+        "btn": "Get a Quote"
+    },
+    "card_section": {
+        "title": "Quantum’s Project Management & Execution Oversight for Digital Transformation ",
+        "top_content": "Deploying IT and emerging technology solutions requires strategic project management to align technological investments with business objectives. Quantum’s Project Management & Execution Oversight services ensure that digital transformation initiatives are successful, scalable, and sustainable. Our services include: ",
+        "bottom_content": "Quantum provides the structure, expertise, and leadership required to implement transformative technology projects on time and on budget. "
+    },
+    "first_section_cards": [
+        {
+            "content": "Procurement of servers, cloud infrastructure, networking equipment, and cybersecurity solutions",
+            "icon": "/icon/01.svg"
+        },
+        {
+            "content": "Vendor identification and selection across emerging tech fields such as AI, blockchain, and IoT",
+            "icon": "/icon/02.svg"
+        },
+        {
+            "content": "Tender preparation for smart infrastructure and digital transformation projects",
+            "icon": "/icon/03.svg"
+        },
+        {
+            "content": "Vendor lifecycle management and technology refresh planning",
+            "icon": "/icon/04.svg"
+        },
+        {
+            "content": "Sourcing of specialized platforms for data analytics, machine learning, and automation",
+            "icon": "/icon/05.svg"
+        }   
+    ],
+    "info_section": {
+        "image": "/single-industries/9/info.png",
+        "title": "Quantum’s IT Infrastructure Deployment and Custom Solutions for Emerging Technologies ",
+        "top_content": "Emerging technologies demand agile, secure, and scalable IT environments. Quantum supports businesses with comprehensive IT Infrastructure Deployment and custom technology solutions tailored to the needs of the modern digital enterprise. Our services include: ",
+        "bottom_content": "Quantum equips businesses with future-proof technology infrastructures and custom digital solutions that enable innovation, enhance operational agility, and secure sustainable growth. "
+    },
+    "second_section_content": {
+        "title": "Why Quantum is the Strategic Partner for IT & Emerging Technologies ",
+        "description": "Quantum’s IT & Emerging Technologies solutions are built around a deep understanding of technology innovation, business transformation, and operational excellence. Whether deploying enterprise IT systems or integrating next-generation technologies, Quantum helps businesses stay ahead of the curve and build the digital foundations for future success. ",
+        "btn": "Join Us",
+        "bg_color": "#4B4B4B"
+    }
+}

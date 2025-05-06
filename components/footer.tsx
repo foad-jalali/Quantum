@@ -68,14 +68,14 @@ const Footer = () => {
 
                     <FooterList title="Industries" items={[
                         { label: "Military & Defence", href: "/industries/military-and-defence" },
-                        { label: "Airports", href: "/industries/ai" },
-                        { label: "Airlines & MRO ", href: "/industries/ai" },
-                        { label: "Energy, Oil & Gas", href: "/industries/ai" },
-                        { label: "Marine & Shipbuilding", href: "/industries/ai" },
-                        { label: "Healthcare & HealthTech", href: "/industries/ai" },
-                        { label: "Manufacturing & Industrial Fabrication", href: "/industries/ai" },
-                        { label: "Navigation, GPS, GNSS", href: "/industries/ai" },
-                        { label: "IT & Emerging Technologies", href: "/industries/ai" },
+                        { label: "Airports", href: "/industries/airports" },
+                        { label: "Airlines & MRO ", href: "/industries/airlines-and-mro" },
+                        { label: "Energy, Oil & Gas", href: "/industries/energy-oil-and-gas" },
+                        { label: "Marine & Shipbuilding", href: "/industries/marine-and-shipbuilding" },
+                        { label: "Healthcare & HealthTech", href: "/industries/healthcare-and-healthtech" },
+                        { label: "Manufacturing & Industrial Fabrication", href: "/industries/manufacturing-and-industrial" },
+                        { label: "Navigation, GPS, GNSS", href: "/industries/navigation-gps-gnss" },
+                        { label: "IT & Emerging Technologies", href: "/industries/it-and-emerging-technologies" },
                     ]}
                         category="industries"
                     />
