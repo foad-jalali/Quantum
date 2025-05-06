@@ -5,309 +5,301 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navItems = [
-  {
-    label: "Services",
-    subItems: [
-      {
-        label: "End-to-End Procurement & Sourcing",
-        href: "/services/end-to-end-procurement-and-sourcing",
-        image: "/navbar/services/1.png",
-      },
-      {
-        label: "Tender Management & Consortium Building",
-        href: "/services/tender-management-and-consortium-building",
-        image: "/navbar/services/2.png",
-      },
-      {
-        label: "Vendor Identification & Matchmaking",
-        href: "/services/vendor-identification-and-matchmaking",
-        image: "/navbar/services/3.png",
-      },
-      {
-        label: "Project Management & Execution Oversight ",
-        href: "/services/project-management-and-execution-oversight",
-        image: "/navbar/services/4.png",
-      },
-      {
-        label: "Tender Preparation & Bid Management",
-        href: "/services/tender-preparation-and-bid-management",
-        image: "/navbar/services/5.png",
-      },
-      {
-        label: "IT Infrastructure Deployment & Software Integration",
-        href: "/services/it-infrastructure-deployment-and-software-integration",
-        image: "/navbar/services/6.png",
-      },
-      {
-        label: "Custom Software & Embedded AI Solutions",
-        href: "/services/custom-software-and-embedded-ai-solutions",
-        image: "/navbar/services/7.png",
-      },
-      {
-        label: "Custom Fabrication & Product Customization",
-        href: "/services/custom-fabrication-and-product-customization",
-        image: "/navbar/services/8.png",
-      },
-    ],
-  },
-  {
-    label: "Industries",
-    subItems: [
-      {
-        label: "Military & Defence",
-        href: "/industries/military-and-defence",
-        image: "/navbar/industries/1.png",
-      },
-      {
-        label: "Airports",
-        href: "/industries/airports",
-        image: "/navbar/industries/2.png",
-      },
-      {
-        label: "Airlines & MRO",
-        href: "/industries/airlines-and-mro",
-        image: "/navbar/industries/3.png",
-      },
-      {
-        label: "Energy, Oil & Gas",
-        href: "/industries/energy-oil-and-gas",
-        image: "/navbar/industries/4.png",
-      },
-      {
-        label: "Marine & Shipbuilding",
-        href: "/industries/marine-and-shipbuilding",
-        image: "/navbar/industries/5.png",
-      },
-      {
-        label: "Healthcare & HealthTech",
-        href: "/industries/healthcare-and-healthtech",
-        image: "/navbar/industries/6.png",
-      },
-      {
-        label: "Manufacturing & Industrial Fabrication",
-        href: "/industries/manufacturing-and-industrial",
-        image: "/navbar/industries/7.png",
-      },
-      {
-        label: "Navigation, GPS, GNSS",
-        href: "/industries/navigation-gps-gnss",
-        image: "/navbar/industries/8.png",
-      },
-      {
-        label: "IT & Emerging Technologies",
-        href: "/industries/it-and-emerging-technologies",
-        image: "/navbar/industries/9.png",
-      },
-    ],
-  },
-  { label: "Solutions", href: "#resources" },
-  { label: "About Us", href: "#resources" },
-  { label: "Blog", href: "#performance" },
-  { label: "Career", href: "#why-us" },
-  { label: "FAQ", href: "#contact" },
-  { label: "Contact Us", href: "#contact" },
+    {
+        label: "Services",
+        subItems: [
+            {
+                label: "End-to-End Procurement & Sourcing",
+                href: "/services/end-to-end-procurement-and-sourcing",
+                image: "/navbar/services/1.png",
+            },
+            {
+                label: "Tender Management & Consortium Building",
+                href: "/services/tender-management-and-consortium-building",
+                image: "/navbar/services/2.png",
+            },
+            {
+                label: "Vendor Identification & Matchmaking",
+                href: "/services/vendor-identification-and-matchmaking",
+                image: "/navbar/services/3.png",
+            },
+            {
+                label: "Project Management & Execution Oversight ",
+                href: "/services/project-management-and-execution-oversight",
+                image: "/navbar/services/4.png",
+            },
+            {
+                label: "Tender Preparation & Bid Management",
+                href: "/services/tender-preparation-and-bid-management",
+                image: "/navbar/services/5.png",
+            },
+            {
+                label: "IT Infrastructure Deployment & Software Integration",
+                href: "/services/it-infrastructure-deployment-and-software-integration",
+                image: "/navbar/services/6.png",
+            },
+            {
+                label: "Custom Software & Embedded AI Solutions",
+                href: "/services/custom-software-and-embedded-ai-solutions",
+                image: "/navbar/services/7.png",
+            },
+            {
+                label: "Custom Fabrication & Product Customization",
+                href: "/services/custom-fabrication-and-product-customization",
+                image: "/navbar/services/8.png",
+            },
+        ],
+    },
+    {
+        label: "Industries",
+        subItems: [
+            {
+                label: "Military & Defence",
+                href: "/industries/military-and-defence",
+                image: "/navbar/industries/1.png",
+            },
+            {
+                label: "Airports",
+                href: "/industries/airports",
+                image: "/navbar/industries/2.png",
+            },
+            {
+                label: "Airlines & MRO",
+                href: "/industries/airlines-and-mro",
+                image: "/navbar/industries/3.png",
+            },
+            {
+                label: "Energy, Oil & Gas",
+                href: "/industries/energy-oil-and-gas",
+                image: "/navbar/industries/4.png",
+            },
+            {
+                label: "Marine & Shipbuilding",
+                href: "/industries/marine-and-shipbuilding",
+                image: "/navbar/industries/5.png",
+            },
+            {
+                label: "Healthcare & HealthTech",
+                href: "/industries/healthcare-and-healthtech",
+                image: "/navbar/industries/6.png",
+            },
+            {
+                label: "Manufacturing & Industrial Fabrication",
+                href: "/industries/manufacturing-and-industrial",
+                image: "/navbar/industries/7.png",
+            },
+            {
+                label: "Navigation, GPS, GNSS",
+                href: "/industries/navigation-gps-gnss",
+                image: "/navbar/industries/8.png",
+            },
+            {
+                label: "IT & Emerging Technologies",
+                href: "/industries/it-and-emerging-technologies",
+                image: "/navbar/industries/9.png",
+            },
+        ],
+    },
+    { label: "Solutions", href: "#resources" },
+    { label: "About Us", href: "#resources" },
+    { label: "Blog", href: "#performance" },
+    { label: "Career", href: "#why-us" },
+    { label: "FAQ", href: "#contact" },
+    { label: "Contact Us", href: "#contact" },
 ];
 
 export default function Navbar() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
-  const toggleSubmenu = (index: number) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
-  };
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+    const toggleSubmenu = (index: number) => {
+        setOpenIndex((prev) => (prev === index ? null : index));
+    };
 
-  return (
-    <motion.header
-      className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-white"
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.2 }}
-    >
-      <div className="container mx-auto px-4 md:px-6 py-4">
-        <div className="flex justify-between items-center">
-          <motion.div
-            className="flex items-center space-x-2"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <div className="h-10 w-10 rounded-full bg-gradient-to-r from-amber-500 to-yellow-300 flex items-center justify-center text-black font-bold relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg viewBox="0 0 24 24" className="w-6 h-6 relative z-10">
-                <path
-                  d="M12,3 L19,7 L19,17 L12,21 L5,17 L5,7 Z"
-                  fill="rgba(0, 0, 0, 0.8)"
-                />
-                <circle cx="12" cy="12" r="2" fill="rgba(0, 0, 0, 1)" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-amber-500">QUANTUM</span>
-          </motion.div>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8">
-            {navItems.map((item, i) => {
-              if (!item.subItems) {
-                return (
-                  <motion.a
-                    key={i}
-                    href={item.href}
-                    className="text-[#00204E] hover:text-amber-600 transition-colors relative"
-                    whileHover={{ scale: 1.1 }}
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.1 * i }}
-                  >
-                    {item.label}
-                    <motion.span
-                      className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
-                      initial={{ width: 0 }}
-                      whileHover={{ width: "100%" }}
-                      transition={{ duration: 0.2 }}
-                    />
-                  </motion.a>
-                );
-              } else {
-                return (
-                  <div key={i} className="relative group">
+    return (
+        <motion.header
+            className="border-b border-amber-100 sticky top-0 z-50 backdrop-blur-md bg-white"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+        >
+            <div className="container mx-auto px-4 md:px-6 py-4">
+                <div className="flex justify-between items-center">
                     <motion.div
-                      className="text-[#00204E] hover:text-amber-600 transition-colors relative cursor-pointer"
-                      whileHover={{ scale: 1.1 }}
-                      initial={{ opacity: 0, y: -20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 * i }}
+                        className="flex items-center space-x-2"
                     >
-                      {item.label}
-                      <motion.span
-                        className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
-                        initial={{ width: 0 }}
-                        whileHover={{ width: "100%" }}
-                        transition={{ duration: 0.2 }}
-                      />
+                        <Link href="/" className="flex items-center space-x-2">
+                            <Image width={100} height={100} alt="logo" src="/favicon.svg" />
+
+                            {/* <span className="font-bold text-xl">InovativAI</span> */}
+                        </Link>
                     </motion.div>
-                    <div
-                      className="absolute left-1/2 md:-translate-x-1/3 2xl:-translate-x-1/2 mt-4 bg-white border border-gray-300 rounded-md 
+
+                    {/* Desktop Nav */}
+                    <nav className="hidden md:flex space-x-8">
+                        {navItems.map((item, i) => {
+                            if (!item.subItems) {
+                                return (
+                                    <motion.a
+                                        key={i}
+                                        href={item.href}
+                                        className="text-[#00204E] hover:text-amber-600 transition-colors relative"
+                                        whileHover={{ scale: 1.1 }}
+                                        initial={{ opacity: 0, y: -20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.3, delay: 0.1 * i }}
+                                    >
+                                        {item.label}
+                                        <motion.span
+                                            className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
+                                            initial={{ width: 0 }}
+                                            whileHover={{ width: "100%" }}
+                                            transition={{ duration: 0.2 }}
+                                        />
+                                    </motion.a>
+                                );
+                            } else {
+                                return (
+                                    <div key={i} className="relative group">
+                                        <motion.div
+                                            className="text-[#00204E] hover:text-amber-600 transition-colors relative cursor-pointer"
+                                            whileHover={{ scale: 1.1 }}
+                                            initial={{ opacity: 0, y: -20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.3, delay: 0.1 * i }}
+                                        >
+                                            {item.label}
+                                            <motion.span
+                                                className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
+                                                initial={{ width: 0 }}
+                                                whileHover={{ width: "100%" }}
+                                                transition={{ duration: 0.2 }}
+                                            />
+                                        </motion.div>
+                                        <div
+                                            className="absolute left-1/2 md:-translate-x-1/3 2xl:-translate-x-1/2 mt-4 bg-white border border-gray-300 rounded-md 
              invisible opacity-0 group-hover:visible group-hover:opacity-100 
              transition-all w-[800px] lg:w-[1000px] duration-300 delay-100 ease-in-out 
              z-50 p-4 shadow-lg"
+                                        >
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+                                                {item.subItems.map((sub, j) => (
+                                                    <a
+                                                        key={j}
+                                                        href={sub.href}
+                                                        className="block bg-white hover:bg-amber-100 transition rounded-lg overflow-hidden border border-gray-200"
+                                                    >
+                                                        <img
+                                                            src={sub.image || "/placeholder.jpg"}
+                                                            alt={sub.label}
+                                                            className="w-full h-42 object-cover"
+                                                        />
+                                                        <div className="p-2 text-left text-sm font-medium text-gray-700">
+                                                            {sub.label}
+                                                        </div>
+                                                    </a>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            }
+                        })}
+                    </nav>
+
+                    {/* Mobile Button */}
+                    <div className="md:hidden">
+                        <button onClick={toggleMobileMenu} aria-label="Toggle Menu">
+                            {isMobileMenuOpen ? (
+                                <X className="h-6 w-6 text-black" />
+                            ) : (
+                                <Menu className="h-6 w-6 text-black" />
+                            )}
+                        </button>
+                    </div>
+
+                    {/* CTA Button */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: 0.5 }}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="hidden md:block"
                     >
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-                        {item.subItems.map((sub, j) => (
-                          <a
-                            key={j}
-                            href={sub.href}
-                            className="block bg-white hover:bg-amber-100 transition rounded-lg overflow-hidden border border-gray-200"
-                          >
-                            <img
-                              src={sub.image || "/placeholder.jpg"}
-                              alt={sub.label}
-                              className="w-full h-42 object-cover"
-                            />
-                            <div className="p-2 text-left text-sm font-medium text-gray-700">
-                              {sub.label}
-                            </div>
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
-            })}
-          </nav>
-
-          {/* Mobile Button */}
-          <div className="md:hidden">
-            <button onClick={toggleMobileMenu} aria-label="Toggle Menu">
-              {isMobileMenuOpen ? (
-                <X className="h-6 w-6 text-black" />
-              ) : (
-                <Menu className="h-6 w-6 text-black" />
-              )}
-            </button>
-          </div>
-
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: 0.5 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="hidden md:block"
-          >
-            <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-              <span className="relative z-10">Partner with Us</span>
-              <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
-            </Button>
-          </motion.div>
-        </div>
-
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              className="md:hidden bg-white border-t border-gray-300 py-4"
-            >
-              {navItems.map((item, i) => (
-                <div key={i} className="px-4 py-2 border-b border-gray-200">
-                  <button
-                    className="w-full text-left font-medium text-gray-700 flex justify-between items-center"
-                    onClick={() => toggleSubmenu(i)}
-                  >
-                    {item.label}
-                    {item.subItems && (
-                      <svg
-                        className={`w-4 h-4 transform transition-transform ${
-                          openIndex === i ? "rotate-90" : ""
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    )}
-                  </button>
-
-                  {item.subItems && openIndex === i && (
-                    <div className="mt-2 pl-4">
-                      {item.subItems.map((sub, j) => (
-                        <a
-                          key={j}
-                          href={sub.href}
-                          className="flex items-center space-x-2 py-1 text-sm text-gray-600 hover:text-amber-500"
-                        >
-                          {sub.image && (
-                            <Image
-                              src={sub.image}
-                              alt={sub.label}
-                              width={48}
-                              height={48}
-                              className="rounded"
-                            />
-                          )}
-                          <span>{sub.label}</span>
-                        </a>
-                      ))}
-                    </div>
-                  )}
+                        <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
+                            <span className="relative z-10">Partner with Us</span>
+                            <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
+                        </Button>
+                    </motion.div>
                 </div>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </motion.header>
-  );
+
+                {/* Mobile Menu */}
+                <AnimatePresence>
+                    {isMobileMenuOpen && (
+                        <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="md:hidden bg-white border-t border-gray-300 py-4"
+                        >
+                            {navItems.map((item, i) => (
+                                <div key={i} className="px-4 py-2 border-b border-gray-200">
+                                    <button
+                                        className="w-full text-left font-medium text-gray-700 flex justify-between items-center"
+                                        onClick={() => toggleSubmenu(i)}
+                                    >
+                                        {item.label}
+                                        {item.subItems && (
+                                            <svg
+                                                className={`w-4 h-4 transform transition-transform ${openIndex === i ? "rotate-90" : ""
+                                                    }`}
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M9 5l7 7-7 7"
+                                                />
+                                            </svg>
+                                        )}
+                                    </button>
+
+                                    {item.subItems && openIndex === i && (
+                                        <div className="mt-2 pl-4">
+                                            {item.subItems.map((sub, j) => (
+                                                <a
+                                                    key={j}
+                                                    href={sub.href}
+                                                    className="flex items-center space-x-2 py-1 text-sm text-gray-600 hover:text-amber-500"
+                                                >
+                                                    {sub.image && (
+                                                        <Image
+                                                            src={sub.image}
+                                                            alt={sub.label}
+                                                            width={48}
+                                                            height={48}
+                                                            className="rounded"
+                                                        />
+                                                    )}
+                                                    <span>{sub.label}</span>
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
+        </motion.header>
+    );
 }

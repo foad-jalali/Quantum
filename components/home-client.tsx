@@ -367,7 +367,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <motion.div
-              className="space-y-6"
+              className="space-y-6 md:ml-[60px]"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}

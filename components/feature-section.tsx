@@ -33,7 +33,7 @@ const FeatureSection = ({
                 )}
             >
 
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 md:ml-[60px]">
                     <div className="prose prose-lg text-white prose-headings:text-white max-w-none mb-6 font-semibold">
                         {description}
                     </div>

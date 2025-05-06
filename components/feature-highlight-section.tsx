@@ -60,7 +60,7 @@ const FeatureHighlightSection = ({ title, subtitle, features }: FeatureHighlight
                 </motion.h3>
 
                 <motion.div
-                    className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                    className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
                     variants={staggerContainer}
                     initial="hidden"
                     whileInView="visible"
