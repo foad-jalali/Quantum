@@ -48,15 +48,15 @@ export default function Home() {
         { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/custom-fabrication-and-product-customization" },
     ];
     const industries = [
-        { title: "Military & Defence", image: "/industries/1.png", href: "/industries/ai" },
-        { title: "Airports", image: "/industries/2.png", href: "/industries/ai" },
-        { title: "Airlines & MRO ", image: "/industries/3.png", href: "/industries/ai" },
-        { title: "Energy, Oil & Gas", image: "/industries/4.png", href: "/industries/ai" },
-        { title: "Marine & Shipbuilding", image: "/industries/5.png", href: "/industries/ai" },
-        { title: "Healthcare & HealthTech", image: "/industries/6.png", href: "/industries/ai" },
-        { title: "Manufacturing & Industrial Fabrication", image: "/industries/7.png", href: "/industries/ai" },
-        { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/ai" },
-        { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/ai" },
+        { title: "Military & Defence", image: "/industries/1.png", href: "/industries/military-and-defenc" },
+        { title: "Airports", image: "/industries/2.png", href: "/industries/airports" },
+        { title: "Airlines & MRO ", image: "/industries/3.png", href: "/industries/airlines-and-mro" },
+        { title: "Energy, Oil & Gas", image: "/industries/4.png", href: "/industries/energy-oil-and-gas" },
+        { title: "Marine & Shipbuilding", image: "/industries/5.png", href: "/industries/marine-and-shipbuilding" },
+        { title: "Healthcare & HealthTech", image: "/industries/6.png", href: "/industries/healthcare-and-healthtech" },
+        { title: "Manufacturing & Industrial Fabrication", image: "/industries/7.png", href: "/industries/manufacturing-and-industrial" },
+        { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/navigation-gps-gnss" },
+        { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/it-and-emerging-technologies" },
     ];
     const slides = [
         {
