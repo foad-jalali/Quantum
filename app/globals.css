@@ -121,4 +121,12 @@
 .animate-fade-in {
   animation: fade-in 0.6s ease forwards;
 }
+@layer base {
+  h1 {
+    @apply text-3xl font-bold md:text-4xl lg:text-5xl;
+  }
+  h2 {
+    @apply text-2xl font-bold md:text-3xl;
+  }
+}
 

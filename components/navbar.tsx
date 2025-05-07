@@ -105,7 +105,7 @@ const navItems = [
     },
     { label: "Solutions", href: "solutions" },
     { label: "About Us", href: "about" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "blog" },
     { label: "Career", href: "career" },
     { label: "FAQ", href: "faq" },
     { label: "Contact Us", href: "contact" },
@@ -144,23 +144,23 @@ export default function Navbar() {
                         {navItems.map((item, i) => {
                             if (!item.subItems) {
                                 return (
-                                    <motion.a
-                                        key={i}
-                                        href={item.href}
-                                        className="text-[#00204E] hover:text-amber-600 transition-colors relative"
-                                        whileHover={{ scale: 1.1 }}
-                                        initial={{ opacity: 0, y: -20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.3, delay: 0.1 * i }}
-                                    >
-                                        {item.label}
-                                        <motion.span
-                                            className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
-                                            initial={{ width: 0 }}
-                                            whileHover={{ width: "100%" }}
-                                            transition={{ duration: 0.2 }}
-                                        />
-                                    </motion.a>
+                                    <Link href={`/${item.href}`}>
+                                        <motion.div
+                                            className="text-[#00204E] hover:text-amber-600 transition-colors relative"
+                                            whileHover={{ scale: 1.1 }}
+                                            initial={{ opacity: 0, y: -20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.3, delay: 0.1 * i }}
+                                        >
+                                            {item.label}
+                                            <motion.span
+                                                className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
+                                                initial={{ width: 0 }}
+                                                whileHover={{ width: "100%" }}
+                                                transition={{ duration: 0.2 }}
+                                            />
+                                        </motion.div>
+                                    </Link>
                                 );
                             } else {
                                 return (
@@ -249,56 +249,66 @@ export default function Navbar() {
                         >
                             {navItems.map((item, i) => (
                                 <div key={i} className="px-4 py-2 border-b border-gray-200">
-                                    <button
-                                        className="w-full text-left font-medium text-gray-700 flex justify-between items-center"
-                                        onClick={() => toggleSubmenu(i)}
-                                    >
-                                        {item.label}
-                                        {item.subItems && (
-                                            <svg
-                                                className={`w-4 h-4 transform transition-transform ${openIndex === i ? "rotate-90" : ""
-                                                    }`}
-                                                fill="none"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                                viewBox="0 0 24 24"
+                                    {!item.subItems ? (
+                                        <Link
+                                            href={item.href.startsWith("/") ? item.href : `/${item.href}`}
+                                            className="block text-left font-medium text-gray-700 hover:text-amber-600"
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    ) : (
+                                        <>
+                                            <button
+                                                className="w-full text-left font-medium text-gray-700 flex justify-between items-center"
+                                                onClick={() => toggleSubmenu(i)}
                                             >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M9 5l7 7-7 7"
-                                                />
-                                            </svg>
-                                        )}
-                                    </button>
-
-                                    {item.subItems && openIndex === i && (
-                                        <div className="mt-2 pl-4">
-                                            {item.subItems.map((sub, j) => (
-                                                <a
-                                                    key={j}
-                                                    href={sub.href}
-                                                    className="flex items-center space-x-2 py-1 text-sm text-gray-600 hover:text-amber-500"
+                                                {item.label}
+                                                <svg
+                                                    className={`w-4 h-4 transform transition-transform ${openIndex === i ? "rotate-90" : ""
+                                                        }`}
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    viewBox="0 0 24 24"
                                                 >
-                                                    {sub.image && (
-                                                        <Image
-                                                            src={sub.image}
-                                                            alt={sub.label}
-                                                            width={48}
-                                                            height={48}
-                                                            className="rounded"
-                                                        />
-                                                    )}
-                                                    <span>{sub.label}</span>
-                                                </a>
-                                            ))}
-                                        </div>
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        d="M9 5l7 7-7 7"
+                                                    />
+                                                </svg>
+                                            </button>
+
+                                            {openIndex === i && (
+                                                <div className="mt-2 pl-4">
+                                                    {item.subItems.map((sub, j) => (
+                                                        <Link
+                                                            key={j}
+                                                            href={sub.href.startsWith("/") ? sub.href : `/${sub.href}`}
+                                                            className="flex items-center space-x-2 py-1 text-sm text-gray-600 hover:text-amber-500"
+                                                        >
+                                                            {sub.image && (
+                                                                <Image
+                                                                    src={sub.image}
+                                                                    alt={sub.label}
+                                                                    width={48}
+                                                                    height={48}
+                                                                    className="rounded"
+                                                                />
+                                                            )}
+                                                            <span>{sub.label}</span>
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </>
                                     )}
                                 </div>
                             ))}
                         </motion.div>
                     )}
                 </AnimatePresence>
+
             </div>
         </motion.header>
     );

@@ -1270,12 +1270,12 @@ export default function Home() {
         alt="AI Services"
         description={
           <>
-            <h2>Join Our Global Vendor Network:</h2>
-            <p>
+            <h2 className="text-white">Join Our Global Vendor Network:</h2>
+            <p className="text-white">
               Are you a forward-thinking supplier, integrator, or technology firm? Join QIS's growing global vendor ecosystem. By partnering with us, you’ll have the opportunity to contribute to complex, high-impact projects across multiple sectors, including defence, energy, healthcare, aviation, and infrastructure.
             </p>
-            <h2>Benefits of Joining:</h2>
-            <ul>
+            <h2 className="text-white">Benefits of Joining:</h2>
+            <ul className="text-white">
               <li>Access to Government and International Projects</li>
               <li>
                 Be Considered for Strategic Consortiums
@@ -1291,6 +1291,7 @@ export default function Home() {
         }
         buttonText="Join Our Global Vendor Network"
         buttonLink="/services/ai"
+        textColor="#FFFFFF"
         backgroundColor="#1282A2"
         reverse={false}
       />
