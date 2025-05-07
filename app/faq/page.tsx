@@ -3,12 +3,13 @@ import { generateMetadata } from "@/components/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadata({
-  title: "FAQs | InovativAI - Frequently Asked Questions",
-  description: "Find answers to the most common questions about InovativAI's AI-driven aviation solutions, software development services, and technology innovations.",
-  url: "https://inovativai.com/faq",
+  title: "FAQs | Quantum",
+  description: "Find answers to common questions about Quantum's procurement solutions, IT services, international logistics, government contracting, and vendor collaboration.",
+  url: "https://quantumints.com/faq",
   image: "/homehero.jpg",
-  keywords: "InovativAI FAQs, AI Solutions FAQs, Aviation Technology FAQs, Software Development FAQs, AI in Aviation, Smart Aviation FAQs, InovativAI Support",
+  keywords: "Quantum FAQs, Government Contracting Questions, Procurement FAQs, IT Service FAQs, Vendor Support, Supply Chain FAQ, Global Sourcing Help, Quantum International Services Support",
 });
+
 
 export default function FaqPage() {
   return (

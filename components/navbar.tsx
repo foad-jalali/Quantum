@@ -103,12 +103,12 @@ const navItems = [
             },
         ],
     },
-    { label: "Solutions", href: "#resources" },
-    { label: "About Us", href: "#resources" },
-    { label: "Blog", href: "#performance" },
-    { label: "Career", href: "#why-us" },
-    { label: "FAQ", href: "#contact" },
-    { label: "Contact Us", href: "#contact" },
+    { label: "Solutions", href: "solutions" },
+    { label: "About Us", href: "about" },
+    { label: "Blog", href: "/blog" },
+    { label: "Career", href: "career" },
+    { label: "FAQ", href: "faq" },
+    { label: "Contact Us", href: "contact" },
 ];
 
 export default function Navbar() {
