@@ -77,7 +77,7 @@ const CareerSection = () => {
                 <div className="container text-white">
                     <SectionHeading
                         textColor="#FFFFFF"
-                        title="Join InovativAI and Build the Future"
+                        title="Join Quantum and Build the Future"
                         subtitle="We're looking for talented individuals. Apply now and become part of a team shaping tomorrow's technology."
                     />
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

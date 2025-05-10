@@ -7,6 +7,8 @@
             "id": "turnkey-government-and-commercial-solutions",
             "title": "1. Turnkey Government & Commercial Solutions ",
             "description": "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery.",
+            "first_paragraph": "We support public and private sector projects from the initial bid to final execution. This includes proposal preparation, compliance documentation, and bid alignment.",
+            "second_paragraph": "Our team handles coordination between multiple vendors to ensure timely delivery and seamless integration, even under strict technical and regulatory requirements.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -35,6 +37,8 @@
             "id": "ai-and-advanced-software-platforms",
             "title": "2. AI & Advanced Software Platforms",
             "description": "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
+            "first_paragraph": "We build AI systems based on real operational challenges, including predictive analytics, process automation, and anomaly detection. These solutions are custom-trained and domain-specific.",
+            "second_paragraph": "Our platforms are designed to work with existing infrastructure, offering scalable deployment for organizations looking to modernize operations without full system overhauls.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -63,6 +67,8 @@
             "id": "secure-infrastructure-and-data-systems",
             "title": "3. Secure Infrastructure & Data Systems ",
             "description": "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
+            "first_paragraph": "We provide secure and high-performance computing environments to support AI and enterprise applications. These include data centers, private cloud setups, and managed hosting.",
+            "second_paragraph": "All systems are built with encryption, redundancy, and role-based access control to meet the needs of sensitive and regulated industries.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -91,6 +97,8 @@
             "id": "navigation-and-remote-monitoring-systems",
             "title": "4. Navigation & Remote Monitoring Systems",
             "description": "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
+            "first_paragraph": "We offer location-tracking and monitoring tools that provide real-time visibility of assets, fleets, and field personnel. These systems use satellite, drone, and cellular data.",
+            "second_paragraph": "Platforms include web-based dashboards and mobile apps for centralized control and alerts, improving operational awareness and response time.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -119,6 +127,8 @@
             "id": "embedded-and-edge-computing-solutions",
             "title": "5. Embedded & Edge Computing Solutions ",
             "description": "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
+            "first_paragraph": "We design embedded systems capable of running time-sensitive applications close to the data source. These are essential in environments where delays are unacceptable.",
+            "second_paragraph": "Edge computing devices are optimized for low power usage, fast processing, and offline operation, making them ideal for field-deployed AI systems.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -147,6 +157,8 @@
             "id": "industrial-equipment-and-automation",
             "title": "6. Industrial Equipment & Automation ",
             "description": "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing.",
+            "first_paragraph": "We supply advanced manufacturing equipment for tasks requiring speed, accuracy, and durability. These tools support high-volume production and custom jobs.",
+            "second_paragraph": "All systems are compatible with digital fabrication workflows, allowing for seamless integration with design software and automation platforms.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -175,6 +187,8 @@
             "id": "power-and-energy-systems",
             "title": "7. Power & Energy Systems ",
             "description": "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience.",
+            "first_paragraph": "Our power solutions include energy storage, backup power, and renewable systems for critical operations. These are designed for both grid-tied and off-grid use.",
+            "second_paragraph": "We provide ruggedized options for military and remote deployments, with customizable runtimes and environmental protections.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -203,6 +217,8 @@
             "id": "field-monitoring-and-instrumentation",
             "title": "8. Field Monitoring & Instrumentation",
             "description": "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
+            "first_paragraph": "We offer precision instruments for real-time field data collection and analysis. These are used in industries such as energy, environmental testing, and safety.",
+            "second_paragraph": "Instruments can transmit data remotely and integrate with control systems for centralized monitoring and automated decision-making.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -231,6 +247,8 @@
             "id": "enterprise-it-and-network-integration",
             "title": "9. Enterprise IT & Network Integration",
             "description": "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
+            "first_paragraph": "We deploy full IT environments that include core servers, user devices, and secure networks. Solutions are designed for scalability and easy maintenance.",
+            "second_paragraph": "Our team handles hardware, setup, and system-level configuration, providing ongoing support for uptime and performance assurance.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -259,6 +277,8 @@
             "id": "smart-connectivity-and-signal-solutions",
             "title": "10. Smart Connectivity & Signal Solutions ",
             "description": "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
+            "first_paragraph": "We supply communication-grade cabling and components built for reliability under harsh conditions. Products are rated for EMI shielding and long-term use.",
+            "second_paragraph": "Applications include defense, aerospace, industrial automation, and infrastructure projects requiring secure data and signal transmission.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -287,6 +307,8 @@
             "id": "custom-fabrication-and-modular-manufacturing",
             "title": "11. Custom Fabrication & Modular Manufacturing ",
             "description": "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
+            "first_paragraph": "Applications include defense, aerospace, industrial automation, and infrastructure projects requiring secure data and signal transmission.",
+            "second_paragraph": "Clients can prototype new concepts and move to scaled manufacturing without switching providers or disrupting production timelines.",
             "image": "/solutions/1.png",
             "brands": [
                 {
@@ -315,6 +337,8 @@
             "id": "lighting-and-sustainable-infrastructure",
             "title": "12. Lighting & Sustainable Infrastructure ",
             "description": "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech. ",
+            "first_paragraph": "We provide high-performance lighting systems that reduce energy usage and maintenance costs. Options include indoor, outdoor, and specialty LED units.",
+            "second_paragraph": "Sustainable lighting can be integrated with solar power and smart controllers for motion sensing, scheduling, and remote management.",
             "image": "/solutions/1.png",
             "brands": [
                 {

@@ -28,6 +28,8 @@ interface Solution {
     id: string;
     title: string;
     description: string;
+    first_paragraph: string;
+    second_paragraph: string;
     image: string;
     brands: Brand[];
 }
@@ -67,6 +69,8 @@ export default async function FaqPage() {
                                 <>
                                     <h2 className="text-2xl font-bold mb-4 text-[#00204E]">{solution.title}</h2>
                                     <p>{solution.description}</p>
+                                    <p>{solution.first_paragraph}</p>
+                                    <p>{solution.second_paragraph}</p>
                                 </>
                             }
                             reverse={i % 2 !== 1}

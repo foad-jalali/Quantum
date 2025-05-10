@@ -25,9 +25,9 @@ const fadeIn = {
 
 const subjects = [
   "General Inquiry",
-  "Partnership Request",
-  "Request a Quote",
-  "Technical Support",
+  "IT Procurement",
+  "Supply Of Goods",
+  "Project Management",
   "Other",
 ];
 
@@ -128,7 +128,7 @@ const ContactSection = () => {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div className="bg-gray-200 p-6 rounded-lg" variants={fadeInUp} initial="hidden" animate={contactInView ? "visible" : "hidden"}>
+          <motion.div className="bg-white p-6 rounded-lg border border-[#00204E]/10 shadow-lg" variants={fadeInUp} initial="hidden" animate={contactInView ? "visible" : "hidden"}>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid gap-4 sm:grid-cols-2">
                 {[

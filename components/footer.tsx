@@ -7,6 +7,7 @@ import {
     Linkedin,
     Instagram,
 } from "lucide-react";
+import Image from "next/image";
 
 const socialLinks = [
     { icon: Twitter, href: "/#" },
@@ -19,15 +20,15 @@ const Footer = () => {
             <div className="container mx-auto px-4 md:px-6 py-8">
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-                    <div className="flex items-center space-x-2 mb-4 md:mb-0">
-                        <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
-                            <svg viewBox="0 0 24 24" className="w-5 h-5">
-                                <path d="M12,3 L19,7 L19,17 L12,21 L5,17 L5,7 Z" fill="rgba(0, 0, 0, 0.8)" />
-                                <circle cx="12" cy="12" r="2" fill="rgba(0, 0, 0, 1)" />
-                            </svg>
-                        </div>
-                        <span className="font-bold">Quantum</span>
-                    </div>
+                    <motion.div
+                        className="flex items-center space-x-2"
+                    >
+                        <Link href="/" className="flex items-center space-x-2">
+                            <Image width={100} height={100} alt="logo" src="/favicon.svg" />
+
+                            {/* <span className="font-bold text-xl">InovativAI</span> */}
+                        </Link>
+                    </motion.div>
                     <div className="flex space-x-4">
                         {socialLinks.map((social, i) => {
                             const Icon = social.icon;
@@ -132,12 +133,12 @@ const Footer = () => {
                 <div className="border-t border-gray-300 pt-4 text-center">
                     <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-sm text-gray-600">
                         <p>© {new Date().getFullYear()} Quantum. All rights reserved.</p>
-                        <span className="hidden md:inline">|</span>
-                        <div className="flex space-x-4">
+                        {/* <span className="hidden md:inline">|</span> */}
+                        {/* <div className="flex space-x-4">
                             <Link href="/terms" className="hover:text-amber-600">Terms of Service</Link>
                             <span className="md:hidden"></span>
                             <Link href="/cookies" className="hover:text-amber-600">Cookies Policy</Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

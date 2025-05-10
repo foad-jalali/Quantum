@@ -135,7 +135,6 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center space-x-2">
                             <Image width={100} height={100} alt="logo" src="/favicon.svg" />
 
-                            {/* <span className="font-bold text-xl">InovativAI</span> */}
                         </Link>
                     </motion.div>
 

@@ -29,8 +29,8 @@ export async function POST(req: Request) {
     });
 
     await transporter.sendMail({
-      from: "contact@inovativai.com",
-      to: "contact@inovativai.com",
+      from: "info@quantumints.com",
+      to: "info@quantumints.com",
       subject: `New Contact Message`,
       html: htmlTemplate,
     });
