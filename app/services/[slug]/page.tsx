@@ -130,7 +130,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     </>
                 }
                 buttonText={data.second_section_content.btn}
-                buttonLink="/services/ai"
+                buttonLink="/contact"
                 backgroundColor="#00A676"
                 reverse={true}
             />

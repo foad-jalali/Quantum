@@ -142,7 +142,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                     </>
                 }
                 buttonText={data.second_section_content.btn}
-                buttonLink="/services/ai"
+                buttonLink="/contact"
                 backgroundColor={data.second_section_content.bg_color}
                 reverse={true}
             />

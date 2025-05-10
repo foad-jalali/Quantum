@@ -222,19 +222,21 @@ export default function Navbar() {
                     </div>
 
                     {/* CTA Button */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, delay: 0.5 }}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="hidden md:block"
-                    >
-                        <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                            <span className="relative z-10">Partner with Us</span>
-                            <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
-                        </Button>
-                    </motion.div>
+                    <Link href="/contact">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3, delay: 0.5 }}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="hidden md:block"
+                        >
+                            <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
+                                <span className="relative z-10">Partner with Us</span>
+                                <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
+                            </Button>
+                        </motion.div>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu */}

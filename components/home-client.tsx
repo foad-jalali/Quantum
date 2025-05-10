@@ -17,6 +17,7 @@ import FeatureSection from "@/components/feature-section";
 import Quantum from "@/components/quantum";
 import HeroSection from "@/components/hero-section";
 import ContentSlider from "./content-slider";
+import Link from "next/link";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -414,32 +415,36 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                    <span className="relative z-10">Explore Our Divisions</span>
-                    <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
-                  </Button>
+                  <Link href="/about">
+                    <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
+                      <span className="relative z-10">About Us</span>
+                      <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
+                    </Button>
+                  </Link>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button
-                    variant="outline"
-                    className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group"
-                  >
-                    <span>Contact Us</span>
-                    <motion.div
-                      initial={{ x: 0 }}
-                      whileHover={{ x: 5 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
+                  <Link href="/contact">
+                    <Button
+                      variant="outline"
+                      className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group"
                     >
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:text-amber-400" />
-                    </motion.div>
-                  </Button>
+                      <span>Contact Us</span>
+                      <motion.div
+                        initial={{ x: 0 }}
+                        whileHover={{ x: 5 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 10,
+                        }}
+                      >
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:text-amber-400" />
+                      </motion.div>
+                    </Button>
+                  </Link>
                 </motion.div>
               </motion.div>
             </motion.div>
@@ -1290,7 +1295,7 @@ export default function Home() {
           </>
         }
         buttonText="Join Our Global Vendor Network"
-        buttonLink="/services/ai"
+        buttonLink="/contact"
         textColor="#FFFFFF"
         backgroundColor="#1282A2"
         reverse={false}
