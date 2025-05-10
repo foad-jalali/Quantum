@@ -116,7 +116,7 @@ export default function AboutUsPage() {
                                 <li>A trusted global vendor ecosystem</li>
                             </ul>
                             <p>
-                                At Quantum, we turn complexity into clarity — and vision into results.
+                                At Quantum, we turn complexity into clarity and vision into results.
                             </p>
                         </>
                     }

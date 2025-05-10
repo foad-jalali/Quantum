@@ -98,6 +98,15 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                     <h2 className="text-4xl font-bold mb-4 text-[#00204E]">{data.card_section.title}</h2>
                     <h3 className="container text-xl text-[#00204E]">{data.card_section.top_content}</h3>
                 </div>
+                <div className="flex justify-center mb-16">
+                    <Image
+                        src={data.card_section.image}
+                        alt="Illustration"
+                        width={600}
+                        height={400}
+                        className="rounded-lg"
+                    />
+                </div>
                 <div className="text-center mt-16">
                     <p className="container text-[#00204E] text-lg mb-4 pt-8">{data.card_section.bottom_content}</p>
                 </div>

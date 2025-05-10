@@ -13,9 +13,10 @@
         "btn": "Get a Quote"
     },
     "card_section": {
-        "title": "Quantum’s Integrated IT Solutions & Customization for Airports ",
-        "top_content": "Technology is a cornerstone of airport operations today. Quantum’s IT Infrastructure Deployment & Custom Software Solutions help airports streamline operations, enhance security, and deliver a better passenger experience. Our airport-focused IT services include: ",
-        "bottom_content": "Quantum ensures that airports are equipped with smart, scalable, and secure technology solutions tailored to their operational demands. "
+        "image": "/single-industries/2/card.png",
+        "title": "Quantum’s Project Management & Execution Oversight for Airport Developments",
+        "top_content": "Airport development and expansion projects are intricate, often involving numerous stakeholders and critical deadlines. Quantum’s Project Management & Execution Oversight services are designed to navigate this complexity and ensure success. Our expertise covers:",
+        "bottom_content": "Quantum delivers end-to-end project oversight, ensuring that airport projects are delivered on time, within budget, and with maximum operational impact. "
     },
     "first_section_cards": [
         {
