@@ -59,7 +59,7 @@ export default function AboutUsPage() {
                     reverse={true}
                 />
                 <FeatureSection
-                    image="/about/1.png"
+                    image="/about/3.png"
                     alt="our mission"
                     description={
                         <>
@@ -75,7 +75,7 @@ export default function AboutUsPage() {
                     reverse={false}
                 />
                 <FeatureSection
-                    image="/about/2.png"
+                    image="/about/4.png"
                     alt="our mission"
                     description={
                         <>
@@ -100,7 +100,7 @@ export default function AboutUsPage() {
                 />
 
                 <FeatureSection
-                    image="/about/2.png"
+                    image="/about/5.png"
                     alt="our mission"
                     description={
                         <>
