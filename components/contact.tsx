@@ -6,6 +6,7 @@ import { useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Mail, Phone, Linkedin, Instagram, Twitter } from "lucide-react";
 import { toast } from "react-hot-toast";
+import SectionHeading from "./section-heading";
 
 const slideInLeft = {
   hidden: { opacity: 0, x: -50 },
@@ -80,6 +81,12 @@ const ContactSection = () => {
 
   return (
     <section className="mt-24 bg-white" id="contact" ref={contactRef}>
+      <SectionHeading
+        title="Get in Touch"
+        subtitle="Connect with Quantum for procurement inquiries, vendor collaboration, or tailored project support we are here to help."
+      />
+
+
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <motion.div variants={slideInLeft} initial="hidden" animate={contactInView ? "visible" : "hidden"}>

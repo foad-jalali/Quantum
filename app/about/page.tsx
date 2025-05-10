@@ -18,14 +18,22 @@ export default function AboutUsPage() {
     return (
         <>
             <section className="container mt-24">
+                <SectionHeading
+                    title="About Quantum"
+                    subtitle="Learn more about our mission, global expertise, and the industries we serve with precision and purpose."
+                />
+
                 <FeatureSection
                     image="/about/1.png"
                     alt="our mission"
                     description={
                         <>
-                            <h2 className="text-[#00204E]">Our Mission</h2>
+                            <h2 className="text-[#00204E]">Who We Are</h2>
                             <p className="text-[#00204E]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                At Quantum International Services, we empower businesses and government agencies by managing critical services so they can focus on what matters most their mission.
+                            </p>
+                            <p>
+                                As a trusted government contractor with deep expertise in international logistics, procurement, and IT solutions, we simplify complex operations across industries. From cutting-edge software and secure IT systems to sourcing specialized equipment and managing defense projects, Quantum delivers with precision, professionalism, and unmatched agility.
                             </p>
                         </>
                     }
@@ -39,9 +47,9 @@ export default function AboutUsPage() {
                     alt="our mission"
                     description={
                         <>
-                            <h2 className="text-[#00204E]">Our Mission</h2>
-                            <p className="text-[#00204E]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <h2 className="text-[#00204E]">Our Vendor Ecosystem</h2>
+                            <p>
+                                We work with a diverse network of global partners to deliver tailored solutions for defense, government, and commercial clients. Our vendors specialize in military-grade equipment, IT hardware, energy systems, aviation and marine technology, healthcare devices, automation, and consulting services.
                             </p>
                         </>
                     }
@@ -55,9 +63,9 @@ export default function AboutUsPage() {
                     alt="our mission"
                     description={
                         <>
-                            <h2 className="text-[#00204E]">Our Mission</h2>
-                            <p className="text-[#00204E]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <h2>Global Reach</h2>
+                            <p>
+                                While we are proudly rooted in North America, our solutions are designed to support organizations of all sizes, anywhere in the world. Our global execution capabilities ensure timely, compliant, and scalable results.
                             </p>
                         </>
                     }
@@ -71,16 +79,51 @@ export default function AboutUsPage() {
                     alt="our mission"
                     description={
                         <>
-                            <h2 className="text-[#00204E]">Our Mission</h2>
-                            <p className="text-[#00204E]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <h2>Awards & Government Contracts</h2>
+                            <p>
+                                Our track record includes major contracts and recognitions that demonstrate our excellence in service delivery. Examples include:
                             </p>
+                            <ul>
+                                <li>Government of Canada – Strategic procurement partner</li>
+                                <li>Department of National Defence (DND) – Customized equipment supplier</li>
+                                <li>Natural Resources Canada (NRCan) – Energy solutions provider</li>
+                                <li>District of Thunder Bay – Municipal procurement partner</li>
+                                <li>City of Edmonton – Strategic sourcing partner</li>
+                                <li>Edmonton Valley Zoo – Product innovation supplier</li>
+                            </ul>
                         </>
                     }
 
                     backgroundColor="transparent"
                     textColor="#00204E"
                     reverse={true}
+                />
+
+                <FeatureSection
+                    image="/about/2.png"
+                    alt="our mission"
+                    description={
+                        <>
+                            <h2>Why Choose Quantum</h2>
+                            <p>
+                                We anticipate our clients' needs and deliver with excellence. Quantum offers:
+                            </p>
+                            <ul>
+                                <li>End-to-end service from sourcing to implementation</li>
+                                <li>Custom-fit solutions at any operational scale</li>
+                                <li>Proven government contracting experience</li>
+                                <li>Technology-driven innovation and efficiency</li>
+                                <li>A trusted global vendor ecosystem</li>
+                            </ul>
+                            <p>
+                                At Quantum, we turn complexity into clarity — and vision into results.
+                            </p>
+                        </>
+                    }
+
+                    backgroundColor="transparent"
+                    textColor="#00204E"
+                    reverse={false}
                 />
             </section>
         </>
