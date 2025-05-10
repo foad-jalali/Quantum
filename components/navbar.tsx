@@ -165,13 +165,22 @@ export default function Navbar() {
                                 return (
                                     <div key={i} className="relative group">
                                         <motion.div
-                                            className="text-[#00204E] hover:text-amber-600 transition-colors relative cursor-pointer"
+                                            className="flex items-center space-x-1 text-[#00204E] hover:text-amber-600 transition-colors relative cursor-pointer"
                                             whileHover={{ scale: 1.1 }}
                                             initial={{ opacity: 0, y: -20 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.3, delay: 0.1 * i }}
                                         >
-                                            {item.label}
+                                            <span>{item.label}</span>
+                                            <svg
+                                                className="w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                            </svg>
                                             <motion.span
                                                 className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500"
                                                 initial={{ width: 0 }}
@@ -179,6 +188,7 @@ export default function Navbar() {
                                                 transition={{ duration: 0.2 }}
                                             />
                                         </motion.div>
+
                                         <div
                                             className="absolute left-1/2 md:-translate-x-1/3 2xl:-translate-x-1/2 mt-4 bg-white border border-gray-300 rounded-md 
              invisible opacity-0 group-hover:visible group-hover:opacity-100 
