@@ -211,13 +211,17 @@ export default function Navbar() {
                     </nav>
 
                     {/* Mobile Button */}
-                    <div className="md:hidden">
-                        <button onClick={toggleMobileMenu} aria-label="Toggle Menu">
-                            {isMobileMenuOpen ? (
-                                <X className="h-6 w-6 text-black" />
-                            ) : (
-                                <Menu className="h-6 w-6 text-black" />
-                            )}
+                    <div className="md:hidden ml-auto">
+                        <button onClick={toggleMobileMenu}>
+                            <svg
+                                className="w-6 h-6 text-gray-800"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                viewBox="0 0 24 24"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
                         </button>
                     </div>
 
@@ -253,6 +257,7 @@ export default function Navbar() {
                                     {!item.subItems ? (
                                         <Link
                                             href={item.href.startsWith("/") ? item.href : `/${item.href}`}
+                                            onClick={() => setIsMobileMenuOpen(false)}
                                             className="block text-left font-medium text-gray-700 hover:text-amber-600"
                                         >
                                             {item.label}
@@ -286,6 +291,7 @@ export default function Navbar() {
                                                         <Link
                                                             key={j}
                                                             href={sub.href.startsWith("/") ? sub.href : `/${sub.href}`}
+                                                            onClick={() => setIsMobileMenuOpen(false)}
                                                             className="flex items-center space-x-2 py-1 text-sm text-gray-600 hover:text-amber-500"
                                                         >
                                                             {sub.image && (

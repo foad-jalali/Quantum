@@ -362,11 +362,11 @@ export default function Home() {
         </motion.header> */}
 
       {/* Hero Section */}
-      <section className="h-screen relative overflow-hidden flex items-center bg-black">
+      <section className="min-h-[100svh] relative overflow-hidden flex items-center bg-black pt-16 md:pt-0">
         <ParticleBackground />
         <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+        <div className="container mx-auto px-4 md:px-6 pt-24 relative z-10">
+          <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
             <motion.div
               className="space-y-6 md:ml-[60px]"
               initial={{ opacity: 0, y: 50 }}
@@ -406,7 +406,7 @@ export default function Home() {
                 Innovating Public Procurement & Supply Solutions Globally
               </motion.p>
               <motion.div
-                className="flex flex-col sm:flex-row gap-4 pt-4"
+                className="flex flex-wrap justify-center lg:justify-start gap-3 pt-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.1 }}
@@ -536,13 +536,10 @@ export default function Home() {
                   </motion.div>
                 </div>
               </motion.div> */}
-            <motion.div
-              className="flex justify-center"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-            >
-              <Quantum />
+            <motion.div className="flex justify-center mt-6 md:mt-0">
+              <div className="scale-[0.7] sm:scale-[0.9] md:scale-100">
+                <Quantum />
+              </div>
             </motion.div>
           </div>
         </div>
