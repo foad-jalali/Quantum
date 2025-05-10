@@ -415,9 +415,9 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="/about">
+                  <Link href="/solutions">
                     <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                      <span className="relative z-10">About Us</span>
+                      <span className="relative z-10">Explore Our Solutions</span>
                       <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
                     </Button>
                   </Link>
