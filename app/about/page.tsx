@@ -29,11 +29,11 @@ export default function AboutUsPage() {
                     description={
                         <>
                             <h2 className="text-[#00204E]">Who We Are</h2>
-                            <p className="text-[#00204E]">
-                                At Quantum International Services, we empower businesses and government agencies by managing critical services so they can focus on what matters most their mission.
+                            <p>
+                                Quantum International Services helps businesses and government organizations by taking care of important services, so they can focus on what they do best.
                             </p>
                             <p>
-                                As a trusted government contractor with deep expertise in international logistics, procurement, and IT solutions, we simplify complex operations across industries. From cutting-edge software and secure IT systems to sourcing specialized equipment and managing defense projects, Quantum delivers with precision, professionalism, and unmatched agility.
+                                We are known for our work with government contracts and our ability to provide smart, customized solutions. From supplying specialized equipment to offering IT and software services, we make sure every project is handled with care and professionalism.
                             </p>
                         </>
                     }
@@ -48,7 +48,7 @@ export default function AboutUsPage() {
                     description={
                         <>
                             <h2 className="text-[#00204E]">Our Vendor Ecosystem</h2>
-                            <p>
+                            <p className="text-[#00204E]">
                                 We work with a diverse network of global partners to deliver tailored solutions for defense, government, and commercial clients. Our vendors specialize in military-grade equipment, IT hardware, energy systems, aviation and marine technology, healthcare devices, automation, and consulting services.
                             </p>
                         </>
@@ -63,8 +63,8 @@ export default function AboutUsPage() {
                     alt="our mission"
                     description={
                         <>
-                            <h2>Global Reach</h2>
-                            <p>
+                            <h2 className="text-[#00204E]">Global Reach</h2>
+                            <p className="text-[#00204E]">
                                 While we are proudly rooted in North America, our solutions are designed to support organizations of all sizes, anywhere in the world. Our global execution capabilities ensure timely, compliant, and scalable results.
                             </p>
                         </>
@@ -79,7 +79,7 @@ export default function AboutUsPage() {
                     alt="our mission"
                     description={
                         <>
-                            <h2>Awards & Government Contracts</h2>
+                            <h2 className="text-[#00204E]">Awards & Government Contracts</h2>
                             <p>
                                 Our track record includes major contracts and recognitions that demonstrate our excellence in service delivery. Examples include:
                             </p>
@@ -104,7 +104,7 @@ export default function AboutUsPage() {
                     alt="our mission"
                     description={
                         <>
-                            <h2>Why Choose Quantum</h2>
+                            <h2 className="text-[#00204E]">Why Choose Quantum</h2>
                             <p>
                                 We anticipate our clients' needs and deliver with excellence. Quantum offers:
                             </p>
