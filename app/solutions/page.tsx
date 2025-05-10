@@ -12,12 +12,12 @@ export async function getSolutions() {
     return JSON.parse(data);
 }
 export const metadata: Metadata = generateMetadata({
-    title: "FAQs | Quantum",
-    description: "Find answers to common questions about Quantum's procurement solutions, IT services, international logistics, government contracting, and vendor collaboration.",
-    url: "https://quantumints.com/faq",
+    title: "Solutions | Quantum",
+    description: "Explore Quantum's tailored solutions for government procurement, AI-powered platforms, IT systems, and multi-industry sourcing. Discover how we deliver precision, speed, and innovation across sectors.",
+    url: "https://quantumints.com/solutions",
     image: "/homehero.jpg",
-    keywords: "Quantum FAQs, Government Contracting Questions, Procurement FAQs, IT Service FAQs, Vendor Support, Supply Chain FAQ, Global Sourcing Help, Quantum International Services Support",
-});
+    keywords: "Quantum Solutions, Government Procurement, AI Platforms, IT Services, Industrial Sourcing, Vendor Network, Public Sector Projects, Technology Integration, Procurement Experts, Quantum International Services"
+  });
 
 interface Brand {
     id: string;

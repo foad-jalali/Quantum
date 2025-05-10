@@ -4,7 +4,7 @@
     "subtitle": "Backed by world-class tech partners, we deliver secure, AI-powered, and scalable systems to solve mission-critical challenges.",
     "solutions": [
         {
-            "id": "",
+            "id": "turnkey-government-and-commercial-solutions",
             "title": "1. Turnkey Government & Commercial Solutions ",
             "description": "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery.",
             "image": "/solutions/1.png",
@@ -32,8 +32,8 @@
             ]
         },
         {
-            "id": "",
-            "title": "2. AI & Advanced Software Platforms ",
+            "id": "ai-and-advanced-software-platforms",
+            "title": "2. AI & Advanced Software Platforms",
             "description": "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
             "image": "/solutions/1.png",
             "brands": [
@@ -60,7 +60,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "secure-infrastructure-and-data-systems",
             "title": "3. Secure Infrastructure & Data Systems ",
             "description": "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
             "image": "/solutions/1.png",
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "navigation-and-remote-monitoring-systems",
             "title": "4. Navigation & Remote Monitoring Systems",
             "description": "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
             "image": "/solutions/1.png",
@@ -116,7 +116,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "embedded-and-edge-computing-solutions",
             "title": "5. Embedded & Edge Computing Solutions ",
             "description": "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
             "image": "/solutions/1.png",
@@ -144,7 +144,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "industrial-equipment-and-automation",
             "title": "6. Industrial Equipment & Automation ",
             "description": "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing.",
             "image": "/solutions/1.png",
@@ -172,7 +172,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "power-and-energy-systems",
             "title": "7. Power & Energy Systems ",
             "description": "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience.",
             "image": "/solutions/1.png",
@@ -200,7 +200,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "field-monitoring-and-instrumentation",
             "title": "8. Field Monitoring & Instrumentation",
             "description": "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
             "image": "/solutions/1.png",
@@ -228,7 +228,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "enterprise-it-and-network-integration",
             "title": "9. Enterprise IT & Network Integration",
             "description": "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
             "image": "/solutions/1.png",
@@ -256,7 +256,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "smart-connectivity-and-signal-solutions",
             "title": "10. Smart Connectivity & Signal Solutions ",
             "description": "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
             "image": "/solutions/1.png",
@@ -284,7 +284,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "custom-fabrication-and-modular-manufacturing",
             "title": "11. Custom Fabrication & Modular Manufacturing ",
             "description": "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
             "image": "/solutions/1.png",
@@ -312,7 +312,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "lighting-and-sustainable-infrastructure",
             "title": "12. Lighting & Sustainable Infrastructure ",
             "description": "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech. ",
             "image": "/solutions/1.png",
