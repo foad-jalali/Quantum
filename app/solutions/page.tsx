@@ -77,7 +77,7 @@ export default async function FaqPage() {
                             backgroundColor="transparent"
                             textColor="#00204E"
                             buttonText="Get a Quote"
-                            buttonLink="/"
+                            buttonLink="/contact"
                         />
 
                         {solution.brands?.length > 0 && (
