@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { cn } from "@/lib/utils";
 
-interface HeroSectionProps {
+interface BannerSectionProps {
   image: string;
   alt?: string;
   title?: string;
@@ -15,7 +15,7 @@ interface HeroSectionProps {
   height?: string;
 }
 
-const HeroSection = ({
+const BannerSection = ({
   image,
   alt = "Hero background",
   title,
@@ -23,11 +23,11 @@ const HeroSection = ({
   buttonText,
   buttonLink = "#",
   height = "h-[80vh]",
-}: HeroSectionProps) => {
+}: BannerSectionProps) => {
   const hasContent = title || subtitle || buttonText;
 
   return (
-    <section className="relative w-full h-[100dvh] overflow-hidden">
+    <section className="relative w-full min-h-[70vh] md:h-screen overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src={image}
@@ -36,7 +36,7 @@ const HeroSection = ({
           priority
           placeholder="blur"
           blurDataURL="placeholder.svg"
-          className="absolute inset-0 w-full h-full object-cover object-[75%_25%] md:object-center"
+          className="object-cover md:object-cover object-center"
         />
       </div>
 
@@ -58,8 +58,7 @@ const HeroSection = ({
       )}
     </section>
 
-
   );
 };
 
-export default HeroSection;
+export default BannerSection;

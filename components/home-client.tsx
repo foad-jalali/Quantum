@@ -15,9 +15,9 @@ import StorySection from "@/components/story-slider";
 import FeatureHighlightSection from "@/components/feature-highlight-section";
 import FeatureSection from "@/components/feature-section";
 import Quantum from "@/components/quantum";
-import HeroSection from "@/components/hero-section";
 import ContentSlider from "./content-slider";
 import Link from "next/link";
+import BannerSection from "./banner-section";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -1307,7 +1307,7 @@ export default function Home() {
       />
 
 
-      <HeroSection
+      <BannerSection
         image="/home/hero.png"
         title="Wrap with Confidence Statement"
         subtitle="With our network of global vendors, project management experience, and direct access to major tendering platforms (GoC, NATO, UN), QIS empowers you to secure, source, and deliver what matters most — without the usual friction."
