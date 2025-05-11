@@ -84,18 +84,18 @@ const Footer = () => {
                     <FooterList
                         title="Solutions"
                         items={[
-                            { label: "Tenders Turnkey Solutions", href: "#turnkey-government-and-commercial-solutions" },
-                            { label: "AI/ML & Custom Software", href: "#ai-and-advanced-software-platforms" },
-                            { label: "Data Centre Infrastructure", href: "#secure-infrastructure-and-data-systems" },
-                            { label: "Navigation Systems", href: "#navigation-and-remote-monitoring-systems" },
-                            { label: "Embedded System", href: "#embedded-and-edge-computing-solutions" },
-                            { label: "Industrial Equipment", href: "#industrial-equipment-and-automation" },
-                            { label: "Power Solutions", href: "#power-and-energy-systems" },
-                            { label: "Field Monitoring and Remote Sensing", href: "#field-monitoring-and-instrumentation" },
-                            { label: "End-to-End IT Infrastructure Solutions", href: "#enterprise-it-and-network-integration" },
-                            { label: "Connectivity", href: "/solutions#smart-connectivity-and-signal-solutions" },
-                            { label: "Fabrication & Manufacturing", href: "#custom-fabrication-and-modular-manufacturing" },
-                            { label: "Lighting & Sustainable Tech", href: "#lighting-and-sustainable-infrastructure" },
+                            { label: "Tenders Turnkey Solutions", href: "/solutions/#turnkey-government-and-commercial-solutions" },
+                            { label: "AI/ML & Custom Software", href: "/solutions/#ai-and-advanced-software-platforms" },
+                            { label: "Data Centre Infrastructure", href: "/solutions/#secure-infrastructure-and-data-systems" },
+                            { label: "Navigation Systems", href: "/solutions/#navigation-and-remote-monitoring-systems" },
+                            { label: "Embedded System", href: "/solutions/#embedded-and-edge-computing-solutions" },
+                            { label: "Industrial Equipment", href: "/solutions/#industrial-equipment-and-automation" },
+                            { label: "Power Solutions", href: "/solutions/#power-and-energy-systems" },
+                            { label: "Field Monitoring and Remote Sensing", href: "/solutions/#field-monitoring-and-instrumentation" },
+                            { label: "End-to-End IT Infrastructure Solutions", href: "/solutions/#enterprise-it-and-network-integration" },
+                            { label: "Connectivity", href: "/solutions/solutions/#smart-connectivity-and-signal-solutions" },
+                            { label: "Fabrication & Manufacturing", href: "/solutions/#custom-fabrication-and-modular-manufacturing" },
+                            { label: "Lighting & Sustainable Tech", href: "/solutions/#lighting-and-sustainable-infrastructure" },
                         ]}
                         category="solutions"
                     />
