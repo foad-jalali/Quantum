@@ -32,9 +32,9 @@ const subjects = [
 ];
 
 const socialLinks = [
-  { icon: Twitter, href: "/#" },
+  // { icon: Twitter, href: "/#" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/quantumints" },
-  { icon: Instagram, href: "/#" },
+  // { icon: Instagram, href: "/#" },
 ];
 
 const ContactSection = () => {
@@ -90,7 +90,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <motion.div variants={slideInLeft} initial="hidden" animate={contactInView ? "visible" : "hidden"}>
-            <h2 className="text-3xl font-bold tracking-tight mb-6">
+            <h2 className="text-[#00204E] text-3xl font-bold tracking-tight mb-6">
               <motion.span
                 className="text-amber-500 inline-block"
                 animate={{ rotate: [0, 10, 0, -10, 0] }}

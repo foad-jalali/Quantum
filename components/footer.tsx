@@ -10,9 +10,9 @@ import {
 import Image from "next/image";
 
 const socialLinks = [
-    { icon: Twitter, href: "/#" },
+    // { icon: Twitter, href: "/#" },
     { icon: Linkedin, href: "https://www.linkedin.com/company/quantumints" },
-    { icon: Instagram, href: "/#" },
+    // { icon: Instagram, href: "/#" },
 ];
 const Footer = () => {
     return (

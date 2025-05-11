@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface BannerSectionProps {
   image: string;
@@ -27,36 +26,36 @@ const BannerSection = ({
   const hasContent = title || subtitle || buttonText;
 
   return (
-    <section className="relative w-full min-h-[70vh] md:h-screen overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={image}
-          alt={alt}
-          fill
-          priority
-          placeholder="blur"
-          blurDataURL="placeholder.svg"
-          className="object-cover md:object-cover object-center"
-        />
-      </div>
+    <section
+      className="relative w-full h-screen bg-fixed bg-center bg-cover"
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <div className="absolute inset-0 bg-black/40 z-0" />
 
-      {hasContent && (
-        <div className="absolute bottom-0 left-0 w-full z-10 px-4 pb-8 md:pb-12 text-white text-center">
-          <div className="max-w-3xl mx-auto">
-            {title && <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>}
-            {subtitle && <p className="text-lg md:text-xl mb-6">{subtitle}</p>}
-            {buttonText && (
-              <Link
-                href={buttonLink}
-                className="inline-block bg-amber-500 text-black font-semibold px-6 py-3 rounded hover:bg-amber-600 transition"
-              >
-                {buttonText}
-              </Link>
-            )}
-          </div>
-        </div>
-      )}
+      <div className="relative z-10 h-full flex items-center justify-center px-4 text-white text-center">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl"
+        >
+          {title && (
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+          )}
+          {subtitle && <p className="text-lg md:text-xl mb-6">{subtitle}</p>}
+          {buttonText && (
+            <Link
+              href={buttonLink}
+              className="inline-block bg-amber-500 text-black font-semibold px-6 py-3 rounded hover:bg-amber-600 transition"
+            >
+              {buttonText}
+            </Link>
+          )}
+        </motion.div>
+      </div>
     </section>
+
 
   );
 };

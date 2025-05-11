@@ -65,7 +65,7 @@ export default function AboutUsPage() {
                         <>
                             <h2 className="text-[#00204E]">Global Reach</h2>
                             <p className="text-[#00204E]">
-                                While we are proudly rooted in North America, our solutions are designed to support organizations of all sizes, anywhere in the world. Our global execution capabilities ensure timely, compliant, and scalable results.
+                                While we are proudly rooted in Alberta, Canada, our solutions are designed to support organizations of all sizes, anywhere in the world. Our global execution capabilities ensure timely, compliant, and scalable results.
                             </p>
                         </>
                     }
@@ -81,16 +81,17 @@ export default function AboutUsPage() {
                         <>
                             <h2 className="text-[#00204E]">Awards & Government Contracts</h2>
                             <p>
-                                Our track record includes major contracts and recognitions that demonstrate our excellence in service delivery. Examples include:
-                            </p>
+                                Our track record includes several long-term Supply Arrangement contracts, as well as several multi-million-dollar contracts demonstrating excellence in delivering goods and services to the government and private sector. Examples includes:                            </p>
                             <ul>
-                                <li>Government of Canada – Strategic procurement partner</li>
+                                <li>Government of Canada – Long-term procurement partner</li>
                                 <li>Department of National Defence (DND) – Customized equipment supplier</li>
-                                <li>Natural Resources Canada (NRCan) – Energy solutions provider</li>
+                                <li>Natural Resources Canada (NRCan) – Energy equipment supplier</li>
+                                <li>Environment Canada – Energy equipment supplier</li>
                                 <li>District of Thunder Bay – Municipal procurement partner</li>
-                                <li>City of Edmonton – Strategic sourcing partner</li>
+                                <li>City of Edmonton – Strategic procurement partner</li>
                                 <li>Edmonton Valley Zoo – Product innovation supplier</li>
                             </ul>
+                            <p>And many more ...</p>
                         </>
                     }
 

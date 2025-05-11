@@ -33,33 +33,31 @@ const CareerSection = () => {
 
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {[
-                            ["AI Engineer", "Designs and implements intelligent systems using machine learning, data science, and AI technologies."],
-                            ["Front-End Developer", "Builds user-facing applications with a focus on design, responsiveness, and seamless user experience."],
-                            ["Business Analyst", "Analyzes business needs, gathers requirements, and bridges the gap between stakeholders and development teams."],
-                            ["Project Manager", "Manages project planning, resources, and execution to deliver results on time, within budget, and to quality standards."],
-                            ["Product Manager", "Defines product vision, strategy, and roadmap to deliver solutions that meet customer and business needs."],
-                            ["Product Owner", "Prioritizes and manages the product backlog, ensuring development teams deliver maximum value."],
-                        ].map((position, index) => (
-                            <motion.div
-                                key={index}
-                                className="bg-white border border-[#00204E]/10 rounded-lg p-6 hover:border-purple-500/50 transition-colors"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: 0.1 * index }}
-                            >
-                                <h3 className="text-xl text-[#00204E] font-bold mb-2">{position[0]}</h3>
-                                <p className="text-[#00204E] mb-4">{position[1]}</p>
-                                <Link
-                                    href="#application-form"
-                                    className="text-[#00204E] hover:text-amber-600 inline-flex items-center"
+                            ["Account Manager, Aviation", "Manages aviation-related client accounts, ensuring strong relationships, timely communication, and alignment with industry regulations and needs."],
+                            ["Account Manager, Oil and Gas", "Oversees client portfolios in the oil and gas sector, focusing on contract fulfillment, performance tracking, and stakeholder coordination."],
+                            ["Project Manager, IT", "Leads IT projects from initiation to completion, managing teams, timelines, budgets, and ensuring alignment with technical and business goals."]
+                        ]
+                            .map((position, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="bg-white border border-[#00204E]/10 rounded-lg p-6 hover:border-purple-500/50 transition-colors"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, delay: 0.1 * index }}
                                 >
-                                    <span>Apply Now</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </Link>
-                            </motion.div>
-                        ))}
+                                    <h3 className="text-xl text-[#00204E] font-bold mb-2">{position[0]}</h3>
+                                    <p className="text-[#00204E] mb-4">{position[1]}</p>
+                                    <Link
+                                        href="#application-form"
+                                        className="text-[#00204E] hover:text-amber-600 inline-flex items-center"
+                                    >
+                                        <span>Apply Now</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                        </svg>
+                                    </Link>
+                                </motion.div>
+                            ))}
                     </div>
                 </div>
             </motion.section>

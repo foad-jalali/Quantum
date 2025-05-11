@@ -39,13 +39,15 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
     return (
         <div>
             <HeroSection
+                title={data.hero_title}
+                subtitle={data.hero_subtitle}
                 image={data.hero_image}
                 buttonLink="/contact"
             />
 
             <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold mb-4" style={{ color: data.title_color }}>{data.title}</h1>
+                    <h2 className="text-4xl font-bold mb-4" style={{ color: data.title_color }}>{data.title}</h2>
                     <h3 className="container text-xl text-[#00204E]">{data.short_description}</h3>
                 </div>
             </section>

@@ -35,7 +35,11 @@ const FeatureGrid: React.FC<FeatureGridProps> = ({
         <a
           key={index}
           href={item.href || "#"}
-          className="block rounded-lg overflow-hidden bg-white text-black hover:scale-105 transition-transform shadow-lg shadow-black/20"
+          className="
+          group block rounded-lg overflow-hidden bg-white text-black 
+          transition-all duration-300 ease-in-out shadow-lg shadow-black/20
+          hover:scale-105 hover:border hover:border-amber-500 hover:shadow-2xl
+        "
           data-aos="fade-up"
           data-aos-delay={index * 100}
           data-aos-duration="600"

@@ -368,7 +368,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 pt-24 relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
             <motion.div
-              className="space-y-6 md:ml-[60px]"
+              className="space-y-6"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -429,7 +429,7 @@ export default function Home() {
                   <Link href="/contact">
                     <Button
                       variant="outline"
-                      className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group"
+                      className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group bg-amber-500/10"
                     >
                       <span>Contact Us</span>
                       <motion.div
