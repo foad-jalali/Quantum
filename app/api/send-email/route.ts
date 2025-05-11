@@ -19,12 +19,12 @@ export async function POST(req: Request) {
       .replace('{{message}}', message);
       
     const transporter = nodemailer.createTransport({
-      host: "sandbox.smtp.mailtrap.io",
+      host: "smtp.zohocloud.ca",
       port: 587,
       secure: false,
       auth: {
-        user: "55e443a2901f26",
-        pass: "d6a936c92336f1",
+        user: "info@quantumints.com",
+        pass: "zfwS2!jr7ss.%$@w",
       },
     });
 
