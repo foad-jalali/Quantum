@@ -27,7 +27,7 @@ const HeroSection = ({
   return (
     <section className="relative h-screen overflow-hidden">
       <div className="absolute inset-0 w-full h-full"
-        style={{ height: "calc(100vh - 70px)" }}
+      // style={{ height: "calc(100vh - 70px)" }}
       >
         <Image
           src={image}
