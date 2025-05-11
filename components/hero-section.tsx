@@ -26,8 +26,9 @@ const HeroSection = ({
 
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* تصویر پس‌زمینه */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full"
+        style={{ height: "calc(100vh - 70px)" }}
+      >
         <Image
           src={image}
           alt={alt}
@@ -36,11 +37,9 @@ const HeroSection = ({
         />
       </div>
 
-      {/* محتوای متنی */}
       {hasContent && (
         <div className="relative z-10 h-full flex items-end md:items-center justify-center md:justify-start px-4 md:px-24 text-white text-left pb-8 md:pb-0">
           <div className="max-w-3xl w-full text-center md:text-left">
-            {/* Title */}
             <motion.h1
               className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4"
               initial={{ opacity: 0, y: 50 }}
@@ -51,7 +50,6 @@ const HeroSection = ({
               {title}
             </motion.h1>
 
-            {/* Subtitle */}
             <motion.p
               className="text-md md:text-xl mb-6 text-gray-300"
               initial={{ opacity: 0, y: 50 }}
@@ -62,7 +60,6 @@ const HeroSection = ({
               {subtitle}
             </motion.p>
 
-            {/* Button */}
             {buttonText && (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
