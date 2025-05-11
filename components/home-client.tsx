@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import {
-  ArrowRight,
-  Quote,
-} from "lucide-react";
+import { ArrowRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useMobile } from "@/hooks/use-mobile";
@@ -39,25 +36,93 @@ export default function Home() {
     amount: 0.3,
   });
   const services = [
-    { title: "End-to-End Procurement & Sourcing", image: "/services/1.png", href: "/services/end-to-end-procurement-and-sourcing" },
-    { title: "Tender Management & Consortium Building", image: "/services/2.png", href: "/services/tender-management-and-consortium-building" },
-    { title: "Vendor Identification & Matchmaking", image: "/services/3.png", href: "/services/vendor-identification-and-matchmaking" },
-    { title: "Project Management & Execution Oversight", image: "/services/4.png", href: "/services/project-management-and-execution-oversight" },
-    { title: "Tender Preparation & Bid Management", image: "/services/5.png", href: "/services/tender-preparation-and-bid-management" },
-    { title: "IT Infrastructure Deployment & Software Integration", image: "/services/6.png", href: "/services/it-infrastructure-deployment-and-software-integration" },
-    { title: "Custom Software & Embedded AI Solutions", image: "/services/7.png", href: "/services/custom-software-and-embedded-ai-solutions" },
-    { title: "Custom Fabrication & Product Customization", image: "/services/8.png", href: "/services/custom-fabrication-and-product-customization" },
+    {
+      title: "End-to-End Procurement & Sourcing",
+      image: "/services/1.png",
+      href: "/services/end-to-end-procurement-and-sourcing",
+    },
+    {
+      title: "Tender Management & Consortium Building",
+      image: "/services/2.png",
+      href: "/services/tender-management-and-consortium-building",
+    },
+    {
+      title: "Vendor Identification & Matchmaking",
+      image: "/services/3.png",
+      href: "/services/vendor-identification-and-matchmaking",
+    },
+    {
+      title: "Project Management & Execution Oversight",
+      image: "/services/4.png",
+      href: "/services/project-management-and-execution-oversight",
+    },
+    {
+      title: "Tender Preparation & Bid Management",
+      image: "/services/5.png",
+      href: "/services/tender-preparation-and-bid-management",
+    },
+    {
+      title: "IT Infrastructure Deployment & Software Integration",
+      image: "/services/6.png",
+      href: "/services/it-infrastructure-deployment-and-software-integration",
+    },
+    {
+      title: "Custom Software & Embedded AI Solutions",
+      image: "/services/7.png",
+      href: "/services/custom-software-and-embedded-ai-solutions",
+    },
+    {
+      title: "Custom Fabrication & Product Customization",
+      image: "/services/8.png",
+      href: "/services/custom-fabrication-and-product-customization",
+    },
   ];
   const industries = [
-    { title: "Military & Defence", image: "/industries/1.png", href: "/industries/military-and-defenc" },
-    { title: "Airports", image: "/industries/2.png", href: "/industries/airports" },
-    { title: "Airlines & MRO ", image: "/industries/3.png", href: "/industries/airlines-and-mro" },
-    { title: "Energy, Oil & Gas", image: "/industries/4.png", href: "/industries/energy-oil-and-gas" },
-    { title: "Marine & Shipbuilding", image: "/industries/5.png", href: "/industries/marine-and-shipbuilding" },
-    { title: "Healthcare & HealthTech", image: "/industries/6.png", href: "/industries/healthcare-and-healthtech" },
-    { title: "Manufacturing & Industrial Fabrication", image: "/industries/7.png", href: "/industries/manufacturing-and-industrial" },
-    { title: "Navigation, GPS, GNSS", image: "/industries/8.png", href: "/industries/navigation-gps-gnss" },
-    { title: "IT & Emerging Technologies", image: "/industries/9.png", href: "/industries/it-and-emerging-technologies" },
+    {
+      title: "Military & Defence",
+      image: "/industries/1.png",
+      href: "/industries/military-and-defenc",
+    },
+    {
+      title: "Airports",
+      image: "/industries/2.png",
+      href: "/industries/airports",
+    },
+    {
+      title: "Airlines & MRO ",
+      image: "/industries/3.png",
+      href: "/industries/airlines-and-mro",
+    },
+    {
+      title: "Energy, Oil & Gas",
+      image: "/industries/4.png",
+      href: "/industries/energy-oil-and-gas",
+    },
+    {
+      title: "Marine & Shipbuilding",
+      image: "/industries/5.png",
+      href: "/industries/marine-and-shipbuilding",
+    },
+    {
+      title: "Healthcare & HealthTech",
+      image: "/industries/6.png",
+      href: "/industries/healthcare-and-healthtech",
+    },
+    {
+      title: "Manufacturing & Industrial Fabrication",
+      image: "/industries/7.png",
+      href: "/industries/manufacturing-and-industrial",
+    },
+    {
+      title: "Navigation, GPS, GNSS",
+      image: "/industries/8.png",
+      href: "/industries/navigation-gps-gnss",
+    },
+    {
+      title: "IT & Emerging Technologies",
+      image: "/industries/9.png",
+      href: "/industries/it-and-emerging-technologies",
+    },
   ];
   const slides = [
     {
@@ -139,31 +204,31 @@ export default function Home() {
       title: "Government of Canada:",
       quote:
         "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
-      name: ''
+      name: "",
     },
     {
       title: "National Airport Authority:",
       quote:
         "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
-      name: ''
+      name: "",
     },
     {
       title: "Major Airline Operator:",
       quote:
         "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
-      name: ''
+      name: "",
     },
     {
       title: "HealthTech Innovator:",
       quote:
         "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
-      name: ''
+      name: "",
     },
     {
       title: "Remote Energy Consortium:",
       quote:
         "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
-      name: ''
+      name: "",
     },
   ];
 
@@ -186,7 +251,8 @@ export default function Home() {
     {
       icon: "/icon/4.svg",
       // title: "Future-Focused",
-      description: "Airport & Airline Equipment Suppliers (ATC, ASMCGS, GSE, Simulators)",
+      description:
+        "Airport & Airline Equipment Suppliers (ATC, ASMCGS, GSE, Simulators)",
     },
     {
       icon: "/icon/5.svg",
@@ -206,7 +272,8 @@ export default function Home() {
     {
       icon: "/icon/8.svg",
       // title: "Future-Focused",
-      description: "Healthcare Equipment Manufacturers & Medical Tech Solution Developers",
+      description:
+        "Healthcare Equipment Manufacturers & Medical Tech Solution Developers",
     },
     {
       icon: "/icon/9.svg",
@@ -216,7 +283,8 @@ export default function Home() {
     {
       icon: "/icon/10.svg",
       // title: "Future-Focused",
-      description: "Advanced Fabrication & CNC Engineering & Manufacturing Partners",
+      description:
+        "Advanced Fabrication & CNC Engineering & Manufacturing Partners",
     },
     {
       icon: "/icon/11.svg",
@@ -229,7 +297,6 @@ export default function Home() {
       description: "Training & Consulting Firms",
     },
   ];
-
 
   useEffect(() => {
     if (aboutInView) {
@@ -362,13 +429,13 @@ export default function Home() {
         </motion.header> */}
 
       {/* Hero Section */}
-      <section className="min-h-[100svh] relative overflow-hidden flex items-center bg-black pt-16 md:pt-0">
+      <section className="h-[100svh] relative overflow-hidden flex items-center bg-black pt-16 md:pt-0">
         <ParticleBackground />
-        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
-        <div className="container mx-auto px-4 md:px-6 pt-24 relative z-10">
+        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30 "></div>
+        <div className="container mx-auto px-4 md:px-6  relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
             <motion.div
-              className="space-y-6"
+              className="space-y-6 text-center md:text-start"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -394,7 +461,6 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.7 }}
                 >
                   International Services
-
                 </motion.span>{" "}
               </motion.h1>
               <motion.p
@@ -417,7 +483,9 @@ export default function Home() {
                 >
                   <Link href="/solutions">
                     <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                      <span className="relative z-10">Explore Our Solutions</span>
+                      <span className="relative z-10">
+                        Explore Our Solutions
+                      </span>
                       <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
                     </Button>
                   </Link>
@@ -448,94 +516,7 @@ export default function Home() {
                 </motion.div>
               </motion.div>
             </motion.div>
-            {/* <motion.div
-                className="flex justify-center"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-              >
-                <div className="relative h-[350px] w-[350px] md:h-[450px] md:w-[450px]">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-500/20 to-amber-700/10 backdrop-blur-sm flex items-center justify-center animate-pulse-slow"></div>
-                  <motion.div
-                    className="absolute inset-4 rounded-full bg-gradient-to-br from-amber-500/10 to-amber-700/5 backdrop-blur-md"
-                    animate={{
-                      boxShadow: [
-                        "0 0 20px 0px rgba(245, 158, 11, 0.3)",
-                        "0 0 60px 10px rgba(245, 158, 11, 0.2)",
-                        "0 0 20px 0px rgba(245, 158, 11, 0.3)",
-                      ],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Number.POSITIVE_INFINITY,
-                      repeatType: "reverse",
-                    }}
-                  ></motion.div>
-                  <motion.div
-                    className="absolute inset-0 flex items-center justify-center"
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
-                  >
-                    <div className="relative w-48 h-48">
-                      <svg viewBox="0 0 200 200" className="w-full h-full">
-                        <motion.path
-                          d="M100,20 L160,50 L160,150 L100,180 L40,150 L40,50 Z"
-                          fill="none"
-                          stroke="rgba(245, 158, 11, 0.8)"
-                          strokeWidth="2"
-                          initial={{ pathLength: 0, opacity: 0 }}
-                          animate={{ pathLength: 1, opacity: 1 }}
-                          transition={{ duration: 2, delay: 1 }}
-                        />
-                        <motion.path
-                          d="M100,40 L140,60 L140,140 L100,160 L60,140 L60,60 Z"
-                          fill="none"
-                          stroke="rgba(245, 158, 11, 0.6)"
-                          strokeWidth="2"
-                          initial={{ pathLength: 0, opacity: 0 }}
-                          animate={{ pathLength: 1, opacity: 1 }}
-                          transition={{ duration: 2, delay: 1.3 }}
-                        />
-                        <motion.path
-                          d="M100,60 L120,70 L120,130 L100,140 L80,130 L80,70 Z"
-                          fill="rgba(245, 158, 11, 0.3)"
-                          initial={{ scale: 0, opacity: 0 }}
-                          animate={{ scale: 1, opacity: 1 }}
-                          transition={{ duration: 1, delay: 1.6 }}
-                        />
-                        <motion.circle
-                          cx="100"
-                          cy="100"
-                          r="10"
-                          fill="rgba(245, 158, 11, 1)"
-                          initial={{ scale: 0 }}
-                          animate={{ scale: 1 }}
-                          transition={{ duration: 0.5, delay: 2 }}
-                        />
-                        <motion.path
-                          d="M40,50 L100,100 L160,50"
-                          fill="none"
-                          stroke="rgba(245, 158, 11, 0.4)"
-                          strokeWidth="1"
-                          initial={{ pathLength: 0, opacity: 0 }}
-                          animate={{ pathLength: 1, opacity: 1 }}
-                          transition={{ duration: 1.5, delay: 2.2 }}
-                        />
-                        <motion.path
-                          d="M40,150 L100,100 L160,150"
-                          fill="none"
-                          stroke="rgba(245, 158, 11, 0.4)"
-                          strokeWidth="1"
-                          initial={{ pathLength: 0, opacity: 0 }}
-                          animate={{ pathLength: 1, opacity: 1 }}
-                          transition={{ duration: 1.5, delay: 2.4 }}
-                        />
-                      </svg>
-                    </div>
-                  </motion.div>
-                </div>
-              </motion.div> */}
+
             <motion.div className="flex justify-center mt-6 md:mt-0">
               <div className="scale-[0.7] sm:scale-[0.9] md:scale-100">
                 <Quantum />
@@ -1046,7 +1027,6 @@ export default function Home() {
         slides={slides}
       />
 
-
       {/* Skills/Expertise Section */}
       {/* <section className="py-16 bg-amber-50" ref={expertiseRef}>
           <div className="container mx-auto px-4 md:px-6">
@@ -1274,20 +1254,18 @@ export default function Home() {
           <>
             <h2 className="text-white">Join Our Global Vendor Network:</h2>
             <p className="text-white">
-              Are you a forward-thinking supplier, integrator, or technology firm? Join QIS's growing global vendor ecosystem. By partnering with us, you’ll have the opportunity to contribute to complex, high-impact projects across multiple sectors, including defence, energy, healthcare, aviation, and infrastructure.
+              Are you a forward-thinking supplier, integrator, or technology
+              firm? Join QIS's growing global vendor ecosystem. By partnering
+              with us, you’ll have the opportunity to contribute to complex,
+              high-impact projects across multiple sectors, including defence,
+              energy, healthcare, aviation, and infrastructure.
             </p>
             <h2 className="text-white">Benefits of Joining:</h2>
             <ul className="text-white">
               <li>Access to Government and International Projects</li>
-              <li>
-                Be Considered for Strategic Consortiums
-              </li>
-              <li>
-                Collaborate on Custom, Turnkey Solutions
-              </li>
-              <li>
-                Enhance Visibility Across B2G & B2B Channels
-              </li>
+              <li>Be Considered for Strategic Consortiums</li>
+              <li>Collaborate on Custom, Turnkey Solutions</li>
+              <li>Enhance Visibility Across B2G & B2B Channels</li>
             </ul>
           </>
         }
@@ -1302,7 +1280,6 @@ export default function Home() {
         subtitle="Our Successful Projects Across Industries"
         items={caseStudies}
       />
-
 
       <BannerSection
         image="/home/hero.png"

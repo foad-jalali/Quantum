@@ -23,7 +23,6 @@ export default function RootLayout({
         <Toaster position="top-center" reverseOrder={false} />
         <Navbar />
         <ThemeProvider
-
           attribute="class"
           defaultTheme="dark"
           enableSystem
