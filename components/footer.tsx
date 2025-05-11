@@ -123,9 +123,6 @@ const Footer = () => {
                         <p className="mb-2">
                             Working Hours:<br />Mon to Fri - 8:30 A.M. to 5 P.M. MST
                         </p>
-                        <p className="text-gray-600 text-xs">
-                            Stay tuned for tips on outdoor living and unique Quantum experiences. No spam—just good stuff!
-                        </p>
                     </div>
                 </div>
 

@@ -241,7 +241,7 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <Link href="/contact">
+          <Link href="/coming-soon">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

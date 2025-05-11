@@ -1270,7 +1270,7 @@ export default function Home() {
           </>
         }
         buttonText="Join Our Global Vendor Network"
-        buttonLink="/contact"
+        buttonLink="/coming-soon"
         textColor="#FFFFFF"
         backgroundColor="#1282A2"
         reverse={false}
@@ -1286,7 +1286,7 @@ export default function Home() {
         title="Wrap with Confidence Statement"
         subtitle="With our network of global vendors, project management experience, and direct access to major tendering platforms (GoC, NATO, UN), QIS empowers you to secure, source, and deliver what matters most — without the usual friction."
         buttonText="Partner with Us"
-        buttonLink="/contact"
+        buttonLink="/coming-soon"
       />
 
       {/* Contact Section */}
