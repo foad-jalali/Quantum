@@ -293,7 +293,7 @@ export default function Home() {
       tags: ["Ongoing", "Innovation", "Pipeline"],
     },
   ];
-  
+
   // const caseStudies = [
   //   {
   //     title: "Government of Canada:",
@@ -524,7 +524,7 @@ export default function Home() {
         </motion.header> */}
 
       {/* Hero Section */}
-      <section className="h-[100svh] relative overflow-hidden flex items-center bg-black pt-16 md:pt-0">
+      <section className="relative bg-black overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-16 md:pt-0">
         <ParticleBackground />
         <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30 "></div>
         <div className="container mx-auto px-4 md:px-6  relative z-10">
@@ -612,11 +612,12 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            <motion.div className="flex justify-center mt-6 md:mt-0">
-              <div className="scale-[0.7] sm:scale-[0.9] md:scale-100">
+            <motion.div className="flex justify-center order-1 md:order-2 mt-6 md:mt-0">
+              <div className="scale-[0.8] sm:scale-[0.9] md:scale-100">
                 <Quantum />
               </div>
             </motion.div>
+
           </div>
         </div>
       </section>
