@@ -24,7 +24,7 @@ const SimpleCard = ({ icon, title, description, color }: SimpleCardProps) => {
     >
       <div
         style={{ backgroundColor: color }}
-        className="h-[150%] rotate-[-9deg] absolute -left-7 top-0 bg-black w-12"
+        className="h-[150%] rotate-[-9deg] absolute -left-7 top-0 w-12"
       ></div>
       <motion.div
         className="h-16 w-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors"
