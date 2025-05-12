@@ -108,7 +108,7 @@ const Footer = () => {
                             { label: "Partnerships", href: "/coming-soon" },
                             { label: "FAQ", href: "/faq" },
                             { label: "Blog", href: "/blog" },
-                            { label: "Careers", href: "/careers" },
+                            { label: "Careers", href: "/career" },
                         ]}
                         category=""
                     />
