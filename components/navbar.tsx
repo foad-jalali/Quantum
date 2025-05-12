@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
+  { label: "Solutions", href: "solutions" },
   {
     label: "Services",
     subItems: [
@@ -103,7 +104,6 @@ const navItems = [
       },
     ],
   },
-  { label: "Solutions", href: "solutions" },
   { label: "About Us", href: "about" },
   { label: "Blog", href: "blog" },
   { label: "Career", href: "career" },
@@ -243,7 +243,7 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <Link href="/contact">
+          <Link href="/coming-soon">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

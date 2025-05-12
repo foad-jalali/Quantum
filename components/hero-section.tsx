@@ -4,6 +4,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import AnimatedText from "./ui/animated-text";
 
 interface HeroSectionProps {
   image: string;
@@ -12,6 +14,7 @@ interface HeroSectionProps {
   subtitle?: string;
   buttonText?: string;
   buttonLink?: string;
+  textColor?: string;
 }
 
 const HeroSection = ({
@@ -21,6 +24,7 @@ const HeroSection = ({
   subtitle,
   buttonText,
   buttonLink = "#",
+  textColor = "#FFFFFF"
 }: HeroSectionProps) => {
   const hasContent = title || subtitle || buttonText;
 
@@ -39,27 +43,17 @@ const HeroSection = ({
 
       {hasContent && (
         <div className="relative z-10 h-full flex items-end md:items-center justify-center md:justify-start px-4 md:px-24 text-white text-left pb-8 md:pb-0">
-          <div className="max-w-3xl w-full text-center md:text-left">
-            <motion.h1
+          <div className={cn("max-w-3xl w-full text-center md:text-left", `text-[${textColor}]`)}>
+            <AnimatedText
+              text={title || ""}
               className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              {title}
-            </motion.h1>
+            />
 
-            <motion.p
-              className="text-md md:text-xl mb-6 text-gray-300"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {subtitle}
-            </motion.p>
-
+            <AnimatedText
+              text={subtitle || ""}
+              className={cn("text-md md:text-xl mb-6 text-gray-300", `text-[${textColor}]`)}
+              delayOffset={0.5}
+            />
             {buttonText && (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}

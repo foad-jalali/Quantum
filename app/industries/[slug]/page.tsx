@@ -41,12 +41,12 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
     <div>
       <HeroSection
         title={data.hero_title}
-        subtitle={data.hero_subtitle}
+        subtitle={data.short_description}
         image={data.hero_image}
         buttonLink="/contact"
       />
 
-      <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
+      {/* <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
         <div className="container mx-auto px-4 text-center">
           <h2
             className="text-4xl font-bold mb-4"
@@ -58,7 +58,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             {data.short_description}
           </h3>
         </div>
-      </section>
+      </section> */}
 
       <div className="bg-[#111111] py-16">
         <div className="container mx-auto px-4">
@@ -167,7 +167,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           </>
         }
         buttonText={data.second_section_content.btn}
-        buttonLink="/contact"
+        buttonLink="/coming-soon"
         backgroundColor={data.second_section_content.bg_color}
         reverse={true}
       />

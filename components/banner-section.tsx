@@ -27,7 +27,7 @@ const BannerSection = ({
 
   return (
     <section
-      className="relative w-full h-screen bg-fixed bg-center bg-cover"
+      className="relative w-full h-[50vh] bg-fixed bg-center bg-cover"
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="absolute inset-0 bg-black/40 z-0" />

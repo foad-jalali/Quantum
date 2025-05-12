@@ -5,6 +5,7 @@ import React from "react";
 interface FeatureGridItem {
   image: string;
   title: string;
+  subtitle?: string;
   href?: string;
 }
 
@@ -51,7 +52,10 @@ const FeatureGrid: React.FC<FeatureGridProps> = ({
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
-          <div className="p-3 font-semibold text-center">{item.title}</div>
+          <div className="p-4 text-left">
+            <div className="font-semibold">{item.title}</div>
+            <p className="text-sm mt-1">{item.subtitle}</p>
+          </div>
         </a>
       ))}
     </div>

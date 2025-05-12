@@ -41,12 +41,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
     <div>
       <HeroSection
         title={data.hero_title}
-        subtitle={data.hero_subtitle}
+        subtitle={data.short_description}
         image={data.hero_image}
         buttonLink="/contact"
       />
 
-      <section className="py-16" style={{ backgroundColor: "#DBF9F0" }}>
+      {/* <section className="py-16" style={{ backgroundColor: "#DBF9F0" }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4 text-[#00204E]">
             {data.title}
@@ -55,7 +55,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             {data.short_description}
           </h3>
         </div>
-      </section>
+      </section> */}
 
       <div className="bg-[#111111] py-16">
         <div className="container mx-auto px-4">
@@ -95,7 +95,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               {data.first_section_content.bottom_content}
             </p>
             <a
-              href="/contact"
+              href="/coming-soon"
               className="px-6 py-3 bg-amber-500 text-black font-semibold rounded hover:bg-amber-600 transition mt-16"
             >
               {data.first_section_content.btn}
