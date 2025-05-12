@@ -191,28 +191,30 @@ export default function Navbar() {
                     </motion.div>
 
                     <div
-                      className="absolute left-1/2 md:-translate-x-1/3 2xl:-translate-x-1/2 mt-4 bg-white border border-gray-300 rounded-md 
+                      className="fixed left-0   mt-4  
              invisible opacity-0 group-hover:visible group-hover:opacity-100 
-             transition-all w-[800px] lg:w-[1000px] duration-300 delay-100 ease-in-out 
-             z-50 p-4 shadow-lg"
+             transition-all w-screen duration-300 bg-transparent delay-100 ease-in-out 
+             z-50 py-4 "
                     >
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-                        {item.subItems.map((sub, j) => (
-                          <a
-                            key={j}
-                            href={sub.href}
-                            className="block bg-white hover:bg-amber-100 transition rounded-lg overflow-hidden border border-gray-200"
-                          >
-                            <img
-                              src={sub.image || "/placeholder.jpg"}
-                              alt={sub.label}
-                              className="w-full h-42 object-cover"
-                            />
-                            <div className="p-2 text-left text-sm font-medium text-gray-700">
-                              {sub.label}
-                            </div>
-                          </a>
-                        ))}
+                      <div className="bg-white border container mx-auto shadow-lg p-4 rounded-md  border-gray-300 w-full">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+                          {item.subItems.map((sub, j) => (
+                            <a
+                              key={j}
+                              href={sub.href}
+                              className="block bg-white hover:bg-amber-100 transition rounded-lg overflow-hidden border border-gray-200"
+                            >
+                              <img
+                                src={sub.image || "/placeholder.jpg"}
+                                alt={sub.label}
+                                className="w-full h-42 object-cover"
+                              />
+                              <div className="p-2 text-left text-sm font-medium text-gray-700">
+                                {sub.label}
+                              </div>
+                            </a>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
