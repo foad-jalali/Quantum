@@ -4,12 +4,14 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 type SlideType = {
   title: string
   content: string
   image?: string
   color: string
+  slug: string
 }
 
 type InfoSliderProps = {
@@ -95,6 +97,21 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
             </h3>
 
             <p className="max-w-2xl text-gray-300">{slides[currentIndex].content}</p>
+            <Link href={slides[currentIndex].slug}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="mt-6"
+              >
+                <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
+                  <span className="relative z-10">See more</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
+                </Button>
+              </motion.div>
+            </Link>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -107,9 +124,8 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
               setDirection(index > currentIndex ? 1 : -1)
               setCurrentIndex(index)
             }}
-            className={`h-2 w-2 rounded-full transition-all ${
-              index === currentIndex ? "bg-amber-500 w-6" : "bg-gray-600"
-            }`}
+            className={`h-2 w-2 rounded-full transition-all ${index === currentIndex ? "bg-amber-500 w-6" : "bg-gray-600"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

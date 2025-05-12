@@ -6,14 +6,15 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = false,
   className,
 }: {
   items: {
     quote: string;
-    name: string;
+    name?: string;
     title: string;
+    tags: string[];
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -61,11 +62,11 @@ export const InfiniteMovingCards = ({
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "60s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
         containerRef.current.style.setProperty("--animation-duration", "80s");
+      } else if (speed === "normal") {
+        containerRef.current.style.setProperty("--animation-duration", "80s");
+      } else {
+        containerRef.current.style.setProperty("--animation-duration", "120s");
       }
     }
   };
@@ -101,6 +102,16 @@ export const InfiniteMovingCards = ({
               <p className="relative z-20 text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
                 {item.quote}
               </p>
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 whitespace-nowrap">
+                {item.tags.map((tag, i) => (
+                  <span
+                    key={i}
+                    className="text-xs text-gray-100 px-2 py-1 text-center"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 {/* <span className="flex flex-col gap-1">
                   <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">

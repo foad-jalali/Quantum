@@ -7,6 +7,7 @@ interface Slide {
     title: string;
     content: string;
     color: string;
+    slug :string;
 }
 
 interface StorySectionProps {
