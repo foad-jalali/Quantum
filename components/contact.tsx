@@ -138,7 +138,7 @@ const ContactSection = () => {
                   { id: "company", label: "Company", type: "text", placeholder: "Your company" },
                 ].map((field) => (
                   <motion.div key={field.id} className="space-y-2" variants={fadeIn}>
-                    <label htmlFor={field.id} className="text-sm font-medium text-gray-700">{field.label}</label>
+                    <label htmlFor={field.id} className="text-sm font-medium text-gray-700">{field.label} <span className="text-red-500">*</span></label>
                     <input
                       id={field.id}
                       type={field.type}
@@ -154,7 +154,7 @@ const ContactSection = () => {
 
               {/* Subject Dropdown */}
               <motion.div className="space-y-2" variants={fadeIn}>
-                <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</label>
+                <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject <span className="text-red-500">*</span></label>
                 <select
                   id="subject"
                   value={formData.subject}
@@ -171,7 +171,7 @@ const ContactSection = () => {
 
               {/* Message Field */}
               <motion.div className="space-y-2" variants={fadeIn}>
-                <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
+                <label htmlFor="message" className="text-sm font-medium text-gray-700">Message <span className="text-red-500">*</span></label>
                 <textarea
                   id="message"
                   value={formData.message}
