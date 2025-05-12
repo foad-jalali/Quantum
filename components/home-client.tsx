@@ -224,72 +224,86 @@ export default function Home() {
   const caseStudies = [
     {
       title: "Total Solution Procurement Across Multi-Vendor Brands",
-      quote: "Unified procurement for diverse technologies from different vendors to meet complex GoC tender requirements.",
+      quote:
+        "Unified procurement for diverse technologies from different vendors to meet complex GoC tender requirements.",
       tags: ["Government", "Strategic Sourcing", "Consortium"],
     },
     {
       title: "Military Batteries & Custom Packaging for DND",
-      quote: "Successfully procured military-grade batteries and engineered custom packaging solutions for the Department of National Defence (DND).",
+      quote:
+        "Successfully procured military-grade batteries and engineered custom packaging solutions for the Department of National Defence (DND).",
       tags: ["Government", "Military", "Power Solutions"],
     },
     {
       title: "Innovative Solar Batteries for Natural Resources Canada",
-      quote: "Delivered cutting-edge solar-integrated battery systems to NRCan, supporting Canada’s clean energy mandate.",
+      quote:
+        "Delivered cutting-edge solar-integrated battery systems to NRCan, supporting Canada’s clean energy mandate.",
       tags: ["Government", "Energy", "Sustainability"],
     },
     {
       title: "Specialized Test Bench for Environment Canada",
-      quote: "Providing consulting services to a private company in relation to the procurement and delivery of a water testing bench to a government entity.",
+      quote:
+        "Providing consulting services to a private company in relation to the procurement and delivery of a water testing bench to a government entity.",
       tags: ["Government", "Instrumentation", "Energy"],
     },
     {
       title: "Sensor Procurement for NRCan",
-      quote: "Sourced and supplied advanced environmental sensors to support real-time climate and field monitoring programs.",
+      quote:
+        "Sourced and supplied advanced environmental sensors to support real-time climate and field monitoring programs.",
       tags: ["Government", "Sensors", "Environment"],
     },
     {
       title: "Appliances for Municipalities",
-      quote: "Coordinated large-scale procurement and delivery of durable appliances to a Canadian municipality.",
+      quote:
+        "Coordinated large-scale procurement and delivery of durable appliances to a Canadian municipality.",
       tags: ["Municipal", "Procurement", "Public Infrastructure"],
     },
     {
       title: "Special Structures for Municipal Projects",
-      quote: "Delivered customized modular and prefabricated structures for public spaces and field operations.",
+      quote:
+        "Delivered customized modular and prefabricated structures for public spaces and field operations.",
       tags: ["Municipal", "Construction", "Custom Fabrication"],
     },
     {
       title: "Innovative Baggage Handling Solution for Airport",
-      quote: "Worked on an AI-supported baggage handling system for a regional airport client.",
+      quote:
+        "Worked on an AI-supported baggage handling system for a regional airport client.",
       tags: ["Airport", "AI", "Aviation Infrastructure"],
     },
     {
       title: "Specialized Structures for Municipal Facilities",
-      quote: "Engineered and delivered functional architectural structures tailored for public use.",
+      quote:
+        "Engineered and delivered functional architectural structures tailored for public use.",
       tags: ["Municipal", "Structures", "Custom Solutions"],
     },
     {
       title: "Global Cable Sourcing for Wire Manufacturer",
-      quote: "Identified and managed supply chain for high-purity industrial cables for North American wire producer.",
+      quote:
+        "Identified and managed supply chain for high-purity industrial cables for North American wire producer.",
       tags: ["Manufacturing", "Global Sourcing", "Cables"],
     },
     {
       title: "AI Data Center Solution Development",
-      quote: "In collaboration with AI tech firms, worked on a scalable data center strategy supporting machine learning workflows.",
+      quote:
+        "In collaboration with AI tech firms, worked on a scalable data center strategy supporting machine learning workflows.",
       tags: ["AI/ML", "Data Infrastructure", "Innovation"],
     },
     {
       title: "Custom IT Procurement",
-      quote: "Executed several contracts for IT hardware and software delivery, supporting critical digital infrastructure.",
+      quote:
+        "Executed several contracts for IT hardware and software delivery, supporting critical digital infrastructure.",
       tags: ["IT", "Government", "Infrastructure"],
     },
     {
       title: "Collaborative AI & Aviation Data Project",
-      quote: "Worked with multiple software and aviation data providers to prepare a government solicitation response for advanced flight planning.",
+      quote:
+        "Worked with multiple software and aviation data providers to prepare a government solicitation response for advanced flight planning.",
       tags: ["AI", "Aviation", "Government Solicitation"],
     },
     {
       title: "Ongoing Projects – Innovation Pipeline",
-      quote: "Several projects currently in development spanning marine, AI, surveillance, and logistics verticals.",
+      quote:
+        "Several projects currently in development spanning marine, AI, surveillance, and logistics verticals.",
       tags: ["Ongoing", "Innovation", "Pipeline"],
     },
   ];
@@ -524,7 +538,7 @@ export default function Home() {
         </motion.header> */}
 
       {/* Hero Section */}
-      <section className="relative bg-black overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-16 md:pt-0">
+      <section className="relative bg-black overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-32  md:pt-16 ">
         <ParticleBackground />
         <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30 "></div>
         <div className="container mx-auto px-4 md:px-6  relative z-10">
@@ -617,7 +631,6 @@ export default function Home() {
                 <Quantum />
               </div>
             </motion.div>
-
           </div>
         </div>
       </section>
