@@ -8,8 +8,9 @@ interface ContentSliderProps {
   subtitle?: string;
   items: {
     quote: string;
-    name: string;
+    name?: string;
     title: string;
+    tags: string[];
   }[];
 }
 

@@ -136,72 +136,84 @@ export default function Home() {
   const slides = [
     {
       title: "Turnkey Government & Commercial Solutions",
+      slug: "/solutions#turnkey-government-and-commercial-solutions",
       content:
         "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery. ",
       color: "#f59e0b",
     },
     {
       title: "AI & Advanced Software Platforms",
+      slug: "/solutions#ai-and-advanced-software-platforms",
       content:
         "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
       color: "#f59e0b",
     },
     {
       title: "Secure Infrastructure & Data Systems",
+      slug: "/solutions#secure-infrastructure-and-data-systems",
       content:
         "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
       color: "#f59e0b",
     },
     {
       title: "Navigation & Remote Monitoring Systems",
+      slug: "/solutions#navigation-and-remote-monitoring-systems",
       content:
         "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
       color: "#f59e0b",
     },
     {
       title: "Embedded & Edge Computing Solutions",
+      slug: "/solutions#embedded-and-edge-computing-solutions",
       content:
         "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
       color: "#f59e0b",
     },
     {
       title: "Industrial Equipment & Automation",
+      slug: "/solutionssolutions#industrial-equipment-and-automation",
       content:
         "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing. ",
       color: "#f59e0b",
     },
     {
       title: "Power & Energy Systems",
+      slug: "/solutions#power-and-energy-systems",
       content:
         "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience. ",
       color: "#f59e0b",
     },
     {
       title: "Field Monitoring & Instrumentation",
+      slug: "/solutions#field-monitoring-and-instrumentation",
       content:
         "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
       color: "#f59e0b",
     },
     {
       title: "Enterprise IT & Network Integration",
+      slug: "/solutions#enterprise-it-and-network-integration",
       content:
         "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
       color: "#f59e0b",
     },
     {
       title: "Smart Connectivity & Signal Solutions",
+      slug: "/solutions#smart-connectivity-and-signal-solutions",
       content:
         "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
       color: "#f59e0b",
     },
     {
       title: "Custom Fabrication & Modular Manufacturing",
+      slug: "/solutions#custom-fabrication-and-modular-manufacturing",
       content:
         "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
       color: "#f59e0b",
     },
     {
       title: "Lighting & Sustainable Infrastructure",
+      slug: "/solutions#lighting-and-sustainable-infrastructure",
       content:
         "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech.",
       color: "#f59e0b",
@@ -210,36 +222,109 @@ export default function Home() {
 
   const caseStudies = [
     {
-      title: "Government of Canada:",
-      quote:
-        "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
-      name: "",
+      title: "Total Solution Procurement Across Multi-Vendor Brands",
+      quote: "Unified procurement for diverse technologies from different vendors to meet complex GoC tender requirements.",
+      tags: ["Government", "Strategic Sourcing", "Consortium"],
     },
     {
-      title: "National Airport Authority:",
-      quote:
-        "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
-      name: "",
+      title: "Military Batteries & Custom Packaging for DND",
+      quote: "Successfully procured military-grade batteries and engineered custom packaging solutions for the Department of National Defence (DND).",
+      tags: ["Government", "Military", "Power Solutions"],
     },
     {
-      title: "Major Airline Operator:",
-      quote:
-        "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
-      name: "",
+      title: "Innovative Solar Batteries for Natural Resources Canada",
+      quote: "Delivered cutting-edge solar-integrated battery systems to NRCan, supporting Canada’s clean energy mandate.",
+      tags: ["Government", "Energy", "Sustainability"],
     },
     {
-      title: "HealthTech Innovator:",
-      quote:
-        "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
-      name: "",
+      title: "Specialized Test Bench for Environment Canada",
+      quote: "Providing consulting services to a private company in relation to the procurement and delivery of a water testing bench to a government entity.",
+      tags: ["Government", "Instrumentation", "Energy"],
     },
     {
-      title: "Remote Energy Consortium:",
-      quote:
-        "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
-      name: "",
+      title: "Sensor Procurement for NRCan",
+      quote: "Sourced and supplied advanced environmental sensors to support real-time climate and field monitoring programs.",
+      tags: ["Government", "Sensors", "Environment"],
+    },
+    {
+      title: "Appliances for Municipalities",
+      quote: "Coordinated large-scale procurement and delivery of durable appliances to a Canadian municipality.",
+      tags: ["Municipal", "Procurement", "Public Infrastructure"],
+    },
+    {
+      title: "Special Structures for Municipal Projects",
+      quote: "Delivered customized modular and prefabricated structures for public spaces and field operations.",
+      tags: ["Municipal", "Construction", "Custom Fabrication"],
+    },
+    {
+      title: "Innovative Baggage Handling Solution for Airport",
+      quote: "Worked on an AI-supported baggage handling system for a regional airport client.",
+      tags: ["Airport", "AI", "Aviation Infrastructure"],
+    },
+    {
+      title: "Specialized Structures for Municipal Facilities",
+      quote: "Engineered and delivered functional architectural structures tailored for public use.",
+      tags: ["Municipal", "Structures", "Custom Solutions"],
+    },
+    {
+      title: "Global Cable Sourcing for Wire Manufacturer",
+      quote: "Identified and managed supply chain for high-purity industrial cables for North American wire producer.",
+      tags: ["Manufacturing", "Global Sourcing", "Cables"],
+    },
+    {
+      title: "AI Data Center Solution Development",
+      quote: "In collaboration with AI tech firms, worked on a scalable data center strategy supporting machine learning workflows.",
+      tags: ["AI/ML", "Data Infrastructure", "Innovation"],
+    },
+    {
+      title: "Custom IT Procurement",
+      quote: "Executed several contracts for IT hardware and software delivery, supporting critical digital infrastructure.",
+      tags: ["IT", "Government", "Infrastructure"],
+    },
+    {
+      title: "Collaborative AI & Aviation Data Project",
+      quote: "Worked with multiple software and aviation data providers to prepare a government solicitation response for advanced flight planning.",
+      tags: ["AI", "Aviation", "Government Solicitation"],
+    },
+    {
+      title: "Ongoing Projects – Innovation Pipeline",
+      quote: "Several projects currently in development spanning marine, AI, surveillance, and logistics verticals.",
+      tags: ["Ongoing", "Innovation", "Pipeline"],
     },
   ];
+  
+  // const caseStudies = [
+  //   {
+  //     title: "Government of Canada:",
+  //     quote:
+  //       "Multi-million-dollar defence procurement including AI surveillance tools and ruggedized tactical tech.",
+  //     name: "",
+  //   },
+  //   {
+  //     title: "National Airport Authority:",
+  //     quote:
+  //       "Delivered integrated terminal management software, LED upgrades, and firefighting equipment.",
+  //     name: "",
+  //   },
+  //   {
+  //     title: "Major Airline Operator:",
+  //     quote:
+  //       "Supplied simulators, avionics, and airport GSE under a 3-year multi-phase rollout.",
+  //     name: "",
+  //   },
+  //   {
+  //     title: "HealthTech Innovator:",
+  //     quote:
+  //       "Co-developed and deployed embedded diagnostic imaging AI used in 5+ hospitals.",
+  //     name: "",
+  //   },
+  //   {
+  //     title: "Remote Energy Consortium:",
+  //     quote:
+  //       "Coordinated solar + UPS + hydrogen metering systems with 4 international vendors.",
+  //     name: "",
+  //   },
+  // ];
 
   const features = [
     {

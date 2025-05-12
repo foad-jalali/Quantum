@@ -93,7 +93,7 @@ const Footer = () => {
                             { label: "Power Solutions", href: "/solutions/#power-and-energy-systems" },
                             { label: "Field Monitoring and Remote Sensing", href: "/solutions/#field-monitoring-and-instrumentation" },
                             { label: "End-to-End IT Infrastructure Solutions", href: "/solutions/#enterprise-it-and-network-integration" },
-                            { label: "Connectivity", href: "/solutions/solutions/#smart-connectivity-and-signal-solutions" },
+                            { label: "Connectivity", href: "/solutions/#smart-connectivity-and-signal-solutions" },
                             { label: "Fabrication & Manufacturing", href: "/solutions/#custom-fabrication-and-modular-manufacturing" },
                             { label: "Lighting & Sustainable Tech", href: "/solutions/#lighting-and-sustainable-infrastructure" },
                         ]}
