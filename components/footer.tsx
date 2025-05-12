@@ -105,8 +105,7 @@ const Footer = () => {
                         items={[
                             { label: "About Us", href: "/about" },
                             { label: "Contact Us", href: "/contact" },
-                            { label: "Partnerships", href: "/partnerships" },
-                            { label: "Case Studies", href: "/case-studies" },
+                            { label: "Partnerships", href: "/coming-soon" },
                             { label: "FAQ", href: "/faq" },
                             { label: "Blog", href: "/blog" },
                             { label: "Careers", href: "/careers" },

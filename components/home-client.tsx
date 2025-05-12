@@ -80,46 +80,55 @@ export default function Home() {
   const industries = [
     {
       title: "Military & Defence",
+      subtitle: "Specialized equipment and tactical technology procurement.",
       image: "/industries/1.png",
       href: "/industries/military-and-defenc",
     },
     {
       title: "Airports",
+      subtitle: "Airport equipment, tech solutions, navigation systems, etc.",
       image: "/industries/2.png",
       href: "/industries/airports",
     },
     {
       title: "Airlines & MRO ",
+      subtitle: "Airport equipment, tech solutions, navigation systems, etc.",
       image: "/industries/3.png",
       href: "/industries/airlines-and-mro",
     },
     {
       title: "Energy, Oil & Gas",
+      subtitle: "Oil, gas, and renewable energy systems integration.",
       image: "/industries/4.png",
       href: "/industries/energy-oil-and-gas",
     },
     {
       title: "Marine & Shipbuilding",
+      subtitle: "Shipbuilding and maritime equipment sourcing.",
       image: "/industries/5.png",
       href: "/industries/marine-and-shipbuilding",
     },
     {
       title: "Healthcare & HealthTech",
+      subtitle: "Medical technology and integrated health solutions.",
       image: "/industries/6.png",
       href: "/industries/healthcare-and-healthtech",
     },
     {
       title: "Manufacturing & Industrial Fabrication",
+      subtitle: "Precision machinery and automated production systems.",
       image: "/industries/7.png",
       href: "/industries/manufacturing-and-industrial",
     },
     {
       title: "Navigation, GPS, GNSS",
+      subtitle: "Advanced positioning and satellite tracking solutions.",
       image: "/industries/8.png",
       href: "/industries/navigation-gps-gnss",
     },
     {
       title: "IT & Emerging Technologies",
+      subtitle: "Cutting-edge IT infrastructure, AI, and next-gen digital innovation.",
       image: "/industries/9.png",
       href: "/industries/it-and-emerging-technologies",
     },
@@ -622,7 +631,7 @@ export default function Home() {
         title="Industries We Empower"
         subtitle="Enabling growth across diverse sectors"
         items={industries}
-        lg={3}
+        lg={4}
         textColor="text-black"
         backgroundColor="#FFFFFF"
       />
