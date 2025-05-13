@@ -341,6 +341,13 @@ export default function Home() {
   //   },
   // ];
 
+  const logos = [
+    { image: "/partners/1.png", alt: "Logo 1" },
+    { image: "/partners/2.png", alt: "Logo 2" },
+    { image: "/partners/3.png", alt: "Logo 3" },
+    { image: "/partners/4.png", alt: "Logo 3" },
+    { image: "/partners/5.png", alt: "Logo 3" },
+  ];
   const features = [
     {
       icon: "/icon/1.svg",
@@ -720,7 +727,10 @@ export default function Home() {
             </motion.div>
           </div>
         </section> */}
-      <PartnersSection />
+      <PartnersSection 
+        items={logos}
+        backgroundColor="#DBF9F0"
+      />
       <FeatureGridSection
         title="Our Core Services"
         subtitle="Tailored solutions for complex projects"

@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import path from "path";
 import { promises as fs } from "fs";
 import FeatureSection from "@/components/feature-section";
+import PartnersSection from "@/components/partners";
+import { LogoSlider } from "@/components/ui/logo-slider";
 
 export async function getSolutions() {
     const filePath = path.join(process.cwd(), "db", "solutions.json");
@@ -17,9 +19,9 @@ export const metadata: Metadata = generateMetadata({
     url: "https://quantumints.com/solutions",
     image: "/solutions/hero.png",
     keywords: "Quantum Solutions, Government Procurement, AI Platforms, IT Services, Industrial Sourcing, Vendor Network, Public Sector Projects, Technology Integration, Procurement Experts, Quantum International Services"
-  });
+});
 
-interface Brand {
+interface Logo {
     id: string;
     image: string;
 }
@@ -31,7 +33,7 @@ interface Solution {
     first_paragraph: string;
     second_paragraph: string;
     image: string;
-    brands: Brand[];
+    logos: Logo[];
 }
 
 
@@ -81,18 +83,8 @@ export default async function FaqPage() {
                             buttonText="Get a Quote"
                             buttonLink="/contact"
                         />
-
-                        {solution.brands?.length > 0 && (
-                            <div className="container mx-auto px-4 mt-10 flex flex-wrap justify-center items-center gap-6">
-                                {solution.brands.map((brand) => (
-                                    <img
-                                        key={brand.id}
-                                        src={brand.image}
-                                        alt={`Brand ${brand.id}`}
-                                        className="h-32 w-32 object-contain"
-                                    />
-                                ))}
-                            </div>
+                        {solution?.logos && (
+                            <LogoSlider logos={solution.logos} direction="left" speed="fast" />
                         )}
                     </section>
                 );
