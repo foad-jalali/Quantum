@@ -33,6 +33,7 @@ export default async function BlogPage() {
                     <SectionHeading
                         title="Latest Articles"
                         subtitle="Explore articles on procurement strategy, project delivery, and business empowerment."
+                        subTextColor="#52575D"
                     />
 
                             <BlogPostGrid posts={blogPosts} />

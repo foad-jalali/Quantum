@@ -19,7 +19,7 @@ const Footer = () => {
         <footer className="bg-white text-gray-800 text-sm">
             <div className="container mx-auto px-4 md:px-6 py-8">
                 {/* Top Section */}
-                <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div className="flex justify-between items-center flex-row md:flex-row mb-6 w-full">
                     <motion.div
                         className="flex items-center space-x-2"
                     >

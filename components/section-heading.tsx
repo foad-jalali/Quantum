@@ -6,6 +6,7 @@ interface SectionHeadingProps {
     centered?: boolean
     badge?: string
     textColor?: string
+    subTextColor?: string
 }
 
 const SectionHeading = ({
@@ -14,6 +15,8 @@ const SectionHeading = ({
     centered = true,
     badge,
     textColor = "#00204E",
+    subTextColor = "#00204E",
+
 }: SectionHeadingProps) => {
     return (
         <div
@@ -40,7 +43,7 @@ const SectionHeading = ({
             {subtitle && (
                 <p
                     className={clsx(centered && "max-w-2xl mx-auto")}
-                    style={{ color: textColor }}
+                    style={{ color: subTextColor }}
                 >
                     {subtitle}
                 </p>

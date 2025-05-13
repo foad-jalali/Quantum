@@ -30,7 +30,7 @@ const FeatureGridSection = ({
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
           <h3 className="text-lg md:text-xl text-opacity-80 mb-10">{subtitle}</h3>
-          <FeatureGrid items={items} cols={{ base: 2, md: 3, lg }} />
+          <FeatureGrid items={items} cols={{ base: 1, md: 3, lg }} />
         </div>
       </section>
     );

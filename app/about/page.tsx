@@ -21,6 +21,7 @@ export default function AboutUsPage() {
                 <SectionHeading
                     title="About Quantum"
                     subtitle="Learn more about our mission, global expertise, and the industries we serve with precision and purpose."
+                    subTextColor="#52575D"
                 />
 
                 <FeatureSection

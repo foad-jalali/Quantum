@@ -84,6 +84,7 @@ const ContactSection = () => {
       <SectionHeading
         title="Get in Touch"
         subtitle="Connect with Quantum for procurement inquiries, vendor collaboration, or tailored project support we are here to help."
+        subTextColor="#52575D"
       />
 
 

@@ -29,6 +29,7 @@ const CareerSection = () => {
                     <SectionHeading
                         title="Join Our Team"
                         subtitle="We're always looking for talented individuals to join our team."
+                        subTextColor="#52575D"
                     />
 
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
