@@ -225,22 +225,21 @@ export default function Navbar() {
 
           {/* Mobile Button */}
           <div className="md:hidden ml-auto">
-            <button onClick={toggleMobileMenu}>
-              <svg
-                className="w-6 h-6 text-gray-800"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+            {!isMobileMenuOpen && (
+              <button onClick={toggleMobileMenu}>
+                <svg
+                  className="w-6 h-6 text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            )}
           </div>
+
 
           {/* CTA Button */}
           <Link href="/coming-soon">
@@ -267,8 +266,27 @@ export default function Navbar() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="md:hidden bg-white border-t border-gray-300 py-4"
+              className="md:hidden bg-white border-gray-300 py-4"
             >
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="absolute top-4 right-4 text-gray-600 hover:text-blac"
+                aria-label="Close menu"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
               {navItems.map((item, i) => (
                 <div key={i} className="px-4 py-2 border-b border-gray-200">
                   {!item.subItems ? (
@@ -289,9 +307,8 @@ export default function Navbar() {
                       >
                         {item.label}
                         <svg
-                          className={`w-4 h-4 transform transition-transform ${
-                            openIndex === i ? "rotate-90" : ""
-                          }`}
+                          className={`w-4 h-4 transform transition-transform ${openIndex === i ? "rotate-90" : ""
+                            }`}
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
