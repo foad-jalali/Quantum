@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: ServicePageProps) {
     title: `${data?.title} | Quantum` || "Service",
     description: data?.short_description || "",
     url: `https://quantumints.com/services/${data.slug}`,
-    image: data.hero_image || "/homehero.jpg",
+    image: data.hero_image || "/home/hero.png",
   };
 }
 

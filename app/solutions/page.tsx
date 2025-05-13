@@ -15,7 +15,7 @@ export const metadata: Metadata = generateMetadata({
     title: "Solutions | Quantum",
     description: "Explore Quantum's tailored solutions for government procurement, AI-powered platforms, IT systems, and multi-industry sourcing. Discover how we deliver precision, speed, and innovation across sectors.",
     url: "https://quantumints.com/solutions",
-    image: "/homehero.jpg",
+    image: "/solutions/hero.png",
     keywords: "Quantum Solutions, Government Procurement, AI Platforms, IT Services, Industrial Sourcing, Vendor Network, Public Sector Projects, Technology Integration, Procurement Experts, Quantum International Services"
   });
 

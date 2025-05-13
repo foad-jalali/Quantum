@@ -10,7 +10,7 @@ export const metadata: Metadata = generateMetadata({
     title: "About Us | Quantum International Services",
     description: "Learn more about Quantum International Services — a trusted Canadian partner in global procurement, project management, and multi-industry solutions. Discover our mission, values, and international impact.",
     url: "https://quantumints.com/about",
-    image: "/homehero.jpg",
+    image: "/home/hero.png",
     keywords: "About Quantum, Quantum International Services, Global Procurement Experts, Canadian Government Contractor, Project Management, Strategic Sourcing, International Supply Partner, Company Overview",
 });
 

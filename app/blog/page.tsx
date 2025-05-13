@@ -11,7 +11,7 @@ export const metadata: Metadata = generateMetadata({
     title: "Blog | Quantum",
     description: "Stay informed with the latest insights, updates, and trends in global procurement, supply chain, IT solutions, and international project management from Quantum.",
     url: "https://quantumints.com/blog",
-    image: "/homehero.jpg",
+    image: "/home/hero.png",
     keywords: "Quantum Blog, Procurement Insights, Global Sourcing News, IT Solutions Trends, Project Management, Defense Technology, Supply Chain Innovation, Quantum International Services Blog",
 });
 
