@@ -38,7 +38,10 @@ const FeatureSection = ({
   textColor = "white",
 }: FeatureSectionProps) => {
   return (
-    <section className="py-10 overflow-x-hidden" style={{ backgroundColor }}>
+    <section
+      className="py-10 overflow-x-hidden bg-sky-900"
+      // style={{ backgroundColor }}
+    >
       <div
         className={cn(
           "container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-6",
