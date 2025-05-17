@@ -49,12 +49,12 @@ export const InfiniteMovingCards = ({
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards",
+          "forwards"
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse",
+          "reverse"
         );
       }
     }
@@ -73,33 +73,26 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn(
-        "scroller relative z-20 overflow-hidden ",
-        className,
-      )}
+      className={cn("scroller relative z-20 overflow-hidden ", className)}
     >
       <ul
         ref={scrollerRef}
         className={cn(
           "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]",
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="relative w-[650px] px-12 py-10 text-lg max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 md:w-[450px] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
+            className="relative w-[650px] text-lg max-w-full shrink-0 rounded-2xl bg-sky-900 border border-b-0 border-zinc-200  px-8 py-6 md:w-[450px] "
             key={item.name || `item-${idx}`}
           >
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className="text-md leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
+              <span className="text-md leading-[1.6] font-normal text-neutral-100 ">
                 {item.title}
               </span>
-              <p className="relative z-20 text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100 pt-4">
+              <p className="relative z-20 text-lg leading-[1.6] font-normal text-neutral-100  pt-4">
                 {item.quote}
               </p>
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 whitespace-nowrap">

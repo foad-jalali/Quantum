@@ -234,12 +234,15 @@ export default function Navbar() {
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               </button>
             )}
           </div>
-
 
           {/* CTA Button */}
           <Link href="/coming-soon">
@@ -307,8 +310,9 @@ export default function Navbar() {
                       >
                         {item.label}
                         <svg
-                          className={`w-4 h-4 transform transition-transform ${openIndex === i ? "rotate-90" : ""
-                            }`}
+                          className={`w-4 h-4 transform transition-transform ${
+                            openIndex === i ? "rotate-90" : ""
+                          }`}
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"

@@ -1,49 +1,55 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type SlideType = {
-  title: string
-  content: string
-  image?: string
-  color: string
-  slug: string
-}
+  title: string;
+  content: string;
+  image?: string;
+  color: string;
+  slug: string;
+};
 
 type InfoSliderProps = {
-  slides: SlideType[]
-  autoPlay?: boolean
-  interval?: number
-}
+  slides: SlideType[];
+  autoPlay?: boolean;
+  interval?: number;
+};
 
-const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [direction, setDirection] = useState(0)
+const InfoSlider = ({
+  slides,
+  autoPlay = true,
+  interval = 5000,
+}: InfoSliderProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
-    if (!autoPlay) return
+    if (!autoPlay) return;
 
     const timer = setInterval(() => {
-      setDirection(1)
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-    }, interval)
+      setDirection(1);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, interval);
 
-    return () => clearInterval(timer)
-  }, [autoPlay, interval, slides.length])
+    return () => clearInterval(timer);
+  }, [autoPlay, interval, slides.length]);
 
   const handlePrevious = () => {
-    setDirection(-1)
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1))
-  }
+    setDirection(-1);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  };
 
   const handleNext = () => {
-    setDirection(1)
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-  }
+    setDirection(1);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
 
   const slideVariants = {
     enter: (direction: number) => ({
@@ -58,10 +64,10 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
       x: direction > 0 ? -1000 : 1000,
       opacity: 0,
     }),
-  }
+  };
 
   return (
-    <div className="relative w-full overflow-hidden rounded-lg bg-gray-900 shadow-xl">
+    <div className="relative w-full overflow-hidden rounded-lg bg-white">
       <div className="relative h-[400px] w-full">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -76,9 +82,9 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
           >
             <div
               className="absolute inset-0 opacity-10"
-              style={{
-                background: `radial-gradient(circle at center, ${slides[currentIndex].color}, transparent 70%)`,
-              }}
+              // style={{
+              //   background: `radial-gradient(circle at center, ${slides[currentIndex].color}, transparent 70%)`,
+              // }}
             />
 
             {slides[currentIndex].image && (
@@ -91,12 +97,16 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
               </div>
             )}
 
-            <h3 className="mb-4 text-2xl font-bold text-white">
-              <span className="text-amber-500">{slides[currentIndex].title.split(" ")[0]}</span>{" "}
+            <h3 className="mb-4 text-2xl font-bold text-gray-900">
+              <span className="text-amber-500">
+                {slides[currentIndex].title.split(" ")[0]}
+              </span>{" "}
               {slides[currentIndex].title.split(" ").slice(1).join(" ")}
             </h3>
 
-            <p className="max-w-2xl text-gray-300">{slides[currentIndex].content}</p>
+            <p className="max-w-2xl text-gray-900">
+              {slides[currentIndex].content}
+            </p>
             <Link href={slides[currentIndex].slug}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -121,11 +131,12 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
           <button
             key={index}
             onClick={() => {
-              setDirection(index > currentIndex ? 1 : -1)
-              setCurrentIndex(index)
+              setDirection(index > currentIndex ? 1 : -1);
+              setCurrentIndex(index);
             }}
-            className={`h-2 w-2 rounded-full transition-all ${index === currentIndex ? "bg-amber-500 w-6" : "bg-gray-600"
-              }`}
+            className={`h-2 w-2 rounded-full transition-all ${
+              index === currentIndex ? "bg-amber-500 w-6" : "bg-gray-600"
+            }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
@@ -134,7 +145,7 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full border-gray-700 bg-gray-800/50 text-white hover:bg-gray-700 hover:text-amber-500"
+        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full hover:bg-sky-800 hover:text-white/90 ease-in-out duration-500 bg-sky-900 text-white "
         onClick={handlePrevious}
         aria-label="Previous slide"
       >
@@ -144,14 +155,14 @@ const InfoSlider = ({ slides, autoPlay = true, interval = 5000 }: InfoSliderProp
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full border-gray-700 bg-gray-800/50 text-white hover:bg-gray-700 hover:text-amber-500"
+        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full hover:bg-sky-800 hover:text-white/90 ease-in-out duration-500 bg-sky-900 text-white "
         onClick={handleNext}
         aria-label="Next slide"
       >
         <ChevronRight className="h-5 w-5" />
       </Button>
     </div>
-  )
-}
+  );
+};
 
-export default InfoSlider
+export default InfoSlider;
