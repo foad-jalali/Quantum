@@ -390,7 +390,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-sky-900 overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-32  md:pt-16 ">
+      <section className="relative bg-gray-900 overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-32  md:pt-16 ">
         <ParticleBackground />
         <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30 "></div>
         <div className="container mx-auto px-4 md:px-6  relative z-10">
