@@ -92,7 +92,7 @@ export default function Home() {
     {
       title: "Energy, Oil & Gas",
       subtitle: "Oil, gas, and renewable energy systems integration.",
-      image: "/industries/4.png",
+      image: "/industries/4.jpeg",
       href: "/industries/energy-oil-and-gas",
     },
     {
