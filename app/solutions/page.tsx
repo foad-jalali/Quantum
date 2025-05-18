@@ -48,13 +48,6 @@ export default async function FaqPage() {
         subtitle={solutions.subtitle}
         buttonLink="/contact"
       />
-      {/* <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold mb-4 text-[#00204E]">{solutions.title}</h1>
-                    <h3 className="container text-xl text-[#00204E]">{solutions.subtitle}</h3>
-                </div>
-            </section> */}
-
       {(solutions.solutions as Solution[]).map((solution, i) => {
         const bgColor = i % 2 === 0 ? "#C9D1D3" : "#FFFFFF";
         const sectionId =
