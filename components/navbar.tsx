@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,42 +15,42 @@ const navItems = [
       {
         label: "End-to-End Procurement & Sourcing",
         href: "/services/end-to-end-procurement-and-sourcing",
-        image: "/navbar/services/1.png",
+        image: "/services/1.png",
       },
       {
         label: "Tender Management & Consortium Building",
         href: "/services/tender-management-and-consortium-building",
-        image: "/navbar/services/2.png",
+        image: "/services/2.png",
       },
       {
         label: "Vendor Identification & Matchmaking",
         href: "/services/vendor-identification-and-matchmaking",
-        image: "/navbar/services/3.png",
+        image: "/services/3.png",
       },
       {
         label: "Project Management & Execution Oversight ",
         href: "/services/project-management-and-execution-oversight",
-        image: "/navbar/services/4.png",
+        image: "/services/4.png",
       },
       {
         label: "Tender Preparation & Bid Management",
         href: "/services/tender-preparation-and-bid-management",
-        image: "/navbar/services/5.png",
+        image: "/services/5.png",
       },
       {
         label: "IT Infrastructure Deployment & Software Integration",
         href: "/services/it-infrastructure-deployment-and-software-integration",
-        image: "/navbar/services/6.png",
+        image: "/services/6.png",
       },
       {
         label: "Custom Software & Embedded AI Solutions",
         href: "/services/custom-software-and-embedded-ai-solutions",
-        image: "/navbar/services/7.png",
+        image: "/services/7.png",
       },
       {
         label: "Custom Fabrication & Product Customization",
         href: "/services/custom-fabrication-and-product-customization",
-        image: "/navbar/services/8.png",
+        image: "/services/8.png",
       },
     ],
   },
@@ -60,47 +60,47 @@ const navItems = [
       {
         label: "Military & Defence",
         href: "/industries/military-and-defence",
-        image: "/navbar/industries/1.png",
+        image: "/industries/1.png",
       },
       {
         label: "Airports",
         href: "/industries/airports",
-        image: "/navbar/industries/2.png",
+        image: "/industries/2.png",
       },
       {
         label: "Airlines & MRO",
         href: "/industries/airlines-and-mro",
-        image: "/navbar/industries/3.png",
+        image: "/industries/3.png",
       },
       {
         label: "Energy, Oil & Gas",
         href: "/industries/energy-oil-and-gas",
-        image: "/navbar/industries/4.jpeg",
+        image: "/industries/4.jpeg",
       },
       {
         label: "Marine & Shipbuilding",
         href: "/industries/marine-and-shipbuilding",
-        image: "/navbar/industries/5.png",
+        image: "/industries/5.png",
       },
       {
         label: "Healthcare & HealthTech",
         href: "/industries/healthcare-and-healthtech",
-        image: "/navbar/industries/6.png",
+        image: "/industries/6.png",
       },
       {
         label: "Manufacturing & Industrial Fabrication",
         href: "/industries/manufacturing-and-industrial",
-        image: "/navbar/industries/7.png",
+        image: "/industries/7.png",
       },
       {
         label: "Navigation, GPS, GNSS",
         href: "/industries/navigation-gps-gnss",
-        image: "/navbar/industries/8.png",
+        image: "/industries/8.png",
       },
       {
         label: "IT & Emerging Technologies",
         href: "/industries/it-and-emerging-technologies",
-        image: "/navbar/industries/9.png",
+        image: "/industries/9.png",
       },
     ],
   },
@@ -122,7 +122,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className="border-b border-amber-100 fixed w-full top-0 z-50 backdrop-blur-md bg-white"
+      className="fixed w-full top-0 z-50 backdrop-blur-md bg-black"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
@@ -142,7 +142,7 @@ export default function Navbar() {
                 return (
                   <Link key={i} href={`/${item.href}`}>
                     <motion.div
-                      className="text-[#00204E] hover:text-amber-600 transition-colors relative"
+                      className="text-white hover:text-amber-600 transition-colors relative"
                       whileHover={{ scale: 1.1 }}
                       initial={{ opacity: 0, y: -20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -162,7 +162,7 @@ export default function Navbar() {
                 return (
                   <div key={i} className="relative group">
                     <motion.div
-                      className="flex items-center space-x-1 text-[#00204E] hover:text-amber-600 transition-colors relative cursor-pointer"
+                      className="flex items-center space-x-1 text-white hover:text-amber-600 transition-colors relative cursor-pointer"
                       whileHover={{ scale: 1.1 }}
                       initial={{ opacity: 0, y: -20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -202,14 +202,14 @@ export default function Navbar() {
                             <a
                               key={j}
                               href={sub.href}
-                              className="block bg-white hover:bg-amber-100 transition rounded-lg overflow-hidden border border-gray-200"
+                              className="flex flex-col  p-4 bg-white hover:bg-amber-100 transition rounded-lg overflow-hidden border border-gray-200"
                             >
                               <img
                                 src={sub.image || "/placeholder.jpg"}
                                 alt={sub.label}
-                                className="w-full h-52 object-cover"
+                                className="w-full mx-auto  h-52 object-cover"
                               />
-                              <div className="p-2 text-left text-sm font-medium text-gray-700">
+                              <div className="mt-2 text-left text-sm font-medium text-gray-700">
                                 {sub.label}
                               </div>
                             </a>
@@ -228,7 +228,7 @@ export default function Navbar() {
             {!isMobileMenuOpen && (
               <button onClick={toggleMobileMenu}>
                 <svg
-                  className="w-6 h-6 text-gray-800"
+                  className="w-6 h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -273,7 +273,7 @@ export default function Navbar() {
             >
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="absolute top-4 right-4 text-gray-600 hover:text-blac"
+                className="absolute top-4 right-4 text-white hover:text-blac"
                 aria-label="Close menu"
               >
                 <svg

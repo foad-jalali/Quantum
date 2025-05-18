@@ -307,6 +307,12 @@ export default function Home() {
     { image: "/partners/3.png", alt: "Logo 3" },
     { image: "/partners/4.png", alt: "Logo 3" },
     { image: "/partners/5.png", alt: "Logo 3" },
+    { image: "/solutions/logos/5/5.png", alt: "intel" },
+    { image: "/solutions/logos/5/6.png", alt: "logo6" },
+    { image: "/solutions/logos/9/4.svg", alt: "do" },
+    { image: "/solutions/logos/9/7.svg", alt: "msi" },
+    { image: "/solutions/logos/10/4.png", alt: "msi" },
+    { image: "/solutions/logos/12/3.png", alt: "msi" },
   ];
   const features = [
     {
