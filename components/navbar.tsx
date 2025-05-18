@@ -75,7 +75,7 @@ const navItems = [
       {
         label: "Energy, Oil & Gas",
         href: "/industries/energy-oil-and-gas",
-        image: "/navbar/industries/4.png",
+        image: "/navbar/industries/4.jpeg",
       },
       {
         label: "Marine & Shipbuilding",
@@ -207,7 +207,7 @@ export default function Navbar() {
                               <img
                                 src={sub.image || "/placeholder.jpg"}
                                 alt={sub.label}
-                                className="w-full h-42 object-cover"
+                                className="w-full h-52 object-cover"
                               />
                               <div className="p-2 text-left text-sm font-medium text-gray-700">
                                 {sub.label}

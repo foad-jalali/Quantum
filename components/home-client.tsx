@@ -27,14 +27,7 @@ export default function Home() {
   const performanceRef = useRef(null);
 
   const aboutInView = useInView(aboutRef, { once: true, amount: 0.3 });
-  const divisionsInView = useInView(divisionsRef, { once: true, amount: 0.1 });
-  const expertiseInView = useInView(expertiseRef, { once: true, amount: 0.3 });
-  const whyUsInView = useInView(whyUsRef, { once: true, amount: 0.3 });
-  const contactInView = useInView(contactRef, { once: true, amount: 0.3 });
-  const performanceInView = useInView(performanceRef, {
-    once: true,
-    amount: 0.3,
-  });
+
   const services = [
     {
       title: "End-to-End Procurement & Sourcing",
@@ -390,8 +383,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-sky-900 overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-32  md:pt-16 ">
-        <ParticleBackground />
+      <section className="relative bg-[url('/home-hero.jpeg')] bg-no-repeat bg-cover overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-32  md:pt-16 ">
+        {/* <ParticleBackground /> */}
         <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30 "></div>
         <div className="container mx-auto px-4 md:px-6  relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
@@ -478,11 +471,11 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            <motion.div className="flex justify-center order-1 md:order-2 mt-6 md:mt-0">
+            {/* <motion.div className="flex justify-center order-1 md:order-2 mt-6 md:mt-0">
               <div className="scale-[0.8] sm:scale-[0.9] md:scale-[1.5]">
                 <Quantum />
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </section>

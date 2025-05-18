@@ -1,53 +1,53 @@
 {
-    "slug": "airports",
-    "title": "Airports Solutions by Quantum ",
-    "title_color": "#00204E",
-    "hero_title": "Airports",
-    "hero_subtitle": "Integrated systems for airport infrastructure, security, and operations. Enhancing safety, efficiency, and passenger experience.",
-    "short_description": "Quantum empowers the Airports sector with comprehensive procurement, IT deployment, project management, and technology integration services, helping modern airports achieve operational efficiency, security, and technological advancement. ",
-    "first_section_image": "/single-industries/2/first_section.png",
-    "second_section_image": "/single-industries/2/second_section.png",
-    "hero_image": "/single-industries/2/hero.png",
-    "first_section_content": {
-        "title": "Quantum’s Strategic Procurement & Infrastructure Support for Airports ",
-        "description": "Airports require continuous modernization and efficient procurement strategies to meet the demands of growing passenger numbers, technological shifts, and regulatory requirements. Quantum provides tailored End-to-End Procurement & Sourcing services for airports, ensuring operational resilience and modernization. Our airport-specific procurement services include:",
-        "bottom_content": "Quantum ensures airports maintain operational continuity and adopt new technologies effectively through strategic procurement support. ",
-        "btn": "Get a Quote"
+  "slug": "airports",
+  "title": "Airports Solutions by Quantum ",
+  "title_color": "#00204E",
+  "hero_title": "Airports",
+  "hero_subtitle": "Integrated systems for airport infrastructure, security, and operations. Enhancing safety, efficiency, and passenger experience.",
+  "short_description": "Quantum empowers the Airports sector with comprehensive procurement, IT deployment, project management, and technology integration services, helping modern airports achieve operational efficiency, security, and technological advancement. ",
+  "first_section_image": "/single-industries/2/first_section.png",
+  "second_section_image": "/single-industries/2/second_section.png",
+  "hero_image": "/single-industries/2/hero.jpeg",
+  "first_section_content": {
+    "title": "Quantum’s Strategic Procurement & Infrastructure Support for Airports ",
+    "description": "Airports require continuous modernization and efficient procurement strategies to meet the demands of growing passenger numbers, technological shifts, and regulatory requirements. Quantum provides tailored End-to-End Procurement & Sourcing services for airports, ensuring operational resilience and modernization. Our airport-specific procurement services include:",
+    "bottom_content": "Quantum ensures airports maintain operational continuity and adopt new technologies effectively through strategic procurement support. ",
+    "btn": "Get a Quote"
+  },
+  "card_section": {
+    "image": "/single-industries/2/card.png",
+    "title": "Quantum’s Project Management & Execution Oversight for Airport Developments",
+    "top_content": "Airport development and expansion projects are intricate, often involving numerous stakeholders and critical deadlines. Quantum’s Project Management & Execution Oversight services are designed to navigate this complexity and ensure success. Our expertise covers:",
+    "bottom_content": "Quantum delivers end-to-end project oversight, ensuring that airport projects are delivered on time, within budget, and with maximum operational impact. "
+  },
+  "first_section_cards": [
+    {
+      "content": "Strategic sourcing of certified aircraft parts, avionics, and systemsSourcing and procurement of airport security systems, IT networks, and communications infrastructure ",
+      "icon": "/icon/01.svg"
     },
-    "card_section": {
-        "image": "/single-industries/2/card.png",
-        "title": "Quantum’s Project Management & Execution Oversight for Airport Developments",
-        "top_content": "Airport development and expansion projects are intricate, often involving numerous stakeholders and critical deadlines. Quantum’s Project Management & Execution Oversight services are designed to navigate this complexity and ensure success. Our expertise covers:",
-        "bottom_content": "Quantum delivers end-to-end project oversight, ensuring that airport projects are delivered on time, within budget, and with maximum operational impact. "
+    {
+      "content": "Vendor identification and qualification for critical systems (baggage handling, access control, etc.) ",
+      "icon": "/icon/02.svg"
     },
-    "first_section_cards": [
-        {
-            "content": "Strategic sourcing of certified aircraft parts, avionics, and systemsSourcing and procurement of airport security systems, IT networks, and communications infrastructure ",
-            "icon": "/icon/01.svg"
-        },
-        {
-            "content": "Vendor identification and qualification for critical systems (baggage handling, access control, etc.) ",
-            "icon": "/icon/02.svg"
-        },
-        {
-            "content": "Compliance assurance with aviation regulations and standards (ICAO, IATA) ",
-            "icon": "/icon/03.svg"
-        },
-        {
-            "content": "Lifecycle vendor management for long-term infrastructure sustainability ",
-            "icon": "/icon/04.svg"
-        }
-    ],
-    "info_section": {
-        "image": "/single-industries/2/info.png",
-        "title": "Quantum’s Integrated IT Solutions & Customization for Airports ",
-        "top_content": "Technology is a cornerstone of airport operations today. Quantum’s IT Infrastructure Deployment & Custom Software Solutions help airports streamline operations, enhance security, and deliver a better passenger experience. Our airport-focused IT services include: ",
-        "bottom_content": "Quantum ensures that airports are equipped with smart, scalable, and secure technology solutions tailored to their operational demands. "
+    {
+      "content": "Compliance assurance with aviation regulations and standards (ICAO, IATA) ",
+      "icon": "/icon/03.svg"
     },
-    "second_section_content": {
-        "title": "Why Quantum is the Strategic Technology Partner for Airports ",
-        "description": "Quantum understands the unique challenges facing modern airports — from capacity expansion and security to digital transformation. Our tailored procurement, project management, and technology integration services enable airports to improve efficiency, enhance passenger safety, and embrace future-ready innovations. Partnering with Quantum means driving operational excellence and long-term growth in an increasingly competitive aviation landscape. ",
-        "btn": "Join Us",
-        "bg_color": "#1F3C88"
+    {
+      "content": "Lifecycle vendor management for long-term infrastructure sustainability ",
+      "icon": "/icon/04.svg"
     }
+  ],
+  "info_section": {
+    "image": "/single-industries/2/info.png",
+    "title": "Quantum’s Integrated IT Solutions & Customization for Airports ",
+    "top_content": "Technology is a cornerstone of airport operations today. Quantum’s IT Infrastructure Deployment & Custom Software Solutions help airports streamline operations, enhance security, and deliver a better passenger experience. Our airport-focused IT services include: ",
+    "bottom_content": "Quantum ensures that airports are equipped with smart, scalable, and secure technology solutions tailored to their operational demands. "
+  },
+  "second_section_content": {
+    "title": "Why Quantum is the Strategic Technology Partner for Airports ",
+    "description": "Quantum understands the unique challenges facing modern airports — from capacity expansion and security to digital transformation. Our tailored procurement, project management, and technology integration services enable airports to improve efficiency, enhance passenger safety, and embrace future-ready innovations. Partnering with Quantum means driving operational excellence and long-term growth in an increasingly competitive aviation landscape. ",
+    "btn": "Join Us",
+    "bg_color": "#1F3C88"
+  }
 }
