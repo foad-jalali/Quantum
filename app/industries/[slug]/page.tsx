@@ -1,6 +1,5 @@
 import path from "path";
-import React from "react";
-import fs from "fs";
+import fs from "fs/promises";
 import { notFound } from "next/navigation";
 import HeroSection from "@/components/hero-section";
 import FeatureSection from "@/components/feature-section";
@@ -11,26 +10,38 @@ interface IndustryPageProps {
   params: { slug: string };
 }
 
-export async function generateMetadata({ params }: IndustryPageProps) {
-  const { slug } = await params;
-  const data = await getIndustryData(slug);
-  return {
-    title: `${data?.title} | Quantum` || "Service",
-    description: data?.short_description || "",
-    url: `https://quantumints.com/services/${data.slug}`,
-    image: data.hero_image || "/home/hero.png",
-  };
-}
-
 async function getIndustryData(slug: string) {
   const filePath = path.join(process.cwd(), "db/industries", `${slug}.json`);
   try {
-    const data = fs.readFileSync(filePath, "utf-8");
+    const data = await fs.readFile(filePath, "utf-8");
     return JSON.parse(data);
   } catch {
     return null;
   }
 }
+
+export async function generateStaticParams() {
+  const dir = path.join(process.cwd(), "db/industries");
+  const files = await fs.readdir(dir);
+
+  return files.map((file) => ({
+    slug: file.replace(/\.json$/, ""),
+  }));
+}
+
+export const dynamicParams = false; // optional, disables runtime fallback
+
+export async function generateMetadata({ params }: IndustryPageProps) {
+  const { slug } = await params;
+  const data = await getIndustryData(slug);
+  return {
+    title: data?.title ? `${data.title} | Quantum` : "Service | Quantum",
+    description: data?.short_description || "",
+    url: `https://quantumints.com/services/${data?.slug || slug}`,
+    image: data?.hero_image || "/home/hero.png",
+  };
+}
+
 export default async function IndustryPage({ params }: IndustryPageProps) {
   const { slug } = await params;
   const data = await getIndustryData(slug);
@@ -45,20 +56,6 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         image={data.hero_image}
         buttonLink="/contact"
       />
-
-      {/* <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
-        <div className="container mx-auto px-4 text-center">
-          <h2
-            className="text-4xl font-bold mb-4"
-            style={{ color: data.title_color }}
-          >
-            {data.title}
-          </h2>
-          <h3 className="container text-xl text-[#00204E]">
-            {data.short_description}
-          </h3>
-        </div>
-      </section> */}
 
       <div className="bg-[#111111] py-16">
         <div className="container mx-auto px-4">
@@ -106,6 +103,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           </div>
         </div>
       </div>
+
       <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
         <div className="container mx-auto px-4 text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-[#00204E]">
@@ -155,6 +153,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           </p>
         </div>
       </section>
+
       <FeatureSection
         image={data.second_section_image}
         alt={data.title}
