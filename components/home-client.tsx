@@ -558,7 +558,7 @@ export default function Home() {
         buttonText="Join Our Global Vendor Network"
         buttonLink="/coming-soon"
         textColor="#FFFFFF"
-        backgroundColor="#1282A2"
+        backgroundColor="#0C4A6E"
         reverse={false}
       />
       <ContentSlider
