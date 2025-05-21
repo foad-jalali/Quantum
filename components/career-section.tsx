@@ -76,6 +76,7 @@ const CareerSection = () => {
                 <div className="container text-white">
                     <SectionHeading
                         textColor="#FFFFFF"
+                        subTextColor="#FFFFFF"
                         title="Join Quantum and Build the Future"
                         subtitle="We're looking for talented individuals. Apply now and become part of a team shaping tomorrow's technology."
                     />
