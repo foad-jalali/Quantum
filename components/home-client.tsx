@@ -15,6 +15,7 @@ import Quantum from "@/components/quantum";
 import ContentSlider from "./content-slider";
 import Link from "next/link";
 import BannerSection from "./banner-section";
+import { TimelineSection } from "./timeline-section";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -505,6 +506,7 @@ export default function Home() {
         </div>
       </section>
 
+      <TimelineSection />
       <PartnersSection items={logos} backgroundColor="#ffffff" />
       <FeatureGridSection
         title="Our Core Services"
