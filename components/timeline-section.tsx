@@ -8,7 +8,7 @@ export function TimelineSection() {
         {
             title: "2024",
             text: `<h2>Public Tenders in Canada</h2>
-          <h4>🔹 How We Help:</h4>
+          <h4> How We Help:</h4>
           <ul>
             <li>Identifying the right government tenders for your business</li>
             <li>Preparing documents, pricing proposals, and required submissions to secure contracts</li>
@@ -19,7 +19,7 @@ export function TimelineSection() {
         {
             title: "Early 2023",
             text: `<h2>Sourcing & Procurement</h2>
-<h4>🔹How We Help:</h4>
+<h4>How We Help:</h4>
 <ul>
   <li>Finding reliable suppliers across various industries</li>
   <li>Negotiating the best prices and purchase terms</li>
@@ -31,7 +31,7 @@ export function TimelineSection() {
         {
             title: "Changelog",
             text: `<h2>Selling & Market Expansion</h2>
-<h4>🔹 How We Help:</h4>
+<h4> How We Help:</h4>
 <ul>
   <li>Identifying new customers and expanding market reach</li>
   <li>Leveraging Quantum’s extensive network to promote your brand</li>
@@ -71,11 +71,16 @@ export function TimelineSection() {
                                 transition={{ duration: 0.6 }}
                             >
                                 <div className="relative w-[350px] h-[350px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
-                                    <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center text-xs font-bold shadow-md">
+                                    <div
+                                        className="absolute top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full 
+             bg-amber-500 text-white flex items-center justify-center 
+             text-xs font-bold shadow-md"
+                                    >
                                         {index + 1}
                                     </div>
+
                                     <div
-                                        className="pt-8 text-sm leading-loose text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
@@ -126,11 +131,16 @@ export function TimelineSection() {
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
                                 <div className="relative w-[350px] h-[350px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
-                                    <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center text-xs font-bold shadow-md">
+                                    <div
+                                        className="absolute top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full 
+             bg-amber-500 text-white flex items-center justify-center 
+             text-xs font-bold shadow-md"
+                                    >
                                         {index + 1}
                                     </div>
+
                                     <div
-                                        className="pt-8 text-sm leading-loose text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
