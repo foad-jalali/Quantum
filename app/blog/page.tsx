@@ -28,7 +28,7 @@ export default async function BlogPage() {
     return (
         <>
 
-            <section id="blog-posts" className="section-padding mt-24" data-aos="fade-up">
+            <section id="blog-posts" className="section-padding mt-24 min-h-screen" data-aos="fade-up">
                 <div className="container">
                     <SectionHeading
                         title="Latest Articles"
