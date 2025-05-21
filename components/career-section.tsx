@@ -16,7 +16,7 @@ const CareerSection = () => {
 
     return (
         <>
-            <section className="min-h-screen">
+            <section>
                 {/* Section 1: Immediate animation */}
                 <motion.section
                     id="open-positions"
@@ -33,7 +33,7 @@ const CareerSection = () => {
                             subTextColor="#52575D"
                         />
 
-                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
                             {[
                                 ["Account Manager, Aviation", "Manages aviation-related client accounts, ensuring strong relationships, timely communication, and alignment with industry regulations and needs."],
                                 ["Account Manager, Oil and Gas", "Oversees client portfolios in the oil and gas sector, focusing on contract fulfillment, performance tracking, and stakeholder coordination."],
