@@ -6,8 +6,8 @@ import { motion, Variants } from "framer-motion";
 export function TimelineSection() {
     const rawData = [
         {
-            title: "2024",
-            text: `<h2>Public Tenders in Canada</h2>
+            title: `<h2>Public Tenders in Canada</h2>`,
+            text: `
           <h4> How We Help:</h4>
           <ul>
             <li>Identifying the right government tenders for your business</li>
@@ -17,8 +17,8 @@ export function TimelineSection() {
             image: "/timeline/1.png",
         },
         {
-            title: "Early 2023",
-            text: `<h2>Sourcing & Procurement</h2>
+            title: `<h2>Sourcing & Procurement</h2>`,
+            text: `
 <h4>How We Help:</h4>
 <ul>
   <li>Finding reliable suppliers across various industries</li>
@@ -29,8 +29,8 @@ export function TimelineSection() {
             image: "/timeline/2.png",
         },
         {
-            title: "Changelog",
-            text: `<h2>Selling & Market Expansion</h2>
+            title: `<h2>Selling & Market Expansion</h2>`,
+            text: `
 <h4> How We Help:</h4>
 <ul>
   <li>Identifying new customers and expanding market reach</li>
@@ -71,13 +71,18 @@ export function TimelineSection() {
                                 transition={{ duration: 0.6 }}
                             >
                                 <div className="relative w-[350px] h-[350px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
-                                    <div
-                                        className="absolute top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full 
-             bg-amber-500 text-white flex items-center justify-center 
-             text-xs font-bold shadow-md"
-                                    >
-                                        {index + 1}
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white 
+                  flex items-center justify-center text-lg font-bold shadow-md">
+                                            {index + 1}
+                                        </div>
+
+                                        <div
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-sm text-left m-0"
+                                            dangerouslySetInnerHTML={{ __html: item.title }}
+                                        />
                                     </div>
+
 
                                     <div
                                         className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
@@ -131,12 +136,16 @@ export function TimelineSection() {
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
                                 <div className="relative w-[350px] h-[350px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
-                                    <div
-                                        className="absolute top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full 
-             bg-amber-500 text-white flex items-center justify-center 
-             text-xs font-bold shadow-md"
-                                    >
-                                        {index + 1}
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white 
+                  flex items-center justify-center text-lg font-bold shadow-md">
+                                            {index + 1}
+                                        </div>
+
+                                        <div
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-sm text-left m-0"
+                                            dangerouslySetInnerHTML={{ __html: item.title }}
+                                        />
                                     </div>
 
                                     <div

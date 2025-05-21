@@ -63,7 +63,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white dark:bg-black z-10 flex items-center justify-center border border-neutral-300 dark:border-neutral-700">
               <div className="w-3 h-3 rounded-full bg-neutral-400 dark:bg-neutral-600" />
             </div>
-
             <div className="mt-8 z-10">{item.content}</div>
           </div>
         ))}
