@@ -17,6 +17,7 @@ import Link from "next/link";
 import BannerSection from "./banner-section";
 import { TimelineSection } from "./timeline-section";
 import ServicesIndustriesMarquee from "./services-industries-marquee";
+import { BentoGridDemo } from "./bento-grid-item";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -416,6 +417,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
             {/* 👈 سمت چپ: متن و CTA */}
+            
             <motion.div
               className="space-y-6 text-center md:text-start"
               initial={{ opacity: 0, y: 50 }}
@@ -504,6 +506,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
+         <ParticleBackground />
       </section>
 
       <TimelineSection />
@@ -514,11 +517,16 @@ export default function Home() {
         items={services}
         backgroundColor="#000000"
       />
-      <FeatureGridSection
+      {/* <BentoGridDemo
+        title="Our Core Services"
+        subtitle="Tailored solutions for complex projects"
+        items={services}
+        backgroundColor="#000000"
+      /> */}
+      <BentoGridDemo
         title="Industries We Empower"
         subtitle="Enabling growth across diverse sectors"
         items={industries}
-        lg={4}
         textColor="text-black"
         backgroundColor="#FFFFFF"
       />
