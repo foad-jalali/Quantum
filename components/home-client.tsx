@@ -137,6 +137,7 @@ export default function Home() {
       content:
         "Complete project lifecycle support – from bid strategy to multi-vendor coordination and delivery. ",
       color: "#f59e0b",
+      image: "/solutions/1.png"
     },
     {
       title: "AI & Advanced Software Platforms",
@@ -144,6 +145,7 @@ export default function Home() {
       content:
         "Custom-built AI/ML solutions tailored for aviation, healthcare, energy, and industrial sectors. ",
       color: "#f59e0b",
+      image: "/solutions/2.png"
     },
     {
       title: "Secure Infrastructure & Data Systems",
@@ -151,6 +153,7 @@ export default function Home() {
       content:
         "AI-ready server infrastructure, cloud systems, and secure data centers for mission-critical deployments. ",
       color: "#f59e0b",
+      image: "/solutions/3.png"
     },
     {
       title: "Navigation & Remote Monitoring Systems",
@@ -158,6 +161,7 @@ export default function Home() {
       content:
         "GNSS, GPS, drones, satellite-based monitoring, and fleet/workforce tracking platforms. ",
       color: "#f59e0b",
+      image: "/solutions/4.png"
     },
     {
       title: "Embedded & Edge Computing Solutions",
@@ -165,6 +169,7 @@ export default function Home() {
       content:
         "Real-time embedded systems for aviation, hospitals, industrial automation, and edge AI devices. ",
       color: "#f59e0b",
+      image: "/solutions/5.png"
     },
     {
       title: "Industrial Equipment & Automation",
@@ -172,6 +177,7 @@ export default function Home() {
       content:
         "High-precision CNC machines, laser tools, waterjet cutters, and 3D metal printers for advanced manufacturing. ",
       color: "#f59e0b",
+      image: "/solutions/6.png"
     },
     {
       title: "Power & Energy Systems",
@@ -179,6 +185,7 @@ export default function Home() {
       content:
         "UPS, battery packs, generators, solar arrays – from commercial to military-grade resilience. ",
       color: "#f59e0b",
+      image: "/solutions/7.png"
     },
     {
       title: "Field Monitoring & Instrumentation",
@@ -186,6 +193,7 @@ export default function Home() {
       content:
         "Multi-sensor analyzers, hydrogen flow meters, gas detection, testers, and remote diagnostic tools. ",
       color: "#f59e0b",
+      image: "/solutions/8.png"
     },
     {
       title: "Enterprise IT & Network Integration",
@@ -193,6 +201,7 @@ export default function Home() {
       content:
         "End-to-end IT infrastructure including servers, networking equipment, and system management. ",
       color: "#f59e0b",
+      image: "/solutions/9.png"
     },
     {
       title: "Smart Connectivity & Signal Solutions",
@@ -200,6 +209,7 @@ export default function Home() {
       content:
         "Wire, cable, ruggedized harnesses, and fiber optics for secure communications and control. ",
       color: "#f59e0b",
+      image: "/solutions/10.png"
     },
     {
       title: "Custom Fabrication & Modular Manufacturing",
@@ -207,6 +217,7 @@ export default function Home() {
       content:
         "Tailored metalwork, assemblies, and fabrication systems – from prototyping to production scale. ",
       color: "#f59e0b",
+      image: "/solutions/11.png"
     },
     {
       title: "Lighting & Sustainable Infrastructure",
@@ -214,6 +225,7 @@ export default function Home() {
       content:
         "LED lighting for commercial, industrial, and public projects, along with solar-integrated smart tech.",
       color: "#f59e0b",
+      image: "/solutions/12.png"
     },
   ];
 
@@ -530,7 +542,7 @@ export default function Home() {
       />
 
       <StorySection
-        title="Solutions We Deliver "
+        title="Solutions We Deliver"
         subtitle="Integrated systems for governments and enterprises"
         slides={slides}
       />
