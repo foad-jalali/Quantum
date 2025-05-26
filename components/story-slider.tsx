@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link"
 
 interface Slide {
   title: string;
@@ -87,24 +88,27 @@ const StorySection = ({
           <Slider ref={sliderRef} {...settings}>
             {slides.map((slide, i) => (
               <div key={i} className="px-4">
-                <div
-                  className="rounded-lg p-6 h-full min-h-[250px] bg-white/5 border border-white/10 backdrop-blur-md flex flex-col md:flex-row gap-6"
-                  style={{ borderLeft: `4px solid ${slide.color}` }}
-                >
-                  <div className="w-full md:w-1/3 aspect-video relative rounded-md overflow-hidden flex-shrink-0">
-                    <Image
-                      src={slide.image}
-                      alt={slide.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                <Link key={i} href={slide.slug} className="block px-4">
+                  <div
+                    className="rounded-lg p-6 h-full min-h-[250px] bg-white/5 border border-white/10 backdrop-blur-md flex flex-col md:flex-row gap-6 hover:scale-[1.01] transition-transform duration-300"
+                    style={{ borderLeft: `4px solid ${slide.color}` }}
+                  >
+                    <div className="w-full md:w-1/3 aspect-video relative rounded-md overflow-hidden flex-shrink-0">
+                      <Image
+                        src={slide.image}
+                        alt={slide.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
 
-                  <div className="flex-1 flex flex-col justify-center text-left">
-                    <h4 className="text-xl font-semibold mb-2 text-white">{slide.title}</h4>
-                    <p className="text-gray-300 line-clamp-5">{slide.content}</p>
+                    <div className="flex-1 flex flex-col justify-center text-left">
+                      <h4 className="text-xl font-semibold mb-2 text-white">{slide.title}</h4>
+                      <p className="text-gray-300 line-clamp-5">{slide.content}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
+
 
               </div>
             ))}
