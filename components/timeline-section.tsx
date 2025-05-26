@@ -72,7 +72,7 @@ export function TimelineSection() {
                             >
                                 <div className="relative w-full max-w-[430px] aspect-square bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white 
+                                        <div className="w-14 h-12 rounded-full bg-amber-500 text-white 
                   flex items-center justify-center text-lg font-bold shadow-md">
                                             {index + 1}
                                         </div>
@@ -137,7 +137,7 @@ export function TimelineSection() {
                             >
                                 <div className="relative w-full max-w-[430px] aspect-square bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white 
+                                        <div className="w-14 h-12 rounded-full bg-amber-500 text-white 
                   flex items-center justify-center text-lg font-bold shadow-md">
                                             {index + 1}
                                         </div>
