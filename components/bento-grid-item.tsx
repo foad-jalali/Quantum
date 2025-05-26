@@ -112,7 +112,12 @@ export function BentoGridDemo({
                 )
               }
               icon={item.icon}
-              className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+              className={
+                i === 8 ? "md:col-span-2" :
+                  i === 7 ? "md:col-span-1" :
+                    i === 3 ? "md:col-span-3" : ""
+              }
+
             />
           ))}
         </BentoGrid>
