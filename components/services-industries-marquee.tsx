@@ -78,7 +78,7 @@ export default function ServicesIndustriesMarquee() {
         { name: 'Military & Defence', image: '/industries/1.png', slug: "/industries/military-and-defence" },
         { name: 'Airports', image: '/industries/2.png', slug: "/industries/airports" },
         { name: 'Airlines & MRO', image: '/industries/3.png', slug: "/industries/airlines-and-mro" },
-        { name: 'Energy, Oil & Gas', image: '/industries/4.png', slug: "/industries/energy-oil-and-gas" },
+        { name: 'Energy, Oil & Gas', image: '/industries/4.jpeg', slug: "/industries/energy-oil-and-gas" },
         { name: 'Marine & Shipbuilding', image: '/industries/5.png', slug: "/industries/marine-and-shipbuilding" },
         { name: 'Healthcare & HealthTech', image: '/industries/6.png', slug: "/industries/healthcare-and-healthtech" },
         { name: 'Manufacturing & Industrial Fabrication', image: '/industries/7.png', slug: "/industries/manufacturing-and-industrial" },

@@ -416,7 +416,6 @@ export default function Home() {
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
-            {/* 👈 سمت چپ: متن و CTA */}
             
             <motion.div
               className="space-y-6 text-center md:text-start"
@@ -495,7 +494,6 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* 👉 سمت راست: اسلایدر مارکیو دوتایی */}
             <motion.div
               className="hidden lg:block h-screen max-h-[90vh] overflow-hidden"
               initial={{ opacity: 0, y: 30 }}

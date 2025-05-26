@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex justify-between items-center flex-row md:flex-row mb-6 w-full">
           <motion.div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center space-x-2">
-              <Image width={150} height={150} alt="logo" src="/favicon.svg" />
+              <Image width={150} height={150} alt="logo" src="/favicon.png" />
 
               {/* <span className="font-bold text-xl">InovativAI</span> */}
             </Link>

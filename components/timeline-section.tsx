@@ -70,7 +70,7 @@ export function TimelineSection() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <div className="relative w-[350px] h-[350px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
+                                <div className="relative w-full max-w-[430px] aspect-square bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
                                     <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 rounded-full bg-amber-500 text-white 
                   flex items-center justify-center text-lg font-bold shadow-md">
@@ -78,14 +78,14 @@ export function TimelineSection() {
                                         </div>
 
                                         <div
-                                            className="prose prose-neutral dark:prose-invert max-w-none text-sm text-left m-0"
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-md text-left m-0"
                                             dangerouslySetInnerHTML={{ __html: item.title }}
                                         />
                                     </div>
 
 
                                     <div
-                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-md leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
@@ -99,7 +99,7 @@ export function TimelineSection() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
-                                <div className="w-[350px] h-[350px] rounded-full overflow-hidden border-4 border-sky-400 flex items-center justify-center">
+                                <div className="w-full max-w-[430px] aspect-square rounded-full overflow-hidden border-4 border-sky-400 flex items-center justify-center">
                                     <img
                                         src={item.image}
                                         alt={item.title}
@@ -118,7 +118,7 @@ export function TimelineSection() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <div className="w-[350px] h-[350px] rounded-full overflow-hidden border-4 border-sky-400 flex items-center justify-center">
+                                <div className="w-full max-w-[430px] aspect-square rounded-full overflow-hidden border-4 border-sky-400 flex items-center justify-center">
                                     <img
                                         src={item.image}
                                         alt={item.title}
@@ -135,7 +135,7 @@ export function TimelineSection() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
-                                <div className="relative w-[350px] h-[350px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
+                                <div className="relative w-full max-w-[430px] aspect-square bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
                                     <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 rounded-full bg-amber-500 text-white 
                   flex items-center justify-center text-lg font-bold shadow-md">
@@ -143,13 +143,13 @@ export function TimelineSection() {
                                         </div>
 
                                         <div
-                                            className="prose prose-neutral dark:prose-invert max-w-none text-sm text-left m-0"
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-md text-left m-0"
                                             dangerouslySetInnerHTML={{ __html: item.title }}
                                         />
                                     </div>
 
                                     <div
-                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-md leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
