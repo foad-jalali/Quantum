@@ -78,14 +78,14 @@ export function TimelineSection() {
                                         </div>
 
                                         <div
-                                            className="prose prose-neutral dark:prose-invert max-w-none text-md text-left m-0"
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-xl text-left m-0"
                                             dangerouslySetInnerHTML={{ __html: item.title }}
                                         />
                                     </div>
 
 
                                     <div
-                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-md leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-xl leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
@@ -143,13 +143,13 @@ export function TimelineSection() {
                                         </div>
 
                                         <div
-                                            className="prose prose-neutral dark:prose-invert max-w-none text-md text-left m-0"
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-xl text-left m-0"
                                             dangerouslySetInnerHTML={{ __html: item.title }}
                                         />
                                     </div>
 
                                     <div
-                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-md leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-xl leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
