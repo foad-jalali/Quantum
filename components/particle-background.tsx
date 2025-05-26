@@ -77,7 +77,7 @@ const ParticleBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw connections
-      ctx.strokeStyle = "#FE7743";
+      ctx.strokeStyle = "rgba(245, 158, 11, 0.4)";
       ctx.lineWidth = 0.5;
 
       for (let i = 0; i < particles.length; i++) {
