@@ -129,4 +129,36 @@
     @apply text-2xl font-bold md:text-3xl;
   }
 }
+@layer utilities {
+  .animate-marquee-up {
+    animation: marquee-up 40s linear infinite;
+  }
+
+  .animate-marquee-down {
+    animation: marquee-down 40s linear infinite;
+  }
+
+  @keyframes marquee-up {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  @keyframes marquee-down {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
 

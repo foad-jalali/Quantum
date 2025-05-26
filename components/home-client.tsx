@@ -16,6 +16,7 @@ import ContentSlider from "./content-slider";
 import Link from "next/link";
 import BannerSection from "./banner-section";
 import { TimelineSection } from "./timeline-section";
+import ServicesIndustriesMarquee from "./services-industries-marquee";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -409,11 +410,12 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-[url('/home-hero.jpeg')] bg-no-repeat bg-cover overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-32  md:pt-16 ">
-        {/* <ParticleBackground /> */}
-        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30 "></div>
-        <div className="container mx-auto px-4 md:px-6  relative z-10">
+      <section className="relative bg-black overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-16 md:pt-0">
+        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
+            {/* 👈 سمت چپ: متن و CTA */}
             <motion.div
               className="space-y-6 text-center md:text-start"
               initial={{ opacity: 0, y: 50 }}
@@ -443,6 +445,7 @@ export default function Home() {
                   International Services
                 </motion.span>{" "}
               </motion.h1>
+
               <motion.p
                 className="text-xl md:text-2xl text-white"
                 initial={{ opacity: 0 }}
@@ -451,29 +454,22 @@ export default function Home() {
               >
                 Innovating Public Procurement & Supply Solutions Globally
               </motion.p>
+
               <motion.div
                 className="flex flex-wrap justify-center lg:justify-start gap-3 pt-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.1 }}
               >
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link href="/solutions">
                     <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                      <span className="relative z-10">
-                        Explore Our Solutions
-                      </span>
+                      <span className="relative z-10">Explore Our Solutions</span>
                       <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
                     </Button>
                   </Link>
                 </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link href="/contact">
                     <Button
                       variant="outline"
@@ -497,11 +493,15 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* <motion.div className="flex justify-center order-1 md:order-2 mt-6 md:mt-0">
-              <div className="scale-[0.8] sm:scale-[0.9] md:scale-[1.5]">
-                <Quantum />
-              </div>
-            </motion.div> */}
+            {/* 👉 سمت راست: اسلایدر مارکیو دوتایی */}
+            <motion.div
+              className="hidden lg:block h-screen max-h-[90vh] overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <ServicesIndustriesMarquee />
+            </motion.div>
           </div>
         </div>
       </section>
@@ -512,7 +512,7 @@ export default function Home() {
         title="Our Core Services"
         subtitle="Tailored solutions for complex projects"
         items={services}
-        backgroundColor="#0c4a6e"
+        backgroundColor="#000000"
       />
       <FeatureGridSection
         title="Industries We Empower"
@@ -560,7 +560,7 @@ export default function Home() {
         buttonText="Join Our Global Vendor Network"
         buttonLink="/coming-soon"
         textColor="#FFFFFF"
-        backgroundColor="#0C4A6E"
+        backgroundColor="#000000"
         reverse={false}
       />
       <ContentSlider

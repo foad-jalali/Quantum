@@ -21,10 +21,10 @@ const StorySection = ({
   title,
   subtitle,
   slides,
-  backgroundColor = "#ffffff",
+  backgroundColor = "#000000",
 }: StorySectionProps) => {
   return (
-    <section className="py-16 bg-sky-900">
+    <section className="py-16 bg-black">
       <div className="container mx-auto px-4 md:px-6">
         <motion.h2
           className="text-3xl text-white font-bold tracking-tight text-center mb-4"
