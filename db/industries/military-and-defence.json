@@ -23,22 +23,22 @@
     "first_section_cards": [
         {
             "title": "Mission-Critical Sourcing",
-            "content": "Sourcing mission-critical components, systems, and equipment",
+            "content": "Procuring essential defence systems, components, and equipment for high-stakes operations.",
             "icon": "/icon/01.svg"
         },
         {
             "title": "Defence Vendor Qualification",
-            "content": "Identifying and qualifying Defence-certified vendors",
+            "content": "Identifying and certifying vendors in accordance with defence sector standards and regulations.",
             "icon": "/icon/02.svg"
         },
         {
             "title": "Vendor Lifecycle Oversight",
-            "content": "Vendor performance monitoring and lifecycle management",
+            "content": "Monitoring vendor performance and managing supplier relationships throughout project lifecycles.",
             "icon": "/icon/03.svg"
         },
         {
             "title": "Government Tender Support",
-            "content": "Supporting bid preparation for government and Defence tenders",
+            "content": "Assisting in bid preparation and compliance for public sector and defence procurement.",
             "icon": "/icon/04.svg"
         }
     ],

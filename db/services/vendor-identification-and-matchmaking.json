@@ -22,32 +22,32 @@
   "first_section_cards": [
     {
       "title": "Needs Assessment",
-      "content": "Detailed Needs Analysis and Project Scoping",
+      "content": "Analyzing business needs and defining the scope of procurement projects.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Market Research",
-      "content": "Market Research and Vendor Database Development",
+      "content": "Conducting research and building vendor databases for targeted sourcing.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Vendor Screening",
-      "content": "Vendor Qualification and Due Diligence",
+      "content": "Evaluating and qualifying vendors through detailed due diligence.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "RFX Preparation",
-      "content": "RFX Documentation (RFP/RFQ)",
+      "content": "Creating structured RFP/RFQ documents for vendor engagement.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Vendor Shortlisting",
-      "content": "Shortlisting Based on Technical, Financial, and Compliance Criteria",
+      "content": "Selecting vendors based on technical, financial, and compliance criteria.",
       "icon": "/icon/05.svg"
     },
     {
       "title": "Vendor Audits",
-      "content": "Conducting Vendor Audits and Performance Reviews",
+      "content": "Auditing vendors and reviewing performance to ensure reliability.",
       "icon": "/icon/06.svg"
     }
   ],

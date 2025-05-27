@@ -23,27 +23,27 @@
     "first_section_cards": [
         {
             "title": "Marine Systems Sourcing",
-            "content": "Procurement of marine engines, navigation systems, and structural materials",
+            "content": "Procuring marine engines, navigation systems, and structural materials for maritime projects.",
             "icon": "/icon/01.svg"
         },
         {
             "title": "IMO-Compliant Equipment",
-            "content": "Sourcing of IMO-compliant safety equipment and communication systems",
+            "content": "Sourcing safety and communication systems aligned with IMO regulations and maritime standards.",
             "icon": "/icon/02.svg"
         },
         {
             "title": "Marine Supply Chain",
-            "content": "Supply chain management and vendor performance tracking",
+            "content": "Managing the end-to-end supply chain with continuous vendor performance tracking.",
             "icon": "/icon/03.svg"
         },
         {
             "title": "Shipyard Tendering",
-            "content": "Tender preparation for shipyard infrastructure projects and fleet modernization",
+            "content": "Preparing tenders for shipyard infrastructure, vessel upgrades, and fleet modernization.",
             "icon": "/icon/04.svg"
         },
         {
             "title": "Maritime Vendor Compliance",
-            "content": "Vendor identification and qualification based on maritime certifications (SOLAS, MARPOL)",
+            "content": "Identifying and qualifying vendors based on SOLAS, MARPOL, and other maritime certifications.",
             "icon": "/icon/05.svg"
         }
     ],

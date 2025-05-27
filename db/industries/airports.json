@@ -23,27 +23,27 @@
   "first_section_cards": [
     {
       "title": "Certified Parts Sourcing",
-      "content": "Strategic sourcing of certified aircraft parts, avionics, and systems",
+      "content": "Sourcing certified aircraft components, avionics, and systems aligned with industry standards.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Supplier Oversight",
-      "content": "Supplier performance monitoring and contract management",
+      "content": "Tracking supplier performance and managing contracts to ensure consistent delivery.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "MRO Tendering",
-      "content": "Tender management and bid preparation for MRO and airline projects",
+      "content": "Preparing and managing tenders for MRO and airline-related procurement projects.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Supply Chain Risk",
-      "content": "Supply chain risk assessment and continuity planning",
+      "content": "Evaluating risks across the supply chain and building robust continuity plans.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Vendor Compliance",
-      "content": "Vendor identification, qualification, and compliance assurance (FAA, EASA standards)",
+      "content": "Identifying and qualifying vendors to meet FAA, EASA, and aviation compliance standards.",
       "icon": "/icon/05.svg"
     }
   ],

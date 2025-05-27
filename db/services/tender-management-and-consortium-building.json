@@ -22,32 +22,32 @@
   "first_section_cards": [
     {
       "title": "Tender Discovery",
-      "content": "Opportunity Identification and Tender Research",
+      "content": "Identifying tender opportunities and conducting targeted market research.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Bid Strategy",
-      "content": "Bid Strategy Development and Positioning",
+      "content": "Developing competitive bid strategies and clear positioning.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Requirements & Compliance",
-      "content": "Requirements Analysis and Compliance Assurance",
+      "content": "Analyzing tender requirements and ensuring full compliance.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Proposal Management",
-      "content": "Proposal Drafting, Review, and Submission Management",
+      "content": "Drafting, reviewing, and managing timely proposal submissions.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Risk Planning",
-      "content": "Risk Assessment and Mitigation Strategies",
+      "content": "Assessing potential risks and defining mitigation strategies.",
       "icon": "/icon/05.svg"
     },
     {
       "title": "Negotiation Support",
-      "content": "Post-Tender Negotiations and Clarifications",
+      "content": "Managing post-tender clarifications and negotiations effectively.",
       "icon": "/icon/06.svg"
     }
   ],

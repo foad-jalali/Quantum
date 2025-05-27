@@ -22,32 +22,32 @@
   "first_section_cards": [
     {
       "title": "Project Planning",
-      "content": "Project Scoping, Scheduling, and Resource Planning",
+      "content": "Defining project scope, timelines, and resource allocation strategies.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Risk Management",
-      "content": "Risk Identification, Mitigation, and Contingency Management",
+      "content": "Identifying potential risks and setting mitigation and contingency plans.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Budget & Cost Control",
-      "content": "Budget Development, Cost Control, and Financial Tracking",
+      "content": "Developing budgets and tracking costs to maintain financial discipline.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Quality Monitoring",
-      "content": "Quality Assurance and Performance Metrics Monitoring",
+      "content": "Ensuring project quality through performance metrics and audits.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Stakeholder Communication",
-      "content": "Stakeholder Engagement, Communication, and Reporting",
+      "content": "Engaging stakeholders with clear updates, reports, and feedback loops.",
       "icon": "/icon/05.svg"
     },
     {
       "title": "Change Management",
-      "content": "Issue Resolution and Change Management Processes",
+      "content": "Managing issues, changes, and project adjustments effectively.",
       "icon": "/icon/06.svg"
     }
   ],

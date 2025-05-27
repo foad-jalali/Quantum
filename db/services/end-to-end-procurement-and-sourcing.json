@@ -23,32 +23,32 @@
   "first_section_cards": [
     {
       "title": "Needs & Specs",
-      "content": "Requirement Analysis and Specification Finalization",
+      "content": "Detailed analysis of requirements and finalization of technical specs to meet project goals.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Supplier Onboarding",
-      "content": "Supplier Research, Qualification, and Onboarding",
+      "content": "Vendor research, qualification, and onboarding for consistent and reliable supply.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Negotiation & Contracts",
-      "content": "Price Negotiation and Contract Management",
+      "content": "Managing price negotiations and contracts to ensure best value and clear terms.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Order Planning",
-      "content": "Procurement Planning and Order Management",
+      "content": "Comprehensive procurement planning and efficient order management to ensure timely and cost-effective fulfillment.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Risk & Compliance",
-      "content": "Risk Mitigation and Compliance Assurance",
+      "content": "Implementation of proactive risk mitigation strategies and adherence to industry regulations and compliance standards.",
       "icon": "/icon/05.svg"
     },
     {
       "title": "Performance Review",
-      "content": "Ongoing Supplier Performance Monitoring",
+      "content": "Continuous monitoring and evaluation of supplier performance to drive improvements and ensure long-term value.",
       "icon": "/icon/06.svg"
     }
   ],

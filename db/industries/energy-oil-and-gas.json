@@ -23,27 +23,27 @@
   "first_section_cards": [
     {
       "title": "Industrial Equipment Sourcing",
-      "content": "Sourcing industrial equipment, valves, pumps, safety systems, and control panels",
+      "content": "Sourcing valves, pumps, safety systems, and industrial control panels for critical operations.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Standards Compliance",
-      "content": "Vendor identification and compliance checks (ISO, API, ASME standards)",
+      "content": "Identifying vendors and validating compliance with ISO, API, and ASME standards.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Tendering for Oil & EPC",
-      "content": "Tender preparation for oilfield services, plant expansion, and EPC contracts",
+      "content": "Preparing tenders for oilfield services, plant expansions, and EPC infrastructure contracts.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Supplier Audits",
-      "content": "Supplier performance auditing and lifecycle management",
+      "content": "Auditing supplier performance and managing vendor lifecycles for operational continuity.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Renewable Sourcing",
-      "content": "Strategic sourcing of renewable energy components (solar, wind, smart grid tech)",
+      "content": "Strategic procurement of solar, wind, and smart grid components for clean energy projects.",
       "icon": "/icon/05.svg"
     }
   ],

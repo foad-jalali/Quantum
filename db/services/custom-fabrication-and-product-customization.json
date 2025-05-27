@@ -22,21 +22,21 @@
   "first_section_cards": [
     {
       "title": "Material Compliance",
-      "content": "Material Sourcing and Specification Compliance",
+      "content": "Sourcing materials that meet strict specifications and industry standards.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Advanced Fabrication",
-      "content": "Advanced Manufacturing and Fabrication Techniques",
+      "content": "Utilizing modern manufacturing methods for efficient and accurate production.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Precision Engineering",
-      "content": "CNC Machining, 3D Printing, and Metal Fabrication",
+      "content": "Delivering high-accuracy parts through CNC machining, 3D printing, and metalwork.",
       "icon": "/icon/03.svg"
     }
   ],
-    "divisions": [
+  "divisions": [
     {
       "content": "Design Modifications to Meet Specific Use Cases ",
       "icon": "/icon/01.svg"

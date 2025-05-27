@@ -22,32 +22,32 @@
   "first_section_cards": [
     {
       "title": "Tender Analysis",
-      "content": "Detailed Tender Opportunity Analysis",
+      "content": "In-depth evaluation of tender opportunities to guide strategic bidding.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Bid Decision Support",
-      "content": "Bid/No-Bid Decision Support and Risk Assessment",
+      "content": "Supporting go/no-go decisions through risk and fit assessment.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Win Strategy",
-      "content": "Development of Win Themes and Value Propositions",
+      "content": "Crafting strong win themes and value propositions for proposals.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Document Preparation",
-      "content": "Technical, Financial, and Administrative Document Preparation",
+      "content": "Preparing technical, financial, and administrative documents accurately.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Compliance Review",
-      "content": "Compliance Checking Against Tender Requirements",
+      "content": "Verifying alignment with all tender instructions and requirements.",
       "icon": "/icon/05.svg"
     },
     {
       "title": "Proposal Design",
-      "content": "Design and Formatting for Professional Presentation",
+      "content": "Designing and formatting proposals for clarity and impact.",
       "icon": "/icon/06.svg"
     }
   ],

@@ -22,22 +22,22 @@
   "first_section_cards": [
     {
       "title": "IT Assessment",
-      "content": "IT Environment Assessment and Requirements Gathering",
+      "content": "Evaluating the current IT environment and gathering technical requirements.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Equipment Procurement",
-      "content": "Hardware and Network Equipment Procurement",
+      "content": "Sourcing and acquiring hardware and networking infrastructure components.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Server & Cloud Setup",
-      "content": "Server Setup, Virtualization, and Cloud Integration",
+      "content": "Deploying servers, enabling virtualization, and integrating cloud solutions.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "Network Design",
-      "content": "LAN/WAN Network Design, Installation, and Optimization",
+      "content": "Planning, installing, and optimizing LAN/WAN network infrastructure.",
       "icon": "/icon/04.svg"
     }
   ],

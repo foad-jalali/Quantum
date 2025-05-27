@@ -22,36 +22,36 @@
   "first_section_cards": [
     {
       "title": "Process Mapping",
-      "content": "Business Requirements Analysis and Process Mapping",
+      "content": "Analyzing business needs and mapping workflows to define system requirements.",
       "icon": "/icon/01.svg"
     },
     {
       "title": "Custom Development",
-      "content": "Custom Web, Mobile, and Desktop Application Development",
+      "content": "Building tailored web, mobile, and desktop applications to meet specific goals.",
       "icon": "/icon/02.svg"
     },
     {
       "title": "Cloud Architecture",
-      "content": "Cloud-Native Application Architecture and Development",
+      "content": "Designing and developing scalable, cloud-native application infrastructures.",
       "icon": "/icon/03.svg"
     },
     {
       "title": "UX & UI Design",
-      "content": "UI/UX Design Focused on Usability and Business Goals",
+      "content": "Creating intuitive and goal-driven user experiences across all platforms.",
       "icon": "/icon/04.svg"
     },
     {
       "title": "Performance & Security",
-      "content": "System Scalability, Security, and Performance Engineering",
+      "content": "Ensuring system scalability, security, and high-performance operations.",
       "icon": "/icon/05.svg"
     },
     {
       "title": "Support & Growth",
-      "content": "Ongoing Maintenance, Support, and Future Enhancements",
+      "content": "Providing long-term maintenance, user support, and continuous improvements.",
       "icon": "/icon/06.svg"
     }
   ],
-    "divisions": [
+  "divisions": [
     {
       "content": "Machine Learning Model Development and Integration ",
       "icon": "/icon/01.svg"
