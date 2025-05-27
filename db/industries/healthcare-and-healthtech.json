@@ -22,22 +22,27 @@
     },
     "first_section_cards": [
         {
+            "title": "Medical Equipment Sourcing",
             "content": "Procurement of medical devices, diagnostic equipment, and hospital IT systems",
             "icon": "/icon/01.svg"
         },
         {
-            "content": "Vendor identification and qualification based on FDA, CE, and ISO standards ",
+            "title": "Regulatory Vendor Screening",
+            "content": "Vendor identification and qualification based on FDA, CE, and ISO standards",
             "icon": "/icon/02.svg"
         },
         {
-            "content": "Tender preparation for healthcare facility expansions and technology rollouts ",
+            "title": "Healthcare Tendering",
+            "content": "Tender preparation for healthcare facility expansions and technology rollouts",
             "icon": "/icon/03.svg"
         },
         {
-            "content": "Vendor performance monitoring and contract management for long-term value ",
+            "title": "Vendor Oversight",
+            "content": "Vendor performance monitoring and contract management for long-term value",
             "icon": "/icon/04.svg"
         },
         {
+            "title": "HealthTech Sourcing",
             "content": "Strategic sourcing of HealthTech solutions including telemedicine and wearable devices",
             "icon": "/icon/05.svg"
         }

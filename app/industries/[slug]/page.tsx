@@ -5,6 +5,7 @@ import HeroSection from "@/components/hero-section";
 import FeatureSection from "@/components/feature-section";
 import SimpleCard from "@/components/simple-card";
 import Image from "next/image";
+import { CardHoverEffectDemo } from "@/components/card-effect-item";
 
 interface IndustryPageProps {
   params: { slug: string };
@@ -77,17 +78,16 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           />
 
           {data?.first_section_cards?.length > 0 && (
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-12">
-              {data.first_section_cards.map(
-                (item: { content: string; icon?: string }, index: number) => (
-                  <SimpleCard
-                    key={index}
-                    description={item.content}
-                    icon={item.icon}
-                  />
-                )
-              )}
-            </div>
+            <CardHoverEffectDemo
+              items={data.first_section_cards.map((item) => ({
+                title: item.title,
+                description: item.content,
+                link: "#",
+                backgroundColor: "bg-black/90",
+                titleColor: "text-gray-300",
+                descriptionColor: "text-gray-400",
+              }))}
+            />
           )}
 
           <div className="text-center">

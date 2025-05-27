@@ -22,25 +22,30 @@
     },
     "first_section_cards": [
         {
+            "title": "IT & Cyber Procurement",
             "content": "Procurement of servers, cloud infrastructure, networking equipment, and cybersecurity solutions",
             "icon": "/icon/01.svg"
         },
         {
+            "title": "Emerging Tech Vendors",
             "content": "Vendor identification and selection across emerging tech fields such as AI, blockchain, and IoT",
             "icon": "/icon/02.svg"
         },
         {
+            "title": "Digital Project Tendering",
             "content": "Tender preparation for smart infrastructure and digital transformation projects",
             "icon": "/icon/03.svg"
         },
         {
+            "title": "Tech Lifecycle Planning",
             "content": "Vendor lifecycle management and technology refresh planning",
             "icon": "/icon/04.svg"
         },
         {
+            "title": "AI & Automation Platforms",
             "content": "Sourcing of specialized platforms for data analytics, machine learning, and automation",
             "icon": "/icon/05.svg"
-        }   
+        }
     ],
     "info_section": {
         "image": "/single-industries/9/info.png",

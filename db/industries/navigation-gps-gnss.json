@@ -22,22 +22,27 @@
     },
     "first_section_cards": [
         {
+            "title": "Navigation Hardware Sourcing",
             "content": "Procurement of GPS receivers, GNSS antennas, and navigation modules",
             "icon": "/icon/01.svg"
         },
         {
+            "title": "GNSS Vendor Validation",
             "content": "Vendor identification and validation based on GNSS technology standards",
             "icon": "/icon/02.svg"
         },
         {
+            "title": "Component Traceability",
             "content": "Lifecycle vendor management and component traceability",
             "icon": "/icon/03.svg"
         },
         {
+            "title": "Navigation Tendering",
             "content": "Tender preparation for large-scale navigation infrastructure projects",
             "icon": "/icon/04.svg"
         },
         {
+            "title": "Sector-Specific Sourcing",
             "content": "Sourcing of specialized equipment for aerospace, maritime, and transportation sectors",
             "icon": "/icon/05.svg"
         }

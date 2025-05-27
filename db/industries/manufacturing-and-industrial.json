@@ -22,22 +22,27 @@
     },
     "first_section_cards": [
         {
+            "title": "Machinery & Materials",
             "content": "Procurement of industrial machinery, automation systems, and raw materials",
             "icon": "/icon/01.svg"
         },
         {
+            "title": "Standards-Based Vendor Selection",
             "content": "Vendor identification and qualification based on ISO and industry-specific standards",
             "icon": "/icon/02.svg"
         },
         {
+            "title": "Industrial Tendering",
             "content": "Tender preparation for plant expansions and equipment upgrades",
             "icon": "/icon/03.svg"
         },
         {
+            "title": "Supplier Oversight",
             "content": "Supplier auditing, performance tracking, and lifecycle management",
             "icon": "/icon/04.svg"
         },
         {
+            "title": "Smart Manufacturing",
             "content": "Strategic sourcing of smart manufacturing technologies (IoT, AI-driven systems)",
             "icon": "/icon/05.svg"
         }

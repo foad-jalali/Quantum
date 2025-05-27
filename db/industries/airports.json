@@ -22,20 +22,29 @@
   },
   "first_section_cards": [
     {
-      "content": "Strategic sourcing of certified aircraft parts, avionics, and systemsSourcing and procurement of airport security systems, IT networks, and communications infrastructure ",
+      "title": "Certified Parts Sourcing",
+      "content": "Strategic sourcing of certified aircraft parts, avionics, and systems",
       "icon": "/icon/01.svg"
     },
     {
-      "content": "Vendor identification and qualification for critical systems (baggage handling, access control, etc.) ",
+      "title": "Supplier Oversight",
+      "content": "Supplier performance monitoring and contract management",
       "icon": "/icon/02.svg"
     },
     {
-      "content": "Compliance assurance with aviation regulations and standards (ICAO, IATA) ",
+      "title": "MRO Tendering",
+      "content": "Tender management and bid preparation for MRO and airline projects",
       "icon": "/icon/03.svg"
     },
     {
-      "content": "Lifecycle vendor management for long-term infrastructure sustainability ",
+      "title": "Supply Chain Risk",
+      "content": "Supply chain risk assessment and continuity planning",
       "icon": "/icon/04.svg"
+    },
+    {
+      "title": "Vendor Compliance",
+      "content": "Vendor identification, qualification, and compliance assurance (FAA, EASA standards)",
+      "icon": "/icon/05.svg"
     }
   ],
   "info_section": {
