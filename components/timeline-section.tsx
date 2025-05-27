@@ -68,24 +68,23 @@ export function TimelineSection() {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.5 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.6, delay: 0.2 }}
                             >
-                                <div className="relative w-full max-w-[430px] aspect-square bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-14 h-12 rounded-full bg-amber-500 text-white 
-                  flex items-center justify-center text-lg font-bold shadow-md">
+                                <div className="relative w-full max-w-[430px] h-[430px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md flex flex-col justify-between">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="w-14 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center text-lg font-bold shadow-md">
                                             {index + 1}
                                         </div>
 
                                         <div
-                                            className="prose prose-neutral dark:prose-invert max-w-none text-xl text-left m-0"
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-xl text-left mt-4"
                                             dangerouslySetInnerHTML={{ __html: item.title }}
                                         />
                                     </div>
 
-
                                     <div
-                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-xl leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert text-lg leading-relaxed text-neutral-800 dark:text-neutral-200 text-left overflow-y-auto"
+                                        style={{ maxHeight: "calc(100% - 3.5rem)" }}
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
@@ -135,25 +134,26 @@ export function TimelineSection() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
-                                <div className="relative w-full max-w-[430px] aspect-square bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-14 h-12 rounded-full bg-amber-500 text-white 
-                  flex items-center justify-center text-lg font-bold shadow-md">
+                                <div className="relative w-full max-w-[430px] h-[430px] bg-neutral-100/60 dark:bg-neutral-800/40 rounded-xl p-6 shadow-sm backdrop-blur-md flex flex-col justify-between">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="w-14 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center text-lg font-bold shadow-md">
                                             {index + 1}
                                         </div>
 
                                         <div
-                                            className="prose prose-neutral dark:prose-invert max-w-none text-xl text-left m-0"
+                                            className="prose prose-neutral dark:prose-invert max-w-none text-xl text-left mt-4"
                                             dangerouslySetInnerHTML={{ __html: item.title }}
                                         />
                                     </div>
 
                                     <div
-                                        className="prose prose-neutral dark:prose-invert max-w-non pt-8 text-xl leading-relaxed text-neutral-800 dark:text-neutral-200 overflow-auto h-full text-left"
+                                        className="prose prose-neutral dark:prose-invert text-lg leading-relaxed text-neutral-800 dark:text-neutral-200 text-left overflow-y-auto"
+                                        style={{ maxHeight: "calc(100% - 3.5rem)" }}
                                         dangerouslySetInnerHTML={{ __html: item.text }}
                                     />
                                 </div>
                             </motion.div>
+
                         </>
                     )}
                 </div>
