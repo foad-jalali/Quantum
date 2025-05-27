@@ -47,23 +47,24 @@
     ],
     "divisions": [
       {
-        "content": "Machine Learning Model Development and Integration "
+        "content": "Machine Learning Model Development and Integration ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Natural Language Processing (NLP) for Smart Interfaces "
+        "content": "Natural Language Processing (NLP) for Smart Interfaces ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Predictive Analytics and Data-Driven Decision Support "
+        "content": "Predictive Analytics and Data-Driven Decision Support ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Computer Vision for Automation and Quality Control "
+        "content": "Computer Vision for Automation and Quality Control ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "AI-Based Process Optimization and Workflow Automation "
-      },
-      {
-        "content": "Custom AI Algorithm Development for Specialized Needs ",
-        "icon_6": "/single-services/06.png"
+        "content": "AI-Based Process Optimization and Workflow Automation ",
+        "icon": "/icon/05.svg"
       }
     ],
     "second_section_content": {

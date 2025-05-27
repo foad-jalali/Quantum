@@ -48,23 +48,24 @@
   ],
   "divisions": [
     {
-      "content": "Total Cost of Ownership (TCO) Analysis"
+      "content": "Total Cost of Ownership (TCO) Analysis",
+      "icon": "/icon/01.svg"
     },
     {
-      "content": "Supplier Consolidation and Relationship Building"
+      "content": "Supplier Consolidation and Relationship Building",
+      "icon": "/icon/02.svg"
     },
     {
-      "content": "Multi-vendor Strategy Development"
+      "content": "Multi-vendor Strategy Development",
+      "icon": "/icon/03.svg"
     },
     {
-      "content": "Sustainability and Ethical Sourcing Evaluation"
+      "content": "Sustainability and Ethical Sourcing Evaluation",
+      "icon": "/icon/04.svg"
     },
     {
-      "content": "Market Intelligence and Competitive Benchmarking"
-    },
-    {
-      "content": "Leveraging Technology for Data-Driven Decisions",
-      "icon_6": "/single-services/06.png"
+      "content": "Market Intelligence and Competitive Benchmarking",
+      "icon": "/icon/05.svg"
     }
   ],
   "second_section_content": {

@@ -39,23 +39,24 @@
   ],
   "divisions": [
     {
-      "content": "Systems Analysis and Integration Planning "
+      "content": "Systems Analysis and Integration Planning ",
+      "icon": "/icon/01.svg"
     },
     {
-      "content": "ERP, CRM, SCM, and Custom Application Integration "
+      "content": "ERP, CRM, SCM, and Custom Application Integration ",
+      "icon": "/icon/02.svg"
     },
     {
-      "content": "API Development and Management for Interconnectivity "
+      "content": "API Development and Management for Interconnectivity ",
+      "icon": "/icon/03.svg"
     },
     {
-      "content": "Legacy System Modernization and Migration "
+      "content": "Legacy System Modernization and Migration ",
+      "icon": "/icon/04.svg"
     },
     {
-      "content": "Data Synchronization, Cleansing, and Consolidation "
-    },
-    {
-      "content": "Testing, Validation, and Continuous Optimization ",
-      "icon_6": "/single-services/06.png"
+      "content": "Data Synchronization, Cleansing, and Consolidation ",
+      "icon": "/icon/05.svg"
     }
   ],
   "second_section_content": {

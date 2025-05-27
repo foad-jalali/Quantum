@@ -5,6 +5,7 @@ import HeroSection from "@/components/hero-section";
 import FeatureSection from "@/components/feature-section";
 import SimpleCard from "@/components/simple-card";
 import DivisionCard from "@/components/division-card";
+import { GlowingEffectDemoSecond } from "@/components/glowing-effect-item";
 
 interface ServicePageProps {
   params: { slug: string };
@@ -116,22 +117,17 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </div>
 
         {data?.divisions?.length > 0 && (
-          <div className="flex justify-center">
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl px-4">
-              {data.divisions.map((division: any, index: number) => (
-                <DivisionCard
-                  key={index}
-                  index={index}
-                  icon={division.icon}
-                  title={division.title}
-                  description={division.description}
-                  content={division.content}
-                  services={division.services}
-                />
-              ))}
-            </div>
+          <div className="max-w-7xl mx-auto px-4">
+            <GlowingEffectDemoSecond
+              items={data.divisions.map((division: any) => ({
+                title: division.title,
+                description: division.content,
+                icon: division.icon,
+              }))}
+            />
           </div>
         )}
+
 
         <div className="text-center mt-16">
           <p className="container text-white text-lg mb-4 pt-8">

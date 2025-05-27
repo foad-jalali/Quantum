@@ -47,23 +47,24 @@
     ],
     "divisions": [
       {
-        "content": "Identifying Complementary Partners with Aligned Capabilities"
+        "content": "Identifying Complementary Partners with Aligned Capabilities",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Defining Roles, Responsibilities, and Consortium Structures"
+        "content": "Defining Roles, Responsibilities, and Consortium Structures",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Drafting Consortium Agreements and Legal Frameworks"
+        "content": "Drafting Consortium Agreements and Legal Frameworks",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Facilitating Joint Proposal Development and Submission "
+        "content": "Facilitating Joint Proposal Development and Submission ",
+        "icon": "/icon/04.svg"
       },
       {
         "content": "Ensuring Compliance with Tender-Specific Consortium Requirements"
-      },
-      {
-        "content": "Leveraging Technology for Data-Driven Decisions",
-        "icon_6": "/single-services/06.png"
+        ,"icon": "/icon/05.svg"
       }
     ],
     "second_section_content": {

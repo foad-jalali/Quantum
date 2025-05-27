@@ -35,23 +35,24 @@
     ],
     "divisions": [
       {
-        "content": "Design Modifications to Meet Specific Use Cases "
+        "content": "Design Modifications to Meet Specific Use Cases ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Feature Enhancements and Component Upgrades "
+        "content": "Feature Enhancements and Component Upgrades ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Aesthetic Customization (Color, Finish, Branding) "
+        "content": "Aesthetic Customization (Color, Finish, Branding) ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Adaptation for Environmental or Industry-Specific Requirements "
+        "content": "Adaptation for Environmental or Industry-Specific Requirements ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "Packaging, Labeling, and Custom Assembly Solutions "
-      },
-      {
-        "content": "Lifecycle Support Including Maintenance and Upgrades ",
-        "icon_6": "/single-services/06.png"
+        "content": "Packaging, Labeling, and Custom Assembly Solutions ",
+        "icon": "/icon/05.svg"
       }
     ],
     "second_section_content": {

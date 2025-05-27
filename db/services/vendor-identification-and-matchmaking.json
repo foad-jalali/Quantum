@@ -47,23 +47,24 @@
     ],
     "divisions": [
       {
-        "content": "Aligning Vendor Strengths with Client Objectives "
+        "content": "Aligning Vendor Strengths with Client Objectives ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Facilitating Introductions and Early Negotiations "
+        "content": "Facilitating Introductions and Early Negotiations ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Supporting Pilot Projects or Trial Engagements "
+        "content": "Supporting Pilot Projects or Trial Engagements ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Advising on Contract Structuring for Long-Term Success "
+        "content": "Advising on Contract Structuring for Long-Term Success ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "Evaluating Cultural and Operational Compatibility "
-      },
-      {
-        "content": "Continuously Optimizing Vendor Relationships Post-Engagement ",
-        "icon_6": "/single-services/06.png"
+        "content": "Evaluating Cultural and Operational Compatibility ",
+        "icon": "/icon/05.svg"
       }
     ],
     "second_section_content": {

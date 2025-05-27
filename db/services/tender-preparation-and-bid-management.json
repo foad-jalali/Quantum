@@ -47,23 +47,24 @@
     ],
     "divisions": [
       {
-        "content": "Creation of a Bid Plan and Timeline Management "
+        "content": "Creation of a Bid Plan and Timeline Management ",
+        "icon": "/icon/01.svg"
       },
       {
-        "content": "Team Coordination and Role Assignment "
+        "content": "Team Coordination and Role Assignment ",
+        "icon": "/icon/02.svg"
       },
       {
-        "content": "Response Drafting, Review, and Editing Cycles "
+        "content": "Response Drafting, Review, and Editing Cycles ",
+        "icon": "/icon/03.svg"
       },
       {
-        "content": "Clarification Request Management and Tender Queries "
+        "content": "Clarification Request Management and Tender Queries ",
+        "icon": "/icon/04.svg"
       },
       {
-        "content": "Submission Tracking and Final Quality Assurance Checks "
-      },
-      {
-        "content": "Post-Submission Support and Debrief Handling ",
-        "icon_6": "/single-services/06.png"
+        "content": "Submission Tracking and Final Quality Assurance Checks ",
+        "icon": "/icon/05.svg"
       }
     ],
     "second_section_content": {
