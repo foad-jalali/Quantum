@@ -62,7 +62,7 @@ export default function AboutPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="heading-lg mb-6 text-gray-800">Our Vendor Ecosystem</h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                        <p className="text-gray-600 max-w-3xl mx-auto mb-10">
                             We work with a diverse network of global partners to deliver tailored solutions for defense, government, and commercial clients. Our vendors specialize in military-grade equipment, IT hardware, energy systems, aviation and marine technology, healthcare devices, automation, and consulting services.
                         </p>
                         <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
@@ -70,7 +70,7 @@ export default function AboutPage() {
                         </Button>
                     </div>
 
-                    <div className="mb-20">
+                    {/* <div className="mb-20">
                         <h2 className="heading-lg text-center mb-12 text-gray-800">Meet Our Team</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {team.map((member, index) => (
@@ -89,11 +89,11 @@ export default function AboutPage() {
                             ))}
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className="text-center mb-20">
                         <h2 className="heading-lg mb-6 text-gray-800">Global Reach</h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                        <p className="text-gray-600 max-w-3xl mx-auto mb-8">
                             While we are proudly rooted in Alberta, Canada, our solutions are designed to support organizations of all sizes, anywhere in the world. Our global execution capabilities ensure timely, compliant, and scalable results.
                         </p>
                     </div>
