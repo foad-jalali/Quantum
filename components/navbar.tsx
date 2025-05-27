@@ -122,7 +122,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className="fixed w-full top-0 z-50 backdrop-blur-md bg-black"
+      className="fixed w-full top-0 z-50 backdrop-blur-md bg-gray-950"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}

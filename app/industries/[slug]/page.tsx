@@ -83,9 +83,9 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                 title: item.title,
                 description: item.content,
                 link: "#",
-                backgroundColor: "bg-black/90",
-                titleColor: "text-gray-300",
-                descriptionColor: "text-gray-400",
+                backgroundColor: "bg-white/90",
+                titleColor: "text-gray-900",
+                descriptionColor: "text-gray-800",
               }))}
             />
           )}
