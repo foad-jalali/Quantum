@@ -1,5 +1,5 @@
 import ContactSection from "@/components/contact";
-import LocationMap from "@/components/location-map";
+import MapWrapper from "@/components/map-wrapper";
 import { generateMetadata } from "@/components/seo";
 import type { Metadata } from "next";
 
@@ -16,9 +16,9 @@ export default function FaqPage() {
   return (
     <>
       <ContactSection />
-      <div className="container mt-20 mb-20">
-        <h2 className="heading-md mb-6">Find Us</h2>
-        <LocationMap />
+      <div className="container mt-20 mb-24">
+        <h2 className="text-gray-800 text-center heading-md mb-6">Find Us</h2>
+        <MapWrapper />
       </div>
     </>
   );
