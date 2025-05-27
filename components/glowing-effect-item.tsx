@@ -15,7 +15,7 @@ interface GlowingEffectGridProps {
 
 export function GlowingEffectDemoSecond({ items }: GlowingEffectGridProps) {
     return (
-        <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+        <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[50rem] xl:grid-rows-2">
             {items.map((item, index) => {
                 const gridAreas = [
                     "md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
@@ -30,15 +30,9 @@ export function GlowingEffectDemoSecond({ items }: GlowingEffectGridProps) {
                     <GridItem
                         key={index}
                         area={area}
-                        title={`Service ${index + 1}`}
                         description={item.description}
-                        icon={
-                            item.icon ? <div className="h-8 w-8 rounded-full bg-amber-600 text-white flex items-center justify-center text-md font-bold">
-                                {String(index + 1).padStart(2, "0")}
-                            </div> : (
-                                <span className="h-4 w-4 bg-gray-400 rounded-full inline-block" />
-                            )
-                        }
+                        icon={item.icon}
+
                     />
                 );
             })}
@@ -48,7 +42,7 @@ export function GlowingEffectDemoSecond({ items }: GlowingEffectGridProps) {
 
 interface GridItemProps {
     area: string;
-    icon: React.ReactNode;
+    icon?: string;
     title: string;
     description: React.ReactNode;
 }
@@ -66,20 +60,23 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
                     proximity={64}
                     inactiveZone={0.01}
                 />
-                <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
-                    <div className="relative flex flex-1 flex-col justify-between gap-3">
-                        <div className="w-fit rounded-lg border border-gray-600 p-2">{icon}</div>
-                        <div className="space-y-3">
-                            {/* <h3 className="pt-0.5 text-xl font-semibold text-black md:text-2xl dark:text-white">
-                {title}
-              </h3> */}
-                            <h2 className="text-sm text-white md:text-base">
-                                {description}
-                            </h2>
-                        </div>
+                <div className="relative h-full w-full overflow-hidden rounded-xl">
+                    {icon && (
+                        <Image
+                            src={icon}
+                            alt={title}
+                            fill
+                            className="object-cover z-0"
+                        />
+                    )}
+
+                    <div className="absolute inset-0 z-10 bg-black/40 p-6 flex flex-col justify-end">
+                        <p className="text-xl text-white font-semibold">{description}</p>
                     </div>
                 </div>
             </div>
         </li>
+
     );
 };
+
