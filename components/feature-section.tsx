@@ -34,8 +34,8 @@ const FeatureSection = ({
   buttonText,
   buttonLink,
   reverse = false,
-  backgroundColor = "#0c4a6e",
-  textColor = "white",
+  backgroundColor,
+  textColor,
 }: FeatureSectionProps) => {
   return (
     <section className="py-10 overflow-x-hidden " style={{ backgroundColor }}>

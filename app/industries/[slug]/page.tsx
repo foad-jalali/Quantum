@@ -129,12 +129,12 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         </div>
       </section>
 
-      <section className="py-16" style={{ backgroundColor: "#C9D1D3" }}>
+      <section className="py-16" style={{ backgroundColor: "#000000" }}>
         <div className="container mx-auto px-4 text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-[#00204E]">
+          <h2 className="text-4xl font-bold mb-4 text-[#FFFFFF]">
             {data.info_section.title}
           </h2>
-          <h3 className="container text-xl text-[#00204E]">
+          <h3 className="container text-xl text-[#FFFFFF]">
             {data.info_section.top_content}
           </h3>
         </div>
@@ -148,7 +148,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           />
         </div>
         <div className="text-center mt-16">
-          <p className="container text-[#00204E] text-lg mb-4 pt-8">
+          <p className="container text-[#FFFFFF] text-lg mb-4 pt-8">
             {data.info_section.bottom_content}
           </p>
         </div>
@@ -159,8 +159,8 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         alt={data.title}
         description={
           <>
-            <h2 className="text-white">{data.second_section_content.title}</h2>
-            <p className="text-white">
+            <h2>{data.second_section_content.title}</h2>
+            <p>
               {data.second_section_content.description}
             </p>
           </>

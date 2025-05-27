@@ -67,7 +67,7 @@ export default function FAQSection() {
         className="container max-w-4xl px-4 text-[#00204E] mb-8"
       >
         <h1 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h1>
-        <Accordion type="multiple" className="w-full">
+        <Accordion type="multiple" defaultValue={["faq-0"]} className="w-full">
           {faqItems.map((item, index) => (
             <AccordionItem key={index} value={`faq-${index}`}>
               <AccordionTrigger>{item.question}</AccordionTrigger>

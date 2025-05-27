@@ -57,23 +57,24 @@ export default async function ServicePage({ params }: ServicePageProps) {
         buttonLink="/contact"
       />
 
-      <div className="bg-[#111111] py-16">
+      <div className="bg-[#FFFFFF] py-16">
         <div className="container mx-auto px-4">
           <FeatureSection
             image={data.first_section_image}
             alt={data.title}
             description={
               <>
-                <h2 className="text-white">
+                <h2>
                   {data.first_section_content.title}
                 </h2>
-                <p className="text-gray-300">
+                <p>
                   {data.first_section_content.description}
                 </p>
               </>
             }
             backgroundColor="transparent"
             reverse={false}
+            textColor="#111111"
           />
 
           {data?.first_section_cards?.length > 0 && (
@@ -104,7 +105,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </div>
       </div>
 
-      <section className="py-16" style={{ backgroundColor: "#247BA0" }}>
+      <section className="py-16" style={{ backgroundColor: "#000000" }}>
         <div className="container mx-auto px-4 text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-white">
             {data.card_section.title}
@@ -144,15 +145,15 @@ export default async function ServicePage({ params }: ServicePageProps) {
         alt={data.title}
         description={
           <>
-            <h2 className="text-white">{data.second_section_content.title}</h2>
-            <p className="text-white">
+            <h2>{data.second_section_content.title}</h2>
+            <p>
               {data.second_section_content.description}
             </p>
           </>
         }
         buttonText={data.second_section_content.btn}
         buttonLink="/contact"
-        backgroundColor="#00A676"
+        backgroundColor="#FFFFFF"
         reverse={true}
       />
     </div>
