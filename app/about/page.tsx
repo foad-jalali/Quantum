@@ -10,6 +10,24 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
+    const team = [
+        {
+            image: "/team/Akbarian.png",
+            name: "Ali Akbarian",
+            position: "Chief Executive Officer",
+        },
+        {
+            image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=faces&auto=format&q=80",
+            name: "Jane Doe",
+            position: "Marketing Director",
+        },
+        {
+            image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=faces&auto=format&q=80",
+            name: "John Smith",
+            position: "Lead Developer",
+        },
+    ];
+
     return (
         <>
             <section className="mt-24">
@@ -55,23 +73,22 @@ export default function AboutPage() {
                     <div className="mb-20">
                         <h2 className="heading-lg text-center mb-12 text-gray-800">Meet Our Team</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {[
-                                "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=300&h=300&fit=crop&crop=faces&auto=format&q=80",
-                                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=faces&auto=format&q=80",
-                                "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=faces&auto=format&q=80",
-                            ].map((image, index) => (
+                            {team.map((member, index) => (
                                 <div key={index} className="salon-card text-center p-6">
                                     <div className="relative w-40 h-40 rounded-full overflow-hidden mx-auto mb-4">
-                                        <Image src={image || "/placeholder.svg"} alt={`Stylist ${index + 1}`} fill className="object-cover" />
+                                        <Image
+                                            src={member.image || "/placeholder.svg"}
+                                            alt={member.name}
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
-                                    <h3 className="text-xl font-semibold mb-2">Stylist Name</h3>
-                                    <p className="text-gray-600 mb-4">Expert in haircuts, coloring, and styling</p>
-                                    <Link href="/booking" className="text-primary hover:text-primary-dark transition-colors">
-                                        Book with this stylist
-                                    </Link>
+                                    <h3 className="text-xl text-gray-800 font-semibold mb-1">{member.name}</h3>
+                                    <p className="text-gray-800 mb-4">{member.position}</p>
                                 </div>
                             ))}
                         </div>
+
                     </div>
 
                     <div className="text-center mb-20">
