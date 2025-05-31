@@ -44,23 +44,23 @@
   "divisions": [
     {
       "content": "Systems Analysis and Integration Planning ",
-      "icon": "/icon/01.svg"
+      "icon": "/single-services/6/system.jpg"
     },
     {
       "content": "ERP, CRM, SCM, and Custom Application Integration ",
-      "icon": "/icon/02.svg"
+      "icon": "/single-services/6/rp.jpg"
     },
     {
       "content": "API Development and Management for Interconnectivity ",
-      "icon": "/icon/03.svg"
+      "icon": "/single-services/6/api.jpg"
     },
     {
       "content": "Legacy System Modernization and Migration ",
-      "icon": "/icon/04.svg"
+      "icon": "/single-services/6/lagacy.jpg"
     },
     {
       "content": "Data Synchronization, Cleansing, and Consolidation ",
-      "icon": "/icon/05.svg"
+      "icon": "/single-services/6/data.jpg"
     }
   ],
   "second_section_content": {

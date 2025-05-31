@@ -54,23 +54,23 @@
   "divisions": [
     {
       "content": "Machine Learning Model Development and Integration ",
-      "icon": "/icon/01.svg"
+      "icon": "/single-services/7/ml.jpg"
     },
     {
       "content": "Natural Language Processing (NLP) for Smart Interfaces ",
-      "icon": "/icon/02.svg"
+      "icon": "/single-services/7/nl.jpg"
     },
     {
       "content": "Predictive Analytics and Data-Driven Decision Support ",
-      "icon": "/icon/03.svg"
+      "icon": "/single-services/7/pre.jpg"
     },
     {
       "content": "Computer Vision for Automation and Quality Control ",
-      "icon": "/icon/04.svg"
+      "icon": "/single-services/7/comp.jpg"
     },
     {
       "content": "AI-Based Process Optimization and Workflow Automation ",
-      "icon": "/icon/05.svg"
+      "icon": "/single-services/7/ai.jpg"
     }
   ],
   "second_section_content": {

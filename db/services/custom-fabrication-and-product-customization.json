@@ -39,23 +39,23 @@
   "divisions": [
     {
       "content": "Design Modifications to Meet Specific Use Cases ",
-      "icon": "/icon/01.svg"
+      "icon": "/single-services/8/des.jpg"
     },
     {
       "content": "Feature Enhancements and Component Upgrades ",
-      "icon": "/icon/02.svg"
+      "icon": "/single-services/8/future.jpg"
     },
     {
       "content": "Aesthetic Customization (Color, Finish, Branding) ",
-      "icon": "/icon/03.svg"
+      "icon": "/single-services/8/aes.jpg"
     },
     {
       "content": "Adaptation for Environmental or Industry-Specific Requirements ",
-      "icon": "/icon/04.svg"
+      "icon": "/single-services/8/adapt.jpg"
     },
     {
       "content": "Packaging, Labeling, and Custom Assembly Solutions ",
-      "icon": "/icon/05.svg"
+      "icon": "/single-services/8/pack.jpg"
     }
   ],
   "second_section_content": {
