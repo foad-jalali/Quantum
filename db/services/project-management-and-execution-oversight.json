@@ -54,23 +54,23 @@
   "divisions": [
     {
       "content": "On-Site and Remote Supervision of Project Milestones ",
-      "icon": "/icon/01.svg"
+      "icon": "/single-services/4/onsite.jpg"
     },
     {
       "content": "Contractor and Vendor Coordination and Monitoring ",
-      "icon": "/icon/02.svg"
+      "icon": "/single-services/4/contractor.jpg"
     },
     {
       "content": "Compliance Audits and Quality Inspections ",
-      "icon": "/icon/03.svg"
+      "icon": "/single-services/4/comp.jpg"
     },
     {
       "content": "Progress Tracking Against Project Timelines and KPIs ",
-      "icon": "/icon/04.svg"
+      "icon": "/single-services/4/progress.jpg"
     },
     {
       "content": "Corrective Action Implementation for Deviations ",
-      "icon": "/icon/05.svg"
+      "icon": "/single-services/4/corrective.jpg"
     }
   ],
   "second_section_content": {

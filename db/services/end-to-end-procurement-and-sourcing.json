@@ -55,23 +55,23 @@
   "divisions": [
     {
       "content": "Total Cost of Ownership (TCO) Analysis",
-      "icon": "/services/g1.png"
+      "icon": "/single-services/1/tco.jpg"
     },
     {
       "content": "Supplier Consolidation and Relationship Building",
-      "icon": "/services/g1.png"
+      "icon": "/single-services/1/supplier.jpg"
     },
     {
       "content": "Multi-vendor Strategy Development",
-      "icon": "/services/g1.png"
+      "icon": "/single-services/1/multi.png"
     },
     {
       "content": "Sustainability and Ethical Sourcing Evaluation",
-      "icon": "/services/g1.png"
+      "icon": "/single-services/1/sustain.jpg"
     },
     {
       "content": "Market Intelligence and Competitive Benchmarking",
-      "icon": "/services/g1.png"
+      "icon": "/single-services/1/comp.jpg"
     }
   ],
   "second_section_content": {

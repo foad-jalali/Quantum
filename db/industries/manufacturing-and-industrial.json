@@ -15,6 +15,28 @@
         "btn": "Get a Quote"
     },
     "card_section": {
+        "cards": [
+            {
+                "image": "/single-industries/7/",
+                "text": "Plant construction, expansion, and modernization project management"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Oversight of production line installations and system integrations"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Coordination across multiple engineering and vendor teams"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Health, Safety, and Environmental (HSE) compliance assurance"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Budget management, risk mitigation, and milestone tracking"
+            }
+        ],
         "image": "/single-industries/7/card.png",
         "title": "Quantum’s Project Management & Execution Oversight for Industrial Operations ",
         "top_content": "Manufacturing and fabrication projects often involve complex engineering, multi-phase implementations, and integration of new technologies. Quantum’s Project Management & Execution Oversight services are designed to navigate these challenges efficiently. Our services include: ",
@@ -48,6 +70,28 @@
         }
     ],
     "info_section": {
+        "cards": [
+            {
+                "image": "/single-industries/7/",
+                "text": "Deployment of factory-wide networks and IIoT sensor systems"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Custom software solutions for production monitoring and predictive maintenance"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Integration of AI-based quality control and process optimization platforms"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Custom fabrication of machine parts, jigs, fixtures, and production equipment"
+            },
+            {
+                "image": "/single-industries/7/",
+                "text": "Cybersecurity deployment to safeguard production data and intellectual property"
+            }
+        ],
         "image": "/single-industries/7/info.png",
         "title": "Quantum’s IT Integration and Custom Fabrication for Industry 4.0 ",
         "top_content": "Modern manufacturing is driven by digital transformation and custom engineering. Quantum supports this transition with cutting-edge IT Infrastructure Deployment, Software Integration, and Custom Fabrication services. Our expertise includes: ",

@@ -15,6 +15,28 @@
         "btn": "Get a Quote"
     },
     "card_section": {
+        "cards": [
+            {
+                "image": "/single-industries/1/",
+                "text": "Strategic Project Planning for Defence Missions"
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Oversight of Custom Fabrication for Defence Equipment"
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Multi-vendor Coordination and Communication"
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Implementing Cybersecurity & Threat"
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Intelligence Systems for Military Networks"
+            }
+        ],
         "image": "/single-industries/1/card.png",
         "title": "Quantum’s Specialized Project Management & Execution Oversight for Defence Projects",
         "top_content": "Defence projects are highly complex, with strict timelines, sensitive deliverables, and non-negotiable standards. Quantum’s Project Management & Execution Oversight services are specifically adapted for Military & Defence environments. Our project services include: ",
@@ -44,6 +66,28 @@
     ],
     "info_section": {
         "image": "/single-industries/1/info.png",
+        "cards": [
+            {
+                "image": "/single-industries/1/",
+                "text": "Developing AI-enhanced Command and Control Systems "
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Building secure, mission-specific custom software applications "
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Integrating GNSS, GPS, and Navigation Systems into Defence Platforms "
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Custom Fabrication of Specialized Military Hardware Components "
+            },
+            {
+                "image": "/single-industries/1/",
+                "text": "Implementing Cybersecurity & Threat Intelligence Systems for Military Networks"
+            }
+        ],
         "title": "Quantum’s Advanced Technology & Customization for Military Applications ",
         "top_content": "In a world where technology superiority defines tactical advantage, Quantum, in collaboration with our Mid- or Large- reputable vendors,  provides Military & Defence clients with bespoke technological solutions. Our Custom Software and Embedded AI services for the Defence sector include: ",
         "bottom_content": "Through our tailored technology and fabrication services, Quantum enables Defence forces to enhance decision-making, increase operational efficiency, and achieve strategic superiority. "

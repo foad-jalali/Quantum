@@ -15,6 +15,28 @@
         "btn": "Get a Quote"
     },
     "card_section": {
+        "cards": [
+            {
+                "image": "/single-industries/3/",
+                "text": "IT system and infrastructure project coordination for airlines"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Implementation of maintenance management systems (MMS)"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Vendor collaboration for specialized systems (hangar equipment, ground support systems)"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Regulatory compliance assurance and reporting throughout project lifecycles"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Planning and overseeing MRO facility upgrades and expansions"
+            }
+        ],
         "image": "/single-industries/3/card.png",
         "title": "Quantum’s Expert Project Management & Execution Oversight for Aviation ",
         "top_content": "Managing projects in the aviation and MRO sectors demands strict adherence to safety, regulatory, and timeline standards. Quantum’s Project Management & Execution Oversight services ensure that every initiative — from facility expansions to IT system upgrades — is executed with precision. Our aviation project management services include: ",
@@ -48,6 +70,28 @@
         }
     ],
     "info_section": {
+        "cards": [
+            {
+                "image": "/single-industries/3/",
+                "text": "Deployment of aviation-specific IT networks and cloud systems"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Integration of predictive maintenance software and AI diagnostics tools"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Custom fabrication of aircraft components and ground equipment"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Installation of navigation, GPS, and GNSS-based tracking systems"
+            },
+            {
+                "image": "/single-industries/3/",
+                "text": "Cybersecurity solutions for safeguarding airline and maintenance data"
+            }
+        ],
         "image": "/single-industries/3/info.png",
         "title": "Quantum’s Aviation IT Deployment and Custom Fabrication Services ",
         "top_content": "The aviation industry is rapidly transforming with technology-driven operations and predictive maintenance. Quantum supports Airlines and MRO providers with IT Infrastructure Deployment, Software Integration, and Custom Fabrication solutions tailored to the sector’s specific needs, including: ",

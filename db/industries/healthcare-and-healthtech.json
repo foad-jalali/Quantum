@@ -15,6 +15,28 @@
         "btn": "Get a Quote"
     },
     "card_section": {
+        "cards": [
+            {
+                "image": "/single-industries/6/",
+                "text": "Planning and managing hospital expansions and clinical infrastructure upgrades"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "IT deployment project oversight including EHR, PACS, and telehealth systems"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "Coordination of medical equipment installation and integration"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "Compliance assurance with HIPAA, GDPR, and healthcare industry standards"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "Risk management, budgeting, and timeline control"
+            }
+        ],
         "image": "/single-industries/6/card.png",
         "title": "Quantum’s Project Management & Execution Oversight for Healthcare Initiatives ",
         "top_content": "Healthcare projects, whether new hospital construction, IT infrastructure upgrades, or digital health rollouts, require meticulous planning, stakeholder alignment, and regulatory compliance. Quantum’s Project Management & Execution Oversight services support healthcare leaders in achieving successful outcomes. Our services include: ",
@@ -48,6 +70,28 @@
         }
     ],
     "info_section": {
+        "cards": [
+            {
+                "image": "/single-industries/6/",
+                "text": "Deployment of hospital-wide secure networks and data centers"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "Integration of AI-powered diagnostic tools and predictive analytics platforms"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "Custom HealthTech application development for patient engagement and remote monitoring"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "GNSS and navigation systems for healthcare logistics and asset tracking"
+            },
+            {
+                "image": "/single-industries/6/",
+                "text": "Cybersecurity architecture to safeguard sensitive health data"
+            }
+        ],
         "image": "/single-industries/6/info.png",
         "title": "Quantum’s IT Infrastructure and Custom HealthTech Solutions ",
         "top_content": "Healthcare is transforming through technology, and Quantum supports this transformation with comprehensive IT Infrastructure Deployment and Custom Software solutions tailored for clinical environments. Our services include: ",

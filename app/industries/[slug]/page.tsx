@@ -6,6 +6,7 @@ import FeatureSection from "@/components/feature-section";
 import SimpleCard from "@/components/simple-card";
 import Image from "next/image";
 import { CardHoverEffectDemo } from "@/components/card-effect-item";
+import { GlowingEffectDemoSecond } from "@/components/glowing-effect-item";
 
 interface IndustryPageProps {
   params: { slug: string };
@@ -113,15 +114,18 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             {data.card_section.top_content}
           </h3>
         </div>
-        <div className="flex justify-center mb-16">
-          <Image
-            src={data.card_section.image}
-            alt="Illustration"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-        </div>
+        {data?.card_section.cards?.length > 0 && (
+          <div className="max-w-7xl mx-auto px-4">
+            <GlowingEffectDemoSecond
+              items={data.card_section.cards.map((item: any) => ({
+                title: item.title,
+                description: item.text,
+                icon: item.icon,
+                borderColor: "gray-300"
+              }))}
+            />
+          </div>
+        )}
         <div className="text-center mt-16">
           <p className="container text-[#00204E] text-lg mb-4 pt-8">
             {data.card_section.bottom_content}
@@ -138,15 +142,17 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             {data.info_section.top_content}
           </h3>
         </div>
-        <div className="flex justify-center mb-16">
-          <Image
-            src={data.info_section.image}
-            alt="Illustration"
-            width={800}
-            height={600}
-            className="rounded-lg"
-          />
-        </div>
+        {data?.info_section.cards?.length > 0 && (
+          <div className="max-w-7xl mx-auto px-4">
+            <GlowingEffectDemoSecond
+              items={data.info_section.cards.map((item: any) => ({
+                title: item.title,
+                description: item.text,
+                icon: item.icon,
+              }))}
+            />
+          </div>
+        )}
         <div className="text-center mt-16">
           <p className="container text-[#FFFFFF] text-lg mb-4 pt-8">
             {data.info_section.bottom_content}

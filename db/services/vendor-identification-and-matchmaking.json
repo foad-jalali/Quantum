@@ -54,23 +54,23 @@
   "divisions": [
     {
       "content": "Aligning Vendor Strengths with Client Objectives ",
-      "icon": "/icon/01.svg"
+      "icon": "/single-services/3/aligning.jpg"
     },
     {
       "content": "Facilitating Introductions and Early Negotiations ",
-      "icon": "/icon/02.svg"
+      "icon": "/single-services/3/facil.jpg"
     },
     {
       "content": "Supporting Pilot Projects or Trial Engagements ",
-      "icon": "/icon/03.svg"
+      "icon": "/single-services/3/support.jpg"
     },
     {
       "content": "Advising on Contract Structuring for Long-Term Success ",
-      "icon": "/icon/04.svg"
+      "icon": "/single-services/3/advising.jpg"
     },
     {
       "content": "Evaluating Cultural and Operational Compatibility ",
-      "icon": "/icon/05.svg"
+      "icon": "/single-services/3/eval.jpg"
     }
   ],
   "second_section_content": {

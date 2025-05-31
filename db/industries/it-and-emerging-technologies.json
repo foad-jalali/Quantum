@@ -15,6 +15,28 @@
         "btn": "Get a Quote"
     },
     "card_section": {
+        "cards": [
+            {
+                "image": "/single-industries/9/",
+                "text": "Planning and executing enterprise-wide IT deployments"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Managing the rollout of emerging tech solutions such as AI integration and IoT ecosystems"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Vendor coordination for multi-system and multi-platform integration"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Ensuring compliance with industry-specific data protection and security regulations"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Risk management, cost control, and agile project delivery"
+            }
+        ],
         "image": "/single-industries/9/card.png",
         "title": "Quantum’s Project Management & Execution Oversight for Digital Transformation ",
         "top_content": "Deploying IT and emerging technology solutions requires strategic project management to align technological investments with business objectives. Quantum’s Project Management & Execution Oversight services ensure that digital transformation initiatives are successful, scalable, and sustainable. Our services include: ",
@@ -48,6 +70,28 @@
         }
     ],
     "info_section": {
+        "cards": [
+            {
+                "image": "/single-industries/9/",
+                "text": "Deployment of hybrid cloud environments and edge computing infrastructures"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Integration of AI and machine learning models into business workflows"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Development of blockchain-based applications for enhanced transparency and security"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Implementation of IoT networks for smart operations across industries"
+            },
+            {
+                "image": "/single-industries/9/",
+                "text": "Cybersecurity architecture design to protect data, devices, and networks"
+            }
+        ],
         "image": "/single-industries/9/info.png",
         "title": "Quantum’s IT Infrastructure Deployment and Custom Solutions for Emerging Technologies ",
         "top_content": "Emerging technologies demand agile, secure, and scalable IT environments. Quantum supports businesses with comprehensive IT Infrastructure Deployment and custom technology solutions tailored to the needs of the modern digital enterprise. Our services include: ",

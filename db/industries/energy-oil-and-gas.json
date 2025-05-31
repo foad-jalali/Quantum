@@ -15,6 +15,28 @@
     "btn": "Get a Quote"
   },
   "card_section": {
+    "cards": [
+      {
+        "image": "/single-industries/4/",
+        "text": "Managing EPC (Engineering, Procurement, Construction) contracts"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "Project planning and risk analysis for drilling, refining, and transmission"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "Coordination across subcontractors and technical teams"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "Oversight of fabrication and equipment installation on-site"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "HSE (Health, Safety, Environment) compliance monitoring and reporting"
+      }
+    ],
     "image": "/single-industries/4/card.png",
     "title": "Quantum’s Project Management for Complex Energy Sector Initiatives ",
     "top_content": "Oil & Gas and Energy projects often span multiple locations, disciplines, and compliance frameworks. Quantum’s Project Management & Execution Oversight services are structured to address the specific complexities of this industry. Our capabilities include: ",
@@ -48,6 +70,28 @@
     }
   ],
   "info_section": {
+    "cards": [
+      {
+        "image": "/single-industries/4/",
+        "text": "Deployment of industrial IoT (IIoT) and sensor networks"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "Custom software solutions for pipeline monitoring, asset tracking, and SCADA systems"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "AI-enhanced maintenance forecasting and predictive analytics"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "GNSS and satellite-based navigation for offshore and remote operations"
+      },
+      {
+        "image": "/single-industries/4/",
+        "text": "Custom fabrication for field-ready enclosures, control units, and safety components"
+      }
+    ],
     "image": "/single-industries/4/info.png",
     "title": "Quantum’s IT Integration and Custom Engineering for Energy Innovation ",
     "top_content": "Digital transformation is driving the future of energy. Quantum supports this evolution with scalable IT infrastructure and customized engineering solutions designed for the harsh environments and performance demands of the sector. Our services include: ",

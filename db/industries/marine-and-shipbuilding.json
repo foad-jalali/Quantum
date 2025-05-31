@@ -15,6 +15,28 @@
         "btn": "Get a Quote"
     },
     "card_section": {
+        "cards": [
+            {
+                "image": "/single-industries/5/",
+                "text": "Shipyard expansion and infrastructure project planning"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Oversight of hull fabrication, system integration, and outfitting"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Vendor and subcontractor management for specialized marine systems"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Compliance monitoring with national and international maritime standards"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Risk management, schedule control, and quality assurance"
+            }
+        ],
         "image": "/single-industries/5/card.png",
         "title": "Quantum’s Project Management and Execution Oversight for Marine Projects ",
         "top_content": "Marine and shipbuilding projects require coordination across multiple disciplines, timelines, and regulatory frameworks. Quantum’s Project Management & Execution Oversight services are tailored to meet the complexities of ship construction, retrofitting, and modernization initiatives. Our services include: ",
@@ -48,6 +70,28 @@
         }
     ],
     "info_section": {
+        "cards": [
+            {
+                "image": "/single-industries/5/",
+                "text": "Installation of GNSS, GPS, and satellite-based navigation systems"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Development of custom fleet management and maintenance tracking software"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Deployment of cybersecurity frameworks for maritime IT networks"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "Custom fabrication of marine-grade components, housings, and control units"
+            },
+            {
+                "image": "/single-industries/5/",
+                "text": "AI-driven monitoring systems for vessel operations and predictive maintenance"
+            }
+        ],
         "image": "/single-industries/5/info.png",
         "title": "Quantum’s Advanced IT and Custom Fabrication for Marine Applications ",
         "top_content": "Modern vessels and shipyards require cutting-edge technology to stay competitive and compliant. Quantum offers IT Infrastructure Deployment, Software Integration, and Custom Fabrication services specifically for the marine sector, including: ",

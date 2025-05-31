@@ -15,6 +15,28 @@
     "btn": "Get a Quote"
   },
   "card_section": {
+    "cards": [
+      {
+        "image": "/single-industries/2/",
+        "text": "Airport terminal construction and infrastructure project planning"
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Risk analysis and management for multi-phase airport projects"
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "IT and network deployment project oversight"
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Multi-vendor coordination for systems integration (CCTV, fire alarms, control rooms)"
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Ensuring regulatory compliance throughout project execution"
+      }
+    ],
     "image": "/single-industries/2/card.png",
     "title": "Quantum’s Project Management & Execution Oversight for Airport Developments",
     "top_content": "Airport development and expansion projects are intricate, often involving numerous stakeholders and critical deadlines. Quantum’s Project Management & Execution Oversight services are designed to navigate this complexity and ensure success. Our expertise covers:",
@@ -48,6 +70,28 @@
     }
   ],
   "info_section": {
+    "cards": [
+      {
+        "image": "/single-industries/2/",
+        "text": "Deployment of airport-wide wired and wireless IT networks "
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Integration of AI-powered security monitoring and predictive analytics "
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Implementation of custom airport management software (AMS) "
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Custom fabrication and integration of navigation, GNSS, and GPS systems "
+      },
+      {
+        "image": "/single-industries/2/",
+        "text": "Cybersecurity infrastructure deployment to protect passenger and operational data "
+      }
+    ],
     "image": "/single-industries/2/info.png",
     "title": "Quantum’s Integrated IT Solutions & Customization for Airports ",
     "top_content": "Technology is a cornerstone of airport operations today. Quantum’s IT Infrastructure Deployment & Custom Software Solutions help airports streamline operations, enhance security, and deliver a better passenger experience. Our airport-focused IT services include: ",

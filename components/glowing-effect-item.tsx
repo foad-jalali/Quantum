@@ -1,12 +1,14 @@
 "use client";
 
 import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
 interface ServiceItem {
     description: string;
     icon?: string;
+    borderColor: string;
 }
 
 interface GlowingEffectGridProps {
@@ -32,7 +34,7 @@ export function GlowingEffectDemoSecond({ items }: GlowingEffectGridProps) {
                         area={area}
                         description={item.description}
                         icon={item.icon}
-
+                        borderColor={item.borderColor}
                     />
                 );
             })}
@@ -42,15 +44,21 @@ export function GlowingEffectDemoSecond({ items }: GlowingEffectGridProps) {
 
 interface GridItemProps {
     area: string;
+    borderColor: string;
     icon?: string;
     title: string;
     description: React.ReactNode;
 }
 
-const GridItem = ({ area, icon, title, description }: GridItemProps) => {
+const GridItem = ({ area, icon, title, description, borderColor }: GridItemProps) => {
     return (
         <li className={`min-h-[14rem] list-none ${area}`}>
-            <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+            <div
+                className={cn(
+                    "relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3",
+                    borderColor ? `border-${borderColor}` : "border"
+                )}
+            >
                 <GlowingEffect
                     blur={0}
                     borderWidth={3}
@@ -70,8 +78,8 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
                         />
                     )}
 
-                    <div className="absolute inset-0 z-10 bg-black/40 p-6 flex flex-col justify-end">
-                        <p className="text-xl text-white font-semibold">{description}</p>
+                    <div className="absolute inset-0 z-10 bg-black/50 p-6 flex flex-col justify-end">
+                        <p className="text-md text-white font-semibold">{description}</p>
                     </div>
                 </div>
             </div>
