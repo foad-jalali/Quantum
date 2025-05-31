@@ -93,7 +93,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           )}
 
           <div className="text-center">
-            <p className="container text-white text-lg mb-4 pt-8">
+            <p className="container text-white text-lg mb-4">
               {data.first_section_content.bottom_content}
             </p>
             <a
