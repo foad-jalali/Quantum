@@ -17,23 +17,23 @@
   "card_section": {
     "cards": [
       {
-        "image": "/single-industries/2/",
+        "icon": "/single-industries/2/air.jpg",
         "text": "Airport terminal construction and infrastructure project planning"
       },
       {
-        "image": "/single-industries/2/",
+        "icon": "/single-industries/2/risk.jpg",
         "text": "Risk analysis and management for multi-phase airport projects"
       },
       {
-        "image": "/single-industries/2/",
+        "icon": "/single-industries/2/it.jpg",
         "text": "IT and network deployment project oversight"
       },
       {
-        "image": "/single-industries/2/",
+        "icon": "/single-industries/2/multi.jpg",
         "text": "Multi-vendor coordination for systems integration (CCTV, fire alarms, control rooms)"
       },
       {
-        "image": "/single-industries/2/",
+        "icon": "/single-industries/2/ensuring.jpg",
         "text": "Ensuring regulatory compliance throughout project execution"
       }
     ],
@@ -101,6 +101,6 @@
     "title": "Why Quantum is the Strategic Technology Partner for Airports ",
     "description": "Quantum understands the unique challenges facing modern airports — from capacity expansion and security to digital transformation. Our tailored procurement, project management, and technology integration services enable airports to improve efficiency, enhance passenger safety, and embrace future-ready innovations. Partnering with Quantum means driving operational excellence and long-term growth in an increasingly competitive aviation landscape. ",
     "btn": "Join Us",
-    "bg_color": "#FFFFFF"
+    "bg_color": "#111111"
   }
 }

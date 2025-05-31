@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/3/",
+                "icon": "/single-industries/3/it.jpg",
                 "text": "IT system and infrastructure project coordination for airlines"
             },
             {
-                "image": "/single-industries/3/",
+                "icon": "/single-industries/3/imp.jpg",
                 "text": "Implementation of maintenance management systems (MMS)"
             },
             {
-                "image": "/single-industries/3/",
+                "icon": "/single-industries/3/vend.jpg",
                 "text": "Vendor collaboration for specialized systems (hangar equipment, ground support systems)"
             },
             {
-                "image": "/single-industries/3/",
+                "icon": "/single-industries/3/reg.jpg",
                 "text": "Regulatory compliance assurance and reporting throughout project lifecycles"
             },
             {
-                "image": "/single-industries/3/",
+                "icon": "/single-industries/3/plan.jpg",
                 "text": "Planning and overseeing MRO facility upgrades and expansions"
             }
         ],
@@ -101,6 +101,6 @@
         "title": "Why Quantum is the Strategic Technology Partner for Airlines & MRO Providers ",
         "description": "Quantum’s Airlines & MRO solutions are built around a deep understanding of the aviation industry’s critical demands for compliance, safety, innovation, and efficiency. With tailored procurement, IT deployment, project oversight, and customization services, Quantum empowers aviation organizations to soar higher, maintain peak operational performance, and embrace technological advancements with confidence. ",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }

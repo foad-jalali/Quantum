@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/6/",
+                "icon": "/single-industries/6/plan.jpg",
                 "text": "Planning and managing hospital expansions and clinical infrastructure upgrades"
             },
             {
-                "image": "/single-industries/6/",
+                "icon": "/single-industries/6/it.jpg",
                 "text": "IT deployment project oversight including EHR, PACS, and telehealth systems"
             },
             {
-                "image": "/single-industries/6/",
+                "icon": "/single-industries/6/coord.jpg",
                 "text": "Coordination of medical equipment installation and integration"
             },
             {
-                "image": "/single-industries/6/",
+                "icon": "/single-industries/6/comp.jpg",
                 "text": "Compliance assurance with HIPAA, GDPR, and healthcare industry standards"
             },
             {
-                "image": "/single-industries/6/",
+                "icon": "/single-industries/6/risk.jpg",
                 "text": "Risk management, budgeting, and timeline control"
             }
         ],
@@ -101,6 +101,6 @@
         "title": "Why Quantum is the Strategic Partner for Healthcare & HealthTech ",
         "description": "Quantum’s Healthcare & HealthTech solutions are designed to meet the sector’s unique demands for reliability, security, innovation, and compliance. With specialized procurement, IT deployment, project management, and technology integration services, Quantum empowers healthcare providers and HealthTech companies to lead in delivering cutting-edge patient care and advancing medical technology. ",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }

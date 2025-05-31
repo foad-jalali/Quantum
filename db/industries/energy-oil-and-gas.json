@@ -17,23 +17,23 @@
   "card_section": {
     "cards": [
       {
-        "image": "/single-industries/4/",
+        "icon": "/single-industries/4/manage.jpg",
         "text": "Managing EPC (Engineering, Procurement, Construction) contracts"
       },
       {
-        "image": "/single-industries/4/",
+        "icon": "/single-industries/4/proj.jpg",
         "text": "Project planning and risk analysis for drilling, refining, and transmission"
       },
       {
-        "image": "/single-industries/4/",
+        "icon": "/single-industries/4/coord.jpg",
         "text": "Coordination across subcontractors and technical teams"
       },
       {
-        "image": "/single-industries/4/",
+        "icon": "/single-industries/4/over.jpg",
         "text": "Oversight of fabrication and equipment installation on-site"
       },
       {
-        "image": "/single-industries/4/",
+        "icon": "/single-industries/4/hse.jpg",
         "text": "HSE (Health, Safety, Environment) compliance monitoring and reporting"
       }
     ],
@@ -101,6 +101,6 @@
     "title": "Why Quantum is the Strategic Partner for Energy, Oil & Gas ",
     "description": "Quantum’s Energy, Oil & Gas solutions are engineered for performance, reliability, and compliance. With deep industry knowledge and cross-disciplinary capabilities, we help companies meet complex operational demands, reduce risk, and embrace innovation. From upstream exploration to renewable integration, Quantum stands as a trusted technology and execution partner. ",
     "btn": "Join Us",
-    "bg_color": "#FFFFFF"
+    "bg_color": "#111111"
   }
 }

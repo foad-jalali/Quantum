@@ -133,7 +133,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         </div>
       </section>
 
-      <section className="py-16" style={{ backgroundColor: "#000000" }}>
+      {/* <section className="py-16" style={{ backgroundColor: "#000000" }}>
         <div className="container mx-auto px-4 text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-[#FFFFFF]">
             {data.info_section.title}
@@ -158,15 +158,15 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             {data.info_section.bottom_content}
           </p>
         </div>
-      </section>
+      </section> */}
 
       <FeatureSection
         image={data.second_section_image}
         alt={data.title}
         description={
           <>
-            <h2>{data.second_section_content.title}</h2>
-            <p>
+            <h2 className="text-[#FFFFFF]">{data.second_section_content.title}</h2>
+            <p className="text-[#FFFFFF]">
               {data.second_section_content.description}
             </p>
           </>

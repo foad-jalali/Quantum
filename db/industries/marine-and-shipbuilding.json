@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/5/",
+                "icon": "/single-industries/5/ship.jpg",
                 "text": "Shipyard expansion and infrastructure project planning"
             },
             {
-                "image": "/single-industries/5/",
+                "icon": "/single-industries/5/over.jpg/",
                 "text": "Oversight of hull fabrication, system integration, and outfitting"
             },
             {
-                "image": "/single-industries/5/",
+                "icon": "/single-industries/5/vend.jpg",
                 "text": "Vendor and subcontractor management for specialized marine systems"
             },
             {
-                "image": "/single-industries/5/",
+                "icon": "/single-industries/5/comp.jpg",
                 "text": "Compliance monitoring with national and international maritime standards"
             },
             {
-                "image": "/single-industries/5/",
+                "icon": "/single-industries/5/risk.jpg",
                 "text": "Risk management, schedule control, and quality assurance"
             }
         ],
@@ -101,6 +101,6 @@
         "title": "Why Quantum is the Trusted Partner for Marine & Shipbuilding Projects ",
         "description": "Quantum’s Marine & Shipbuilding solutions combine industry-specific knowledge, technological innovation, and execution excellence. We empower marine organizations to build and operate vessels that are safer, more efficient, and more sustainable. Whether you’re expanding a shipyard, modernizing a fleet, or deploying new technologies, Quantum stands ready as your trusted strategic partner. ",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }

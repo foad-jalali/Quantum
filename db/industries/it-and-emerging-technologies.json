@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/9/",
+                "icon": "/single-industries/9/plan.jpg",
                 "text": "Planning and executing enterprise-wide IT deployments"
             },
             {
-                "image": "/single-industries/9/",
+                "icon": "/single-industries/9/manage.jpg",
                 "text": "Managing the rollout of emerging tech solutions such as AI integration and IoT ecosystems"
             },
             {
-                "image": "/single-industries/9/",
+                "icon": "/single-industries/9/vend.jpg",
                 "text": "Vendor coordination for multi-system and multi-platform integration"
             },
             {
-                "image": "/single-industries/9/",
+                "icon": "/single-industries/9/ensuring.jpg",
                 "text": "Ensuring compliance with industry-specific data protection and security regulations"
             },
             {
-                "image": "/single-industries/9/",
+                "icon": "/single-industries/9/risk.jpg",
                 "text": "Risk management, cost control, and agile project delivery"
             }
         ],
@@ -101,6 +101,6 @@
         "title": "Why Quantum is the Strategic Partner for IT & Emerging Technologies ",
         "description": "Quantum’s IT & Emerging Technologies solutions are built around a deep understanding of technology innovation, business transformation, and operational excellence. Whether deploying enterprise IT systems or integrating next-generation technologies, Quantum helps businesses stay ahead of the curve and build the digital foundations for future success. ",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }

@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/7/",
+                "icon": "/single-industries/7/plan.jpg",
                 "text": "Plant construction, expansion, and modernization project management"
             },
             {
-                "image": "/single-industries/7/",
+                "icon": "/single-industries/7/over.jpg",
                 "text": "Oversight of production line installations and system integrations"
             },
             {
-                "image": "/single-industries/7/",
+                "icon": "/single-industries/7/coord.jpg",
                 "text": "Coordination across multiple engineering and vendor teams"
             },
             {
-                "image": "/single-industries/7/",
+                "icon": "/single-industries/7/health.jpg",
                 "text": "Health, Safety, and Environmental (HSE) compliance assurance"
             },
             {
-                "image": "/single-industries/7/",
+                "icon": "/single-industries/7/budget.jpg",
                 "text": "Budget management, risk mitigation, and milestone tracking"
             }
         ],
@@ -101,6 +101,6 @@
         "title": "Why Quantum is the Trusted Partner for Manufacturing & Industrial Fabrication ",
         "description": "Quantum’s Manufacturing & Industrial Fabrication solutions are built on a deep understanding of industrial processes, innovation, and operational excellence. With tailored procurement, project management, IT deployment, and custom fabrication services, Quantum enables manufacturers to lead the market, innovate continuously, and achieve scalable success. ",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }

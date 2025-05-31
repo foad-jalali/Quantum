@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/1/",
+                "icon": "/single-industries/1/stra.jpg",
                 "text": "Strategic Project Planning for Defence Missions"
             },
             {
-                "image": "/single-industries/1/",
+                "icon": "/single-industries/1/over.jpg",
                 "text": "Oversight of Custom Fabrication for Defence Equipment"
             },
             {
-                "image": "/single-industries/1/",
+                "icon": "/single-industries/1/multi.jpg",
                 "text": "Multi-vendor Coordination and Communication"
             },
             {
-                "image": "/single-industries/1/",
+                "icon": "/single-industries/1/imp.jpg",
                 "text": "Implementing Cybersecurity & Threat"
             },
             {
-                "image": "/single-industries/1/",
+                "icon": "/single-industries/1/int.jpg",
                 "text": "Intelligence Systems for Military Networks"
             }
         ],
@@ -96,6 +96,6 @@
         "title": "Why Quantum is the Trusted Technology Partner for the Military & Defence Sector ",
         "description": "Quantum’s Military & Defence solutions are designed with a deep understanding of the industry’s unique requirements — security, precision, reliability, and compliance. By delivering tailored procurement, project management, technology integration, and customization services, Quantum ensures that military and defence organizations and contractors are equipped to meet the evolving demands of modern Military and Defence landscapes with confidence and agility.",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }

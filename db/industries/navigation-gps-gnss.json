@@ -17,23 +17,23 @@
     "card_section": {
         "cards": [
             {
-                "image": "/single-industries/8/",
+                "icon": "/single-industries/8/plan.jpg",
                 "text": "Planning and management of navigation infrastructure deployments"
             },
             {
-                "image": "/single-industries/8/",
+                "icon": "/single-industries/8/coord.jpg",
                 "text": "Coordination of hardware, software, and network integration for GNSS systems"
             },
             {
-                "image": "/single-industries/8/",
+                "icon": "/single-industries/8/risk.jpg",
                 "text": "Risk analysis and mitigation for signal integrity and coverage"
             },
             {
-                "image": "/single-industries/8/",
+                "icon": "/single-industries/8/test.jpg",
                 "text": "Testing, validation, and compliance assurance with navigation standards"
             },
             {
-                "image": "/single-industries/8/",
+                "icon": "/single-industries/8/multi.jpg",
                 "text": "Multi-stakeholder communication management and reporting"
             }
         ],
@@ -101,6 +101,6 @@
         "title": "Why Quantum is the Strategic Partner for Navigation, GPS, and GNSS Solutions ",
         "description": "Quantum’s Navigation, GPS, and GNSS solutions combine technical expertise, industry knowledge, and execution excellence. Whether supporting aviation, maritime, defense, or transportation sectors, Quantum delivers tailored services that ensure clients stay ahead in an increasingly precise and data-driven world. ",
         "btn": "Join Us",
-        "bg_color": "#FFFFFF"
+        "bg_color": "#111111"
     }
 }
