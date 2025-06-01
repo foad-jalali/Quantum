@@ -16,7 +16,7 @@ const timelineData = [
     <li>Preparing documents, pricing proposals, and required submissions to secure contracts</li>
     <li>Partnering with reliable suppliers to successfully execute projects</li>
   </ul>`,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/home/1.jpg",
     icon: Lightbulb,
     color: "from-gray-500 to-gray-800",
     stats: "3 Founders",
@@ -32,7 +32,7 @@ const timelineData = [
     <li>Negotiating the best prices and purchase terms</li>
     <li>Managing logistics and delivery processes</li>
   </ul>`,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/home/2.jpg",
     icon: Rocket,
     color: "from-gray-500 to-gray-800",
     stats: "10K Users",
@@ -47,7 +47,7 @@ const timelineData = [
     <li>Leveraging Quantum’s extensive network to promote your brand</li>
     <li>Connecting you with large-scale projects that need your products</li>
   </ul>`,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/home/3.jpg",
     icon: Users,
     color: "from-gray-500 to-gray-800",
     stats: "50 Team Members",
@@ -63,7 +63,7 @@ const timelineData = [
     <li>Creating a shortlist of verified vendors aligned with your technical and budgetary needs</li>
     <li>Managing the onboarding and compliance processes for selected vendors</li>
   </ul>`,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/home/4.jpg",
     icon: Trophy,
     color: "from-gray-500 to-gray-800",
     stats: "1M+ Users",
@@ -79,7 +79,7 @@ const timelineData = [
     <li>Coordinating multi-partner bid submissions for large contracts</li>
     <li>Providing expert review to maximize scoring and compliance</li>
   </ul>`,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/home/5.jpg",
     icon: Target,
     color: "from-gray-500 to-gray-800",
     stats: "50+ Countries",
@@ -215,7 +215,7 @@ function TimelineCard({
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           />
-          <div className={`absolute inset-0 bg-gradient-to-t ${item.color} opacity-60`} />
+          <div className={`absolute inset-0`} />
 
           {/* Icon Overlay */}
           <motion.div
