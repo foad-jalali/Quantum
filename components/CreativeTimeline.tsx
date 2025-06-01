@@ -129,10 +129,15 @@ export default function CreativeTimeline() {
         className="relative overflow-x-auto pb-20 scrollbar-hide"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        <div className="flex items-center min-w-max px-8 py-16 relative">
-
+        <div className="flex flex-col md:flex-row items-center min-w-full md:min-w-max px-4 md:px-8 py-16 relative gap-12">
           {/* Fixed Line based on total width */}
-          <div className="absolute top-1/2 left-0 h-1 w-full bg-gradient-to-r from-purple-500 via-blue-500 via-green-500 via-yellow-500 to-red-500 -translate-y-1/2 z-0" />
+          <div className="
+  absolute 
+  bg-gradient-to-r from-purple-500 via-blue-500 via-green-500 via-yellow-500 to-red-500 
+  md:top-1/2 md:left-0 md:w-full md:h-1 md:-translate-y-1/2 md:translate-x-0
+  top-0 left-1/2 w-1 h-full -translate-x-1/2 
+  z-0
+" />
 
           {/* Cards */}
           {timelineData.map((item, index) => (
@@ -195,8 +200,8 @@ function TimelineCard({
 
       {/* Card */}
       <motion.div
-        className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900 ${index % 2 === 0 ? "mb-32" : "mt-32"
-          }`}
+        className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900
+  ${index % 2 === 0 ? "md:mb-32" : "md:mt-32"} my-8`}
         whileHover={{ scale: 1.05, y: -10 }}
         onClick={onActivate}
         animate={isActive ? { scale: 1.05, y: -10 } : {}}
