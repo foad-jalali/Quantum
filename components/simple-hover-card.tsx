@@ -115,16 +115,16 @@ const Feature = ({
             )}
         >
             {index < 4 && (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-amber-400 dark:from-amber-300 to-transparent pointer-events-none" />
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-amber-200 dark:from-amber-100 to-transparent pointer-events-none" />
             )}
             {index >= 4 && index < 9 && (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-amber-400 dark:from-amber-300 to-transparent pointer-events-none" />
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-amber-200 dark:from-amber-100 to-transparent pointer-events-none" />
             )}
             {index >= 8 && (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-amber-400 dark:from-amber-300 to-transparent pointer-events-none" />
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-amber-200 dark:from-amber-100 to-transparent pointer-events-none" />
             )}
             <motion.div
-                className="items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors"
+                className="items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors z-10"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
