@@ -7,11 +7,15 @@ import { Calendar, Users, Rocket, Trophy, Lightbulb, Target } from "lucide-react
 const timelineData = [
   {
     id: 1,
-    year: "2020",
-    title: "The Spark",
-    subtitle: "Where it all began",
-    description:
-      "A small team of dreamers gathered in a garage, fueled by coffee and an ambitious vision to change the world through technology.",
+    year: "01",
+    title: "Public Tender Support in Canada",
+    subtitle: "Win more government contracts with expert guidance.",
+    description: `How We Help:
+  <ul>
+    <li>Identifying the right government tenders for your business</li>
+    <li>Preparing documents, pricing proposals, and required submissions to secure contracts</li>
+    <li>Partnering with reliable suppliers to successfully execute projects</li>
+  </ul>`,
     image: "/placeholder.svg?height=300&width=400",
     icon: Lightbulb,
     color: "from-gray-500 to-gray-800",
@@ -19,11 +23,15 @@ const timelineData = [
   },
   {
     id: 2,
-    year: "2021",
-    title: "First Breakthrough",
-    subtitle: "The prototype that changed everything",
-    description:
-      "After countless sleepless nights, we built our first working prototype. The excitement was electric as we realized we had something special.",
+    year: "02",
+    title: "Strategic Sourcing & Procurement",
+    subtitle: "Secure quality suppliers and optimal pricing across industries.",
+    description: `How We Help:
+  <ul>
+    <li>Finding reliable suppliers across various industries</li>
+    <li>Negotiating the best prices and purchase terms</li>
+    <li>Managing logistics and delivery processes</li>
+  </ul>`,
     image: "/placeholder.svg?height=300&width=400",
     icon: Rocket,
     color: "from-gray-500 to-gray-800",
@@ -31,11 +39,14 @@ const timelineData = [
   },
   {
     id: 3,
-    year: "2022",
-    title: "Growing Strong",
-    subtitle: "Building the dream team",
-    description:
-      "We expanded our team with brilliant minds from around the globe. Each new member brought unique perspectives and incredible talent.",
+    year: "03",
+    title: "Selling & Market Expansion",
+    subtitle: "Grow your customer base and enter new markets with confidence.",
+    description: `How We Help:
+    <li>Identifying new customers and expanding market reach</li>
+    <li>Leveraging Quantum’s extensive network to promote your brand</li>
+    <li>Connecting you with large-scale projects that need your products</li>
+  </ul>`,
     image: "/placeholder.svg?height=300&width=400",
     icon: Users,
     color: "from-gray-500 to-gray-800",
@@ -43,11 +54,15 @@ const timelineData = [
   },
   {
     id: 4,
-    year: "2023",
-    title: "Market Leader",
-    subtitle: "Recognition and growth",
-    description:
-      "Our hard work paid off as we became the industry leader. Awards, recognition, and most importantly, happy customers worldwide.",
+    year: "04",
+    title: "Vendor Identification & Qualification",
+    subtitle: "Find, assess, and onboard the right partners for your projects.",
+    description: `How We Help:
+  <ul>
+    <li>Evaluating supplier capabilities, certifications, and reliability</li>
+    <li>Creating a shortlist of verified vendors aligned with your technical and budgetary needs</li>
+    <li>Managing the onboarding and compliance processes for selected vendors</li>
+  </ul>`,
     image: "/placeholder.svg?height=300&width=400",
     icon: Trophy,
     color: "from-gray-500 to-gray-800",
@@ -55,11 +70,15 @@ const timelineData = [
   },
   {
     id: 5,
-    year: "2024",
-    title: "Global Impact",
-    subtitle: "Changing lives worldwide",
-    description:
-      "Today, we're proud to serve millions of users across 50+ countries, making a real difference in people's lives every single day.",
+    year: "05",
+    title: "Proposal & Bid Management",
+    subtitle: "Craft winning proposals that meet all technical and compliance needs.",
+    description: `How We Help:
+  <ul>
+    <li>Crafting compelling technical and financial proposals</li>
+    <li>Coordinating multi-partner bid submissions for large contracts</li>
+    <li>Providing expert review to maximize scoring and compliance</li>
+  </ul>`,
     image: "/placeholder.svg?height=300&width=400",
     icon: Target,
     color: "from-gray-500 to-gray-800",
@@ -85,14 +104,14 @@ export default function CreativeTimeline() {
 
       {/* Header */}
       <div className="relative z-10 text-center py-16">
-        <motion.h1
-          className="text-6xl font-bold text-white mb-4"
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold text-white mb-4"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
           Our Journey
-        </motion.h1>
+        </motion.h2>
         <motion.p
           className="text-xl text-gray-300 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 50 }}
@@ -110,22 +129,25 @@ export default function CreativeTimeline() {
         className="relative overflow-x-auto pb-20 scrollbar-hide"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        <div className="flex items-center min-w-max px-8 py-16">
-          {/* Connecting Line */}
-          <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-blue-500 via-green-500 via-yellow-500 to-red-500 transform -translate-y-1/2" />
+        <div className="flex items-center min-w-max px-8 py-16 relative">
 
+          {/* Fixed Line based on total width */}
+          <div className="absolute top-1/2 left-0 h-1 w-full bg-gradient-to-r from-purple-500 via-blue-500 via-green-500 via-yellow-500 to-red-500 -translate-y-1/2 z-0" />
+
+          {/* Cards */}
           {timelineData.map((item, index) => (
-            <TimelineCard
-              key={item.id}
-              item={item}
-              index={index}
-              isActive={activeCard === index}
-              onActivate={() => setActiveCard(index)}
-            />
+            <div className="relative z-10">
+              <TimelineCard
+                key={item.id}
+                item={item}
+                index={index}
+                isActive={activeCard === index}
+                onActivate={() => setActiveCard(index)}
+              />
+            </div>
           ))}
         </div>
       </div>
-
       {/* Progress Indicator
       <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {timelineData.map((_, index) => (
@@ -173,9 +195,8 @@ function TimelineCard({
 
       {/* Card */}
       <motion.div
-        className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900 ${
-          index % 2 === 0 ? "mb-32" : "mt-32"
-        }`}
+        className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900 ${index % 2 === 0 ? "mb-32" : "mt-32"
+          }`}
         whileHover={{ scale: 1.05, y: -10 }}
         onClick={onActivate}
         animate={isActive ? { scale: 1.05, y: -10 } : {}}
@@ -232,12 +253,12 @@ function TimelineCard({
           </motion.p>
 
           <motion.p
-            className="text-gray-300 text-sm leading-relaxed mb-4"
+            className="text-gray-300 text-sm leading-relaxed mb-4 prose"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: index * 0.2 + 0.6 }}
+            dangerouslySetInnerHTML={{ __html: item.description }}
           >
-            {item.description}
           </motion.p>
 
           {/* Stats */}
@@ -254,9 +275,8 @@ function TimelineCard({
 
         {/* Connecting Line to Node */}
         <motion.div
-          className={`absolute ${
-            index % 2 === 0 ? "top-full" : "bottom-full"
-          } left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-b ${item.color}`}
+          className={`absolute ${index % 2 === 0 ? "top-full" : "bottom-full"
+            } left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-b ${item.color}`}
           initial={{ scaleY: 0 }}
           animate={isInView ? { scaleY: 1 } : {}}
           transition={{ delay: index * 0.2 + 0.8 }}
