@@ -19,6 +19,7 @@ import { TimelineSection } from "./timeline-section";
 import ServicesIndustriesMarquee from "./services-industries-marquee";
 import { BentoGridDemo } from "./bento-grid-item";
 import CreativeTimeline from "./CreativeTimeline";
+import { SimpleHoverCard } from "./simple-hover-card";
 
 export default function Home() {
   const isMobile = useMobile();

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import SimpleCard from "./simple-card";
+import { SimpleHoverCard } from "./simple-hover-card";
 
 interface Feature {
   icon: string;
@@ -65,23 +66,7 @@ const FeatureHighlightSection = ({
           {subtitle}
         </motion.h3>
 
-        <motion.div
-          className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {features.map((feature, index) => (
-            <SimpleCard
-              key={index}
-              color={colorSelector(index)}
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
-        </motion.div>
+        <SimpleHoverCard />
       </div>
     </article>
   );
