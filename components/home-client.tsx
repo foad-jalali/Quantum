@@ -18,6 +18,7 @@ import BannerSection from "./banner-section";
 import { TimelineSection } from "./timeline-section";
 import ServicesIndustriesMarquee from "./services-industries-marquee";
 import { BentoGridDemo } from "./bento-grid-item";
+import CreativeTimeline from "./CreativeTimeline";
 
 export default function Home() {
   const isMobile = useMobile();
@@ -519,7 +520,8 @@ export default function Home() {
          <ParticleBackground />
       </section>
 
-      <TimelineSection />
+      {/* <TimelineSection /> */}
+      <CreativeTimeline />
       <PartnersSection items={logos} backgroundColor="#ffffff" />
       <FeatureGridSection
         title="Our Core Services"
