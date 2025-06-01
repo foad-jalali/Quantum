@@ -96,7 +96,7 @@ export default function CreativeTimeline() {
   return (
     <div className="min-h-screen bg-black overflow-hidden">
       {/* Animated Background */}
-      <motion.div className="fixed inset-0 opacity-20">
+      <motion.div className="fixed inset-0 opacity-20 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-pink-500/20" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
@@ -123,25 +123,15 @@ export default function CreativeTimeline() {
         </motion.p>
       </div>
 
-      {/* Timeline Container */}
-      <div
-        ref={containerRef}
-        className="relative overflow-x-auto pb-20 scrollbar-hide"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-      >
-        <div className="flex flex-col md:flex-row items-center min-w-full md:min-w-max px-4 md:px-8 py-16 relative gap-12">
-          {/* Fixed Line based on total width */}
-          <div className="
-  absolute 
-  bg-gradient-to-r from-purple-500 via-blue-500 via-green-500 via-yellow-500 to-red-500 
-  md:top-1/2 md:left-0 md:w-full md:h-1 md:-translate-y-1/2 md:translate-x-0
-  top-0 left-1/2 w-1 h-full -translate-x-1/2 
-  z-0
-" />
+      <div className="relative bg-black py-20">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+          <div className="hidden md:block w-[calc(100%-64px)] h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-red-500" />
+          <div className="block md:hidden w-1 h-full bg-gradient-to-b from-purple-500 via-blue-500 to-red-500" />
+        </div>
 
-          {/* Cards */}
-          {timelineData.map((item, index) => (
-            <div className="relative z-10">
+        <div className="relative z-10 max-w-4xl mx-auto px-4">
+          <div className="hidden md:flex justify-center gap-6">
+            {timelineData.map((item, index) => (
               <TimelineCard
                 key={item.id}
                 item={item}
@@ -149,10 +139,29 @@ export default function CreativeTimeline() {
                 isActive={activeCard === index}
                 onActivate={() => setActiveCard(index)}
               />
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="flex flex-col items-center gap-16 md:hidden">
+            {timelineData.map((item, index) => (
+              <div key={item.id} className="relative">
+                <TimelineCard
+                  item={item}
+                  index={index}
+                  isActive={activeCard === index}
+                  onActivate={() => setActiveCard(index)}
+                />
+                {index !== timelineData.length - 1 && (
+                  <div className="absolute left-1/2 top-full h-10 w-1 bg-gradient-to-b from-purple-500 to-pink-500 -translate-x-1/2" />
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
+
+
       {/* Progress Indicator
       <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {timelineData.map((_, index) => (
@@ -186,11 +195,13 @@ function TimelineCard({
   return (
     <motion.div
       ref={cardRef}
-      className="relative flex-shrink-0 mx-8"
       initial={{ opacity: 0, y: 100 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, delay: index * 0.2 }}
     >
+
+
       {/* Timeline Node */}
       {/* <motion.div
         className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-r ${item.color} z-20 border-4 border-gray-900`}
@@ -202,9 +213,11 @@ function TimelineCard({
       <motion.div
         className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900
   ${index % 2 === 0 ? "md:mb-32" : "md:mt-32"} my-8`}
-        whileHover={{ scale: 1.05, y: -10 }}
-        onClick={onActivate}
-        animate={isActive ? { scale: 1.05, y: -10 } : {}}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        whileHover={{ scale: 1.01, y: -10 }}
+        transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
       >
         {/* Image Section */}
         <div className="relative h-48 overflow-hidden">
@@ -219,7 +232,7 @@ function TimelineCard({
 
           {/* Icon Overlay */}
           <motion.div
-            className="absolute top-4 right-4 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center"
+            className="absolute top-4 right-4 w-12 h-12 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center"
             whileHover={{ rotate: 360 }}
             transition={{ duration: 0.5 }}
           >
@@ -267,7 +280,7 @@ function TimelineCard({
           </motion.p>
 
           {/* Stats */}
-          <motion.div
+          {/* <motion.div
             className={`inline-flex items-center px-3 py-1 rounded bg-gradient-to-r ${item.color} text-white text-sm font-medium`}
             initial={{ scale: 0 }}
             animate={isInView ? { scale: 1 } : {}}
@@ -275,7 +288,7 @@ function TimelineCard({
           >
             <Calendar className="w-4 h-4 mr-2" />
             {item.stats}
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Connecting Line to Node */}
