@@ -87,6 +87,14 @@ const timelineData = [
 ]
 
 export default function CreativeTimeline() {
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  }
   const [activeCard, setActiveCard] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollXProgress } = useScroll({ container: containerRef })
@@ -130,7 +138,13 @@ export default function CreativeTimeline() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4">
-          <div className="hidden md:flex justify-center gap-6">
+          <motion.div
+            className="hidden md:flex justify-center gap-6"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {timelineData.map((item, index) => (
               <TimelineCard
                 key={item.id}
@@ -140,7 +154,8 @@ export default function CreativeTimeline() {
                 onActivate={() => setActiveCard(index)}
               />
             ))}
-          </div>
+          </motion.div>
+
 
           <div className="flex flex-col items-center gap-16 md:hidden">
             {timelineData.map((item, index) => (
@@ -191,6 +206,10 @@ function TimelineCard({
   const cardRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(cardRef, { once: true, margin: "-100px" })
   const Icon = item.icon
+  const cardVariants = {
+    hidden: { opacity: 0, y: 100 },
+    show: { opacity: 1, y: 0 },
+  }
 
   return (
     <motion.div
@@ -213,6 +232,7 @@ function TimelineCard({
       <motion.div
         className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900
   ${index % 2 === 0 ? "md:mb-32" : "md:mt-32"} my-8`}
+        variants={cardVariants} // این خط جدید
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -256,7 +276,7 @@ function TimelineCard({
             className="text-2xl font-bold text-amber-500 mb-2"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: index * 0.2 + 0.4 }}
+            transition={{ duration: 0.5 }}
           >
             {item.title}
           </motion.h3>
