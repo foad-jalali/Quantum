@@ -591,7 +591,7 @@ export default function Home() {
       />
 
       <BannerSection
-        image="/home/hero.png"
+        image="/home/hero.webp"
         title="Wrap with Confidence Statement"
         subtitle="With our network of global vendors, project management experience, and direct access to major tendering platforms (GoC, NATO, UN), QIS empowers you to secure, source, and deliver what matters most — without the usual friction."
         buttonText="Partner with Us"
