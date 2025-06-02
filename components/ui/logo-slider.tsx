@@ -64,17 +64,18 @@ export function LogoSlider({
           )}
         >
           {logos.map((logo, idx) => (
-            <li key={idx} className="w-32 h-32 flex items-center justify-center rounded">
-              <div className="relative w-24 h-24">
-                <Image
-                  src={logo.image}
-                  alt={logo.alt}
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <li
+              key={idx}
+              className="w-24 h-24 relative flex items-center justify-center rounded"
+            >
+              <Image
+                src={logo.image}
+                alt={logo.alt}
+                fill
+                className="object-contain"
+                loading="lazy"
+              />
             </li>
-
           ))}
         </ul>
       </div>

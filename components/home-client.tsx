@@ -451,14 +451,11 @@ export default function Home() {
                 >
                   Quantum
                 </motion.span>{" "}
-                <motion.span
+                <span
                   className="text-white inline-block"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.7 }}
                 >
                   International Services
-                </motion.span>{" "}
+                </span>{" "}
               </motion.h1>
 
               <motion.p

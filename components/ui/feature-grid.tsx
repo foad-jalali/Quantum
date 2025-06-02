@@ -45,13 +45,11 @@ const FeatureGrid: React.FC<FeatureGridProps> = ({
           data-aos-delay={index * 100}
           data-aos-duration="600"
         >
-          <div className="relative w-full aspect-square">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full aspect-square object-cover rounded-xl"
+          />
           <div className="p-4 text-left">
             <div className="font-semibold">{item.title}</div>
             <p className="text-sm mt-1">{item.subtitle}</p>
