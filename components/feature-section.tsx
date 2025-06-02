@@ -3,8 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 interface FeatureSectionProps {
   image: string;
@@ -35,62 +35,57 @@ const FeatureSection = ({
   buttonLink,
   reverse = false,
   backgroundColor,
-  textColor,
+  textColor = "text-gray-800",
 }: FeatureSectionProps) => {
   return (
-    <section className="py-10 overflow-x-hidden " style={{ backgroundColor }}>
+    <motion.section
+      className="py-14"
+      style={{ backgroundColor }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <div
         className={cn(
-          "container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-6",
+          "container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10",
           reverse && "md:flex-row-reverse"
         )}
       >
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.7 }}
+        <motion.article
           variants={reverse ? fadeLeft : fadeRight}
-          className="w-full md:w-1/2 md:ml-[60px]"
+          transition={{ duration: 0.6 }}
+          className={cn("w-full md:w-1/2", textColor)}
         >
-          <div
-            className={cn(
-              "prose prose-lg max-w-none mb-6 font-semibold",
-              `text-[${textColor}]`,
-              `prose-headings:text-[${textColor}]`
-            )}
-          >
+          <div className="mb-6 leading-relaxed text-lg font-medium">
             {description}
           </div>
 
           {buttonText && buttonLink && (
             <Link
               href={buttonLink}
-              className="inline-block px-6 py-3 bg-amber-500 text-black font-semibold rounded hover:bg-amber-600 transition"
+              className="inline-block mt-4 px-6 py-3 bg-amber-500 text-black font-semibold rounded hover:bg-amber-600 transition"
             >
               {buttonText}
             </Link>
           )}
-        </motion.div>
+        </motion.article>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.7 }}
+        <motion.figure
           variants={reverse ? fadeRight : fadeLeft}
-          className="relative w-full max-w-md h-auto rounded-[10px] overflow-hidden shadow-md mx-auto"
+          transition={{ duration: 0.6 }}
+          className="w-full md:w-1/2 max-w-md mx-auto rounded-xl overflow-hidden shadow-md"
         >
           <Image
             src={image}
             alt={alt}
-            width={400}
+            width={500}
             height={400}
             className="object-cover w-full h-full"
           />
-        </motion.div>
+          <figcaption className="sr-only">{alt}</figcaption>
+        </motion.figure>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

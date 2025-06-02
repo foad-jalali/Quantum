@@ -12,7 +12,7 @@ interface FeatureGridItem {
 interface FeatureGridProps {
   items: FeatureGridItem[];
   cols?: {
-    base?: number; // default: 2
+    base?: number;
     md?: number;
     lg?: number;
   };
@@ -22,39 +22,35 @@ const FeatureGrid: React.FC<FeatureGridProps> = ({
   items,
   cols = { base: 2, md: 3, lg: 4 },
 }) => {
-  const className = `
-    grid 
-    grid-cols-${cols.base || 2}
-    ${cols.md ? `md:grid-cols-${cols.md}` : ""}
-    ${cols.lg ? `lg:grid-cols-${cols.lg}` : ""}
-    gap-6
-  `;
+  const baseCols = cols.base || 2;
+  const mdCols = cols.md ? `md:grid-cols-${cols.md}` : "";
+  const lgCols = cols.lg ? `lg:grid-cols-${cols.lg}` : "";
 
   return (
-    <div className={className}>
+    <div className={`grid grid-cols-${baseCols} ${mdCols} ${lgCols} gap-6`}>
       {items.map((item, index) => (
-        <a
+        <article
           key={index}
-          href={item.href || "#"}
-          className="
-          group block rounded-lg overflow-hidden bg-white text-black 
-          transition-all duration-300 ease-in-out shadow-lg shadow-black/20
-          hover:scale-105 hover:border hover:border-amber-500 hover:shadow-2xl
-        "
+          className="rounded-lg overflow-hidden bg-white text-black shadow-lg shadow-black/20 transition-transform duration-300 hover:scale-105 hover:border hover:border-amber-500 hover:shadow-2xl"
           data-aos="fade-up"
           data-aos-delay={index * 100}
           data-aos-duration="600"
         >
-          <img
-            src={item.image}
-            alt={item.title}
-            className="w-full aspect-square object-cover rounded-xl"
-          />
-          <div className="p-4 text-left">
-            <div className="font-semibold">{item.title}</div>
-            <p className="text-sm mt-1">{item.subtitle}</p>
-          </div>
-        </a>
+          <a href={item.href || "#"} aria-label={item.title} className="block">
+            <figure className="w-full aspect-square overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </figure>
+            <div className="p-4 text-left">
+              <h3 className="font-semibold text-lg">{item.title}</h3>
+              {item.subtitle && <p className="text-sm mt-1">{item.subtitle}</p>}
+            </div>
+          </a>
+        </article>
       ))}
     </div>
   );

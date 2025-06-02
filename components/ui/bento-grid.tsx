@@ -11,8 +11,9 @@ export const BentoGrid = ({
     <div
       className={cn(
         "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[24rem] md:grid-cols-3",
-        className,
+        className
       )}
+      role="list"
     >
       {children}
     </div>
@@ -36,18 +37,21 @@ export const BentoGridItem = ({
     <div
       className={cn(
         "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none min-h-[22rem]",
-        className,
+        className
       )}
+      role="listitem"
     >
       {header}
       <div className="transition duration-200 group-hover/bento:translate-x-2">
-        {icon}
-        <div className="mt-2 mb-2 font-sans font-bold text-neutral-600 dark:text-neutral-200">
+        {icon && <div className="mb-2">{icon}</div>}
+        <h3 className="font-sans font-bold text-neutral-600 dark:text-neutral-200 text-lg">
           {title}
-        </div>
-        <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
-          {description}
-        </div>
+        </h3>
+        {description && (
+          <p className="font-sans text-sm font-normal text-neutral-600 dark:text-neutral-300">
+            {description}
+          </p>
+        )}
       </div>
     </div>
   );

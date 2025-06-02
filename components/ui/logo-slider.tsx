@@ -39,7 +39,10 @@ export function LogoSlider({
     const container = containerRef.current;
     if (!container) return;
 
-    container.style.setProperty("--animation-direction", direction === "left" ? "forwards" : "reverse");
+    container.style.setProperty(
+      "--animation-direction",
+      direction === "left" ? "forwards" : "reverse"
+    );
 
     const duration =
       speed === "fast" ? "30s" : speed === "slow" ? "60s" : "40s";
@@ -47,7 +50,7 @@ export function LogoSlider({
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" role="region" aria-label="Partner Logos">
       <div
         ref={containerRef}
         className={cn(
@@ -66,7 +69,8 @@ export function LogoSlider({
           {logos.map((logo, idx) => (
             <li
               key={idx}
-              className="w-24 h-24 relative flex items-center justify-center rounded"
+              className="w-24 h-24 relative flex items-center justify-center"
+              aria-label={logo.alt}
             >
               <Image
                 src={logo.image}

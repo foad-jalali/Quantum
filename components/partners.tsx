@@ -6,16 +6,28 @@ interface Items {
 }
 
 interface PartnerItems {
-  items: Items[]
+  items: Items[];
   backgroundColor?: string;
-
 }
 
-export default function PartnersSection({ items, backgroundColor = "transparent"}: PartnerItems) {
+export default function PartnersSection({
+  items,
+  backgroundColor = "transparent",
+}: PartnerItems) {
   return (
-    <div className={`py-10`} style={{ backgroundColor }}>
-      <h2 className="text-center text-2xl font-bold mb-6">Our Trusted Partners & Vendor Network</h2>
-      <LogoSlider logos={items} direction="left" speed="fast" />
-    </div>
+    <section
+      style={{ backgroundColor }}
+      className="py-10"
+      aria-labelledby="partners-heading"
+    >
+      <div className="container mx-auto px-4">
+        <header className="text-center mb-6">
+          <h2 id="partners-heading" className="text-2xl font-bold">
+            Our Trusted Partners & Vendor Network
+          </h2>
+        </header>
+        <LogoSlider logos={items} direction="left" speed="fast" />
+      </div>
+    </section>
   );
 }

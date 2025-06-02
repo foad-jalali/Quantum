@@ -425,86 +425,55 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-amber-50 text-gray-800 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-black overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-16 md:pt-0">
-        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30"></div>
+      <section
+        className="relative bg-black overflow-hidden flex flex-col md:flex-row items-center justify-center min-h-screen md:h-screen pt-16 md:pt-0"
+        aria-labelledby="hero-heading"
+      >
+        <div className="absolute inset-0 bg-gradient-radial from-amber-100/50 to-transparent opacity-30" aria-hidden="true" />
 
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <main className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 items-center">
-            
+
+            {/* متن اصلی */}
             <motion.div
               className="space-y-6 text-center md:text-start"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+              }}
             >
-              <motion.h1
-                className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-              >
-                <motion.span
-                  className="text-amber-500 inline-block"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.7 }}
-                >
-                  Quantum
-                </motion.span>{" "}
-                <span
-                  className="text-white inline-block"
-                >
-                  International Services
-                </span>{" "}
-              </motion.h1>
+              <h1 id="hero-heading" className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+                <span className="text-amber-500">Quantum</span>{" "}
+                <span className="text-white">International Services</span>
+              </h1>
 
-              <motion.p
-                className="text-xl md:text-2xl text-white"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.9 }}
-              >
+              <p className="text-xl md:text-2xl text-white">
                 Innovating Public Procurement & Supply Solutions Globally
-              </motion.p>
+              </p>
 
-              <motion.div
-                className="flex flex-wrap justify-center lg:justify-start gap-3 pt-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.1 }}
-              >
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/solutions">
-                    <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
-                      <span className="relative z-10">Explore Our Solutions</span>
-                      <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"></span>
-                    </Button>
-                  </Link>
-                </motion.div>
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/contact">
-                    <Button
-                      variant="outline"
-                      className="border-amber-500 text-amber-500 hover:bg-amber-500/10 group bg-amber-500/10"
-                    >
-                      <span>Contact Us</span>
-                      <motion.div
-                        initial={{ x: 0 }}
-                        whileHover={{ x: 5 }}
-                        transition={{
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 10,
-                        }}
-                      >
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:text-amber-400" />
-                      </motion.div>
-                    </Button>
-                  </Link>
-                </motion.div>
-              </motion.div>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 pt-4">
+                <Link href="/solutions">
+                  <Button className="bg-amber-500 hover:bg-amber-600 text-black relative overflow-hidden group">
+                    <span className="relative z-10">Explore Our Solutions</span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110" />
+                  </Button>
+                </Link>
+
+                <Link href="/contact">
+                  <Button
+                    variant="outline"
+                    className="border-amber-500 text-amber-500 hover:bg-amber-500/10 bg-amber-500/10 flex items-center"
+                  >
+                    <span>Contact Us</span>
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:text-amber-400 transition-all" />
+                  </Button>
+                </Link>
+              </div>
             </motion.div>
 
+            {/* تصویر یا مارکوئه */}
             <motion.div
               className="hidden lg:block h-screen max-h-[90vh] overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
@@ -514,8 +483,9 @@ export default function Home() {
               <ServicesIndustriesMarquee />
             </motion.div>
           </div>
-        </div>
-         <ParticleBackground />
+        </main>
+
+        <ParticleBackground />
       </section>
 
       {/* <TimelineSection /> */}
