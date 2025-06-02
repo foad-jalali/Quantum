@@ -3,6 +3,7 @@
 import { useState, useRef } from "react"
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
 import { Calendar, Users, Rocket, Trophy, Lightbulb, Target } from "lucide-react"
+import Image from "next/image"
 
 const timelineData = [
   {
@@ -43,6 +44,7 @@ const timelineData = [
     title: "Selling & Market Expansion",
     subtitle: "Grow your customer base and enter new markets with confidence.",
     description: `How We Help:
+    <ul>
     <li>Identifying new customers and expanding market reach</li>
     <li>Leveraging Quantum’s extensive network to promote your brand</li>
     <li>Connecting you with large-scale projects that need your products</li>
@@ -103,14 +105,10 @@ export default function CreativeTimeline() {
 
   return (
     <div className="min-h-screen bg-black">
-      {/* Animated Background */}
       <motion.div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-pink-500/20" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
       </motion.div>
 
-      {/* Header */}
       <div className="relative z-10 text-center py-16">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-white mb-4"
@@ -137,9 +135,9 @@ export default function CreativeTimeline() {
           <div className="block md:hidden w-1 h-full bg-gradient-to-b from-purple-500 via-blue-500 to-red-500" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4">
+        <div className="relative z-10 mx-auto px-4">
           <motion.div
-            className="hidden md:flex justify-center gap-6"
+            className="hidden md:flex flex-wrap justify-center gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
@@ -155,7 +153,6 @@ export default function CreativeTimeline() {
               />
             ))}
           </motion.div>
-
 
           <div className="flex flex-col items-center gap-16 md:hidden">
             {timelineData.map((item, index) => (
@@ -174,20 +171,6 @@ export default function CreativeTimeline() {
           </div>
         </div>
       </div>
-
-
-
-      {/* Progress Indicator
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {timelineData.map((_, index) => (
-          <motion.div
-            key={index}
-            className={`w-3 h-3 rounded-full cursor-pointer ${activeCard === index ? "bg-white" : "bg-gray-600"}`}
-            whileHover={{ scale: 1.2 }}
-            onClick={() => setActiveCard(index)}
-          />
-        ))}
-      </div> */}
     </div>
   )
 }
@@ -204,13 +187,8 @@ function TimelineCard({
   onActivate: () => void
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
-  const isInView = useInView(cardRef, { once: true, margin: "-100px" })
   const Icon = item.icon
-  const cardVariants = {
-    hidden: { opacity: 0, y: 100 },
-    show: { opacity: 1, y: 0 },
-  }
-
+  const isInView = useInView(cardRef, { once: true, margin: "-100px" })
   return (
     <motion.div
       ref={cardRef}
@@ -219,38 +197,19 @@ function TimelineCard({
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, delay: index * 0.2 }}
     >
-
-
-      {/* Timeline Node */}
-      {/* <motion.div
-        className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-r ${item.color} z-20 border-4 border-gray-900`}
-        whileHover={{ scale: 1.5 }}
-        animate={isActive ? { scale: 1.3 } : { scale: 1 }}
-      /> */}
-
-      {/* Card */}
       <motion.div
         className={`relative w-80 bg-black/80 backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-gray-900
   ${index % 2 === 0 ? "md:mb-32" : "md:mt-32"} my-8`}
-        variants={cardVariants} // این خط جدید
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
         whileHover={{ scale: 1.01, y: -10 }}
-        transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
       >
-        {/* Image Section */}
         <div className="relative h-48 overflow-hidden">
-          <motion.img
+          <Image
             src={item.image}
             alt={item.title}
-            className="w-full h-full object-cover"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
+            width={320}
+            height={192}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           />
-          <div className={`absolute inset-0`} />
-
-          {/* Icon Overlay */}
           <motion.div
             className="absolute top-4 right-4 w-12 h-12 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center"
             whileHover={{ rotate: 360 }}
@@ -258,8 +217,6 @@ function TimelineCard({
           >
             <Icon className="w-6 h-6 text-white" />
           </motion.div>
-
-          {/* Year Badge */}
           <motion.div
             className="absolute bottom-4 left-4 px-4 py-2 bg-black/50 backdrop-blur-sm rounded"
             initial={{ x: -50, opacity: 0 }}
@@ -270,51 +227,19 @@ function TimelineCard({
           </motion.div>
         </div>
 
-        {/* Content Section */}
         <div className="p-6">
-          <motion.h3
-            className="text-2xl font-bold text-amber-500 mb-2"
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.5 }}
-          >
-            {item.title}
-          </motion.h3>
-
-          <motion.p
-            className={`text-sm font-medium mb-3 bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: index * 0.2 + 0.5 }}
-          >
+          <h3 className="text-2xl font-bold text-amber-500 mb-2">{item.title}</h3>
+          <p className="text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-gray-800">
             {item.subtitle}
-          </motion.p>
-
-          <motion.p
+          </p>
+          <p
             className="text-gray-300 text-sm leading-relaxed mb-4 prose"
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: index * 0.2 + 0.6 }}
             dangerouslySetInnerHTML={{ __html: item.description }}
-          >
-          </motion.p>
-
-          {/* Stats */}
-          {/* <motion.div
-            className={`inline-flex items-center px-3 py-1 rounded bg-gradient-to-r ${item.color} text-white text-sm font-medium`}
-            initial={{ scale: 0 }}
-            animate={isInView ? { scale: 1 } : {}}
-            transition={{ delay: index * 0.2 + 0.7, type: "spring" }}
-          >
-            <Calendar className="w-4 h-4 mr-2" />
-            {item.stats}
-          </motion.div> */}
+          ></p>
         </div>
 
-        {/* Connecting Line to Node */}
         <motion.div
-          className={`absolute ${index % 2 === 0 ? "top-full" : "bottom-full"
-            } left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-b ${item.color}`}
+          className={`absolute ${index % 2 === 0 ? "top-full" : "bottom-full"} left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-b ${item.color}`}
           initial={{ scaleY: 0 }}
           animate={isInView ? { scaleY: 1 } : {}}
           transition={{ delay: index * 0.2 + 0.8 }}
