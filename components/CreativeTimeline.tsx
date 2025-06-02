@@ -94,9 +94,9 @@ export default function CreativeTimeline() {
   const backgroundX = useTransform(scrollXProgress, [0, 1], ["0%", "-50%"])
 
   return (
-    <div className="min-h-screen bg-black overflow-hidden">
+    <div className="min-h-screen bg-black">
       {/* Animated Background */}
-      <motion.div className="fixed inset-0 opacity-20 pointer-events-none">
+      <motion.div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-pink-500/20" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
