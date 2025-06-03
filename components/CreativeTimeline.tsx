@@ -69,23 +69,23 @@ const timelineData = [
     icon: Trophy,
     color: "from-gray-500 to-gray-800",
     stats: "1M+ Users",
-  },
-  {
-    id: 5,
-    year: "05",
-    title: "Proposal & Bid Management",
-    subtitle: "Craft winning proposals that meet all technical and compliance needs.",
-    description: `How We Help:
-  <ul>
-    <li>Crafting compelling technical and financial proposals</li>
-    <li>Coordinating multi-partner bid submissions for large contracts</li>
-    <li>Providing expert review to maximize scoring and compliance</li>
-  </ul>`,
-    image: "/home/5.webp",
-    icon: Target,
-    color: "from-gray-500 to-gray-800",
-    stats: "50+ Countries",
-  },
+  }
+  // {
+  //   id: 5,
+  //   year: "05",
+  //   title: "Proposal & Bid Management",
+  //   subtitle: "Craft winning proposals that meet all technical and compliance needs.",
+  //   description: `How We Help:
+  // <ul>
+  //   <li>Crafting compelling technical and financial proposals</li>
+  //   <li>Coordinating multi-partner bid submissions for large contracts</li>
+  //   <li>Providing expert review to maximize scoring and compliance</li>
+  // </ul>`,
+  //   image: "/home/5.webp",
+  //   icon: Target,
+  //   color: "from-gray-500 to-gray-800",
+  //   stats: "50+ Countries",
+  // },
 ]
 
 export default function CreativeTimeline() {
@@ -137,7 +137,7 @@ export default function CreativeTimeline() {
 
         <div className="relative z-10 mx-auto px-4">
           <motion.div
-            className="hidden md:flex flex-wrap justify-center gap-6"
+            className="flex flex-wrap justify-center md:gap-4 xl:gap-4"
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
